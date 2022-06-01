@@ -1,0 +1,927 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"premi",
+				"premium"
+			],
+			[
+				"ty",
+				"typeof"
+			],
+			[
+				"reco",
+				"recordInfo"
+			],
+			[
+				"d",
+				"description"
+			],
+			[
+				"member",
+				"member_id"
+			],
+			[
+				"fe",
+				"fetchone"
+			],
+			[
+				"int",
+				"interaction"
+			],
+			[
+				"warn",
+				"warn_count"
+			],
+			[
+				"g",
+				"guild_id_invoker"
+			],
+			[
+				"gu",
+				"guild_id"
+			],
+			[
+				"date",
+				"datetime_format"
+			],
+			[
+				"fro",
+				"fromtimestamp"
+			],
+			[
+				"war",
+				"warn"
+			],
+			[
+				"Gu",
+				"GuildNoMatch"
+			],
+			[
+				"dat",
+				"datetime_format"
+			],
+			[
+				"us",
+				"user_warns_dict"
+			],
+			[
+				"memb",
+				"member_warns"
+			],
+			[
+				"u",
+				"user_warns_dict"
+			],
+			[
+				"me",
+				"member_warns"
+			],
+			[
+				"remo",
+				"remove_warn"
+			],
+			[
+				"conne",
+				"connection"
+			],
+			[
+				"conn",
+				"connection"
+			],
+			[
+				"POS",
+				"POSTGRESQL"
+			],
+			[
+				"pas",
+				"password"
+			],
+			[
+				"POST",
+				"POSTGRESQL"
+			],
+			[
+				"PO",
+				"POSTGRESQL"
+			],
+			[
+				"user",
+				"user_warns_dict"
+			],
+			[
+				"get",
+				"get_warns"
+			],
+			[
+				"con",
+				"connection"
+			],
+			[
+				"resp",
+				"response_json"
+			],
+			[
+				"res",
+				"response_json"
+			],
+			[
+				"tex",
+				"text_channels"
+			],
+			[
+				"ch",
+				"channels"
+			],
+			[
+				"is",
+				"user_is_connected_to_voice"
+			],
+			[
+				"pla",
+				"play"
+			],
+			[
+				"in",
+				"interaction"
+			],
+			[
+				"connec",
+				"_connect_user_voice"
+			],
+			[
+				"pl",
+				"Player"
+			],
+			[
+				"_get",
+				"_get_queue"
+			],
+			[
+				"queu",
+				"queue_count"
+			],
+			[
+				"que",
+				"queue_count"
+			],
+			[
+				"net",
+				"nextcord"
+			],
+			[
+				"In",
+				"Interaction"
+			],
+			[
+				"voice",
+				"voice_client"
+			],
+			[
+				"mi",
+				"missing_permissions_errors"
+			],
+			[
+				"missin",
+				"missing_roles"
+			],
+			[
+				"m",
+				"missing_role_errors"
+			],
+			[
+				"app",
+				"application_checks"
+			],
+			[
+				"miss",
+				"missing_roles"
+			],
+			[
+				"mis",
+				"missing_role_errors"
+			],
+			[
+				"missing_",
+				"missing_permissions"
+			],
+			[
+				"Ap",
+				"ApplicationMissingPermissions"
+			],
+			[
+				"er",
+				"error"
+			],
+			[
+				"Appl",
+				"ApplicationNotOwner"
+			],
+			[
+				"Missi",
+				"ApplicationMissingPermissions"
+			],
+			[
+				"per",
+				"permission"
+			],
+			[
+				"Perm",
+				"Permission"
+			],
+			[
+				"perm",
+				"permission"
+			],
+			[
+				"permiss",
+				"permission"
+			],
+			[
+				"p",
+				"permission_dict"
+			],
+			[
+				"permi",
+				"permission_dict"
+			],
+			[
+				"a",
+				"append"
+			],
+			[
+				"mana",
+				"manage_messages"
+			],
+			[
+				"manag",
+				"manage_messages"
+			],
+			[
+				"T",
+				"TESTING_GUILD_ID"
+			],
+			[
+				"on_",
+				"on_message"
+			],
+			[
+				"creat",
+				"created_at"
+			],
+			[
+				"set_",
+				"set_thumbnail"
+			],
+			[
+				"slas",
+				"SlashOption"
+			],
+			[
+				"defa",
+				"default_role"
+			],
+			[
+				"ma",
+				"manage_messages"
+			],
+			[
+				"ra",
+				"random_member"
+			],
+			[
+				"wa",
+				"warnings_old"
+			],
+			[
+				"M",
+				"MONGO"
+			],
+			[
+				"Mo",
+				"MongoClient"
+			],
+			[
+				"vote",
+				"vote_6"
+			],
+			[
+				"vot",
+				"vote_4"
+			],
+			[
+				"__",
+				"__name__"
+			],
+			[
+				"down",
+				"down_all"
+			],
+			[
+				"sn",
+				"snipe_message_id"
+			],
+			[
+				"sni",
+				"snipe_message_id"
+			],
+			[
+				"snipe_",
+				"snipe_message_id"
+			],
+			[
+				"snipe",
+				"snipe_message_id"
+			],
+			[
+				"displa",
+				"display_avatar"
+			],
+			[
+				"snipe_mes",
+				"snipe_message_auhor"
+			],
+			[
+				"get_comam",
+				"get_command_signature"
+			],
+			[
+				"eror",
+				"error"
+			],
+			[
+				"Ero",
+				"Errors"
+			],
+			[
+				"err",
+				"error"
+			],
+			[
+				"mut",
+				"mutedrole"
+			],
+			[
+				"di",
+				"display_name"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "# Welcome to is-a.dev",
+			"file": "index.md",
+			"file_size": 491,
+			"file_write_time": 132985824488680558,
+			"settings":
+			{
+				"buffer_size": 21,
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					5,
+					1,
+					"insert",
+					{
+						"characters": "#"
+					},
+					"AgAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAOsBAAAjIFdlbGNvbWUgdG8gTWtEb2NzCgpGb3IgZnVsbCBkb2N1bWVudGF0aW9uIHZpc2l0IFtta2RvY3Mub3JnXShodHRwczovL3d3dy5ta2RvY3Mub3JnKS4KCiMjIENvbW1hbmRzCgoqIGBta2RvY3MgbmV3IFtkaXItbmFtZV1gIC0gQ3JlYXRlIGEgbmV3IHByb2plY3QuCiogYG1rZG9jcyBzZXJ2ZWAgLSBTdGFydCB0aGUgbGl2ZS1yZWxvYWRpbmcgZG9jcyBzZXJ2ZXIuCiogYG1rZG9jcyBidWlsZGAgLSBCdWlsZCB0aGUgZG9jdW1lbnRhdGlvbiBzaXRlLgoqIGBta2RvY3MgLWhgIC0gUHJpbnQgaGVscCBtZXNzYWdlIGFuZCBleGl0LgoKIyMgUHJvamVjdCBsYXlvdXQKCiAgICBta2RvY3MueW1sICAgICMgVGhlIGNvbmZpZ3VyYXRpb24gZmlsZS4KICAgIGRvY3MvCiAgICAgICAgaW5kZXgubWQgICMgVGhlIGRvY3VtZW50YXRpb24gaG9tZXBhZ2UuCiAgICAgICAgLi4uICAgICAgICMgT3RoZXIgbWFya2Rvd24gcGFnZXMsIGltYWdlcyBhbmQgb3RoZXIgZmlsZXMuCg",
+					"AQAAAAAAAAABAAAAAAAAAAAAAADrAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					6,
+					1,
+					"insert",
+					{
+						"characters": " Welcome"
+					},
+					"CAAAAAEAAAAAAAAAAgAAAAAAAAAAAAAAAgAAAAAAAAADAAAAAAAAAAAAAAADAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAABQAAAAAAAAAAAAAABQAAAAAAAAAGAAAAAAAAAAAAAAAGAAAAAAAAAAcAAAAAAAAAAAAAAAcAAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAJAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					7,
+					1,
+					"insert",
+					{
+						"characters": " to"
+					},
+					"AwAAAAkAAAAAAAAACgAAAAAAAAAAAAAACgAAAAAAAAALAAAAAAAAAAAAAAALAAAAAAAAAAwAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAACQAAAAAAAAAJAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					8,
+					1,
+					"insert",
+					{
+						"characters": " is-a.dev"
+					},
+					"CQAAAAwAAAAAAAAADQAAAAAAAAAAAAAADQAAAAAAAAAOAAAAAAAAAAAAAAAOAAAAAAAAAA8AAAAAAAAAAAAAAA8AAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAARAAAAAAAAAAAAAAARAAAAAAAAABIAAAAAAAAAAAAAABIAAAAAAAAAEwAAAAAAAAAAAAAAEwAAAAAAAAAUAAAAAAAAAAAAAAAUAAAAAAAAABUAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAADAAAAAAAAAAMAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"settings",
+				"Preferences: AutoPep8 Settings – User"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"eneabl",
+				"Package Control: Enable Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"image",
+				"Snippet: Markdown Image"
+			],
+			[
+				"pep8",
+				"AutoPEP8: Preview Changes"
+			],
+			[
+				"indent",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"white",
+				"Trim Trailing White Space"
+			],
+			[
+				"space",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"whites",
+				"Trim Trailing White Space"
+			],
+			[
+				"trail",
+				"Trim Trailing White Space"
+			],
+			[
+				"ma",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"terminal",
+				"Terminal View: Open Bash Terminal"
+			],
+			[
+				"te",
+				"Terminal: Open"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"reinden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"inden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"lint",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"pep",
+				"Project: Edit Project"
+			],
+			[
+				"rst",
+				"Set Syntax: reStructuredText"
+			],
+			[
+				"inte",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"package dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"Indentation",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add Current File"
+			],
+			[
+				"git",
+				"Git: Commit"
+			],
+			[
+				"whitespa",
+				"Trim Trailing White Space"
+			],
+			[
+				"sublimelinter",
+				"Preferences: SublimeLinter Settings"
+			],
+			[
+				"SublimeLinter",
+				"SublimeLinter: Toggle Highlights"
+			],
+			[
+				"linter",
+				"SublimeLinter: Quick Action"
+			],
+			[
+				"l",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"build",
+				"Build With: Python"
+			],
+			[
+				"python",
+				"Build With: Python - Syntax Check"
+			],
+			[
+				"tabn",
+				"⌬ tabnine: Open Configuration"
+			],
+			[
+				"termin",
+				"Terminal: Open"
+			],
+			[
+				"tabnine",
+				"⌬ tabnine: Open Configuration"
+			],
+			[
+				"open ",
+				"⌬ tabnine: Open Configuration"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"menu",
+				"View: Toggle Menu"
+			],
+			[
+				"ayu",
+				"ayu: Activate theme"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/mouse/is-a-dev-docs",
+		"/home/mouse/is-a-dev-docs/src",
+		"/home/mouse/is-a-dev-docs/src/docs"
+	],
+	"file_history":
+	[
+		"/home/mouse/botghost.py",
+		"/home/mouse/projects/is-a-dev-domain-register/index.js",
+		"/home/mouse/.config/sublime-text/Packages/User/AutoPep8.sublime-settings",
+		"/home/mouse/projects/ball/docs/docs/hosting/local/index.md",
+		"/home/mouse/projects/ball/docs/mkdocs.yml",
+		"/home/mouse/projects/ball/docs/docs/hosting/index.md",
+		"/home/mouse/projects/ball/docs/docs/index.md",
+		"/home/mouse/projects/ball/docs/docs/hosting/heroku/index.md",
+		"/home/mouse/projects/ball/src/bot.py",
+		"/home/mouse/projects/ball/src/_helper.py",
+		"/home/mouse/projects/ball/src/cogs/fun.py",
+		"/home/mouse/projects/ball/src/db.py",
+		"/home/mouse/projects/ball/src/cogs/info.py",
+		"/home/mouse/projects/ball/docs/docs/hosting/railway/index.md",
+		"/home/mouse/projects/ball/src/cogs/events.py",
+		"/home/mouse/projects/ball/src/cogs/mod.py",
+		"/home/mouse/projects/ball/src/helper/db.py",
+		"/home/mouse/projects/ball/src/warns/add_warn.py",
+		"/home/mouse/projects/ball/warns/add_warn.py",
+		"/home/mouse/projects/ball/src/cogs/danger.py",
+		"/home/mouse/projects/ball/src/cogs/errors.py",
+		"/home/mouse/projects/ball/src/cogs/mod_vc.py",
+		"/home/mouse/projects/ball/src/afks.py",
+		"/home/mouse/projects/ball/src/cogs/owner.py",
+		"/home/mouse/projects/ball/src/cogs/help.py",
+		"/home/mouse/projects/ball/src/cogs/music.py",
+		"/home/mouse/projects/ball/src/cogs/snipe.py",
+		"/home/mouse/projects/ball/src/cogs_store/mod.py",
+		"/home/mouse/projects/ball/README.md",
+		"/home/mouse/main",
+		"/home/mouse/.config/sublime-text/Packages/User/Terminal.sublime-settings",
+		"/home/mouse/mongo.py",
+		"/home/mouse/jartex_autovote.py",
+		"/home/mouse/yt-dlp-down-all.py",
+		"/home/mouse/projects/ball/src/morechecks.py",
+		"/home/mouse/projects/ball/ball.sublime-project",
+		"/home/crowbar/nextcord/docs/interactions.rst",
+		"/home/crowbar/projects/ball/src/cogs/mod.py",
+		"/home/crowbar/projects/ball/src/cogs/errors.py",
+		"/home/crowbar/projects/ball/src/cogs/events.py",
+		"/home/crowbar/projects/ball/src/cogs/info.py",
+		"/home/crowbar/projects/ball/src/cogs/fun.py",
+		"/home/crowbar/projects/ball/src/cogs/danger.py",
+		"/home/crowbar/projects/ball/src/bot.py",
+		"/home/crowbar/projects/ball/src/cogs/config/afks.py",
+		"/home/crowbar/projects/ball/src/cogs/example.py",
+		"/home/crowbar/projects/pengoon/src/cogs/owner.py",
+		"/home/crowbar/projects/pengoon/src/cogs/mod.py",
+		"/home/crowbar/projects/pengoon/.gitignore",
+		"/hugo/cyborgstation-website/config/_default/config.toml",
+		"/hugo/cyborgstation-website/config/_default/author.toml",
+		"/hugo/cyborgstation-website/config/_default/params.toml",
+		"/home/crowbar/Documents/RouterCfm.cfg",
+		"/home/crowbar/.config/sublime-text/Packages/Terminal/Terminal.sublime-settings",
+		"/home/crowbar/.config/sublime-text/Packages/foo.py"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.md",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 21,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								21,
+								21
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 52.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "is-a-dev-docs.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 149.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
