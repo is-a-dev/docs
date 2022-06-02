@@ -1,3 +1,4 @@
+# Hashnode Blog
 When you create your hashnode blog, hashnode provides a free `hashnode.dev` subdomain for you. However, you can set up your own `is-a.dev` subdomain.
 
 In this guide, you will learn how to accomplish this.
@@ -6,19 +7,19 @@ In this guide, you will learn how to accomplish this.
 
 1. Log in to your Hashnode account.
 
-2. Click on your **avatar** at the bottom-left corner of the page on **desktop** or top-right corner on **mobile**.
+1. Click on your **avatar** at the bottom-left corner of the page on **desktop** or top-right corner on **mobile**.
 
 ![Hashnode's Feed](https://cdn.hashnode.com/res/hashnode/image/upload/v1614932849541/cBNDGKXMj.png?auto=compress)
 
-3. Click on the **Blog Dashboard** option from the popup modal to access your blog's dashboard.
+1. Click on the **Blog Dashboard** option from the popup modal to access your blog's dashboard.
 
 ![Hashnode's Feed](https://cdn.hashnode.com/res/hashnode/image/upload/v1614937218081/InvxVHXDy.png?auto=compress)
 
-4. Navigate to the **Domain** tab and enter your domain without the **www** or **https://** prefix in the text field provided. Then click on the **Update** button to proceed.
+1. Navigate to the **Domain** tab and enter your domain without the **www** or **https://** prefix in the text field provided. Then click on the **Update** button to proceed.
 
 ![Hashnode's Blog Domain Tab](https://cdn.hashnode.com/res/hashnode/image/upload/v1614937377176/0cwddAywO.png?auto=compress)
 
-5. Go to your fork of the `is-a-dev/register` repository, edit your subdomain's JSON file, make sure you remove any old records, then add this:
+1. Go to your fork of the `is-a-dev/register` repository, edit your subdomain's JSON file, make sure you remove any old records, then add this:
 ```json
 "CNAME": "hashnode.network"
 ```
