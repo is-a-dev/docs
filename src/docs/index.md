@@ -1,5 +1,5 @@
 # How to register
-You can read more about the domains JSON file structure [here](/domain_structure)
+You can read more about the domains JSON file structure [here](/domain_structure).
 
 ## Guides
 - [GitHub Pages](/github_pages)
