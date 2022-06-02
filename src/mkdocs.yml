@@ -2,6 +2,8 @@ site_name: is-a.dev documentation
 
 theme:
   name: material
+  favicon: img/favicon.ico
+  logo: img/banner.png
   palette: 
     - scheme: default
       toggle:
