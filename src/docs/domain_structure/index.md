@@ -19,7 +19,7 @@ In the owner object, the fields username and email are required. You can add mor
 {
   "owner": {
     "username": "<github-username>",
-    "email": "email@address"
+    "email": "<email@address>"
   }
 }
 ```
