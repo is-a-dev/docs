@@ -1,3 +1,5 @@
+## CURRENTLY PAUSED DUE TO GITHUB VERIFICATION CHANGES! CLICK [HERE](https://github.com/is-a-dev/register/issues/3385) TO LEARN MORE
+
 # Setting up GitHub pages with is-a.dev subdomain
 
 ## Creating a GitHub pages repository
