@@ -1,4 +1,4 @@
-site_name: is-a.dev documentation
+site_name: is-a.dev Documentation
 
 theme:
   name: material
@@ -27,4 +27,4 @@ nav:
   - GitHub Pages: github_pages/index.md
   - Hashnode Blog: hashnode/index.md
   - Railway: railway/index.md
-  - Other services: other/index.md
+  - Other Services: other/index.md
