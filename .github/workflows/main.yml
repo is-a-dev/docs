@@ -1,4 +1,4 @@
-name: Publish docs via GitHub Pages
+name: Publish
 on:
   push:
     branches:
@@ -6,13 +6,13 @@ on:
 
 jobs:
   build:
-    name: Deploy docs
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout main
+      - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Deploy docs
+      - name: Deploy
         uses: mhausenblas/mkdocs-deploy-gh-pages@master
         # Or use mhausenblas/mkdocs-deploy-gh-pages@nomaterial to build without the mkdocs-material theme
         env:
