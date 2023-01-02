@@ -1,9 +1,18 @@
 site_name: is-a.dev Docs
 
 theme:
-  name: compose
+  name: material
   favicon: img/favicon.ico
   logo: img/banner.png
+  palette: 
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch 
+        name: Switch to dark mode
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
 
 markdown_extensions:
   - pymdownx.highlight:
