@@ -3,8 +3,6 @@
 
 uniqueHomePage = true # change to false to add sidebar to homepage
 
-blogDir = "blog" # can be posts, blog e.t.c
-
 repo = "https://github.com/onweru/compose"
 
 time_format_blog = "Monday, January 02, 2006"
@@ -32,9 +30,3 @@ otherSearchableFields = ["Tags", "Categories", "CustomField"] # As they appear i
   iconLight = "images/GitHubMarkLight.svg"
   iconDark = "images/GitHubMarkDark.svg"
   url = "https://github.com/onweru/compose/"
-
-# optional
-# attribution. Feel free to delete this
-[author]
-  name = "Weru"
-  url = "https://neuralvibes.com/author/"
