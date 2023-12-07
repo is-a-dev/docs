@@ -1,4 +1,4 @@
-# Setting up Cloudflare pages with is-a.dev subdomain
+# Setting up Cloudflare pages with your is-a.dev subdomain
 
 ## Creating a pages.dev site
 Follow [their guide](https://developers.cloudflare.com/pages/get-started/guide/) on how to set it up.
