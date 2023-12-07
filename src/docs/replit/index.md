@@ -1,4 +1,4 @@
-# Setting up GitHub pages with is-a.dev subdomain
+# Setting up Replit with your is-a.dev subdomain
 
 ## Creating a project
 Follow [their guide](https://docs.replit.com/programming-ide/introduction-to-the-workspace#how-to-create-a-repl) on how to set it up.
