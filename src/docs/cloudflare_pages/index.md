@@ -8,7 +8,8 @@ Follow [their guide](https://developers.cloudflare.com/pages/platform/custom-dom
 Only follow the "Add a custom domain" section and then follow the rest of the steps here.
 
 ## Creating the domain file
-Create a JSON file inside `domains` directory (`domains/<subdomain>.json`) with the following content
+Create a JSON file inside `domains` directory (`domains/<subdomain>.json`) with the following content:
+
 ```json 
 {
     "owner": {
