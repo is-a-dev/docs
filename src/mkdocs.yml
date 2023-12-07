@@ -26,5 +26,7 @@ nav:
   - Domain Structure: domain-structure/index.md
   - GitHub Pages: github_pages/index.md
   - Hashnode Blog: hashnode/index.md
+  - Cloudflare Pages: cloudflare_pages/index.md
+  - Replit: replit/index.md
   - Railway: railway/index.md
   - Other Services: other/index.md
