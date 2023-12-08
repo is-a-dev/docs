@@ -6,8 +6,8 @@ You can read more about the domains JSON file structure [here](domain-structure)
 - [Hashnode Blogs](hashnode)
 - [Cloudflare Pages](cloudflare_pages)
 - [Replit](replit)
-- [CLI](CLI)
 - [Railway](railway)
+- [CLI](CLI)
 - [Other Services](other)
 
 ## Vercel and Netlify
