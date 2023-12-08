@@ -21,7 +21,7 @@ Create a JSON file inside `domains` directory (`domains/<subdomain>.json`) with 
         "twitter": "<twitter-username>"
     },
     "record": {
-        "CNAME": "<sitename>.id.repl.co"
+        "CNAME": "<siteid>.id.repl.co"
     }
 } 
 ```
