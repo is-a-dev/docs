@@ -3,7 +3,7 @@
 ## Install npm and Node.JS
 Make sure you have npm and Node.js installed.
 
-If you don't then you can download it from Node.JS [website](https://nodejs.org)
+If you don't then you can download it from Node.js [website](https://nodejs.org).
 
 ## Installing the CLI
 Open up Command Prompt or Powershell and run:
