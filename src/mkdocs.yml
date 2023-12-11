@@ -31,3 +31,5 @@ nav:
   - Railway: railway/index.md
   - Other Services: other/index.md
   - CLI: CLI/index.md
+  - dashboard: dashboard/index.md
+  - hosting: hosting/index.md
