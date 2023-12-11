@@ -23,3 +23,12 @@ Create a JSON file inside `domains` directory (`domains/<subdomain>.json`) with 
 ## Configuring
 - After the pull request is merged, you will see a **404** error on `<your-subdomain>.is-a.dev`. To fix this, go to your GitHub pages repository's **Settings > GitHub pages > Custom domain** and add `<your-subdomain>.is-a.dev` in the given field. _Only do this **after** your pull request is merged._
 - Check the **Enforce HTTPS** checkbox below the custom domain input.
+
+## Using is-a.dev for all GitHub Pages sites in your account
+It is possible to have a unique subdomain on your is-a.dev domain for each repository which has Pages enabled.
+
+In order to utilise this, you must ensure the following conditions are met:
+1) The website which hosts the "root" (`<subdomain>.is-a.dev`) *must* be named `<username>.github.io`
+2) That repo *must* have `<subdomain>.is-a.dev` as the custom domain within the Pages settings.
+3) Every other repo *must not* have a custom domain set in the Pages settings.
+4) Links to these hosted repos *must* end with `/` (e.g `https://<subdomain>.is-a.dev/<project>/`)
