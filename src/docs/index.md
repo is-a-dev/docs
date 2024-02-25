@@ -8,7 +8,6 @@ You can read more about the domains JSON file structure [here](domain-structure)
 - [Replit](replit)
 - [Railway](railway)
 - [Other Services](other)
-- [CLI](CLI)
 - [Dashboard](dashboard)
 
 ## Vercel and Netlify
