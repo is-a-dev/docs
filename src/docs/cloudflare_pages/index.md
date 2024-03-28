@@ -13,7 +13,8 @@ Create a JSON file inside `domains` directory (`domains/<subdomain>.json`) with 
 ```json 
 {
     "owner": {
-        "username": "<github-username>",
+        "username": "github-username",
+
         "email": "email@address"
     },
     "record": {
