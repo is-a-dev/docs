@@ -14,8 +14,7 @@ Create a JSON file inside `domains` directory (`domains/<subdomain>.json`) with 
 {
     "owner": {
         "username": "<github-username>",
-        "email": "email@address",
-        "twitter": "<twitter-username>"
+        "email": "email@address"
     },
     "record": {
         "CNAME": "<sitename>.pages.dev"
