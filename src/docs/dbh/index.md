@@ -1,27 +1,27 @@
 ## Adding Is-a.dev to Danbot Hosting
 
-### Danbot hosting is a good free hosting service.
+### Danbot Hosting: A Reliable Free Hosting Service
 
+Danbot Hosting offers reliable free hosting services, making it an excellent choice for hosting your projects.
 
-> Get started by joining their [discord server](https://discord.gg/dbh)
+> To get started, join their [Discord server](https://discord.gg/dbh).
 
+### Steps to Connect Your Domain
 
-### Steps to connect your domain
+1. Run the `DBH!proxy` command to view its information:
 
-1. Run `DBH!proxy` command. view its information
+   ![Proxy Command Info](https://github.com/TerraPlayz/docs/assets/69719569/53b87083-7fda-4970-8260-0b500f74c06b)
 
-![image](https://github.com/TerraPlayz/docs/assets/69719569/53b87083-7fda-4970-8260-0b500f74c06b)
+   Take note of the IP address provided (currently `69.30.249.53`).
 
-Take note of this ip. ( currently its `69.30.249.53` )
+2. Create a Pull Request according to the [Docs](https://is-a.dev/docs).
 
-2. Creat a Pull Request according to the [Docs](https://is-a.dev/docs)
+3. Wait for the Pull Request to be merged.
 
-3. Wait for Pull Request to be merged
+4. Run `DBH!server proxy username.is-a.dev serverId` to set up the server proxy.
 
-4. Run DBH!server proxy `username.is-a.dev serverId`
+   Here, `username` is your subdomain (the text before `.is-a.dev`).
 
-Here `username` is your subdomain (the text that comes before `.is-a.dev`)
+   Get the `serverId` by running `DBH!server list`. Look for your server's name and note its server ID. Refer to the example shown in the image below:
 
-Get `serverId` By running `DBH!server list`. in there look for your server's name and get it's server id. example is shown in below image.
-
-![image](https://github.com/TerraPlayz/docs/assets/69719569/29c353d5-cb0a-483d-9464-3277fc7d3c2d)
+   ![Server ID Example](https://github.com/TerraPlayz/docs/assets/69719569/29c353d5-cb0a-483d-9464-3277fc7d3c2d)
