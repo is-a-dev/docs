@@ -1,6 +1,6 @@
-# Verify Your is-a.dev Domain with GitHub Pages
+# Verify your is-a.dev Domain with GitHub Pages
 
-## Get Your Verification Data
+## Get your verification string
 
 1. Open GitHub, press on your profile icon on the top right, and press `Settings`.
 
@@ -22,7 +22,7 @@
 
 <img src="../img/github_pages_verification_step_5.png" height="259">
 
-## Create the Domain File
+## Create the domain file
 
 Create a JSON file inside the `domains/` directory called `domains/hostname.json` using the hostname you copied in step 5 with the following content:
 
