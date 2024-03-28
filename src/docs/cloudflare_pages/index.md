@@ -14,11 +14,10 @@ Create a JSON file inside `domains` directory (`domains/<subdomain>.json`) with 
 {
     "owner": {
         "username": "github-username",
-
-        "email": "email@address"
+        "email": "email@gmail.com"
     },
     "record": {
-        "CNAME": "<sitename>.pages.dev"
+        "CNAME": "sitename.pages.dev"
     }
 } 
 ```
