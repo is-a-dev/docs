@@ -29,7 +29,7 @@ nav:
   - Cloudflare Pages: cloudflare_pages/index.md
   - Discord Domain Verification: discord_verification/index.md
   - FAQ: faq/index.md
-  - Add Domain using NPM: npm/index.md
+  - Add Domain To Danbot Hosting: dbh/index.md
   - Register domain using discord: discord/index.md
   - Delete Your Domain: delete_domain/index.md 
   - Edit Your Domain: edit_domain/index.md 
