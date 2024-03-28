@@ -41,17 +41,6 @@ In the owner object, the fields username and email are required. You can add mor
   }
 }
 ```
-If you don't wish to share your email address here, please share your twitter or discord or any other social media account.
-```json
-{
-  "owner": {
-    "username": "<github-username>",
-    "email": "",
-    "twitter": "twitter-handle",
-    "discord": "discord-user-id"
-  }
-}
-```
 
 ### description
 Describe your domain name and your usage. This is purely for documentation purpose and is optional.

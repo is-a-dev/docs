@@ -27,6 +27,9 @@ nav:
   - GitHub Pages: github_pages/index.md
   - Hashnode Blog: hashnode/index.md
   - Cloudflare Pages: cloudflare_pages/index.md
+  - Discord Domain Verification: discord_verification/index.md
+  - Delete Your Domain: delete_domain/index.md 
+  - Edit Your Domain: edit_domain/index.md 
   - Replit: replit/index.md
   - Railway: railway/index.md
   - Other Services: other/index.md

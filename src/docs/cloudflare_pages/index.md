@@ -13,12 +13,11 @@ Create a JSON file inside `domains` directory (`domains/<subdomain>.json`) with 
 ```json 
 {
     "owner": {
-        "username": "<github-username>",
-        "email": "email@address",
-        "twitter": "<twitter-username>"
+        "username": "github-username",
+        "email": "email@gmail.com"
     },
     "record": {
-        "CNAME": "<sitename>.pages.dev"
+        "CNAME": "sitename.pages.dev"
     }
 } 
 ```
