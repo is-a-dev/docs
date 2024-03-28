@@ -27,14 +27,14 @@ nav:
   - GitHub Pages: github_pages/index.md
   - Hashnode Blog: hashnode/index.md
   - Cloudflare Pages: cloudflare_pages/index.md
-  - Discord Domain Verification: discord_verification/index.md
+  - Discord domain verification: discord_verification/index.md
   - FAQ: faq/index.md
-  - Add Domain To Danbot Hosting: dbh/index.md
-  - Register domain using discord: discord/index.md
-  - Delete Your Domain: delete_domain/index.md 
-  - Edit Your Domain: edit_domain/index.md 
+  - DanBot Hosting: dbh/index.md
+  - Register using the Discord bot: discord/index.md
+  - Delete your Domain: delete_domain/index.md 
+  - Edit your Domain: edit_domain/index.md 
   - Replit: replit/index.md
   - Railway: railway/index.md
-  - Other Services: other/index.md
+  - Other services: other/index.md
   - Dashboard: dashboard/index.md
 
