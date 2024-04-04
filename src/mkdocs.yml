@@ -23,7 +23,7 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Domain Structure: domain-structure/index.md
+  - Domain Structure: domain_structure/index.md
   - GitHub Pages: github_pages/index.md
   - Hashnode Blog: hashnode/index.md
   - Cloudflare Pages: cloudflare_pages/index.md
