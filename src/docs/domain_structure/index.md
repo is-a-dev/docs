@@ -7,7 +7,7 @@ To register a subdomain, you need to create a new JSON file in the `domains` dir
 
 The filename:
 
-- Must be alphanumeric, in lowercase, with dashes as separators. Using underscores as separators is also valid, but it's recommended to use dashes.
+- Must be alphanumeric, in lowercase, with dashes as separators.
 - Must be at least 2 characters.
 - Must have a `.json` file extension.
 
@@ -27,7 +27,6 @@ All the filenames below meet all the criteria. The reason in parentheses is just
 - `example.json` (alphanumeric and in lowercase)
 - `blog.example.json` (includes dots to register a sub-subdomain)
 - `my-blog.json` (uses dashes as separators, which is recommended)
-- `my_blog.json` (valid, but it's recommended to use dashes instead of underscores as separators)
 ## Structure
 
 ### owner (required)
