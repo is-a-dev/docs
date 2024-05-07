@@ -23,4 +23,3 @@ Create a JSON file inside `domains` directory (`domains/<subdomain>.json`) with 
 ## Configuring
 - After the pull request is merged, you will see a **404** error on `<your-subdomain>.is-a.dev`. To fix this, go to your GitHub pages repository's **Settings > GitHub pages > Custom domain** and add `<your-subdomain>.is-a.dev` in the given field. _Only do this **after** your pull request is merged._
 - Check the **Enforce HTTPS** checkbox below the custom domain input.
-
