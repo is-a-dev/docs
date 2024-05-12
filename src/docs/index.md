@@ -11,6 +11,7 @@ You can read more about the domains JSON file structure [here](domain_structure)
 - [Edit Your Domain](edit_domain)
 - [Replit](replit)
 - [Railway](railway)
+- [Minecraft](minecraft)
 - [Other Services](other)
 
 ## Vercel and Netlify
