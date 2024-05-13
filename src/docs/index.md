@@ -2,11 +2,11 @@
 You can read more about the domains JSON file structure [here](domain_structure).
 
 ## Guides
-- [GitHub Pages](github_pages)
 - [Cloudflare Pages](cloudflare_pages)
 - [Delete Your Domain](delete_domain)
 - [Discord Domain Verification](discord_verification)
 - [Edit Your Domain](edit_domain)
+- [GitHub Pages](github_pages)
 - [GitHub Pages Domain Verification](github_pages_verification)
 - [Hashnode Blogs](hashnode)
 - [Minecraft](minecraft)
