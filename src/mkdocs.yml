@@ -24,13 +24,13 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Domain Structure: domain_structure/index.md
-  - GitHub Pages: github_pages/index.md
-  - Hashnode Blog: hashnode/index.md
   - Cloudflare Pages: cloudflare_pages/index.md
+  - Delete Your Domain: delete_domain/index.md
   - Discord Domain Verification: discord_verification/index.md
+  - Edit Your Domain: edit_domain/index.md
+  - GitHub Pages: github_pages/index.md
   - GitHub Pages Domain Verification: github_pages_verification/index.md
-  - Delete Your Domain: delete_domain/index.md 
-  - Edit Your Domain: edit_domain/index.md 
-  - Replit: replit/index.md
+  - Hashnode Blog: hashnode/index.md
   - Railway: railway/index.md
+  - Replit: replit/index.md
   - Other Services: other/index.md
