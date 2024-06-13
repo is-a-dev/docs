@@ -11,5 +11,5 @@ You can read about the domains JSON file structure [here](domain-structure/index
 - [Replit](replit/index.md)
 - [Other Services](other/index.md)
 
-## Vercel and Netlify
-You will encounter an SSL certificate issue when using Vercel and Netlify. Neither service will work with our domains. It is recommended to use [GitHub Pages](https://pages.github.com), [Railway](https://railway.app) or [Cloudflare Pages](https://pages.cloudflare.com) instead.
+## Vercel
+You will encounter a domain ownership verification issue when using Vercel so it will not will work with our domains. It is recommended to use [GitHub Pages](https://pages.github.com), [Railway](https://railway.app) or [Cloudflare Pages](https://pages.cloudflare.com) instead.

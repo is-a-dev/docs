@@ -16,7 +16,7 @@ This usually occurs due to the cache of your browser becoming invalid and [clear
 When we get into it. We always want you to wait for as short as possible. But maintainers cannot always be online. We have school and work, this is just a side project. Just be patient and we'll get to it as soon as possible! For a chance for a quicker review, send your PR in [⁠pull-requests](https://discord.com/channels/830872854677422150/1130858271620726784).
 
 ## Which services do you support?
-We support almost all services except Vercel and Netlify. For example: Github Pages and Cloudflare Pages.
+We support almost all services except Vercel. For example: Github Pages and Cloudflare Pages.
 
 ## Can I create nested subdomains? (sub-sub domains)
 Yes, you can! Simply create a file such as `blog.example.json` and follow the same guidelines as you would while registering `example.json`. Please note in order to have `blog.example.is-a.dev`, you must also own `example.is-a.dev`.
