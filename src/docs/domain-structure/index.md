@@ -27,6 +27,23 @@ All the filenames below meet all the criteria. The reason in parentheses is just
 - `example.json` (alphanumeric and in lowercase)
 - `blog.example.json` (includes dots to register a sub-subdomain)
 - `my-blog.json` (uses dashes as separators, which is recommended)
+
+### Example JSON File
+`domains/docs.json`
+```json
+{
+  "description": "Documentation for is-a-dev",
+  "repo": "https://github.com/is-a-dev/docs",
+  "owner": {
+    "username": "is-a-dev",
+    "email": "hello@maintainers.is-a.dev"
+  },
+  "record": {
+    "URL": "https://www.is-a.dev/docs"
+  }
+}
+```
+
 ## Structure
 
 ### owner (required)
