@@ -27,11 +27,11 @@ Create a JSON file inside the `domains/` directory called `domains/_discord.exam
 ```json 
 {
     "owner": {
-        "username": "<github-username>",
-        "email": "<email@address>"
+        "username": "github-username",
+        "email": "email@address"
     },
     "record": {
-        "TXT": "<discord-verification-string>"
+        "TXT": "discord-verification-string"
     }
 } 
 ```
