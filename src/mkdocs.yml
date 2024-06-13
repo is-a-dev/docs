@@ -1,4 +1,8 @@
 site_name: is-a.dev Docs
+site_url: https://www.is-a.dev/docs/
+repo_url: https://github.com/is-a-dev/docs
+edit_uri: blob/main/src/docs
+site_description: Documentation for is-a.dev
 
 theme:
   name: material
@@ -23,13 +27,13 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Domain Structure: domain_structure/index.md
-  - Cloudflare Pages: cloudflare_pages/index.md
-  - Delete Your Domain: delete_domain/index.md
-  - Discord Domain Verification: discord_verification/index.md
-  - Edit Your Domain: edit_domain/index.md
-  - GitHub Pages: github_pages/index.md
-  - GitHub Pages Domain Verification: github_pages_verification/index.md
+  - Domain Structure: domain-structure/index.md
+  - FAQ: faq/index.md
+  - Resources: resources/index.md
+  - Cloudflare Pages: cloudflare-pages/index.md
+  - Discord Domain Verification: discord-verification/index.md
+  - GitHub Pages: github-pages/index.md
+  - GitHub Pages Domain Verification: github-pages-verification/index.md
   - Hashnode Blog: hashnode/index.md
   - Railway: railway/index.md
   - Replit: replit/index.md
