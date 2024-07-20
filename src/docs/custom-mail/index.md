@@ -13,5 +13,7 @@ You have to create a custom donain, easily you can make one from our discord by 
 
 # Step Two
 
-I believe you have successfully setup your is-a.dev domain and cloudflare account. Now we make a ImprovMX account, follow this guide [click me]() to make one yourself.
+I believe you have successfully setup your is-a.dev domain and cloudflare account. Now we need to make a ImprovMX account, Follow to this page [click me](https://improvmx.com/) to make one yourself. Below are the example to make one yourself 
+
+![img](https://host-image.is-a.dev/file/c94b335a97ab4af67d8df.jpg)
 
