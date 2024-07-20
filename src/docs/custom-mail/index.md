@@ -13,7 +13,7 @@ Before you begin, make sure you have the following:
 # Step One: Set Up Your Domain
 
 1. **Create Your Custom Domain**:
-   - **Access our Discord**: Join our official [Discord server]() if you haven’t already. You will need this to interact with our official bot.
+   - **Access our Discord**: Join our official [Discord server](https://discord.com/invite/is-a-dev-830872854677422150) if you haven’t already. You will need this to interact with our official bot.
    - **Run a Command**: Use the provided command in the Discord bot to create your custom domain. This process will guide you through the setup.
 
 2. **Set Up Cloudflare**:
