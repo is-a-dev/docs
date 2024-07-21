@@ -45,7 +45,3 @@ You will get a reply like this:
 ![2](../img/DBH_PROXY_2.jpg)
 
 Note down the server ID, then execute following command:
-```
-dbh!server proxy yoursubdomain.is-a.dev yourserverid
-```
-If it says that you dont have records, wait for 1 to 2 hrs and try again.
