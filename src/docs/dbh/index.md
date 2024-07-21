@@ -10,7 +10,7 @@ dbh!server proxy
 ```
 You will get a reply like this
 <img src="../img/DBH_PROXY_1.jpg">
-If you are on free plan,choose any US proxy or Donater Proxy If you are Donater, then note the ip of the proxy
+If you are on free plan, choose any US proxy or you can use the Donator Proxy If you are a Donator, then note the IP address of the proxy you chose.
 
 ## Creating the domain file
 Create a JSON file inside `domains` directory (`domains/<subdomain>.json`) with the following content and submit a pull request:
