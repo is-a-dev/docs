@@ -8,7 +8,9 @@ Execute the following command in DanBot Hosting Discord Server in #commands chan
 ```
 dbh!server proxy
 ```
-You will get a reply like this
+
+You will get a reply like this:
+
 
 ![1](../img/DBH_PROXY_1.jpg)
 
