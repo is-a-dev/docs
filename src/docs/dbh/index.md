@@ -9,7 +9,9 @@ Execute the following command in DanBot Hosting Discord Server in #commands chan
 dbh!server proxy
 ```
 You will get a reply like this
-<img src="../img/DBH_PROXY_1.jpg">
+
+![1](../img/DBH_PROXY_1.jpg)
+
 If you are on free plan, choose any US proxy or you can use the Donator Proxy If you are a Donator, then note the IP address of the proxy you chose.
 
 ## Creating the domain file
