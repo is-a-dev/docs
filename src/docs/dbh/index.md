@@ -37,7 +37,7 @@ Create a JSON file inside `domains` directory (`domains/<subdomain>.json`) with 
 **Note:** In the owner section, you can add any social media handle, such as Discord. If you add another social media account, you can omit the email and Twitter fields. However, the GitHub username is mandatory.
 
 ## Configuring
-- After the pull request is merged, get your server ID by running this command
+After the pull request is merged, get your server ID by running this command:
 ```
 dbh!server list
 ```
