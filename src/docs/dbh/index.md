@@ -39,10 +39,12 @@ Create a JSON file inside `domains` directory (`domains/<subdomain>.json`) with 
 ```
 dbh!server list
 ```
-You will get a reply like this
-<img src="../img/DBH_PROXY_2.jpg">
-Note down the server ID
-Then execute following command
+
+You will get a reply like this:
+
+![2](../img/DBH_PROXY_2.jpg)
+
+Note down the server ID, then execute following command:
 ```
 dbh!server proxy yoursubdomain.is-a.dev yourserverid
 ```
