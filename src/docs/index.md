@@ -9,6 +9,8 @@ You can read about the domains JSON file structure [here](domain-structure/index
 - [Hashnode Blogs](hashnode/index.md)
 - [Railway](railway/index.md)
 - [Replit](replit/index.md)
+- [Render](render/index.md)
+- [DanBot Hosting](dbh/index.md)
 - [Other Services](other/index.md)
 
 ## Vercel
