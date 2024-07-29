@@ -21,6 +21,7 @@ You will encounter a domain ownership verification issue when using Vercel so it
 These are the subdomains run by the is-a.dev staff team. Do not trust any subdomain that is not on this list that claims to be us.
 
 **Websites**:
+
 - is-a.dev (the root domain, redirects to www.is-a.dev)
 - api.is-a.dev (official API, run by [@wdhdev](https://github.com/wdhdev))
 - data.is-a.dev (data website, run by [@wdhdev](https://github.com/wdhdev))
@@ -37,6 +38,7 @@ These are the subdomains run by the is-a.dev staff team. Do not trust any subdom
 **Do NOT trust any websites claiming to be us that are not listed here. Report them to [security@m.is-a.dev](mailto:security@m.is-a.dev).**
 
 **Emails**:
+
 - m.is-a.dev (maintainer email addresses)
 - maintainers.is-a.dev (email domain alias for m.is-a.dev)
 
