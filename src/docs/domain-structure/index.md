@@ -28,7 +28,7 @@ All the filenames below meet all the criteria. The reason in parentheses is just
 - `blog.example.json` (includes dots to register a sub-subdomain)
 - `my-blog.json` (uses dashes as separators, which is recommended)
 
-**NOTE:** To stop a person from having a molopoly over one-lettered subdomains, we limit everyone to only one one-lettered subdomain.
+**NOTE:** To stop a person from having a monopoly over one-lettered subdomains, we limit everyone to only one one-lettered subdomain.
 
 ### Example JSON File
 `domains/docs.json`
