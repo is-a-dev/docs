@@ -30,6 +30,9 @@ You can edit your domain's JSON file and submit a pull request to edit your doma
 ## How can I delete my domain?
 You can delete your domain's JSON file and submit a pull request to delete your domain.
 
+## I keep getting a encryption error while using Github Pages, how do i fix this?
+You need to go to your github pages settings and make sure the 'Enforce HTTPS' option is enabled to avoid this error.
+
 ## Can I be a maintainer/join the team?
 No, we handpick every member of our team. You can increase your chances of being chosen by helping out people in our help forums.
 
