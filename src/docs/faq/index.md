@@ -12,6 +12,9 @@ We support the following records:
 ## Why does my domain still redirect to the is-a-dev website?
 This usually occurs due to the cache of your browser becoming invalid and [clearing your browser's cache](https://support.google.com/accounts/answer/32050) should solve this issue.
 
+## Can i use a CNAME record with any other records?
+You cannot request a subdomain nor submit changes containing a CNAME with any other records (TXT, A records, MX, etc...)
+
 ## How long will it take for my PR to get merged?
 When we get into it. We always want you to wait for as short as possible. But maintainers cannot always be online. We have school and work, this is just a side project. Just be patient and we'll get to it as soon as possible! For a chance for a quicker review, send your PR in [⁠pull-requests](https://discord.com/channels/830872854677422150/1130858271620726784).
 
