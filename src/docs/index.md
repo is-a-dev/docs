@@ -31,6 +31,7 @@ These are the subdomains run by the is-a.dev staff team. Do not trust any subdom
 - privacy.is-a.dev (redirects to owl.is-a.dev)
 - raw-api.is-a.dev (raw JSON API of all is-a.dev subdomains, run by [@wdhdev](https://github.com/wdhdev))
 - register-bot.is-a.dev (Discord bot API, run by [@andrewstech](https://github.com/andrewstech))
+- factory.is-a.dev (JSON file generator, run by [@vaibhavsys](https://github.com/VaibhavSys))
 - register.is-a.dev (old registration site, redirects to repo)
 - team.is-a.dev (team documentation)
 - www.is-a.dev (main website + docs)
