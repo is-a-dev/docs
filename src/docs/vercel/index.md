@@ -50,7 +50,7 @@ Make `subdomain.json` in the **domains directory** (replace subdomain with the d
   "owner": {
     "username": "insert-github-username-here",
     "email": "",
-    "discord": "insertdiscordid"
+    "discord": "insert-discord-user-ID-here"
   },
   "record": {
     "A": ["76.76.21.21"]
