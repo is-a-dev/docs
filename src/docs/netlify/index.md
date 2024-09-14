@@ -23,7 +23,7 @@ Create a JSON file inside the `domains` directory (`domains/<subdomain>.json`) w
     }
 }
 ```
-**Note:** In the owner section, you can add any social media handle, such as Discord. If you add another social media account, you can omit the email and Twitter fields. However, the GitHub username is mandatory.
+**Note:** In the owner section, you can add any social media handle, such as Discord. If you add another social media account, you can omit the email and Twitter fields. However, the GitHub username is mandatory.In your pull request dont forgot to provide a preview of the site.
 
 ## Configuring Netlify
 - After the pull request is merged, you may need to configure your Netlify site to use the new subdomain. Go to your Netlify site's dashboard.
