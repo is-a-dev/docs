@@ -11,7 +11,7 @@ First, go to your Vercel dashboard, then go to your project, then go to Custom D
 **You will need to make two files to ensure this process goes smoothly**. We will go in order for this section.
 
 1. Make a file for Vercel TXT verification.
-When connecting the domain, you will be greeted with a TXT verification string. To make the file for this one the TXT record should be placed in `_vercel.subdomain.json` in the **domains directory** (replace subdomain with the domain you want of course) and the file should be like this (You can leave email field blank as long as you have another social, but **DON'T REMOVE THE FIELD**.):
+When connecting the domain, you will be greeted with a TXT verification string. To make the file for this one the TXT record should be placed in `_vercel.subdomain.json` in the **domains directory** (replace subdomain with the domain you want of course) and the file should be like this (You can leave email field blank as long as you have another social, but **don't remove the field**):
 ```json
 {
   "owner": {
@@ -27,7 +27,7 @@ When connecting the domain, you will be greeted with a TXT verification string. 
 ***DON'T MAKE A PULL REQUEST YET***, we still have to make another file. If you were to make a pull request at this point, we would reject your domain since you are trying to make a nested subdomain on a subdomain you don't own yet. Please proceed to the next step.
 
 2. Make a file for the main domain.
-Now you need to make a file for the main domain, we have 2 ways to do it: CNAME and A records. We'll have 2 different files for these and explain what restricions or stuff you need to do.
+Now you need to make a file for the main domain, we have two ways to do it: CNAME and A records. We'll have two different files for these and explain what restricions or stuff you need to do.
 
 Make `subdomain.json` in the **domains directory** (replace subdomain with the domain you want of course) and put in the file one of these types:
 
