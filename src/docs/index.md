@@ -16,7 +16,7 @@ You can read about the domains JSON file structure [here](domain-structure/index
 - [Other Services](other/index.md)
 
 ## Official Subdomains
-These are the subdomains run by the is-a.dev staff team. Do not trust any subdomain that is not on this list that claims to be us.
+These are the subdomains run by the ~~is-a.dev staff~~ team. Do not trust any subdomain that is not on this list that claims to be us.
 
 **Websites**:
 
@@ -33,7 +33,7 @@ These are the subdomains run by the is-a.dev staff team. Do not trust any subdom
 - register.is-a.dev (old registration site, redirects to repo)
 - team.is-a.dev (team documentation)
 - www.is-a.dev (main website + docs)
-
+- check.is-a.dev (check if a domain under is.-a.dev is available)
 **Do NOT trust any websites claiming to be us that are not listed here. Report them to [security@m.is-a.dev](mailto:security@m.is-a.dev).**
 
 **Emails**:
