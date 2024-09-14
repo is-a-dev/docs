@@ -11,7 +11,7 @@ You can read about the domains JSON file structure [here](domain-structure/index
 - [Replit](replit/index.md)
 - [Render](render/index.md)
 - [Netlify](netlify/index.md)
-- [Netlify](vercel/index.md)
+- [Vercel](vercel/index.md)
 - [DanBot Hosting](dbh/index.md)
 - [Other Services](other/index.md)
 
