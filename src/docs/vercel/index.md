@@ -35,7 +35,7 @@ Make the file `subdomain.json` in the **domains directory** (replace subdomain w
 {
   "owner": {
     "username": "insertusername",
-    "email": "", #76.76.21.21
+    "email": "",
     "discord": "insertdiscordid"
   },
   "record": {
@@ -48,7 +48,7 @@ Make the file `subdomain.json` in the **domains directory** (replace subdomain w
 {
   "owner": {
     "username": "insertusername",
-    "email": "", #you can leave email field blank as long as you have another social, but DON'T REMOVE THE FIELD
+    "email": "",
     "discord": "insertdiscordid"
   },
   "record": {
