@@ -39,5 +39,6 @@ nav:
   - Replit: replit/index.md
   - Render: render/index.md
   - Netlify: netlify/index.md
+  - Vercel: vercel/index.md
   - DanBot Hosting: dbh/index.md
   - Other Services: other/index.md
