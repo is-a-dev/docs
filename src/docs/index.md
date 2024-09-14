@@ -11,11 +11,9 @@ You can read about the domains JSON file structure [here](domain-structure/index
 - [Replit](replit/index.md)
 - [Render](render/index.md)
 - [Netlify](netlify/index.md)
+- [Vercel](vercel/index.md)
 - [DanBot Hosting](dbh/index.md)
 - [Other Services](other/index.md)
-
-## Vercel
-You will encounter a domain ownership verification issue when using Vercel so it will not will work with our domains. It is recommended to use [GitHub Pages](https://pages.github.com), [Railway](https://railway.app) or [Cloudflare Pages](https://pages.cloudflare.com) instead.
 
 ## Official Subdomains
 These are the subdomains run by the is-a.dev staff team. Do not trust any subdomain that is not on this list that claims to be us.
