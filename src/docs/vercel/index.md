@@ -57,7 +57,7 @@ Make `subdomain.json` in the **domains directory** (replace subdomain with the d
   }
 }
 ```
-## Make your PR.
+## Make your pull request.
 After you have made these 2 files, you can now make a PR (Pull Request) to the main repo. Then you will have to be patient until it gets merged. If you want a chance to get your PR merged faster then join our [discord server!](https://discord.gg/is-a-dev-830872854677422150)
 
 When the PR has been merged your site should be working, if its still redirecting to the is-a.dev site clear your cache.
