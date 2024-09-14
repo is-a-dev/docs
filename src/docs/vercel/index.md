@@ -29,7 +29,7 @@ When connecting the domain, you will be greeted with a TXT verification. To make
 2. Make a file for the main domain.
 Now you need to make a file for the main domain, we have 2 ways to do it: CNAME and A records. We'll have 2 different files for these and explain what restricions or stuff you need to do.
 
-Make the file `subdomain.json` in the **domains directory** (replace subdomain with the domain you want of course) and put in the file one of these types:
+Make `subdomain.json` in the **domains directory** (replace subdomain with the domain you want of course) and put in the file one of these types:
 
 **CNAME record**: If you are using CNAME record you don't have to give a preview as you are using the site as the CNAME, but you can't use other record. (Like MX and TXT records)
 ```json
