@@ -44,7 +44,7 @@ Make `subdomain.json` in the **domains directory** (replace subdomain with the d
   }
 }
 ```
-**A record**: If you are using A record, you would need to give a preview either a link via the comment of the PR or put it in the description, or you can give a screenshot of your website. **This option is ideal for those who want to use their domain for their site and email**.
+**A record**: If you are using an A record, you would need to give a preview either by putting a link in the comment section of the PR, putting it in the description, or by providing a screenshot of your website. **This option is ideal for those who want to use their domain for their site and email**.
 ```json
 {
   "owner": {
