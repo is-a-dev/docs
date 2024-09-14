@@ -15,7 +15,7 @@ When connecting the domain, you will be greeted with a TXT verification. To make
 ```json
 {
   "owner": {
-    "username": "insertusername",
+    "username": "insert-github-username-here",
     "email": ""
     "discord": "insertdiscordid"
   },
