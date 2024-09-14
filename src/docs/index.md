@@ -33,7 +33,7 @@ These are the subdomains run by the is-a.dev staff team. Do not trust any subdom
 - register.is-a.dev (old registration site, redirects to repo)
 - team.is-a.dev (team documentation)
 - www.is-a.dev (main website + docs)
-
+- 
 **Do NOT trust any websites claiming to be us that are not listed here. Report them to [security@m.is-a.dev](mailto:security@m.is-a.dev).**
 
 **Emails**:
