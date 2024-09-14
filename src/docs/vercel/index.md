@@ -17,7 +17,7 @@ When connecting the domain, you will be greeted with a TXT verification. To make
   "owner": {
     "username": "insert-github-username-here",
     "email": ""
-    "discord": "insertdiscordid"
+    "discord": "insert-discord-user-ID-here"
   },
   "record": {
     "TXT": "inserttxtstring"
