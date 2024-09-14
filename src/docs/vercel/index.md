@@ -24,7 +24,7 @@ When connecting the domain, you will be greeted with a TXT verification string. 
   }
 }
 ```
-**DON'T MAKE A PR YET**, we still have to make another file. If you were to make a PR until this point, we will reject your domain since you are trying to make a nested subdomain on a subdomain you don't own yet. Please go to the next step.
+***DON'T MAKE A PULL REQUEST YET***, we still have to make another file. If you were to make a pull request at this point, we would reject your domain since you are trying to make a nested subdomain on a subdomain you don't own yet. Please proceed to the next step.
 
 2. Make a file for the main domain.
 Now you need to make a file for the main domain, we have 2 ways to do it: CNAME and A records. We'll have 2 different files for these and explain what restricions or stuff you need to do.
