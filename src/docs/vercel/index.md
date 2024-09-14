@@ -31,7 +31,7 @@ Now you need to make a file for the main domain, we have 2 ways to do it: CNAME 
 
 Make `subdomain.json` in the **domains directory** (replace subdomain with the domain you want of course) and put in the file one of these types:
 
-**CNAME record**: If you are using CNAME record you don't have to give a preview as you are using the site as the CNAME, but you can't use other record. (Like MX and TXT records)
+**CNAME record**: If you are using CNAME record you don't have to give a preview as you are using the site as the CNAME, but you can't use other record (Like MX and TXT records). **This option is ideal for those who want to use their domain for their site**.
 ```json
 {
   "owner": {
@@ -44,7 +44,7 @@ Make `subdomain.json` in the **domains directory** (replace subdomain with the d
   }
 }
 ```
-**A record**: If you are using A record, you would need to give a preview either a link via the comment of the PR or put it in the description, or you can give a screenshot of your website.
+**A record**: If you are using A record, you would need to give a preview either a link via the comment of the PR or put it in the description, or you can give a screenshot of your website. **This option is ideal for those who want to use their domain for their site and email**.
 ```json
 {
   "owner": {
