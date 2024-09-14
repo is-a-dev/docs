@@ -11,7 +11,7 @@ First, go to your Vercel dashboard, then go to your project, then go to Custom D
 **You will need to make two files to ensure this proccess goes smoothly**. We will go in order for this section.
 
 1. Make a file for Vercel TXT verification.
-When connecting the domain, you will be greeted with a TXT verification. To make the file for this one it should be `_vercel.subdomain.json` in the **domains directory** (replace subdomain with the domain you want of course) and the file should be like this (You can leave email field blank as long as you have another social, but **DON'T REMOVE THE FIELD**.):
+When connecting the domain, you will be greeted with a TXT verification string. To make the file for this one the TXT record should be placed in `_vercel.subdomain.json` in the **domains directory** (replace subdomain with the domain you want of course) and the file should be like this (You can leave email field blank as long as you have another social, but **DON'T REMOVE THE FIELD**.):
 ```json
 {
   "owner": {
