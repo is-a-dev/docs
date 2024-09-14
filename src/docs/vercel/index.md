@@ -8,7 +8,7 @@ If you haven't made a Vercel site, make sure to make one. Follow the instruction
 ## Creating the domain files.
 First, go to your Vercel dashboard, then go to your project, then go to Custom Domains and put in there the is-a.dev subdomain you want.
 
-**You will need to make two files to ensure this proccess goes smoothly**. We will go in order for this section.
+**You will need to make two files to ensure this process goes smoothly**. We will go in order for this section.
 
 1. Make a file for Vercel TXT verification.
 When connecting the domain, you will be greeted with a TXT verification string. To make the file for this one the TXT record should be placed in `_vercel.subdomain.json` in the **domains directory** (replace subdomain with the domain you want of course) and the file should be like this (You can leave email field blank as long as you have another social, but **DON'T REMOVE THE FIELD**.):
