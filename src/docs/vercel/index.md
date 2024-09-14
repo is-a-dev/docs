@@ -35,7 +35,7 @@ Make `subdomain.json` in the **domains directory** (replace subdomain with the d
 ```json
 {
   "owner": {
-    "username": "insertusername",
+    "username": "insert-github-username-here",
     "email": "",
     "discord": "insertdiscordid"
   },
