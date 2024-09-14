@@ -16,7 +16,7 @@ You can read about the domains JSON file structure [here](domain-structure/index
 - [Other Services](other/index.md)
 
 ## Official Subdomains
-These are the subdomains run by the ~~is-a.dev staff team.~~ Do not trust any subdomain that is not on this list that claims to be us.
+These are the subdomains run by the is-a.dev staff team. Do not trust any subdomain that is not on this list that claims to be us.
 
 **Websites**:
 
