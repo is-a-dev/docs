@@ -18,7 +18,7 @@ In this guide, you will learn how to accomplish this.
 
 1. Go to your fork of the `is-a-dev/register` repository, edit your subdomain's JSON file, make sure you remove any old records, then add this and submit a PR:
 ```json
-"CNAME": "hashnode.network"
+"A": "76.76.21.21"
 ```
 
 ## Configuration
