@@ -8,6 +8,9 @@ We support the following records:
 - MX
 - TXT
 - URL (Redirection)
+- NS (Limited Acess)
+- SRV
+- CAA
 
 ## Why does my domain still redirect to the is-a-dev website?
 This usually occurs due to the cache of your browser becoming invalid and [clearing your browser's cache](https://support.google.com/accounts/answer/32050) should solve this issue.
@@ -44,6 +47,18 @@ Please open a help thread via any of our help channels and we will look into it.
 
 ## Can I use my domain for a minecraft server?
 Sure, but it needs to be a nested subdomain (mc.example.is-a.dev). You would normally use a A record for this.
+
+## Can I Use NS Records?
+We allow NS records for the following reasons and users:
+  - is-a.dev maintainers
+  - Users who are using **multiple** Cloudflare (or similar providers') services, which often require their own zones (e.g., DynDNS, cloudflared tunnels, etc.)
+  - Users who require a private zone, as they are using their home IP addresses behind Cloudflare (These cases will be carefully reviewed, as we understand some may claim to use a home IP address when they are not.)
+  - Users with a lot of nested subdomains *may* be allowed to register NS records so they do not have to manage multiple files.
+  - Aternos users (specifically Aternos, as they require NS records and you cannot modify DNS records under them).
+  
+Note: These guidelines are not set in stone and may change. You are not limited to fitting only one of the criteria above; use them as a general guide. I will personally review each NS record request.
+
+*We reserve the right to deny NS records at our discretion.*
 
 ## How can I make changes to my is-a.dev subdomain?
 
