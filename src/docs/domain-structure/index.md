@@ -42,7 +42,8 @@ All the filenames below meet all the criteria. The reason in parentheses is just
   },
   "record": {
     "URL": "https://www.is-a.dev/docs"
-  }
+  },
+  "proxied": false 
 }
 ```
 
@@ -75,7 +76,10 @@ This section is where you specify the DNS records. The supported types are:
 - `URL`
 - `MX`
 - `TXT`
-
+- `SRV`
+- `CAA`
+- `NS` (NS records will only be given to users with a genuine need for them who are trusted users.)
+  
 Below are some examples for the given record types:
 
 - **CNAME** record: This must be a hostname (`something.tld`). It cannot be used in conjunction with any other record types. This is typically used to map your domain to a specific server.
@@ -144,3 +148,59 @@ Below are some examples for the given record types:
   }
 }
 ```
+- **NS** record: This must be a list of hostnames. These hostnames specify the authoritative DNS servers for your domain.
+```json
+{
+  "record": {
+    "NS": [
+      "ns1.example.com",
+      "ns2.example.com"
+    ]
+  }
+}
+```
+~# Please refer to the frequently asked questions for clarification on what or who we allow NS records for.
+
+-**SRV** record: This must be a list of service records. Each record specifies the priority, weight, port, and target for a service on your domain. SRV records are often used for services such as VoIP, messaging, and more.
+```json
+{
+  "record": {
+    "SRV": [
+      {
+        "priority": 10,
+        "weight": 5,
+        "port": 8080,
+        "target": "srv.example.com"
+      },
+      {
+        "priority": 20,
+        "weight": 10,
+        "port": 9090,
+        "target": "srv2.example.com"
+      }
+    ]
+  }
+}
+```
+-**CAA** record: This must be a list of Certification Authority Authorization (CAA) records. Each record specifies the authority permitted to issue SSL certificates for your domain, with fields for `flags`, `tag`, and `value`.
+```js
+{
+  "record": {
+    "CAA": [
+      {
+        "flags": 0,
+        "tag": "issue",
+        "value": "letsencrypt.org"
+      },
+      {
+        "flags": 0,
+        "tag": "issuewild",
+        "value": "comodoca.com"
+      }
+    ]
+  }
+}
+```
+
+### proxy (optional)
+This feild is where you specify whether you want to enable Cloudflare proxy for your domain.
