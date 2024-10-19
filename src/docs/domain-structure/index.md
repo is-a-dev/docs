@@ -78,7 +78,7 @@ This section is where you specify the DNS records. The supported types are:
 - `TXT`
 - `SRV`
 - `CAA`
-- `NS` (NS records will only be given to users with a genuine need for them who are trusted users.)
+- `NS` (NS records will only be given to users with a [genuine need for them who are trusted users.](https://is-a.dev/docs/faq/))
   
 Below are some examples for the given record types:
 
@@ -159,7 +159,7 @@ Below are some examples for the given record types:
   }
 }
 ```
-~# Please refer to the frequently asked questions for clarification on what or who we allow NS records for.
+Note: Please refer to the [frequently asked questions](https://is-a.dev/docs/faq/) for clarification on what or who we allow NS records for.
 
 -**SRV** record: This must be a list of service records. Each record specifies the priority, weight, port, and target for a service on your domain. SRV records are often used for services such as VoIP, messaging, and more.
 ```json
