@@ -202,5 +202,5 @@ Note: Please refer to the [frequently asked questions](https://is-a.dev/docs/faq
 }
 ```
 
-### proxy (optional)
-This feild is where you specify whether you want to enable Cloudflare proxy for your domain.
+### proxied (*optional*)
+Enable Cloudflare proxy for your domain. Disabled by default.
