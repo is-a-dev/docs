@@ -8,7 +8,7 @@ We support the following records:
 - MX
 - TXT
 - URL (Redirection)
-- NS (Limited Acess)
+- NS (limited access)
 - SRV
 - CAA
 
