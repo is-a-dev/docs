@@ -48,7 +48,7 @@ Please open a help thread via any of our help channels and we will look into it.
 ## Can I use my domain for a minecraft server?
 Sure, but it needs to be a nested subdomain (mc.example.is-a.dev). You would normally use a A record for this.
 
-## Can I Use NS Records?
+## Can I use NS records?
 We allow NS records for the following reasons and users:
   - is-a.dev maintainers
   - Users who are using **multiple** Cloudflare (or similar providers') services, which often require their own zones (e.g., DynDNS, cloudflared tunnels, etc.)
