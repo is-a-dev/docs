@@ -182,7 +182,7 @@ Note: Please refer to the [frequently asked questions](https://is-a.dev/docs/faq
   }
 }
 ```
--**CAA** record: This must be a list of Certification Authority Authorization (CAA) records. Each record specifies the authority permitted to issue SSL certificates for your domain, with fields for `flags`, `tag`, and `value`.
+- **CAA** record: This must be a list of Certification Authority Authorization (CAA) records. Each record specifies the authority permitted to issue SSL certificates for your domain, with fields for `flags`, `tag`, and `value`.
 ```js
 {
   "record": {
