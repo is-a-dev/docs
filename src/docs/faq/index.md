@@ -56,7 +56,7 @@ We allow NS records for the following reasons and users:
   - Users with a lot of nested subdomains *may* be allowed to register NS records so they do not have to manage multiple files.
   - Aternos users (specifically Aternos, as they require NS records and you cannot modify DNS records under them).
   
-Note: These guidelines are not set in stone and may change. You are not limited to fitting only one of the criteria above; use them as a general guide. I will personally review each NS record request.
+Note: These guidelines are not set in stone and may change. You are not limited to fitting only one of the criteria above; use them as a general guide. [@wdhdev](https://github.com/wdhdev) personally review each NS record request.
 
 *We reserve the right to deny NS records at our discretion.*
 
