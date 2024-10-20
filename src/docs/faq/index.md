@@ -7,7 +7,7 @@ We support the following records:
 - CNAME
 - MX
 - TXT
-- URL (Redirection)
+- URL (redirection)
 - NS (limited access)
 - SRV
 - CAA
