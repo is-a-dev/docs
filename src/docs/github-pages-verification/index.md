@@ -33,7 +33,7 @@ Create a JSON file inside the `domains/` directory called `domains/hostname.json
         "email": "<email@address>"
     },
     "record": {
-        "TXT": "<github-verification-string>"
+        "TXT": ["<github-verification-string>"]
     }
 }
 ```

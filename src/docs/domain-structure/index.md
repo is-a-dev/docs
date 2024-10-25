@@ -137,7 +137,7 @@ Below are some examples for the given record types:
 ```json
 {
   "record": {
-    "TXT": "Hello World!"
+    "TXT": ["Hello World!"]
   }
 }
 ```
