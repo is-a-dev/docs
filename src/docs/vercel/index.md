@@ -20,7 +20,7 @@ When connecting the domain, you will be greeted with a TXT verification string. 
     "discord": "insert-discord-user-ID-here"
   },
   "record": {
-    "TXT": "insert-TXT-string-you-got-from-vercel-here"
+    "TXT": ["insert-TXT-string-you-got-from-vercel-here"]
   }
 }
 ```

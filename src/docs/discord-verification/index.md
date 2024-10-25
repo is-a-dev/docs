@@ -31,7 +31,7 @@ Create a JSON file inside the `domains/` directory called `domains/_discord.exam
         "email": "email@address"
     },
     "record": {
-        "TXT": "discord-verification-string"
+        "TXT": ["discord-verification-string"]
     }
 } 
 ```
