@@ -3,16 +3,18 @@
 ## Creating a project
 Follow the instructions in the [Replit Workspace Guide](https://docs.replit.com/programming-ide/introduction-to-the-workspace#how-to-create-a-repl) on how to create a project.
 
+<!-- You need replit core, since they have a limit to 3 workspaces on free account, and deployment needs to be purchased also -->
 ## Connect your repl to your is-a.dev subdomain
-Follow the instructions in the [Replit Custom Domains Guide](https://docs.replit.com/hosting/custom-domains#connecting-your-domain-to-your-repl).
-
-Only follow the "Connecting your domain to your repl" section, then return to this guide for the next steps.
+Since Replit Workspaces has changed alot, follow the instructions in the [Replit Deployment Custom Domains Guide](https://docs.replit.com/cloud-services/deployments/custom-domains). You may need the Replit Deployment subscription to do so
 
 ## Creating the domain file
+After clicking the "Link a Domain" button on your Replit Deployment menu and already typed the domain, you will see this
+![image](https://github.com/user-attachments/assets/32abb589-5fad-4383-8554-eebe005052e9)
+(The example screenshot uses their own domain, `kaboom.thedevbird.com`. But in our case, it should be `<subdomain>.is-a.dev`)
+
 Create a JSON file inside `domains` directory (`domains/<subdomain>.json`) with the following content:
 
-**Note:** Do not add any TXT records, even if Replit instructs you to do so.
-
+<!-- They are now using TXT for verification, not just `replit-user=cupglassdev`. When deleted, you cant use it in replit -->
 ```json 
 {
     "owner": {
@@ -21,7 +23,8 @@ Create a JSON file inside `domains` directory (`domains/<subdomain>.json`) with 
         "twitter": "<twitter-username>"
     },
     "record": {
-        "CNAME": "<siteid>.id.repl.co"
+        "A": "<IP here, listed on the A Record>",
+        "TXT": "<TXT value here, listed on the TXT Record>"
     }
 } 
 ```
