@@ -23,8 +23,9 @@ Create a JSON file inside `domains` directory (`domains/<subdomain>.json`) and s
         "twitter": "<twitter-username>"
     },
     "record": {
-        "A": "<IP here, listed on the A Record>",
+        "A": ["<IP here, listed on the A Record>"],
         "TXT": "<TXT value here, listed on the TXT Record>"
+
     }
 } 
 ```
