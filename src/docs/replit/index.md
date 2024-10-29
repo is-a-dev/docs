@@ -9,7 +9,7 @@ Since Replit Workspaces has changed alot, follow the instructions in the [Replit
 
 ## Creating the domain file
 After clicking "Link a Domain" button on your Replit Deployment menu and already typed the domain, you will see this
-![image](https://github.com/user-attachments/assets/32abb589-5fad-4383-8554-eebe005052e9)
+![image](../img/REPLIT_DOMAINPOPUP.png)
 (The example screenshot uses their own domain, `kaboom.thedevbird.com`. But in our case, it should be `<subdomain>.is-a.dev`)
 
 Create a JSON file inside `domains` directory (`domains/<subdomain>.json`) and submit a pull request:
