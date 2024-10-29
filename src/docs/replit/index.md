@@ -8,7 +8,7 @@ Follow the instructions in the [Replit Workspace Guide](https://docs.replit.com/
 Since Replit Workspaces has changed alot, follow the instructions in the [Replit Deployment Custom Domains Guide](https://docs.replit.com/cloud-services/deployments/custom-domains). You may need the Replit Deployment subscription to do so
 
 ## Creating the domain file
-After clicking the "Link a Domain" button on your Replit Deployment menu and already typed the domain, you will see this
+After clicking "Link a Domain" button on your Replit Deployment menu and already typed the domain, you will see this
 ![image](https://github.com/user-attachments/assets/32abb589-5fad-4383-8554-eebe005052e9)
 (The example screenshot uses their own domain, `kaboom.thedevbird.com`. But in our case, it should be `<subdomain>.is-a.dev`)
 
