@@ -12,7 +12,7 @@ After clicking "Link a Domain" button on your Replit Deployment menu and already
 ![image](https://github.com/user-attachments/assets/32abb589-5fad-4383-8554-eebe005052e9)
 (The example screenshot uses their own domain, `kaboom.thedevbird.com`. But in our case, it should be `<subdomain>.is-a.dev`)
 
-Create a JSON file inside `domains` directory (`domains/<subdomain>.json`) with the following content:
+Create a JSON file inside `domains` directory (`domains/<subdomain>.json`) and submit a pull request:
 
 <!-- They are now using TXT for verification, not just `replit-user=cupglassdev`. When deleted, you cant use it in replit -->
 ```json 
@@ -28,6 +28,10 @@ Create a JSON file inside `domains` directory (`domains/<subdomain>.json`) with 
     }
 } 
 ```
+<!-- as EducatedSuddenBucket's suggestion -->
+Make sure to provide the preview on the pull request (not on your JSON files)
+
+Note: In the owner section, you can add any social media handle, such as Discord. If you add another social media account, you can omit the email and Twitter fields. However, the GitHub username is mandatory. Don't forget to provide a preview of your site in your pull request.
 
 ## Configuring
 - After your pull request has been merged into the main repository you should be able to visit your new is-a.dev domain and it should show you your replit site,
