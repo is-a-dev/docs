@@ -16,18 +16,15 @@ You can read about the domains JSON file structure [here](domain-structure/index
 - [Vercel](vercel/index.md)
 
 ## Official Subdomains
-These are the subdomains run by the is-a.dev staff team. Do not trust any subdomain that is not on this list that claims to be us.
+These are the subdomains run by the is-a.dev staff team.
 
-**Websites**:
-
-- is-a.dev (the root domain, used for website and emails)
+- is-a.dev (the root domain, used for website, docs and emails)
 - data.is-a.dev (data website, run by [@wdhdev](https://github.com/wdhdev))
 - docs.is-a.dev (redirects to https://is-a.dev/docs)
 - owl.is-a.dev (beta user privacy service, run by [@andrewstech](https://github.com/andrewstech) and [@wdhdev](https://github.com/wdhdev))
 - raw-api.is-a.dev (raw JSON API of all is-a.dev subdomains, run by [@wdhdev](https://github.com/wdhdev))
 - register-bot.is-a.dev (Discord bot API, run by [@andrewstech](https://github.com/andrewstech))
 - team.is-a.dev (team documentation)
-- www.is-a.dev (redirects to https://is-a.dev)
 
 **Do NOT trust any websites claiming to be us that are not listed here. If you find any, please report them to [security@is-a.dev](mailto:security@is-a.dev).**
 

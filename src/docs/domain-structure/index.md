@@ -38,7 +38,7 @@ All the filenames below meet all the criteria. The reason in parentheses is just
   "repo": "https://github.com/is-a-dev/docs",
   "owner": {
     "username": "is-a-dev",
-    "email": "hello@maintainers.is-a.dev"
+    "email": "hello@is-a.dev"
   },
   "record": {
     "URL": "https://www.is-a.dev/docs"
