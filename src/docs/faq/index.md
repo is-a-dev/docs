@@ -7,13 +7,14 @@
 - CAA
 - CNAME
 - DS
-  - Note: This can only be used in combination for NS records.
+    - Note: This can only be used in combination for NS records.
 - MX
-- NS (limited access)
+- NS
+    - Note: These are only given out in specific cases. Refer to `Can I use NS records?` for more information.
 - SRV
 - TXT
 - URL
-  - Note: This is uses Cloudflare for redirection, it is not a real DNS record type.
+    - Note: This is uses Cloudflare for redirection, it is not a real DNS record type.
 
 ## Why does my domain still redirect to the is-a-dev website?
 This usually occurs due to the cache of your browser becoming invalid and [clearing your browser's cache](https://support.google.com/accounts/answer/32050) should solve this issue.
