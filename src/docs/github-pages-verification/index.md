@@ -29,8 +29,7 @@ Create a JSON file inside the `domains/` directory called `domains/hostname.json
 ```json
 {
     "owner": {
-        "username": "<github-username>",
-        "email": "<email@address>"
+        "username": "github-username"
     },
     "record": {
         "TXT": ["<github-verification-string>"]

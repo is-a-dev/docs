@@ -18,9 +18,7 @@ Create a JSON file inside `domains` directory (`domains/<subdomain>.json`) and s
 ```json 
 {
     "owner": {
-        "username": "<github-username>",
-        "email": "<email@address>",
-        "twitter": "<twitter-username>"
+        "username": "github-username"
     },
     "record": {
         "A": ["<IP here, listed on the A Record>"],

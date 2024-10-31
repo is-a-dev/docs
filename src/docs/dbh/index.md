@@ -20,12 +20,8 @@ If you are on free plan, choose any US proxy or you can use the Donator Proxy If
 Create a JSON file inside `domains` directory (`domains/<subdomain>.json`) with the following content and submit a pull request:
 ```json 
 {
-    "description": "Describe the use of this subdomain",
-    "repo": "https://github.com/<github-username>/<github-repository>",
     "owner": {
-        "username": "<github-username>",
-        "email": "<email@address>",
-        "twitter": "<twitter-username>"
+        "username": "github-username"
     },
     "record": {
         "A": [

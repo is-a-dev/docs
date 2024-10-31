@@ -34,16 +34,15 @@ All the filenames below meet all the criteria. The reason in parentheses is just
 `domains/docs.json`
 ```json
 {
-  "description": "Documentation for is-a-dev",
+  "description": "Documentation website for is-a.dev",
   "repo": "https://github.com/is-a-dev/docs",
   "owner": {
     "username": "is-a-dev",
-    "email": "hello@is-a.dev"
+    "email": "admin@is-a.dev"
   },
   "record": {
-    "URL": "https://www.is-a.dev/docs"
-  },
-  "proxied": false 
+    "URL": "https://is-a.dev/docs"
+  }
 }
 ```
 
@@ -55,8 +54,7 @@ In the owner object, the fields username and email are required. You can add mor
 ```json
 {
   "owner": {
-    "username": "<github-username>",
-    "email": "<email@address>"
+    "username": "github-username"
   }
 }
 ```
@@ -86,7 +84,7 @@ Below are some examples for the given record types:
 ```json
 {
   "record": {
-    "CNAME": "<github-username>.github.io"
+    "CNAME": "github-username.github.io"
   }
 }
 ```

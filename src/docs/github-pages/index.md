@@ -10,15 +10,11 @@ First, you'll need to create a site on GitHub Pages. Follow the instructions in 
 Create a JSON file inside `domains` directory (`domains/<subdomain>.json`) with the following content and submit a pull request:
 ```json 
 {
-    "description": "Describe the use of this subdomain",
-    "repo": "https://github.com/<github-username>/<github-repository>",
     "owner": {
-        "username": "<github-username>",
-        "email": "<email@address>",
-        "twitter": "<twitter-username>"
+        "username": "github-username"
     },
     "record": {
-        "CNAME": "<github-username>.github.io"
+        "CNAME": "github-username.github.io"
     }
 } 
 ```

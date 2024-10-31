@@ -15,9 +15,7 @@ When connecting the domain, you will be greeted with a TXT verification string. 
 ```json
 {
   "owner": {
-    "username": "insert-github-username-here",
-    "email": "",
-    "discord": "insert-discord-user-ID-here"
+    "username": "insert-github-username-here"
   },
   "record": {
     "TXT": ["insert-TXT-string-you-got-from-vercel-here"]
@@ -35,9 +33,7 @@ Make `subdomain.json` in the **domains directory** (replace subdomain with the d
 ```json
 {
   "owner": {
-    "username": "insert-github-username-here",
-    "email": "",
-    "discord": "insert-discord-user-ID-here"
+    "username": "insert-github-username-here"
   },
   "record": {
     "CNAME": "domainname.vercel.app"
@@ -48,9 +44,7 @@ Make `subdomain.json` in the **domains directory** (replace subdomain with the d
 ```json
 {
   "owner": {
-    "username": "insert-github-username-here",
-    "email": "",
-    "discord": "insert-discord-user-ID-here"
+    "username": "insert-github-username-here"
   },
   "record": {
     "A": ["76.76.21.21"]

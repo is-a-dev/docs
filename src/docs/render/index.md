@@ -9,12 +9,8 @@ First, you'll need to create a service on Render. Follow the instructions in the
 Create a JSON file inside the `domains` directory (`domains/<subdomain>.json`) with the following content and submit a pull request:
 ```json
 {
-    "description": "Describe the use of this subdomain",
-    "repo": "https://github.com/<github-username>/<github-repository>",
     "owner": {
-        "username": "<github-username>",
-        "email": "<email@address>",
-        "twitter": "<twitter-username>"
+        "username": "github-username"
     },
     "record": {
         "A": [
