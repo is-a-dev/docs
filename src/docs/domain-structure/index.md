@@ -201,4 +201,7 @@ Note: Please refer to the [frequently asked questions](https://is-a.dev/docs/faq
 ```
 
 ### proxied (*optional*)
-Enable Cloudflare proxy for your domain. Disabled by default.
+Enable Cloudflare proxy for your domain. Disabled by default. To enable it, add this line of code:
+```json
+  "proxied": true
+```
