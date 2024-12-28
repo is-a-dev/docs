@@ -52,23 +52,28 @@ No, we handpick every member of our team. You can increase your chances of being
 ## I have accidentally leaked sensitive information in my PR, how can I get my PR deleted?
 If your PR **has not been merged**, you can email [security@is-a.dev](mailto:security@is-a.dev) or DM [williamharrison on Discord](https://discord.com/users/853158265466257448). If your PR has been merged already, then there is nothing we can do about it unfortunately.
 
-## Can I use my domain for a minecraft server?
+## Can I use my domain for a Minecraft server?
 Yes, you can. You can use an A record combined with an SRV record for this.
 
 Refer to [this article](https://www.namecheap.com/support/knowledgebase/article.aspx/9765/2208/how-can-i-link-my-domain-name-to-a-minecraft-server) by Namecheap for support.
 
-## Can I use NS records?
+## Who can use NS records?
 We allow NS records for the following reasons and users:
 
-- is-a.dev maintainers
-- Users who are using **multiple** Cloudflare (or similar providers') services, which often require their own zones (e.g., DynDNS, cloudflared tunnels, etc.)
-- Users who require a private zone, as they are using their home IP addresses behind Cloudflare (These cases will be carefully reviewed, as we understand some may claim to use a home IP address when they are not.)
-- Users with a lot of nested subdomains *may* be allowed to register NS records so they do not have to manage multiple files.
+- Users who are using Cloudflare (or similar providers') services, which often require their own zones (e.g., DynDNS, cloudflared tunnels, etc.)
+- Users who require a private zone, as they are using their home IP addresses behind Cloudflare. Please provide evidence of usage.
 - Aternos users (specifically due to the fact that they require NS records and you cannot modify DNS records under them.)
-  
-Note: These guidelines are not set in stone and may change. You are not limited to fitting only one of the criteria above; use them as a general guide. [@wdhdev](https://github.com/wdhdev) personally reviews each NS record request.
+
+Note: These guidelines are not set in stone and may change. You are not limited to fitting only one of the criteria above; use them as a general guide.
 
 *We reserve the right to deny NS records at our discretion.*
+
+## Why are you so strict with NS records?
+We have to be strict with who we delegate NS records to as they allow the end-user to do basically *whatever they want* with their subdomain.
+
+As you can probably imagine, this can open the door to a lot of abuse, which is why are they are not freely available to everyone.
+
+If we could, we would delegate NS records to everyone that wanted them, however this is not a perfect world, so unfortunately we cannot.
 
 ## How can I make changes to my is-a.dev subdomain?
 1. **Open your JSON file:** Navigate to the `domains` directory in your fork and open the JSON file corresponding to your subdomain (`domains/subdomain.json`).
