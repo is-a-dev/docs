@@ -10,7 +10,7 @@
     - Note: These can only be used in combination for NS records, which are used for DNSSEC.
 - MX
 - NS
-    - Note: These are only given out in specific cases. Refer to `Can I use NS records?` for more information.
+    - Note: These are only given out in specific cases. Refer to [`Who can use NS records?`](#who-can-use-ns-records) for more information.
 - SRV
 - TXT
 - URL
