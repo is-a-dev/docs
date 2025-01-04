@@ -9,7 +9,7 @@ This guide will walk you through the process of setting up ImprovMX with your is
 
 ## Making the file.
 
-First go to the fork you've made, then go into the `domains` directory and make a file. The file should be named like this: `subdomain.json`.
+First go to the fork you've made, then go into the `domains` directory and make a file. The file should be named like this: `subdomain.json`. (Replace `subdomain` with the subdomain name you want of course.)
 
 After you've made the file, you should put in the file this:
 ```json
@@ -28,4 +28,4 @@ After you've made the file, you should put in the file this:
 
 ## Configuring
 
-After it has been merged, it should be automatically recognized and should start working. If you haven't configured it beforehand, please go to the ImprovMX dashboard and add the domain there.
+After it has been merged, it should be automatically recognized and should start working. If you haven't configured it beforehand, please go to the [ImprovMX dashboard](https://app.improvmx.com/) and add the domain there.
