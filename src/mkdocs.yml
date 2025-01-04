@@ -27,18 +27,19 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - Cloudflare Pages: cloudflare-pages/index.md
+  - DanBot Hosting: dbh/index.md
+  - Discord Domain Verification: discord-verification/index.md
   - Domain Structure: domain-structure/index.md
   - FAQ: faq/index.md
-  - Resources: resources/index.md
-  - Cloudflare Pages: cloudflare-pages/index.md
-  - Discord Domain Verification: discord-verification/index.md
   - GitHub Pages: github-pages/index.md
   - GitHub Pages Domain Verification: github-pages-verification/index.md
   - Hashnode Blog: hashnode/index.md
+  - Netlify: netlify/index.md
+  - Other Services: other/index.md
   - Railway: railway/index.md
   - Replit: replit/index.md
   - Render: render/index.md
-  - Netlify: netlify/index.md
+  - Resources: resources/index.md
   - Vercel: vercel/index.md
-  - DanBot Hosting: dbh/index.md
-  - Other Services: other/index.md
+
