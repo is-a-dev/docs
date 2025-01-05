@@ -58,22 +58,28 @@ Yes, you can. You can use an A record combined with an SRV record for this.
 Refer to [this article](https://www.namecheap.com/support/knowledgebase/article.aspx/9765/2208/how-can-i-link-my-domain-name-to-a-minecraft-server) by Namecheap for support.
 
 ## Who can use NS records?
-We allow NS records for the following reasons and users:
+We allow NS records for the following reasons and use-cases:
 
-- Users who are using Cloudflare (or similar providers') services, which often require their own zones (e.g., DynDNS, cloudflared tunnels, etc.)
-- Users who require a private zone, as they are using their home IP addresses behind Cloudflare. Please provide evidence of usage.
-- Aternos users (specifically due to the fact that they require NS records and you cannot modify DNS records under them.)
+- Users who require a private zone, as they are using their home IP address through **an `A` OR `AAAA` record** behind a proxy service such as Cloudflare. **You MUST provide evidence of usage for this reasoning to be approved.**
+- When a third-party service (e.g. Aternos, Wix or Squarespace) mandates specific NS records and you are unable to manage DNS records directly under that domain. Approval requires:
+  - Documentation or evidence from the third-party service explicitly stating this requirement.
+  - Proof that no alternative DNS configuration (CNAME, A records, etc.) can achieve the same result.
 
-Note: These guidelines are not set in stone and may change. You are not limited to fitting only one of the criteria above; use them as a general guide.
+We do not permit NS records for:
+- Convenience-only setups: Where alternatives such as A, AAAA, or CNAME records are sufficient.
+- Non-operational purposes: Vanity configurations, aesthetic setups, or speculative use.
+- Unverifiable claims: Any setup lacking clear and concrete evidence of necessity.
+- Misleading configurations: Attempts to misrepresent ownership, mislead users, or impersonate another entity.
+- Security risks: Configurations that introduce vulnerabilities, such as delegating to untrusted or unreliable servers.
 
-*We reserve the right to deny NS records at our discretion.*
+***We reserve the right to deny NS records at our discretion, no matter the reasoning.***
 
 ## Why are you so strict with NS records?
 We have to be strict with who we delegate NS records to as they allow the end-user to do basically *whatever they want* with their subdomain.
 
 As you can probably imagine, this can open the door to a lot of abuse, which is why are they are not freely available to everyone.
 
-If we could, we would delegate NS records to everyone that wanted them, however this is not a perfect world, so unfortunately we cannot.
+If we could, we would delegate NS records to everyone that wanted them, however we are not in a perfect world, so unfortunately we cannot.
 
 ## How can I make changes to my is-a.dev subdomain?
 1. **Open your JSON file:** Navigate to the `domains` directory in your fork and open the JSON file corresponding to your subdomain (`domains/subdomain.json`).
