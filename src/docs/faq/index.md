@@ -66,6 +66,7 @@ We allow NS records for the following reasons and use-cases:
   - Proof that no alternative DNS configuration (CNAME, A records, etc.) can achieve the same result.
 
 We do not permit NS records for:
+
 - Convenience-only setups: Where alternatives such as A, AAAA, or CNAME records are sufficient.
 - Non-operational purposes: Vanity configurations, aesthetic setups, or speculative use.
 - Unverifiable claims: Any setup lacking clear and concrete evidence of necessity.
