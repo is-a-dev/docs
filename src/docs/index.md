@@ -20,12 +20,13 @@ These are the subdomains run by the is-a.dev staff team.
 
 - is-a.dev (the root domain, used for website, docs and emails)
 - data.is-a.dev (data website, run by [@wdhdev](https://github.com/wdhdev))
-- docs.is-a.dev (redirects to https://is-a.dev/docs)
+- docs.is-a.dev (this website)
 - owl.is-a.dev (beta user privacy service, run by [@andrewstech](https://github.com/andrewstech) and [@wdhdev](https://github.com/wdhdev))
 - raw-api.is-a.dev (raw JSON API of all is-a.dev subdomains, run by [@wdhdev](https://github.com/wdhdev))
 - register-bot.is-a.dev (Discord bot API, run by [@andrewstech](https://github.com/andrewstech))
 - team.is-a.dev (team documentation)
+- www.is-a.dev (redirect to the root domain)
 
 **Do NOT trust any websites claiming to be us that are not listed here. If you find any, please report them to [security@is-a.dev](mailto:security@is-a.dev).**
 
-*We do not unsolicitedly send emails to users, do not trust any unsolicitedly sent emails claiming they are us. Report any scam emails to [security@is-a.dev](mailto:security@is-a.dev).*
+*We do not unsolicitedly send emails to users, do not trust any unsolicitedly sent emails claiming they are us. Report any unsolicited emails to [security@is-a.dev](mailto:security@is-a.dev).*
