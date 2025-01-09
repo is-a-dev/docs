@@ -1,9 +1,4 @@
----
-tags: useful
-icon: list-unordered
----
-
-# Domain Structure
+# Domains JSON file
 To register a subdomain, you need to create a new JSON file in the `domains` directory through a pull request. For example, to register `example.is-a.dev`, you would create a file named `example.json` in the `domains` directory. The full path would be `domains/example.json`.
 
 ## Filename
@@ -24,6 +19,7 @@ The filename:
 - `a .json` (filename contains a space)
 - `a$.json` (filename contains a non-alphanumeric character)
 - `a.json.json` (filename contains more than one `.json` extension)
+- `a.is-a.dev.json` (filename contains `.is-a.dev`)
 
 ### Examples of Valid Filenames
 All the filenames below meet all the criteria. The reason in parentheses is just an example of one of the criteria they meet.
@@ -39,16 +35,15 @@ All the filenames below meet all the criteria. The reason in parentheses is just
 `domains/docs.json`
 ```json
 {
-  "description": "Documentation for is-a-dev",
+  "description": "Documentation website for is-a.dev",
   "repo": "https://github.com/is-a-dev/docs",
   "owner": {
     "username": "is-a-dev",
-    "email": "hello@maintainers.is-a.dev"
+    "email": "admin@is-a.dev"
   },
   "record": {
-    "URL": "https://www.is-a.dev/docs"
-  },
-  "proxied": false 
+    "CNAME": "is-a.dev"
+  }
 }
 ```
 
@@ -60,8 +55,7 @@ In the owner object, the fields username and email are required. You can add mor
 ```json
 {
   "owner": {
-    "username": "github-username",
-    "email": "me@example.com"
+    "username": "github-username"
   }
 }
 ```
@@ -73,18 +67,10 @@ Describe your domain name and your usage. This is purely for documentation purpo
 This is a link to your website repository or your github account. This is purely for documentation purpose and is optional.
 
 ### record (required)
-This section is where you specify the DNS records. The supported types are:
+This section is where you specify the DNS records.
 
-- `CNAME`
-- `A`
-- `AAAA`
-- `URL`
-- `MX`
-- `TXT`
-- `SRV`
-- `CAA`
-- `NS` (NS records will only be given to users with a [genuine need for them who are trusted users.](https://is-a.dev/docs/faq/))
-  
+You can see a list of supported types [here](/faq/#which-records-are-supported).
+
 Below are some examples for the given record types:
 
 - **CNAME** record: This must be a hostname (`something.tld`). It cannot be used in conjunction with any other record types. This is typically used to map your domain to a specific server.
@@ -123,7 +109,7 @@ Below are some examples for the given record types:
 ```json
 {
   "record": {
-    "URL": "https://my-other-website.com"
+    "URL": "https://example.com"
   }
 }
 ```
@@ -164,9 +150,7 @@ Below are some examples for the given record types:
   }
 }
 ```
-!!!warning Note
-Please refer to the [frequently asked questions](https://is-a.dev/docs/faq/) for clarification on what or who we allow NS records for. If you want a example on what we want as the reasonings, you can [checkout this PR](https://github.com/is-a-dev/register/pull/16758).
-!!!
+Note: Please refer to the [frequently asked questions](https://docs.is-a.dev/faq/) for clarification on what or who we allow NS records for. If you want a example on what we want as the reasonings, you can [checkout this PR](https://github.com/is-a-dev/register/pull/16758).
 
 - **SRV** record: This must be a list of service records. Each record specifies the priority, weight, port, and target for a service on your domain. SRV records are often used for services such as VoIP, messaging, and more.
 ```json
@@ -210,4 +194,7 @@ Please refer to the [frequently asked questions](https://is-a.dev/docs/faq/) for
 ```
 
 ### proxied (*optional*)
-Enable Cloudflare proxy for your domain. Disabled by default.
+Enable Cloudflare proxy for your domain. Disabled by default. To enable it, add this line of code:
+```json
+  "proxied": true
+```
