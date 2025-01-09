@@ -1,0 +1,59 @@
+input: ./src
+output: .retype
+url: docs.is-a.dev
+branding:
+  title: is-a.dev Docs
+  logo: /media/logo_circle.png
+  logoAlign: left
+  colors:
+    label:
+      text: "#ffffff"
+      background: "#9d00ff"
+links:
+  - text: Home
+    link: index.md
+    icon: home
+  - text: Website
+    link: https://is-a.dev
+    icon: globe
+  - text: Register
+    link: https://github.com/is-a-dev/register
+    icon: mark-github
+    target: blank
+  - text: Donate
+    link: https://donate.is-a.dev
+    icon: heart
+    target: blank
+edit:
+  repo: "https://github.com/is-a-dev/docs"
+  base: "/src"
+  branch: "main"
+  label: "Edit this page"
+editor:
+  enabled: true
+favicon: /media/logo_circle.png
+generator:
+  recase: all
+include:
+  - "*.py"
+markdown:
+  lineBreaks: soft
+meta:
+  title: " | is-a.dev Docs"
+search:
+  hotkeys:
+    - "/"
+  maxResults: 20
+  minChars: 2
+  mode: full
+  noResultsFoundMsg: "No results"
+  placeholder: Search
+start:
+  open: false
+snippets:
+  lineNumbers:
+    - js
+    - none
+templating:
+  enabled: true
+  liquid: false
