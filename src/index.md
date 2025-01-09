@@ -12,16 +12,17 @@ You can read about the domains JSON file structure [here](domain-structure).
 
 ## Guides
 - [Cloudflare Pages](guides/cloudflare-pages)
+- [DanBot Hosting](guides/dbh)
 - [Discord Domain Verification](guides/discord-verification)
 - [GitHub Pages](guides/github-pages)
 - [Hashnode Blogs](guides/hashnode)
-- [Railway](guides/railway)
-- [Replit](guides/replit)
-- [Render](guides/render)
+- [ImprovMX](guides/improvmx)
 - [Netlify](guides/netlify)
-- [Vercel](guides/vercel)
-- [DanBot Hosting](guides/dbh)
 - [Other Services](guides/other)
+- [Railway](guides/railway)
+- [Render](guides/render)
+- [Replit](guides/replit)
+- [Vercel](guides/vercel)
 
 ## Useful
  - [Domain Structure](domain-structure)
