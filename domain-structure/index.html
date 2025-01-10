@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.789801876143">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.789801970759">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
 
     <!-- Primary Meta Tags -->
-    <title>Domains JSON file | is-a.dev Docs</title>
-    <meta name="title" content="Domains JSON file | is-a.dev Docs">
+    <title>Domain Structure | is-a.dev Docs</title>
+    <meta name="title" content="Domain Structure | is-a.dev Docs">
     <meta name="description" content="To register a subdomain, you need to create a new JSON file in the domains directory through a pull request. For example, to register ">
 
     <!-- Canonical -->
@@ -19,24 +19,24 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.is-a.dev/domain-structure/">
-    <meta property="og:title" content="Domains JSON file | is-a.dev Docs">
+    <meta property="og:title" content="Domain Structure | is-a.dev Docs">
     <meta property="og:description" content="To register a subdomain, you need to create a new JSON file in the domains directory through a pull request. For example, to register ">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.is-a.dev/domain-structure/">
-    <meta property="twitter:title" content="Domains JSON file | is-a.dev Docs">
+    <meta property="twitter:title" content="Domain Structure | is-a.dev Docs">
     <meta property="twitter:description" content="To register a subdomain, you need to create a new JSON file in the domains directory through a pull request. For example, to register ">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../media/logo_circle.png" rel="icon">
-    <link href="../resources/css/retype.css?v=3.6.0.789801876143" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=3.6.0.789801970759" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.6.0.789801876143" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.6.0.789801970759" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.6.0.789801876143" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.6.0.789801876143" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.6.0.789801970759" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.6.0.789801970759" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -243,10 +243,10 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="domains-json-file" class="break-words">
+<doc-anchor-target id="domain-structure" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#domains-json-file">#</doc-anchor-trigger>
-        <span>Domains JSON file</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#domain-structure">#</doc-anchor-trigger>
+        <span>Domain Structure</span>
     </h1>
 </doc-anchor-target>
 <p>To register a subdomain, you need to create a new JSON file in the <code v-pre>domains</code> directory through a pull request. For example, to register <code v-pre>example.is-a.dev</code>, you would create a file named <code v-pre>example.json</code> in the <code v-pre>domains</code> directory. The full path would be <code v-pre>domains/example.json</code>.</p>
@@ -504,7 +504,17 @@ In the owner object, the fields username and email are required. You can add mor
 <pre class="language-json"><code v-pre class="language-json">  &quot;proxied&quot;: true</code></pre>
 </doc-codeblock></div>
 
-                                
+                                <div class="flex items-center mt-6 mb-6 clear-both">
+                                    <span>
+                                        <a href="../tags/">
+                                            <svg class="inline-block -mb-px mr-1.5 text-blue-500 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" overflow="visible" fill="currentColor"><g><path d="M21.3 9.88l-8.59-8.59C12.52 1.11 12.27 1 12 1H2c-.55 0-1 .45-1 1v10c0 .27.11.52.29.71l8.59 8.58c.57.57 1.32.88 2.12.88s1.55-.31 2.12-.88l7.17-7.17a3.009 3.009 0 00.01-4.24zm-1.42 2.82l-7.17 7.17c-.39.39-1.02.39-1.42 0L3 11.59V3h8.59l8.29 8.29c.39.39.39 1.03 0 1.41z" /><path d="M7.01 6C6.45 6 6 6.45 6 7s.45 1 1 1 1-.45 1-1-.44-1-.99-1z" /></g></svg>
+                                        </a>
+                                        <span class="mr-2"><a href="../tags/useful/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>useful</span>
+                                </a></span>
+                                    </span>
+                                </div>
+                
                                 <!-- Required only on API pages -->
                                 <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
                             </div>
@@ -575,6 +585,6 @@ In the owner object, the fields username and email are required. You can add mor
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Domains JSON file", level: 1, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Domain Structure", level: 1, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
