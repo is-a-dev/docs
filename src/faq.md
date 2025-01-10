@@ -2,7 +2,6 @@
 tags: useful
 icon: question
 ---
-
 # Frequently Asked Questions (FAQ)
 
 ## Which records are supported?
