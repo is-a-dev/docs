@@ -1,0 +1,6 @@
+/ /en
+/guides/* /en/guides/:splat
+/media/* /en/media/:splat
+/domain-structure /en/domain-structure
+/faq /en/faq
+/resources /en/resources
