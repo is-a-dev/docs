@@ -60,7 +60,7 @@ integrations:
     domain: docs.is-a.dev
     host: analytics.hrsn.net
 footer:
-  copyright: "&copy; 2020-<script>document.write(new Date().getFullYear())</script> is-a.dev - All Rights Reserved."
+  copyright: "&copy; 2020-2025 is-a.dev - All Rights Reserved."
   links:
     - text: is-a-dev/docs
       link: https://github.com/is-a-dev/docs
