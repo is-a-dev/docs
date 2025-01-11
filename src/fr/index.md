@@ -41,4 +41,4 @@ Ce sont les sous-domaines gérés par l'équipe de is-a.dev.
 
 **Ne faites confiance à AUCUN site affirmant être affilié à l'équipe n'étant pas listé ici. Si vous en trouvez, merci de les signaler à [security@is-a.dev](mailto:security@is-a.dev).**
 
-*Nous n'envoyons pas de mails non sollicités à nos utilisateurs. Ne faites confiance à aucun mail affirmant être affilié à l'équipe. Signalez les mails non sollicité à [security@is-a.dev]*
+*Nous n'envoyons pas de mails non sollicités à nos utilisateurs. Ne faites confiance à aucun mail affirmant être affilié à l'équipe. Signalez les mails non sollicités à [security@is-a.dev]*
