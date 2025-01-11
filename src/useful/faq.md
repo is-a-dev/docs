@@ -1,6 +1,7 @@
 ---
 tags: useful
 icon: question
+route: /faq
 ---
 # Frequently Asked Questions (FAQ)
 

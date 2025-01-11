@@ -1,6 +1,7 @@
 ---
 tags: useful
 icon: info
+route: /resources
 ---
 
 # Resources
