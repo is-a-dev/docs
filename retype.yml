@@ -34,8 +34,6 @@ editor:
 favicon: /media/logo_circle.png
 generator:
   recase: all
-include:
-  - "*.py"
 markdown:
   lineBreaks: soft
 meta:
@@ -57,3 +55,12 @@ snippets:
 templating:
   enabled: true
   liquid: false
+integrations:
+  plausible:
+    domain: docs.is-a.dev
+    host: analytics.hrsn.net
+footer:
+  copyright: "&copy; 2020-2025 is-a.dev - All Rights Reserved."
+  links:
+    - text: Terms of Service
+      link: https://is-a.dev/terms
