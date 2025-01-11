@@ -1,6 +1,6 @@
 ---
-label: Bienvenido
-icon: home
+label: Spanish / Español
+icon: es
 ---
 
 # Documentación is-a.dev
