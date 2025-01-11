@@ -64,5 +64,3 @@ footer:
   links:
     - text: is-a-dev/docs
       link: https://github.com/is-a-dev/docs
-include:
-  - "_redirects"
