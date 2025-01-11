@@ -200,5 +200,5 @@ Note: Please refer to the [frequently asked questions](https://docs.is-a.dev/faq
 ### proxied (*optional*)
 Enable Cloudflare proxy for your domain. Disabled by default. To enable it, add this line of code:
 ```json
-  "proxied": true
+"proxied": true
 ```
