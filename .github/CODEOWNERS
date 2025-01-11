@@ -1,0 +1,5 @@
+* @is-a-dev/maintainers
+
+/src/** @is-a-dev/docs-en
+/src/es/** @is-a-dev/docs-es
+/src/fr/** @is-a-dev/docs-fr
