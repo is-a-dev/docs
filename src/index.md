@@ -1,0 +1,3 @@
+---
+redirect: en/index.md
+---
