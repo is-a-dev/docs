@@ -9,21 +9,21 @@ Anda bisa membaca tentang struktur JSON file kami [disini](domain-structure).
 ## Panduan
 - [Cloudflare Pages](guides/cloudflare-pages)
 - [DanBot Hosting](guides/dbh)
-- [Discord Domain Verification](guides/discord-verification)
+- [Discord Verifikasi Domain](guides/discord-verification)
 - [GitHub Pages](guides/github-pages)
 - [Hashnode Blogs](guides/hashnode)
 - [ImprovMX](guides/improvmx)
 - [Netlify](guides/netlify)
-- [Other Services](guides/other)
+- [Layanan lain](guides/other)
 - [Railway](guides/railway)
 - [Render](guides/render)
 - [Replit](guides/replit)
 - [Vercel](guides/vercel)
 
 ## Link cepat
- - [Domain Structure](domain-structure)
+ - [Struktur domain](domain-structure)
  - [FAQ](faq)
- - [Resources](resources)
+ - [Materi](resources)
 
 ## Subdomain resmi kami
 Ini adalah daftar subdomain yang dijalankan oleh staf tim is-a.dev.
