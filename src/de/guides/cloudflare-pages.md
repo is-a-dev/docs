@@ -6,31 +6,43 @@ tags:
 ---
 
 # Cloudflare Pages mit einer is-a.dev Subdomain einrichten
-This guide will walk you through the process of setting up a Cloudflare Pages site and pointing your is-a.dev subdomain to it.
-
+Diese Anleitung führt dich durch den Prozess, eine CF-Pages-Seite einzurichten und diese mit deiner is-a.dev Subdomain zu verbinden.
 ## Eine Cloudflare Pages-Seite erstellen
 
-First, you'll need to create a site on Cloudflare Pages. Follow the instructions in the [Cloudflare Pages Getting Started Guide](https://developers.cloudflare.com/pages/get-started/guide/).
 
+Erstelle ersteinmal eine CF-Pages Seite. Folge diesen Instruktionen: [Cloudflare Pages Anleitung (Auf Englisch)](https://developers.cloudflare.com/pages/get-started/guide/)
 ### Die Subdomain zu deiner CF-Pages-Seite zeigen lassen
-Next, you'll need to point your is-a.dev subdomain to your Cloudflare Pages site. Follow the instructions in the [Cloudflare Pages Custom Domains Guide](https://developers.cloudflare.com/pages/platform/custom-domains/#add-a-custom-domain). Only follow the "Add a custom domain" section, then return to this guide for the next steps.
+Hier ist eine Deutsche Übersetzung der [Cloudflare Pages Custom Domains Guide](https://developers.cloudflare.com/pages/platform/custom-domains/#add-a-custom-domain). Du benötigst nur "Add a custom domain", wenn du das Original verwendest. Wenn du diese Übersetzung verwendest, musst du nichts weiter beachten.
+
+#### Eigene Domain hinzufügen
+
+Um eine eigene Domain hinzuzufügen:
+
+    Logge dich in dein Cloudflare-Dashboard ein.
+    Wähle deinen Account in Account Home > Workers & Pages aus.
+    Wähle dein Pages-Projekt aus, wähle dann "Custom domains".
+    Klicke "Set up a domain".
+    Gebe die gewünschte Subdomain ein und klicke "Continue"
+Hier ein Bild:
+![Bild](https://developers.cloudflare.com/_astro/domains.zq4iMU_J_1jlTEx.webp)
+
 
 ### Die Domain-Datei erstellen
 
-In the `domains` directory, create a new JSON file for your subdomain (`domains/subdomain.json`) and submit a pull request. This file should contain the following:
+In dem `domains` Ordner, erstelle eine neue JSON-Datei für deine Subdomain (`domains/subdomain.json`) und erstelle ein Pull-Request. Diese Datei sollte folgendes erhalten:
 
 ```json
 {
     "owner": {
-        "username": "your-github-username",
-        "email": "your-email@gmail.com"
+        "username": "dein-github-nutzername",
+        "email": "deine-email@dein-email-provider.com"
     },
     "record": {
-        "CNAME": "your-sitename.pages.dev"
+        "CNAME": "seitenname.pages.dev"
     }
 }
 ```
 
 ### Glückwunsch, deine Seite ist jetzt live!
 
-If you have followed all the steps correctly, then your site should be live after your pull request has been merged.
+Deine Seite sollte erreichbar sein, nachdem dein PR akzeptiert wurde. Das kann aber ca. 24 Stunden dauern.
