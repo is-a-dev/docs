@@ -4,7 +4,7 @@ Deutsche Übersetzung für die Docs von is-a.dev
 
 - [X] Cloudflare Pages
 - [X] DanBot Hosting
-- [ ] Discord
+- [X] Discord
 - [ ] GH-Pages
 - [ ] Hashnode
 - [ ] ImprovMX
