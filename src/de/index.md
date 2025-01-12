@@ -10,9 +10,9 @@ icon: home
 
 Hier wirst du Anleitungen, unsere JSON Dateistruktur und mehr finden. Wenn du zur Dokumentation beitragen willst, besuche [unser Dokumentations-Repository](https://github.com/is-a-dev/docs).
 ## Domain registrieren
-You can read about the domains JSON file structure Du kannst dich [hier](domain-structure) über unsere JSON-Dateistruktur informieren.
+Du kannst dich [hier](domain-structure) über unsere JSON-Dateistruktur informieren.
 
-## Guides
+## Anleitungen
 - [Cloudflare Pages](guides/cloudflare-pages)
 - [DanBot Hosting](guides/dbh)
 - [Discord Domain Verification](guides/discord-verification)
@@ -20,29 +20,31 @@ You can read about the domains JSON file structure Du kannst dich [hier](domain-
 - [Hashnode Blogs](guides/hashnode)
 - [ImprovMX](guides/improvmx)
 - [Netlify](guides/netlify)
-- [Other Services](guides/other)
+- [Andere Dienste](guides/other)
 - [Railway](guides/railway)
 - [Render](guides/render)
 - [Replit](guides/replit)
 - [Vercel](guides/vercel)
 
-## Useful
- - [Domain Structure](domain-structure)
+## Anderes
+ - [Domain-Struktur](domain-structure)
  - [FAQ](faq)
- - [Resources](resources)
+ - [Resourcen](resources)
 
-## Official Subdomains
+## Offizielle Subdomains
 These are the subdomains run by the is-a.dev staff team.
 
-- is-a.dev (the root domain, used for website, docs and emails)
-- data.is-a.dev (data website, run by [@wdhdev](https://github.com/wdhdev))
-- docs.is-a.dev (this website)
-- owl.is-a.dev (beta user privacy service, run by [@andrewstech](https://github.com/andrewstech) and [@wdhdev](https://github.com/wdhdev))
-- raw-api.is-a.dev (raw JSON API of all is-a.dev subdomains, run by [@wdhdev](https://github.com/wdhdev))
-- register-bot.is-a.dev (Discord bot API, run by [@andrewstech](https://github.com/andrewstech))
-- team.is-a.dev (team documentation)
-- www.is-a.dev (redirect to the root domain)
+- is-a.dev (Die obere Domain, genutzt für die Webseite, Dokumentation und E-Mails)
+- data.is-a.dev (Datenwebseite, betrieben von [@wdhdev](https://github.com/wdhdev))
+- docs.is-a.dev (Diese Webseite)
+- owl.is-a.dev (Nutzer-Privatsphäredienst (BETA)), betrieben von [@andrewstech](https://github.com/andrewstech) und [@wdhdev](https://github.com/wdhdev))
+- raw-api.is-a.dev (JSON API für alle is-a.dev Subdomains, betrieben von [@wdhdev](https://github.com/wdhdev))
+- register-bot.is-a.dev (Discord-Bot API, betrieben von [@andrewstech](https://github.com/andrewstech))
+- team.is-a.dev (Team-Dokumentation)
+- www.is-a.dev (Weiterleitung zu [is-a.dev](https://is-a.dev))
 
-**Do NOT trust any websites claiming to be us that are not listed here. If you find any, please report them to [security@is-a.dev](mailto:security@is-a.dev).**
 
-*We do not unsolicitedly send emails to users, do not trust any unsolicitedly sent emails claiming they are us. Report any unsolicited emails to [security@is-a.dev](mailto:security@is-a.dev).*
+**Vertraue KEINER Webseite, die sagt, dass sie von uns ist, aber hier nicht aufgeführt ist. Wenn du eine findest, melde sie an [security@is-a.dev](mailto:security@is-a.dev)**
+
+
+*Wir senden keine unaufgeforderten E-Mails an Benutzer. Vertraue keinen, die sagen, dass sie von uns ist, und melde sie an [security@is-a.dev](mailto:security@is-a.dev).*
