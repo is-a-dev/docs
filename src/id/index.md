@@ -1,4 +1,4 @@
-![](media/banner.png)
+![](../media/banner.png)
 
 # Dokumentasi is-a.dev
 Disini, anda bisa mencari panduan tentang struktur JSON file kami, dan lainnya. Jika anda ingin berkontribusi untuk dokumentasi ini, anda bisa membuka [repositori kami](https://github.com/is-a-dev/docs).
