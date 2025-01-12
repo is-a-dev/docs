@@ -5,25 +5,25 @@ tags:
     - guides
 ---
 
-# Setting up ImprovMX with is-a.dev subdomain
+# ImprovMX mit deiner is-a.dev subdomain einrichten
 
-This guide will walk you through the process of setting up ImprovMX with your is-a.dev subdomain.
 
-## What you need to do before you continue.
 
-1. Have a ImprovMX account. If you don't have a ImprovMX account, please go to [their site](https://improvmx.com) and make a account.
-2. You should have already forked the [is-a.dev repository](https://github.com/is-a-dev/register). If you haven't forked the repository, please make one by using [this link](https://github.com/is-a-dev/register/fork).
+## Voraussetzungen
 
-## Making the file.
+1. Ein ImprovMX-Konto. Wenn du kein Konto hast, klicke [hier](https://improvmx.com) und erstelle einen.
+2. Du solltest bereits die [is-a.dev Repository](https://github.com/is-a-dev/register) geforkt🍴 haben. Erstelle einen über [diesen Link](https://github.com/is-a-dev/register/fork).
 
-First go to the fork you've made, then go into the `domains` directory and make a file. The file should be named like this: `subdomain.json`. (Replace `subdomain` with the subdomain name you want of course.)
+## Datei erstellen
 
-After you've made the file, you should put in the file this:
+Erstelle eine neue Datei im `domains` Ordner namens `deine-subdomain.json`.
+
+Füge das hier in die Datei ein:
 ```json
 {
     "owner": {
-        "username": "github-username",
-        "email": "me@example.com"
+        "username": "github-nutzername",
+        "email": "meine@normale-email.addresse"
     },
     "record": {
         "MX": ["mx1.improvmx.com", "mx2.improvmx.com"],
@@ -32,8 +32,8 @@ After you've made the file, you should put in the file this:
 }
 ```
 
-**After you have made the file, you should make a pull request to the [is-a.dev repository](https://github.com/is-a-dev/register).**
+**Erstelle jetzt ein Pull Request in der[is-a.dev Repository](https://github.com/is-a-dev/register).**
 
-## Configuring
+## Konfiguration
 
-After it has been merged, it should be automatically recognized and should start working. If you haven't configured it beforehand, please go to the [ImprovMX dashboard](https://app.improvmx.com/) and add the domain there.
+Nach spätestens 24 Stunden nach Merge sollte die E-Mail-Addresse funktionieren

@@ -7,7 +7,7 @@ Deutsche Übersetzung für die Docs von is-a.dev
 - [X] Discord
 - [ ] GH-Pages
 - [ ] Hashnode
-- [ ] ImprovMX
+- [X] ImprovMX
 - [ ] Netlify
 - [ ] Other
 - [ ] Railway
