@@ -1,5 +1,5 @@
 ---
-label: Welcome
+label: Willkommen
 icon: home
 ---
 ![](media/banner.png)
