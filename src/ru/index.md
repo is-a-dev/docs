@@ -24,7 +24,7 @@ icon: home
 - [Vercel](guides/vercel)
 ### Дополнительно:
 - [Документация для других сервисов](guides/other)
-- [Подтверждение владения субдоменного имени для Discord](guides/discord-verification)
+- [Привязка субдоменного имени к аккаунту Discord](guides/discord-verification)
 
 ## Важные ресурсы
  - [Структура доменного имени](domain-structure)
