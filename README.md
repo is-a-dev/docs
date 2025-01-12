@@ -3,7 +3,7 @@
 Deutsche Übersetzung für die Docs von is-a.dev
 
 - [X] Cloudflare Pages
-- [ ] DanBot Hosting
+- [X] DanBot Hosting
 - [ ] Discord
 - [ ] GH-Pages
 - [ ] Hashnode
