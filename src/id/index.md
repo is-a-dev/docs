@@ -33,10 +33,10 @@ Ini adalah daftar subdomain yang dijalankan oleh staf tim is-a.dev.
 - docs.is-a.dev (website ini)
 - owl.is-a.dev ((beta) layanan privasi untuk pengguna is-a.dev, dijalankan oleh [@andrewstech](https://github.com/andrewstech) and [@wdhdev](https://github.com/wdhdev))
 - raw-api.is-a.dev (JSON API secara mentahan untuk semua subdomain is-a.dev, dijalankan oleh [@wdhdev](https://github.com/wdhdev))
-- register-bot.is-a.dev (Discord bot API, dijalan kan oleh [@andrewstech](https://github.com/andrewstech))
+- register-bot.is-a.dev (Discord bot API, dijalankan oleh [@andrewstech](https://github.com/andrewstech))
 - team.is-a.dev (dokumentasi khusus untuk tim internal)
 - www.is-a.dev (hanya redirect ke root domain)
 
-**JANGAN PERCAYA dengan website yang tidak ada di daftar ini, dan meng-klaim sebagai kami. Jika ada menemukannya, anda bisa laporkan ke [security@is-a.dev](mailto:security@is-a.dev).**
+**JANGAN PERCAYA dengan website yang tidak ada di dalam daftar ini, dan meng-klaim sebagai kami. Jika anda menemukannya, anda bisa laporkan ke [security@is-a.dev](mailto:security@is-a.dev).**
 
 *Kami tidak mengirim email ke pengguna tanpa konsen, jangan mempercayai setiap email spam yang meng-klaim sebagai kami. Anda bisa laporkan ke [security@is-a.dev](mailto:security@is-a.dev).*
