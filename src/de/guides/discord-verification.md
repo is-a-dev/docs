@@ -1,49 +1,45 @@
 ---
 icon: /media/discord.svg
-label: Discord Domain Connection
+label: Discord Domain-Verbindung
 tags:
     - guides
 ---
 
-# Setting up Discord domain connection with your is-a.dev domain
+# Discord mit is-a.dev verbinden
 
-## Get your verification string
 
-1. Open your Discord app and press `Settings`.
+1. Öffne deine Discord-App und klicke auf`Nutzereinstellungen`.
    ![](../media/discord/step_1.png)
 
-1. Open the `Connections` section.
+2. Öffne "Verknüpfungen"
    ![](../media/discord/step_2.png)
 
-1. Press the `View more` button.
+3. Klicke `Mehr anzeigen`, danach den Globus.
    ![](../media/discord/step_3.png)
 
-1. Click on the domain button (the globe icon).
+4. Gebe deinen Domainnamen ein (z.B. `deine-subdomain.is-a.dev`).
    ![](../media/discord/step_4.png)
 
-1. In the field that appears type your is-a.dev domain name (e.g. `example.is-a.dev`).
+5. Klicke auf `Kopieren` im Inhaltsfeld.
    ![](../media/discord/step_5.png)
 
-1. Copy the verification string.
-   ![](../media/discord/step_6.png)
+### Die Domain-Datei erstellen
 
-### Create the domain file
-
-Create a JSON file inside the `domains/` directory called `domains/_discord.example.json` with the following content:
+Erstelle eine JSON-Datei im `domains/` Ordner namens `_discord.deine-subdomain.json` mit diesem Inhalt:
 
 ```json
 {
     "owner": {
-        "username": "github-username",
-        "email": "email@address"
+        "username": "github-nutzername",
+        "email": "deine@email.addresse"
     },
     "record": {
-        "TXT": "discord-verification-string"
+        "TXT": "dein-kopierter-text"
     }
 }
 ```
 
-## Configuration
+## Konfiguration
 
-After your pull request has been merged, repeat the steps to get the verification string and press the `Verify` button.
-If it shows any error such as `Unable to verify your domain`, try waiting a few minutes (sometimes up to 24 hours) as the DNS might have not been updated yet.
+
+Nachdem dein PR akzeptiert wurde wiederhole die Schritte vorher und drücke `Verifizieren`. Wenn ein Fehler erschein, warte 24 Stunden, damit die DNS-Änderungen greifen.
