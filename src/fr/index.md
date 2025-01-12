@@ -28,16 +28,16 @@ La structure du JSON pour enregistrer un domaine est expliquée [ici](domain-str
  - [Ressources](resources)
 
 ## Sous-domaines officiels
-Ce sont les sous-domaines gérés par l'équipe de is-a.dev.
+Voici les sous-domaines gérés par l'équipe de is-a.dev :
 
-- is-a.dev (le domaine principal, utilisé pour le site, la documentation et les mails)
-- data.is-a.dev (site de données, géré par [@wdhdev](https://github.com/wdhdev))
-- docs.is-a.dev (ce site)
-- owl.is-a.dev (site en bêta pour le service de confidentialité des utilisateurs, géré par [@andrewstech](https://github.com/andrewstech) and [@wdhdev](https://github.com/wdhdev))
-- raw-api.is-a.dev (API JSON pour tout les domaines is-a.dev, géré par [@wdhdev](https://github.com/wdhdev))
-- register-bot.is-a.dev (API pour le robot Discord, géré par [@andrewstech](https://github.com/andrewstech))
-- team.is-a.dev (documentation pour l'équipe)
-- www.is-a.dev (redirige vers le domaine principal)
+- is-a.dev (le domaine principal, utilisé pour le site, la documentation et les mails).
+- data.is-a.dev (site de données, géré par [@wdhdev](https://github.com/wdhdev)).
+- docs.is-a.dev (ce site).
+- owl.is-a.dev (site en bêta pour le service de confidentialité des utilisateurs, géré par [@andrewstech](https://github.com/andrewstech) et [@wdhdev](https://github.com/wdhdev)).
+- raw-api.is-a.dev (API JSON pour tout les domaines is-a.dev, géré par [@wdhdev](https://github.com/wdhdev)).
+- register-bot.is-a.dev (API pour le robot Discord, géré par [@andrewstech](https://github.com/andrewstech)).
+- team.is-a.dev (documentation pour l'équipe).
+- www.is-a.dev (redirige vers le domaine principal).
 
 **Ne faites confiance à AUCUN site affirmant être affilié à l'équipe n'étant pas listé ici. Si vous en trouvez, merci de les signaler à [security@is-a.dev](mailto:security@is-a.dev).**
 
