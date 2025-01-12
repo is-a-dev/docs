@@ -1,6 +1,7 @@
 ---
 label: Willkommen
 icon: home
+author: zvdxc
 ---
 ![](media/banner.png)
 # WORK IN PROGRESS // DEUTSCHE ÜBERSETZUNG NOCH NICHT KOMPLETT
