@@ -4,58 +4,57 @@ tags: guides
 icon: /media/dbh.png
 ---
 
-# Setting up DanBot Hosting with is-a.dev subdomain
+# Einrichten von DanBot Hosting mit einer is-a.dev Subdomain
 
-This guide will walk you through the process of setting up a DanBot Hosting site and pointing your is-a.dev subdomain to it.
+Diese Anleitung führt dich durch den Prozess der Einrichtung einer DanBot-Hosting-Seite und der Verknüpfung Ihrer is-a.dev-Subdomain damit.
 
-## Getting Proxy IP
+## Die Proxy-IP erhalten
 
-Execute the following command in [DanBot Hosting Discord server](https://discord.gg/dbh) in the #commands channel.
+Gebe den folgenden Befehl im [DanBot Hosting Discord server](https://discord.gg/dbh) im #commands Kanal ein.
 
 ```
 dbh!server proxy
 ```
 
-You will get a reply like this:
+Du wirst so eine Antwort erhalten:
 
-![](../media/dbh_proxy/1.jpg)
+![Bild](../media/dbh_proxy/1.jpg)
 
-If you are on free plan, choose any US proxy or you can use the Donator Proxy If you are a Donator, then note the IP address of the proxy you chose.
+Wenn du den kostenlosen Tarif verwendest, wähle einen US-Proxy, wenn du ein Spender bist, nutze einen Donator-Proxy. Notiere dir dann die IP.
 
-### Creating the domain file
+### Die Domain-Datei erstellen
 
-Create a JSON file inside `domains` directory (`domains/subdomain.json`) with the following content and submit a pull request:
+Erstelle eine JSON-Datei im `domains` Verzeichnis (`domains/subdomain.json`) mit dem folgenden Inhalt und erstelle ein Pull-Request:
 
 ```json
 {
     "description": "Describe the use of this subdomain",
     "repo": "https://github.com/github-username/github-repository",
     "owner": {
-        "username": "github-username",
-        "email": "me@example.com"
+        "username": "github-nutzername",
+        "email": "ich@beispiel.com"
     },
     "record": {
-        "A": ["proxy-ip-here"]
+        "A": ["proxy-ip-hier-einsetzen"]
     }
 }
 ```
 
-**Note:** In the owner section, you can add any social media handle, such as Discord. If you add another social media account, you can omit the email field. However, the GitHub username is mandatory. Don't forget to provide a preview of your site in your pull request.
+* Im "owner" Abschnitt, kannst du auch andere Social-Media Verknüpfungen (z.B. Discord) verwenden, und die E-Mail weglassen. Aber der GitHub-Nutzername ist Pflicht. Vergesse nicht, eine Vorschau deiner Seite im PR hinzuzufügen.
 
-## Configuring
+## Konfigurieren
 
-After the pull request is merged, get your server ID by running this command:
-
+Wenn dein PR gemergt wurde, bekomme deine Server-ID über diesen Befehl im DanBot-Discord:
 ```
 dbh!server list
 ```
 
-You will get a reply like this:
+Du bekommst eine Antwort so wie diese:
 
-![](../media/dbh_proxy/2.jpg)
+![Bild](../media/dbh_proxy/2.jpg)
 
-Note down the server ID, then execute following command:
+Notiere die Server-ID, sende dann den folgenden Befehl.
 
 ```
-dbh!server proxy your-subdomain.is-a.dev yourserverid
+dbh!server proxy deine-subdomain.is-a.dev deineserverid
 ```
