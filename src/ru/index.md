@@ -24,7 +24,7 @@ icon: home
 - [Vercel](guides/vercel)
 ### Дополнительно:
 - [Документация для других сервисов](guides/other)
-- [Привязка субдоменного имени к аккаунту Discord](guides/discord-verification)
+- [Привязка субдоменного имени к аккаунту Discord*](guides/discord-verification)
 
 ## Важные ресурсы
  - [Структура доменного имени](domain-structure)
@@ -39,10 +39,14 @@ icon: home
 - docs.is-a.dev (данный вебсайт)
 - owl.is-a.dev (сервис приватности пользователей (бета-тестирование), разработали [@andrewstech](https://github.com/andrewstech) и [@wdhdev](https://github.com/wdhdev))
 - raw-api.is-a.dev (raw JSON API для всех субдоменных имён is-a.dev, разработал [@wdhdev](https://github.com/wdhdev))
-- register-bot.is-a.dev (API бота Discord, разработал [@andrewstech](https://github.com/andrewstech))
+- register-bot.is-a.dev (API бота Discord*, разработал [@andrewstech](https://github.com/andrewstech))
 - team.is-a.dev (документация о команде)
 - www.is-a.dev (переадресация на корневое доменное имя)
 
 **НЕ доверяйте любым вебсайтам, выдающим себя за нас, которые не преведены в списке выше. Если Вы столкнулись с таким вебсайтом, пожалуйста, подайте жалобу о вебсайте в [security@is-a.dev](mailto:security@is-a.dev).**
 
 *Мы не отправляем незапрошенных электронных писем пользователям. Не доверяйте каким угодно незапрошенным электронным письмам от авторов, которые выдают себя за нас. Подать жалобу о любом незапрошенном электронном письме можно в [security@is-a.dev](mailto:security@is-a.dev)*
+
+### \* - Discord является запрёщенным мессенджером на территории РФ.
+
+`Переводом документации на русский язык занимался `[`JustDeveloper`](https://justdeveloper.is-a.dev)
