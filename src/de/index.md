@@ -48,3 +48,5 @@ These are the subdomains run by the is-a.dev staff team.
 
 
 *Wir senden keine unaufgeforderten E-Mails an Benutzer. Vertraue keinen, die sagen, dass sie von uns ist, und melde sie an [security@is-a.dev](mailto:security@is-a.dev).*
+
+### Deutsche Übersetzung von [zvdxc](https://github.com/zvdxc)
