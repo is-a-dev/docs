@@ -5,34 +5,34 @@ tags:
     - guides
 ---
 
-# Настроить и соединить Cloudflare Pages с Вашим субдоменным именем на сервисе is-a-dev
+# Настройка и соединение Cloudflare Pages с Вашим субдоменным именем на сервисе is-a-dev
 
-Данная инструкция о настройке и соединении сайта Cloudflare Pages с Вашим субдоменным именем на сервисе is-a.dev.
+Данная инструкция о настройке и соединении вебсайта Cloudflare Pages с Вашим субдоменным именем на сервисе is-a.dev.
 
-## Create a Cloudflare Pages Site
+## Создание вебсайта на сервисе Cloudflare Pages
 
-First, you'll need to create a site on Cloudflare Pages. Follow the instructions in the [Cloudflare Pages Getting Started Guide](https://developers.cloudflare.com/pages/get-started/guide/).
+Для начала, Вам нужно создать вебсайт на сервисе Cloudflare Pages. Следуйте иструкциям [Cloudflare Pages Getting Started Guide (доступно только на английском языке)](https://developers.cloudflare.com/pages/get-started/guide/).
 
-### Point your subdomain to your Cloudflare Pages site
+### Соединение субдоменного имени с Вашим вебсайтом на сервисе Cloudflare Pages
 
-Next, you'll need to point your is-a.dev subdomain to your Cloudflare Pages site. Follow the instructions in the [Cloudflare Pages Custom Domains Guide](https://developers.cloudflare.com/pages/platform/custom-domains/#add-a-custom-domain). Only follow the "Add a custom domain" section, then return to this guide for the next steps.
+Затем, Вам нужно соединить Ваш вебсайт на сервисе Cloudflare Pages с Вашим субдоменным именем на сервисе is-a.dev. Следуйте инструкциям [Cloudflare Pages Custom Domains Guide (доступно только на английском языке)](https://developers.cloudflare.com/pages/platform/custom-domains/#add-a-custom-domain). **Следуйте только инструкциям раздела "Add a custom domain"**, а затем вернитесь к данной инструкции.
 
-### Create the Domain File
+### Создание файла субдоменного имени
 
-In the `domains` directory, create a new JSON file for your subdomain (`domains/subdomain.json`) and submit a pull request. This file should contain the following:
+В каталоге `domains`, создайте новый файл JSON для Вашего субдоменного имени (`domains/субдомен.json`, замените "субдомен" на субдоменное имя, которое хотите получить. Можно использовать только латинские буквы, цифры, и знаки тире и нижнего подчеркивания. Также для создания суб-субдоменного имени можно использовать точку, но вы должны являться владельцем субдоменного имени) и подтвердить pull request (запрос). Данный файл должен содержать следующее:
 
 ```json
 {
     "owner": {
-        "username": "your-github-username",
-        "email": "your-email@gmail.com"
+        "username": "ваш-псевдоним-github",
+        "email": "ваша-электронная-почта@mail.ru"
     },
     "record": {
-        "CNAME": "your-sitename.pages.dev"
+        "CNAME": "ваш-вебсайт.pages.dev"
     }
 }
 ```
 
-### Your site should be live!
+### Ваш вебсайт должен быть завершённым!
 
-If you have followed all the steps correctly, then your site should be live after your pull request has been merged.
+Если Вы сделали все приведённые выше шаги верно, учтите, что Ваш вебсайт должен быть завершён и запущен (никаких ошибок 404 или "вебсайт ещё на стадии разработки").
