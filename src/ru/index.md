@@ -12,9 +12,9 @@ icon: home
 
 ## Инструкции
 ### Если Вы используйте сервис из списка ниже, рекомендуется читать инструкцию по этому сервису (кликните на ссылку с названием сервиса который Вы используете).
-- [Cloudflare Pages](guides/cloudflare-pages)
-- [DanBot Hosting](guides/dbh)
-- [GitHub Pages](guides/github-pages)
+- [Cloudflare Pages](ru/guides/cloudflare-pages)
+- [DanBot Hosting](ru/guides/dbh)
+- [GitHub Pages](ru/guides/github-pages)
 - [Hashnode Blogs](guides/hashnode)
 - [ImprovMX](guides/improvmx)
 - [Netlify](guides/netlify)
@@ -23,8 +23,8 @@ icon: home
 - [Replit](guides/replit)
 - [Vercel](guides/vercel)
 ### Дополнительно:
-- [Документация для других сервисов](guides/other)
-- [Привязка субдоменного имени к аккаунту Discord¹](guides/discord-verification)
+- [Документация для других сервисов](ru/guides/other)
+- [Привязка субдоменного имени к аккаунту Discord¹](ru/guides/discord-verification)
 
 ## Важные ресурсы
  - [Структура доменного имени](domain-structure)
