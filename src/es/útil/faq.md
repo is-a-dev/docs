@@ -1,37 +1,39 @@
 ---
-tags: useful
 icon: question
-route: /faq
+label: Preguntas Frecuentes (FAQ)
+tags: 
+    - useful
+    - spanish
 ---
-# Frequently Asked Questions (FAQ)
+# Preguntas Frecuentes (FAQ)
 
-## Which records are supported?
+## ¿Qué registros son compatibles?
 
 - A
 - AAAA
 - CAA
 - CNAME
 - DS
-    - Note: These can only be used in combination for NS records, which are used for DNSSEC.
+    - Nota: Estos solo pueden usarse en combinación con registros NS, que se usan para DNSSEC.
 - MX
 - NS
-    - Note: These are only given out in specific cases. Refer to [`Who can use NS records?`](#who-can-use-ns-records) for more information.
+    - Nota: Estos solo se otorgan en casos específicos. Consulta [`¿Quién puede usar registros NS?`](#quién-puede-usar-registros-ns) para más información.
 - SRV
 - TXT
 - URL
-    - Note: These records use Cloudflare for redirection, it is not a real DNS record type.
+    - Nota: Estos registros usan Cloudflare para redirección, no es un tipo real de registro DNS.
 
-## Why does my domain still redirect to the is-a-dev website?
-This usually occurs due to the cache of your browser becoming invalid and [clearing your browser's cache](https://support.google.com/accounts/answer/32050) should solve this issue.
+## ¿Por qué mi dominio sigue redirigiendo al sitio web is-a-dev?
+Esto generalmente ocurre debido a que el caché de tu navegador se vuelve inválido y [limpiar el caché de tu navegador](https://support.google.com/accounts/answer/32050) debería resolver este problema.
 
-## Can I use a CNAME record with any other records?
-You cannot request a subdomain nor submit changes containing a CNAME with any other records (A, AAAA, MX, TXT, etc...)
+## ¿Puedo usar un registro CNAME con otros registros?
+No puedes solicitar un subdominio ni enviar cambios que contengan un CNAME con otros registros (A, AAAA, MX, TXT, etc...)
 
-## How long will it take for my PR to get merged?
-When we get into it. We always want you to wait for as short as possible. But maintainers cannot always be online. We have school and work, this is just a side project. Just be patient and we'll get to it as soon as possible! For a chance for a quicker review, send your PR in [#⁠pull-requests](https://discord.com/channels/830872854677422150/1130858271620726784) on our [Discord server](https://discord.gg/is-a-dev-830872854677422150).
+## ¿Cuánto tiempo tardará en fusionarse mi PR?
+Cuando nos ocupemos de ello. Siempre queremos que esperes lo menos posible. Pero los mantenedores no siempre pueden estar en línea. Tenemos escuela y trabajo, esto es solo un proyecto secundario. ¡Solo sé paciente y lo revisaremos tan pronto como sea posible! Para una oportunidad de revisión más rápida, envía tu PR en [#⁠pull-requests](https://discord.com/channels/830872854677422150/1130858271620726784) en nuestro [servidor de Discord](https://discord.gg/is-a-dev-830872854677422150).
 
-## Which services do you support?
-We support nearly all services, however these are the main services people use with is-a.dev:
+## ¿Qué servicios soportan?
+Soportamos casi todos los servicios, sin embargo, estos son los principales servicios que la gente usa con is-a.dev:
 
 - Cloudflare Pages
 - GitHub Pages
@@ -39,60 +41,60 @@ We support nearly all services, however these are the main services people use w
 - Railway
 - Vercel
 
-## Can I create nested subdomains? (sub-sub domains)
-Yes, you can! Simply create a file such as `blog.example.json` and follow the same guidelines as you would while registering `example.json`. Please note in order to have `blog.example.is-a.dev`, you must also own `example.is-a.dev`.
+## ¿Puedo crear subdominios anidados? (sub-subdominios)
+¡Sí, puedes! Simplemente crea un archivo como `blog.ejemplo.json` y sigue las mismas pautas que seguirías al registrar `ejemplo.json`. Ten en cuenta que para tener `blog.ejemplo.is-a.dev`, debes ser propietario de `ejemplo.is-a.dev`.
 
-## How can I edit my domain?
-You can edit your domain's JSON file and submit a pull request to edit your domain.
+## ¿Cómo puedo editar mi dominio?
+Puedes editar el archivo JSON de tu dominio y enviar una pull request para editarlo.
 
-## How can I delete my domain?
-You can delete your domain's JSON file and submit a pull request to delete your domain.
+## ¿Cómo puedo eliminar mi dominio?
+Puedes eliminar el archivo JSON de tu dominio y enviar una pull request para eliminarlo.
 
-## I keep getting a SSL error while using GitHub Pages, how do i fix this?
-You need to go to your GitHub Pages settings on your website repository (likely called something like `github-username.github.i>`) and make sure the `Enforce HTTPS` option is enabled to avoid this error.
+## Sigo recibiendo un error SSL mientras uso GitHub Pages, ¿cómo lo soluciono?
+Necesitas ir a la configuración de GitHub Pages en tu repositorio del sitio web (probablemente llamado algo como `nombre-usuario.github.io`) y asegurarte de que la opción `Enforce HTTPS` esté habilitada para evitar este error.
 
-## Can I be a maintainer/join the team?
-No, we handpick every member of our team. You can increase your chances of being chosen by helping out people in our help forums.
+## ¿Puedo ser un mantenedor/unirme al equipo?
+No, elegimos a mano a cada miembro de nuestro equipo. Puedes aumentar tus posibilidades de ser elegido ayudando a las personas en nuestros foros de ayuda.
 
-## I have accidentally leaked sensitive information in my PR, how can I get my PR deleted?
-If your PR **has not been merged**, you can email [security@is-a.dev](mailto:security@is-a.dev) or DM [williamharrison on Discord](https://discord.com/users/853158265466257448). If your PR has been merged already, then there is nothing we can do about it unfortunately.
+## He filtrado accidentalmente información sensible en mi PR, ¿cómo puedo hacer que se elimine?
+Si tu PR **no ha sido fusionada**, puedes enviar un correo a [security@is-a.dev](mailto:security@is-a.dev) o enviar un MD a [williamharrison en Discord](https://discord.com/users/853158265466257448). Si tu PR ya ha sido fusionada, lamentablemente no hay nada que podamos hacer.
 
-## Can I use my domain for a Minecraft server?
-Yes, you can. You can use an A record combined with an SRV record for this.
+## ¿Puedo usar mi dominio para un servidor de Minecraft?
+Sí, puedes. Puedes usar un registro A combinado con un registro SRV para esto.
 
-Refer to [this article](https://www.namecheap.com/support/knowledgebase/article.aspx/9765/2208/how-can-i-link-my-domain-name-to-a-minecraft-server) by Namecheap for support.
+Consulta [este artículo](https://www.namecheap.com/support/knowledgebase/article.aspx/9765/2208/how-can-i-link-my-domain-name-to-a-minecraft-server) de Namecheap para obtener ayuda.
 
-## Who can use NS records?
-We allow NS records for the following reasons and use-cases:
+## ¿Quién puede usar registros NS?
+Permitimos registros NS para las siguientes razones y casos de uso:
 
-- Users who require a private zone, as they are using their home IP address through **an `A` OR `AAAA` record** behind a proxy service such as Cloudflare. **You MUST provide evidence of usage for this reasoning to be approved.**
-- When a third-party service (e.g. Aternos, Wix or Squarespace) mandates specific NS records and you are unable to manage DNS records directly under that domain. Approval requires:
-  - Documentation or evidence from the third-party service explicitly stating this requirement.
-  - Proof that no alternative DNS configuration (CNAME, A records, etc.) can achieve the same result.
+- Usuarios que requieren una zona privada, ya que están usando su dirección IP doméstica a través de **un registro `A` O `AAAA`** detrás de un servicio proxy como Cloudflare. **DEBES proporcionar evidencia de uso para que este razonamiento sea aprobado.**
+- Cuando un servicio de terceros (por ejemplo, Aternos, Wix o Squarespace) exige registros NS específicos y no puedes gestionar registros DNS directamente bajo ese dominio. La aprobación requiere:
+  - Documentación o evidencia del servicio de terceros que indique explícitamente este requisito.
+  - Prueba de que ninguna configuración DNS alternativa (CNAME, registros A, etc.) puede lograr el mismo resultado.
 
-We do not permit NS records for:
+No permitimos registros NS para:
 
-- Convenience-only setups: Where alternatives such as A, AAAA, or CNAME records are sufficient.
-- Non-operational purposes: Vanity configurations, aesthetic setups, or speculative use.
-- Unverifiable claims: Any setup lacking clear and concrete evidence of necessity.
-- Misleading configurations: Attempts to misrepresent ownership, mislead users, or impersonate another entity.
-- Security risks: Configurations that introduce vulnerabilities, such as delegating to untrusted or unreliable servers.
+- Configuraciones solo por conveniencia: Donde alternativas como registros A, AAAA o CNAME son suficientes.
+- Propósitos no operativos: Configuraciones de vanidad, configuraciones estéticas o uso especulativo.
+- Reclamos no verificables: Cualquier configuración que carezca de evidencia clara y concreta de necesidad.
+- Configuraciones engañosas: Intentos de tergiversar la propiedad, engañar a usuarios o suplantar a otra entidad.
+- Riesgos de seguridad: Configuraciones que introducen vulnerabilidades, como delegar a servidores no confiables o poco fiables.
 
-***We reserve the right to deny NS records at our discretion, no matter the reasoning.***
+***Nos reservamos el derecho de denegar registros NS a nuestra discreción, sin importar el razonamiento.***
 
-## Why are you so strict with NS records?
-We have to be strict with who we delegate NS records to as they allow the end-user to do basically *whatever they want* with their subdomain.
+## ¿Por qué son tan estrictos con los registros NS?
+Tenemos que ser estrictos con a quién delegamos registros NS ya que permiten al usuario final hacer básicamente *lo que quiera* con su subdominio.
 
-As you can probably imagine, this can open the door to a lot of abuse, which is why are they are not freely available to everyone.
+Como probablemente puedas imaginar, esto puede abrir la puerta a muchos abusos, por lo que no están disponibles libremente para todos.
 
-If we could, we would delegate NS records to everyone that wanted them, however we are not in a perfect world, so unfortunately we cannot.
+Si pudiéramos, delegaríamos registros NS a todos los que los quisieran, sin embargo no vivimos en un mundo perfecto, así que desafortunadamente no podemos.
 
-## How can I make changes to my is-a.dev subdomain?
-1. **Open your JSON file:** Navigate to the `domains` directory in your fork and open the JSON file corresponding to your subdomain (`domains/subdomain.json`).
-2. **Make your changes:** Edit the JSON file (or delete) to reflect the changes you want to make.
-3. **Commit your changes:** Once you've made your changes, commit them to your fork.
-4. **Push your changes:** Push your changes to your forked repository on GitHub.
-5. **Submit a Pull Request:** Go to your forked repository on GitHub and open a pull request.
-6. **Wait for your PR to be merged:** After you have submitted your pull request, wait for it to be reviewed and merged. Once your pull request has been merged, your changes should be live!
+## ¿Cómo puedo hacer cambios en mi subdominio is-a.dev?
+1. **Abre tu archivo JSON:** Navega al directorio `domains` en tu fork y abre el archivo JSON correspondiente a tu subdominio (`domains/subdominio.json`).
+2. **Haz tus cambios:** Edita el archivo JSON (o elimínalo) para reflejar los cambios que quieres hacer.
+3. **Confirma tus cambios:** Una vez que hayas hecho tus cambios, confírmalos en tu fork.
+4. **Sube tus cambios:** Sube tus cambios a tu repositorio bifurcado en GitHub.
+5. **Envía una Pull Request:** Ve a tu repositorio bifurcado en GitHub y abre una pull request.
+6. **Espera a que tu PR sea fusionada:** Después de enviar tu pull request, espera a que sea revisada y fusionada. ¡Una vez que tu pull request haya sido fusionada, tus cambios deberían estar activos!
 
-**Note:** Make sure to monitor your PR for reviews in case some changes are requested.
+**Nota:** Asegúrate de monitorear tu PR para revisiones en caso de que se soliciten algunos cambios.

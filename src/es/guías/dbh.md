@@ -1,7 +1,9 @@
 ---
 label: DanBot Hosting
-tags: guides
 icon: /media/dbh.png
+tags:
+    - guides
+    - spanish
 ---
 
 # Configurando DanBot Hosting con un subdominio is-a.dev

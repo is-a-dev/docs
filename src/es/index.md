@@ -1,7 +1,3 @@
----
-label: Bienvenido - Español
-icon: home
----
 ![](../media/banner.png)
 
 # Documentación is-a.dev

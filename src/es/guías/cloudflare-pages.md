@@ -3,6 +3,7 @@ label: Páginas de Cloudflare
 icon: /media/cloudflare.svg
 tags:
     - guides
+    - spanish
 ---
 
 # Configurando páginas de Cloudflare con un subdominio is-a.dev

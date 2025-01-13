@@ -1,7 +1,6 @@
 ---
 tags: useful
 icon: file-code
-route: /domain-structure
 ---
 # Domain Structure
 To register a subdomain, you need to create a new JSON file in the `domains` directory through a pull request. For example, to register `example.is-a.dev`, you would create a file named `example.json` in the `domains` directory. The full path would be `domains/example.json`.
