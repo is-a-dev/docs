@@ -1,8 +1,7 @@
 ---
 label: ImprovMX
 icon: /media/improvmx.svg
-tags:
-    - guides
+tags: guides
 ---
 
 # Setting up ImprovMX with is-a.dev subdomain

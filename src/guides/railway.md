@@ -1,8 +1,7 @@
 ---
 icon: /media/railway.png
 label: Railway
-tags:
-    - guides
+tags: guides
 ---
 
 # Setting up is-a.dev with Railway

@@ -8,7 +8,7 @@ icon: home
 Here you will find guides, our JSON file structure and more. If you want to help contribute to our documentation, you can visit [our docs repository](https://github.com/is-a-dev/docs).
 
 ## How to Register
-You can read about the domains JSON file structure [here](domain-structure).
+You can read about the domains JSON file structure [here](useful/domain-structure).
 
 ## Guides
 - [Cloudflare Pages](guides/cloudflare-pages)
@@ -25,9 +25,9 @@ You can read about the domains JSON file structure [here](domain-structure).
 - [Vercel](guides/vercel)
 
 ## Useful
- - [Domain Structure](domain-structure)
- - [FAQ](faq)
- - [Resources](resources)
+ - [Domain Structure](useful/domain-structure)
+ - [FAQ](useful/faq)
+ - [Resources](useful/resources)
 
 ## Official Subdomains
 These are the subdomains run by the is-a.dev staff team.

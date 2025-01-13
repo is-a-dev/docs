@@ -1,8 +1,7 @@
 ---
 icon: /media/discord.svg
 label: Discord Domain Connection
-tags:
-    - guides
+tags: guides
 ---
 
 # Setting up Discord domain connection with your is-a.dev domain

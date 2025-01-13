@@ -1,8 +1,7 @@
 ---
 icon: /media/hashnode.svg
 label: Hashnode
-tags:
-    - guides
+tags: guides
 ---
 
 # Hashnode Blog

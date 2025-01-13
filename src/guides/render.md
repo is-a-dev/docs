@@ -1,8 +1,7 @@
 ---
 icon: /media/render.svg
 label: Render
-tags:
-    - guides
+tags: guides
 ---
 
 # Setting up Render with is-a.dev Subdomain

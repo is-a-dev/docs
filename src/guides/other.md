@@ -8,7 +8,7 @@ tags: guides
 
 ## Setting up records
 
-Read the [domain file structure](/domain-structure) and setup the records accordingly.
+Read the [domain file structure](../useful/domain-structure) and setup the records accordingly.
 
 ## Configuring your server
 
