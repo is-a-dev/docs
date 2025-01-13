@@ -1,5 +1,11 @@
-* @is-a-dev/maintainers
+* @wdhdev
 
-/src/** @is-a-dev/docs-en
+# English
+/src/guides/** @is-a-dev/docs-en
+/src/media/** @is-a-dev/docs-en
+/src/useful/** @is-a-dev/docs-en
+/src/index.md @is-a-dev/docs-en
+
+# Other Languages
 /src/es/** @is-a-dev/docs-es
 /src/fr/** @is-a-dev/docs-fr
