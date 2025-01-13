@@ -11,23 +11,24 @@ Aquí vas a encontrar guías, nuestra estructura JSON de archivos y más. Si qui
 Puedes leer sobre la estructura JSON de archivos de dominios [aquí](domain-structure).
 
 ## Guías
-- [Páginas de Cloudflare](guides/cloudflare-pages)
-- [DanBot Hosting](guides/dbh)
-- [Verificación de Dominio con Discord](guides/discord-verification)
-- [GitHub Pages](guides/github-pages)
-- [Hashnode Blogs](guides/hashnode)
-- [ImprovMX](guides/improvmx)
-- [Netlify](guides/netlify)
-- [Otros Servicios](guides/other)
-- [Railway](guides/railway)
-- [Render](guides/render)
-- [Replit](guides/replit)
-- [Vercel](guides/vercel)
+
+- [Páginas de Cloudflare](guías/cloudflare-pages)
+- [DanBot Hosting](guías/dbh)
+- [Verificación de Dominio con Discord](guías/discord-verification)
+- [GitHub Pages](guías/github-pages)
+- [Hashnode Blogs](guías/hashnode)
+- [ImprovMX](guías/improvmx)
+- [Netlify](guías/netlify)
+- [Otros Servicios](guías/other)
+- [Railway](guías/railway)
+- [Render](guías/render)
+- [Replit](guías/replit)
+- [Vercel](guías/vercel)
 
 ## Útil
- - [Estructura de Dominio](domain-structure)
- - [FAQ](faq)
- - [Recursos](resources)
+ - [Estructura de Dominio](útil/domain-structure)
+ - [FAQ](útil/faq)
+ - [Recursos](útil/resources)
 
 ## Subdominios Oficiales
 Estos son los subdominios administrados por el equipo de is-a.dev.
