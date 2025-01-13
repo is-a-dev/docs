@@ -1,5 +1,5 @@
 ---
-icon: /media/netlify.svg
+icon: ../../media/netlify.svg
 label: Netlify
 tags:
     - guides

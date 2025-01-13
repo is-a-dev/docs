@@ -1,6 +1,6 @@
 ---
 label: ImprovMX
-icon: /media/improvmx.svg
+icon: ../../media/improvmx.svg
 tags:
     - guides
 ---

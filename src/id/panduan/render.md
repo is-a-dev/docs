@@ -5,9 +5,11 @@ tags:
     - guides
 ---
 
-## Setting up Render with is-a.dev Subdomain
+### Eits! Sebelumnya, Kamu harus fork repositori [is-a-dev/register](https://github.com/is-a-dev/register) dulu di GitHub. Abis itu baru mulai prosesnya
 
-This guide will walk you through the process of setting up a Render deployment and pointing your is-a.dev subdomain to it.
+## Membuat Render dengan subdomain is-a.dev
+
+Ini adalah panduan tentang cara membuat Render service dan mengarahkannya ke subdomain is-a.dev kamu
 
 ### Membuat Render Service
 
@@ -39,11 +41,10 @@ Note: "A" itu ditaruh dengan alamat IP-nya Render
 
 ## Configuring Render
 
-- After the pull request is merged, you may need to configure your Render service to use the new subdomain. Go to your Render service's dashboard.
-- Navigate to **Settings > Custom Domains** and add `subdomain.is-a.dev` in the given field.
-- Render will provide a verification step, usually requiring you to add a DNS record. This step should be skipped if your subdomain is already pointing to Render's IP address (`216.24.57.1`).
+- Masuk ke **Settings > Custom Domains** dan tambahkan `<subdomain kamu>.is-a.dev` di kolom yang tersedia
+- Sebenarnya sih Render bakal ngasih tahap verifikasi lagi, tapi kita skip aja soalnya kan sudah kita tambahin IP-nya (`216.24.57.1`).
 
 ### Tahap Terakhir
 
 - Nunggu biar DNS ke propagate. Bisa sampai beberapa menit, atau lebih dari sejam
-- Website Render kamu bisa diakses di `<subdomain kamu>.is-a.dev` deh!
+- Render Service kamu bisa diakses di `<subdomain kamu>.is-a.dev` deh!

@@ -4,7 +4,7 @@
 Disini, kamu bisa mencari panduan tentang struktur JSON file kami, dan lainnya. Jika kamu ingin berkontribusi untuk dokumentasi ini, kamu bisa membuka [repositori kami](https://github.com/is-a-dev/docs).
 
 ## Cara mendaftar
-Kamu bisa membaca tentang struktur JSON file kami [disini](../../useful/domain-structure) (bahasa inggris).
+Kamu bisa membaca tentang struktur JSON file kami [disini](../../useful/domain-structure) (bahasa Inggris).
 
 ## Panduan
 - [Cloudflare Pages](panduan/cloudflare-pages)
@@ -14,16 +14,21 @@ Kamu bisa membaca tentang struktur JSON file kami [disini](../../useful/domain-s
 - [Hashnode Blog](panduan/hashnode)
 - [ImprovMX](panduan/improvmx)
 - [Netlify](panduan/netlify)
-- [Layanan lain](panduan/other)
 - [Replit](panduan/replit)
-- [Vercel](panduan/vercel)
 - [Render](panduan/render)
-- [Railway (bahasa Inggris)](../guides/railway) Note: Panduan Railway ini belum jelas dalam versi aslinya, jadi tidak ada versi bahasa Indonesianya
+- [Vercel (bahasa inggris)](panduan/vercel)*
+- [Railway (bahasa Inggris)](../guides/railway)**
+- [Layanan lain](panduan/other)
+
+*Yang ngetranslate B.Indo capek, ga banyak yang volunteer. Jadi ga ditranslate
+**Panduan Railway ini belum jelas dalam versi aslinya (Inggris), karena itu jadi tidak ada versi bahasa Indonesianya
 
 ## Link cepat
  - [Materi](link_cepat/materi)
- - [Struktur domain (bahasa Inggris)](../useful/domain-structure)
- - [FAQ (bahasa Inggris)](../useful/faq)
+ - [Struktur domain (bahasa Inggris)](../useful/domain-structure)*
+ - [FAQ (bahasa Inggris)](../useful/faq)*
+
+*Yang ngetranslate B.Indo capek, ga banyak yang volunteer. Jadi ga ditranslate
 
 ## Subdomain resmi kami
 Ini adalah daftar subdomain yang dijalankan oleh staf tim is-a.dev.
