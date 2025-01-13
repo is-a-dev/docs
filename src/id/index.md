@@ -16,7 +16,7 @@ Kamu bisa membaca tentang struktur JSON file kami [disini](../../useful/domain-s
 - [Netlify](panduan/netlify)
 - [Replit](panduan/replit)
 - [Render](panduan/render)
-- [Vercel (bahasa inggris)](panduan/vercel)*
+- [Vercel (bahasa inggris)](../guides/vercel)*
 - [Railway (bahasa Inggris)](../guides/railway)**
 - [Layanan lain](panduan/layanan-lainnya)**
 
