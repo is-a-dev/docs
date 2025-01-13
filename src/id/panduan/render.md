@@ -13,9 +13,13 @@ This guide will walk you through the process of setting up a Render deployment a
 
 Pertama, (ya pasti) buat service dulu di Render. Ikuti petunjuknya di [Render Docs](https://docs.render.com/) (bahasa Inggris).
 
-### Creating the Domain File
+### Membuat file Domain
 
-Create a JSON file inside the `domains` directory (`domains/subdomain.json`) with the following content and submit a pull request:
+Masuk ke repositori yang sudah kamu fork sebelumnya
+
+Buat file JSON di dalam directory `domains` dan tambahkan `<subdomain kamu>.json` (Jangan lupa ganti `<subdomain kamu>` ya dengan nama subdomain yang kamu inginkan). Habis itu buat pull request:
+
+Note: "A" itu ditaruh dengan alamat IP-nya Render
 
 ```json
 {
