@@ -1,29 +1,29 @@
-![](../media/banner.png)
+![Banner is-a.dev](../media/banner.png)
 
 # Dokumentasi is-a.dev
 Disini, kamu bisa mencari panduan tentang struktur JSON file kami, dan lainnya. Jika kamu ingin berkontribusi untuk dokumentasi ini, kamu bisa membuka [repositori kami](https://github.com/is-a-dev/docs).
 
 ## Cara mendaftar
-kamu bisa membaca tentang struktur JSON file kami [disini](domain-structure).
+Kamu bisa membaca tentang struktur JSON file kami [disini](../../useful/domain-structure) (bahasa inggris).
 
 ## Panduan
-- [Cloudflare Pages](guides/cloudflare-pages)
-- [DanBot Hosting](guides/dbh)
-- [Discord Verifikasi Domain](guides/discord-verification)
-- [GitHub Pages](guides/github-pages)
-- [Hashnode Blogs](guides/hashnode)
-- [ImprovMX](guides/improvmx)
-- [Netlify](guides/netlify)
-- [Layanan lain](guides/other)
-- [Railway](guides/railway)
-- [Render](guides/render)
-- [Replit](guides/replit)
-- [Vercel](guides/vercel)
+- [Cloudflare Pages](panduan/cloudflare-pages)
+- [DanBot Hosting](panduan/dbh)
+- [Discord Verifikasi Domain](panduan/discord-verification)
+- [GitHub Pages](panduan/github-pages)
+- [Hashnode Blog](panduan/hashnode)
+- [ImprovMX](panduan/improvmx)
+- [Netlify](panduan/netlify)
+- [Layanan lain](panduan/other)
+- [Replit](panduan/replit)
+- [Vercel](panduan/vercel)
+- [Render](panduan/render)
+- [Railway (bahasa Inggris)](../guides/railway) Note: Panduan Railway ini belum jelas dalam versi aslinya, jadi tidak ada versi bahasa Indonesianya
 
 ## Link cepat
- - [Struktur domain](domain-structure)
- - [FAQ](faq)
- - [Materi](resources)
+ - [Materi](link_cepat/materi)
+ - [Struktur domain (bahasa Inggris)](../useful/domain-structure)
+ - [FAQ (bahasa Inggris)](../useful/faq)
 
 ## Subdomain resmi kami
 Ini adalah daftar subdomain yang dijalankan oleh staf tim is-a.dev.
@@ -40,3 +40,6 @@ Ini adalah daftar subdomain yang dijalankan oleh staf tim is-a.dev.
 **JANGAN PERCAYA dengan website yang tidak ada di dalam daftar ini, dan meng-klaim sebagai kami. Jika kamu menemukannya, kamu bisa laporkan ke [security@is-a.dev](mailto:security@is-a.dev).**
 
 *Kami tidak mengirim email ke pengguna tanpa konsen, jangan mempercayai setiap email spam yang meng-klaim sebagai kami. Kamu bisa laporkan ke [security@is-a.dev](mailto:security@is-a.dev).*
+
+<!-- Full translation (including Guide, and 'Useful' section) was provided in Indonesia by @vintheweirdass -->
+<!-- to**l banget gw, harusnya ngerjain tugas. et dah -->

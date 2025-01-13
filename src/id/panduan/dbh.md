@@ -4,6 +4,8 @@ tags: guides
 icon: ../../media/dbh.png
 ---s
 
+### Eits! Sebelumnya, Kamu harus fork repositori [is-a-dev/register](https://github.com/is-a-dev/register) dulu di GitHub. Abis itu baru mulai prosesnya
+
 # Membuat server DanBot Hosting dengan subdomain is-a.dev
 
 Ini adalah panduan tentang cara membuat server DanBot Hosting dan mengarahkannya ke subdomain is-a.dev kamu
@@ -23,15 +25,16 @@ Jika kamu berada di free plan, kamu hanya bisa memilih proxy yang berada di US. 
 
 ### Membuat file Domain
 
+Masuk ke repositori yang sudah kamu fork sebelumnya
+
 Kamu perlu membuat file JSON di dalam `domains` (semisal, `domains/subdomain.json`) dengan format ini. Habis itu buatlah pull request:
 
 ```json
 {
     "description": "Jelaskan kegunaan subdomain ini",
-    "repo": "https://github.com/github-username/github-repository",
     "owner": {
-        "username": "github-username",
-        "email": "me@example.com"
+        "username": "<username GitHub kamu>",
+        "email": "<email kamu>"
     },
     "record": {
         "A": ["proxy-ip-disini"]
@@ -56,5 +59,5 @@ Kamu akan mendapatkan pesan seperti ini:
 Catat server ID yang berada pada pesan tersebut, terus jalankan command ini:
 
 ```
-dbh!server proxy your-subdomain.is-a.dev yourserverid
+dbh!server proxy <subdomain kamu>.is-a.dev <server ID kamu>
 ```

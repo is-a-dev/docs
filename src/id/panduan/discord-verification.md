@@ -5,13 +5,16 @@ tags:
     - guides
 ---
 
+### Eits! Sebelumnya, Kamu harus fork repositori [is-a-dev/register](https://github.com/is-a-dev/register) dulu di GitHub. Abis itu baru mulai prosesnya
+
 # Membuat koneksi domain untuk Discord, dengan subdomain is-a.dev
 
 Ini adalah panduan tentang cara membuat koneksi subdomain is-a.dev kamu ke Discord
 
 ## Mendapatkan teks verifikasi
+Note: di saat dokumentasi ini dibuat, opsi 'Bahasa Indonesia' tidak ditemukan di Discord. Jadi ini hanya untuk pengguna yang memakai bahasa 'English'
 
-1. Buka aplikasi discord kamu dan tekan `Settings`.
+1. Buka aplikasi Discord kamu dan tekan `Settings`.
    ![](../../media/discord/step_1.png)
 
 2. Buka  `Connections`.
@@ -20,10 +23,10 @@ Ini adalah panduan tentang cara membuat koneksi subdomain is-a.dev kamu ke Disco
 3. Tekan `View more`.
    ![](../../media/discord/step_3.png)
 
-4. Tekan tombol domain (yang ada logo globe).
+4. Tekan tombol domain (yang ada icon globe).
    ![](../../media/discord/step_4.png)
 
-5. Ketik subomain is-a.dev kamu di dalam kolom tersebut  (misal, `example.is-a.dev`).
+5. Ketik subomain is-a.dev kamu di dalam kolom tersebut (misal, `example.is-a.dev`).
    ![](../../media/discord/step_5.png)
 
 6. Ambil teks verifikasi tersebut (berada di kolom `Content`)
@@ -31,13 +34,15 @@ Ini adalah panduan tentang cara membuat koneksi subdomain is-a.dev kamu ke Disco
 
 ### Membuat file Domain
 
+Masuk ke repositori yang sudah kamu fork sebelumnya
+
 Buatlah sebuah file JSON baru di dalam directory `domains`, dengan nama `_discord.<nama subdomain kamu>.json` dengan format ini:
 
 ```json
 {
     "owner": {
-        "username": "github-username",
-        "email": "email@address"
+        "username": "<username GitHub kamu>",
+        "email": "<email kamu>"
     },
     "record": {
         "TXT": "teks-verifikasi-discord"

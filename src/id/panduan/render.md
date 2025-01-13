@@ -5,13 +5,13 @@ tags:
     - guides
 ---
 
-# Setting up Render with is-a.dev Subdomain
+## Setting up Render with is-a.dev Subdomain
 
 This guide will walk you through the process of setting up a Render deployment and pointing your is-a.dev subdomain to it.
 
-## Creating a Render Service
+### Membuat Render Service
 
-First, you'll need to create a service on Render. Follow the instructions in the [Render Docs](https://docs.render.com/).
+Pertama, (ya pasti) buat service dulu di Render. Ikuti petunjuknya di [Render Docs](https://docs.render.com/) (bahasa Inggris).
 
 ### Creating the Domain File
 
@@ -31,7 +31,7 @@ Create a JSON file inside the `domains` directory (`domains/subdomain.json`) wit
 }
 ```
 
-**Note:** In the owner section, you can add any social media handle, such as Discord. If you add another social media account, you can omit the email field. However, the GitHub username is mandatory. Don't forget to provide a preview of your site in your pull request.
+**Note:** Di bagian 'owner', kamu bisa menambahkan username social media kamu, seperti Discord. Jika kamu ingin menambahkan akun social media lagi, kamu bisa menghapus bagian 'email' di dalam file JSON tersebut. Tapi, kamu tetap diwajibkan untuk mencantumkan username Github kamu. Jangan lupa kasih cuplikan (bisa sekilas) di dalam server DanBot Host yang kamu punya, ke pull request kamu ya
 
 ## Configuring Render
 
@@ -39,7 +39,7 @@ Create a JSON file inside the `domains` directory (`domains/subdomain.json`) wit
 - Navigate to **Settings > Custom Domains** and add `subdomain.is-a.dev` in the given field.
 - Render will provide a verification step, usually requiring you to add a DNS record. This step should be skipped if your subdomain is already pointing to Render's IP address (`216.24.57.1`).
 
-### Final Steps
+### Tahap Terakhir
 
-- Wait for the DNS changes to propagate. This can take from a few minutes to a couple of hours.
-- Your Render service should now be accessible at `subdomain.is-a.dev`.
+- Nunggu biar DNS ke propagate. Bisa sampai beberapa menit, atau lebih dari sejam
+- Website Render kamu bisa diakses di `<subdomain kamu>.is-a.dev` deh!

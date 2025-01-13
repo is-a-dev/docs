@@ -5,6 +5,8 @@ tags:
     - guides
 ---
 
+### Eits! Sebelumnya, Kamu harus fork repositori [is-a-dev/register](https://github.com/is-a-dev/register) dulu di GitHub. Abis itu baru mulai prosesnya
+
 # Membuat Cloudfare Pages dengan subdomain is-a.dev
 
 Ini adalah panduan tentang cara membuat website Cloudflare Pages dan mengarahkannya ke subdomain is-a.dev kamu
@@ -19,13 +21,15 @@ Habis itu, kamu perlu mengarahkan subdomain is-a.dev kamu ke website Cloudflare 
 
 ### Membuat file Domain
 
+Masuk ke repositori yang sudah kamu fork sebelumnya
+
 Di dalam folder `domains`, buat file JSON baru untuk subdomain kamu (semisal, `domains/subdomain.json`) dan buatlah pull request. File-nya harus memenuhi seperti ini ya! (Btw yang email bisa opsional ya. Bisa di hapus key sama value 'email' nya)
 
 ```json
 {
     "owner": {
-        "username": "usename-github-kamu",
-        "email": "email-kamu@example.com"
+        "username": "<username GitHub kamu>",
+        "email": "<email kamu>"
     },
     "record": {
         "CNAME": "website-kamu.pages.dev"
