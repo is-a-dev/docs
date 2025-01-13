@@ -1,5 +1,5 @@
 ---
-label: Welcome
+label: Bienvenido - Español
 icon: home
 ---
 ![](../media/banner.png)
