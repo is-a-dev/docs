@@ -18,10 +18,10 @@ Kamu bisa membaca tentang struktur JSON file kami [disini](../../useful/domain-s
 - [Render](panduan/render)
 - [Vercel (bahasa inggris)](panduan/vercel)*
 - [Railway (bahasa Inggris)](../guides/railway)**
-- [Layanan lain](panduan/other)
+- [Layanan lain](panduan/layanan-lainnya)**
 
 *Yang ngetranslate B.Indo capek, ga banyak yang volunteer. Jadi ga ditranslate
-**Panduan Railway ini belum jelas dalam versi aslinya (Inggris), karena itu jadi tidak ada versi bahasa Indonesianya
+**Panduan aslinya belum jelas (Inggris), karena itu ada yang ditranslate, ada juga yang nggak
 
 ## Link cepat
  - [Materi](link_cepat/materi)
