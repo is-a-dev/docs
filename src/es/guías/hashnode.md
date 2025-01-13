@@ -5,11 +5,11 @@ tags:
     - guides
 ---
 
-# Hashnode Blog
+# Blog de Hashnode
 
-When you create your Hashnode blog, Hashnode provides a free `hashnode.dev` subdomain for you. However, you can set up your own `is-a.dev` subdomain.
+Cuando creas tu blog de Hashnode, Hashnode provee un subdominio `hashnode.dev` para ti. Pero, puedes poner tu propio subdominio `is-a.dev`.
 
-In this guide, you will learn how to accomplish this.
+En esta guía aprenderá cómo conseguirlo.
 
 ---
 
