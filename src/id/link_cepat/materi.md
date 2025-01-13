@@ -10,8 +10,8 @@ Laman ini ada koleksi materi tentang semua yang kita jelaskan, agar kamu bisa me
 
 ## Bertanya
 
-- [How do I ask a good question?](https://stackoverflow.com/help/how-to-ask) - A guide on how to ask a good question by Stack Overflow.
-- [How To Ask Questions The Smart Way](http://catb.org/~esr/faqs/smart-questions.html) - A long and comprehensive guide on asking questions the smart way by Eric Steven Raymond and Rick Moen.
+- [How do I ask a good question?](https://stackoverflow.com/help/how-to-ask) - Panduan tentang cara bertanya yang bagus, dari Stack Overflow.
+- [How To Ask Questions The Smart Way](http://catb.org/~esr/faqs/smart-questions.html) - Panduan tentang cara bertanya dengan pintar, dari Eric Steven Raymond dan Rick Moen.
 
 ## JSON
 
