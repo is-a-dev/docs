@@ -9,7 +9,7 @@ tags:
 
 ## Hashnode Blog
 
-Ini adalah panduan tentang cara membuat website Hashnode Blog dan mengarahkannya ke subdomain is-a.dev kamu. Kalau nggak sih bisa pakai opsi default nya, `hasnode.dev`
+Ini adalah panduan tentang cara membuat website Hashnode Blog dan mengarahkannya ke subdomain is-a.dev kamu. Kalau nggak sih bisa pakai opsi default nya, `hashnode.dev`
 
 ---
 
