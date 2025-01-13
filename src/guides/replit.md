@@ -22,6 +22,8 @@ After clicking "Link a Domain" button on your Replit Deployment menu and already
 
 (The example screenshot uses their own domain, `hat-tip.cc`. But in our case, it should be `<your subdomain>.is-a.dev`)
 
+Note the IP of the A record, and the TXT value, and
+
 Create a JSON file inside `domains` directory and name it like `<your subdomain>.json` with the following content, then do the pull request:
 
 ```json

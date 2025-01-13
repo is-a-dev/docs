@@ -24,9 +24,13 @@ Setelah klik "Link a Domain" di menu Replit Deployment (yang ada pada panduan se
 
 ![image](https://docimg.replit.com/images/deployments/custom-domains/03.png)
 
-(Di contoh screenshot it, mereka memakai domain `hat-tip.cc`. Tapi kalau di situasi kita, harusnya `<subdomain kamu>.is-a.dev`)
+(Di contoh screenshot itu, mereka memakai domain `hat-tip.cc`. Tapi kalau di situasi kita, harusnya `<subdomain kamu>.is-a.dev`)
 
-Buat file JSON baru didalam directory `domains` dan namai seperti `<subdomain kamu>.json` dengan konten ini: (Btw, emailnya ga wajib yak kalau udah taruh 'username')
+1. Catat IP dari 'A' nya dan value TXT nya. 
+
+2. Masuk ke repositori yang sudah kamu fork sebelumnya
+
+3. Buat file JSON baru didalam directory `domains` dan namai seperti `<subdomain kamu>.json` dengan konten ini: (Btw, emailnya ga wajib yak kalau udah taruh 'username')
 
 Kalau udah dibuat pull request
 ```json
