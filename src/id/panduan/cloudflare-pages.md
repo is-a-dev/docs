@@ -23,7 +23,11 @@ Habis itu, kamu perlu mengarahkan subdomain is-a.dev kamu ke website Cloudflare 
 
 Masuk ke repositori yang sudah kamu fork sebelumnya
 
-Di dalam folder `domains`, buat file JSON baru untuk subdomain kamu (semisal, `domains/subdomain.json`) dan buatlah pull request. File-nya harus memenuhi seperti ini ya! (Btw yang email bisa opsional ya. Bisa di hapus key sama value 'email' nya)
+Di dalam folder `domains`, buat file JSON baru untuk subdomain kamu
+
+(semisal, `akukeren.json`. Teks 'akukeren' akan menjadi subdomain kamu, yang bisa di terjemahkan ke `akukeren.is-a.dev`) 
+
+dan buatlah pull request. File-nya harus memenuhi seperti ini ya! (Btw yang email bisa opsional ya. Bisa di hapus key sama value 'email' nya)
 
 ```json
 {
