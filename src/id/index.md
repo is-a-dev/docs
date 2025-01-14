@@ -21,6 +21,7 @@ Kamu bisa membaca tentang struktur JSON file kami [disini](../../useful/domain-s
 - [Layanan lain](panduan/layanan-lainnya)**
 
 *Yang ngetranslate B.Indo capek, ga banyak yang volunteer. Jadi ga ditranslate
+
 **Panduan aslinya belum jelas (Inggris), karena itu ada yang ditranslate, ada juga yang nggak
 
 ## Link cepat
