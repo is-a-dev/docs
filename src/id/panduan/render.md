@@ -1,5 +1,5 @@
 ---
-icon: /media/render.svg
+icon: ../../media/render.svg
 label: Render
 tags:
     - guides
