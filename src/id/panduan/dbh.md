@@ -42,7 +42,9 @@ Kamu perlu membuat file JSON di dalam `domains` (semisal, `domains/subdomain.jso
 }
 ```
 
-**Note:** Di bagian 'owner', kamu bisa menambahkan username social media kamu, seperti Discord. Jika kamu ingin menambahkan akun social media lagi, kamu bisa menghapus bagian 'email' di dalam file JSON tersebut. Tapi, kamu tetap diwajibkan untuk mencantumkan username Github kamu. Jangan lupa kasih cuplikan (bisa sekilas) di dalam server DanBot Host yang kamu punya, ke pull request kamu ya
+**Note:** Di bagian 'owner', kamu bisa menambahkan username social media kamu, seperti Discord. Jika kamu ingin menambahkan akun social media lagi, kamu bisa menghapus bagian 'email' di dalam file JSON tersebut. Tapi, kamu tetap diwajibkan untuk mencantumkan username Github kamu.
+
+Jangan lupa kasih cuplikan (bisa sekilas) di dalam server DanBot Host yang kamu punya, ke pull request kamu ya
 
 ## Configuring
 

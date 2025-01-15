@@ -41,6 +41,10 @@ dan buatlah pull request. File-nya harus memenuhi seperti ini ya! (Btw yang emai
 }
 ```
 
+**Note:** Di bagian 'owner', kamu bisa menambahkan username social media kamu, seperti Discord. Jika kamu ingin menambahkan akun social media lagi, kamu bisa menghapus bagian 'email' di dalam file JSON tersebut. Tapi, kamu tetap diwajibkan untuk mencantumkan username Github kamu.
+
+Jangan lupa kasih cuplikan (bisa sekilas) tentang/isi website ini, di pull requestnya yak.
+
 ### Website kamu sudah live!
 
 Kalau kamu sudah mengikuti semua tahapannya secara benar, website kamu bisa live setelah pull request kamu sudah tergabung
