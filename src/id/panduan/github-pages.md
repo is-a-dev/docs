@@ -37,7 +37,7 @@ Buat file JSON di dalam directory `domains` dan tambahkan `<subdomain kamu>.json
 
 ### Configuring
 
-- Setelah pull request sudah tergabung, kamu mungkin akan mendapatkan error **404** pada `<subdomain kamu>.is-a.dev` atau malah website yang salah 😔. Untuk memperbaiki ini, masuk ke repository website Github Pages kamu, terus buka **Settings > GitHub pages > Custom Domain** and add `subdomain.is-a.dev` in the given field. _Hanya lakukan ini **setelah** pull request kamu sudah tergabung._
+- Setelah pull request sudah tergabung, kamu mungkin akan mendapatkan error **404** pada `<subdomain kamu>.is-a.dev` atau malah website yang salah 😔. Untuk memperbaiki ini, masuk ke repository website Github Pages kamu, terus buka **Settings > GitHub pages > Custom Domain** dan tambahkan `<subdomain kamu>.is-a.dev` di kolom yang tersedia. _Hanya lakukan ini **setelah** pull request kamu sudah tergabung._
 - Klik **Enforce HTTPS** dibawah custom domain input
 - Tunggu sebentar dan website mu sudah live!
 
