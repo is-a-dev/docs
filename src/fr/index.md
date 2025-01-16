@@ -1,16 +1,15 @@
 ![](../media/banner.png)
 
-# Documentation de is-a.dev
-Vous trouverez ici des guides, notre structure de fichier JSON et plus encore. Pour contribuer à notre documentation, vous pouvez visiter [notre dépôt de documentation](https://github.com/is-a-dev/docs).
+# Documentation du service is-a.dev
+Ici, vous trouverez des guides, la structure des fichiers JSON à respecter et plus. Si vous voulez contribuer à la documentation, vous pouvez visiter [le référentiel Github](https://github.com/is-a-dev/docs).
 
-## Comment s'inscrire
-La structure du JSON pour enregistrer un domaine est expliquée [ici](domain-structure).
+## Comment enregistrer un domaine
+Vous pouvez trouver le guide sur la structure des fichiers JSON [ici](useful/domain-structure).
 
 ## Guides
-*En attente de traduction*
 - [Cloudflare Pages](guides/cloudflare-pages)
 - [DanBot Hosting](guides/dbh)
-- [Profile Discord](guides/discord-verification)
+- [Vérification de domaine Discord](guides/discord-verification)
 - [GitHub Pages](guides/github-pages)
 - [Hashnode Blogs](guides/hashnode)
 - [ImprovMX](guides/improvmx)
@@ -22,23 +21,22 @@ La structure du JSON pour enregistrer un domaine est expliquée [ici](domain-str
 - [Vercel](guides/vercel)
 
 ## Utile
-*En attente de traduction*
- - [Structure des domaines](domain-structure)
- - [FAQ](faq)
- - [Ressources](resources)
+ - [Structure des domaines](useful/domain-structure)
+ - [FAQ](useful/faq)
+ - [Ressources](useful/resources)
 
 ## Sous-domaines officiels
-Voici les sous-domaines gérés par l'équipe de is-a.dev :
+Voici les domaines utilisés par l'administration de is-a.dev
 
-- is-a.dev (le domaine principal, utilisé pour le site, la documentation et les mails).
-- data.is-a.dev (site de données, géré par [@wdhdev](https://github.com/wdhdev)).
-- docs.is-a.dev (ce site).
-- owl.is-a.dev (site en bêta pour le service de confidentialité des utilisateurs, géré par [@andrewstech](https://github.com/andrewstech) et [@wdhdev](https://github.com/wdhdev)).
-- raw-api.is-a.dev (API JSON pour tout les domaines is-a.dev, géré par [@wdhdev](https://github.com/wdhdev)).
-- register-bot.is-a.dev (API pour le robot Discord, géré par [@andrewstech](https://github.com/andrewstech)).
-- team.is-a.dev (documentation pour l'équipe).
-- www.is-a.dev (redirige vers le domaine principal).
+- is-a.dev (Le domaine principal, utilisé pour le site web, la documentation et les E-Mails)
+- data.is-a.dev (Site web de données, hébergé par [@wdhdev](https://github.com/wdhdev))
+- docs.is-a.dev (Ce site web)
+- owl.is-a.dev (Service de confidentialité des utilisateurs [Beta], hébergé par [@andrewstech](https://github.com/andrewstech) et [@wdhdev](https://github.com/wdhdev))
+- raw-api.is-a.dev (API brute JSON de tous les sous-domaines de is-a.dev, hébergé par [@wdhdev](https://github.com/wdhdev))
+- register-bot.is-a.dev (API du bot Discord, hébergé par [@andrewstech](https://github.com/andrewstech))
+- team.is-a.dev (Documentation pour l'administration)
+- www.is-a.dev (Redirige au domaine principal)
 
-**Ne faites confiance à AUCUN site affirmant être affilié à l'équipe n'étant pas listé ici. Si vous en trouvez, merci de les signaler à [security@is-a.dev](mailto:security@is-a.dev).**
+**Ne faites confiance à AUCUN site web qui prétend être affilié à is-a.dev n'étant pas listé ici. Si vous en trouvez un, nous vous prions de le signaler à [security@is-a.dev](mailto:security@is-a.dev).**
 
-*Nous n'envoyons pas de mails non sollicités à nos utilisateurs. Ne faites confiance à aucun mail affirmant être affilié à l'équipe. Signalez les mails non sollicités à [security@is-a.dev]*
+*Nous n'envoyons pas d'E-Mails non sollicités aux utilisateurs, ne faites confiance à aucun E-Mail envoyé qui affirment être affiliés à l'équipe. Signalez tous les E-Mails non sollicités à [security@is-a.dev](mailto:security@is-a.dev).*
