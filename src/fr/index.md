@@ -39,4 +39,4 @@ Voici les domaines utilisés par l'administration de is-a.dev
 
 **Ne faites confiance à AUCUN site web qui prétend être affilié à is-a.dev n'étant pas listé ici. Si vous en trouvez un, nous vous prions de le signaler à [security@is-a.dev](mailto:security@is-a.dev).**
 
-*Nous n'envoyons pas d'E-Mails non sollicités aux utilisateurs, ne faites confiance à aucun E-Mail envoyé qui affirment être affiliés à l'équipe. Signalez tous les E-Mails non sollicités à [security@is-a.dev](mailto:security@is-a.dev).*
+*Nous n'envoyons pas d'E-Mails non sollicités aux utilisateurs, ne faites confiance à aucun E-Mail envoyé qui affirme être affilié à l'équipe. Signalez tous les E-Mails non sollicités à [security@is-a.dev](mailto:security@is-a.dev).*
