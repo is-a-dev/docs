@@ -3,81 +3,83 @@ label: GitHub Pages
 icon: mark-github
 tags:
     - guides
+    - spanish
 ---
 
-## Setting up GitHub pages with is-a.dev subdomain
+## Configurando GitHub Pages con un subdominio is-a.dev
 
-This guide will walk you through the process of setting up a GitHub Pages site and pointing your is-a.dev subdomain to it.
+Esta guía te guiará a través del proceso de configuración de un sitio de GitHub Pages y asignarle tu subdominio is-a.dev.
 
-### Creating a GitHub Pages repository
+### Crear un repositorio de GitHub Pages
 
-First, you'll need to create a site on GitHub Pages. Follow the instructions in the [GitHub Pages Getting Started Guide](https://docs.github.com/en/pages/getting-started-with-github-pages).
+Primero, necesitarás crear un sitio en GitHub Pages. Sigue las instrucciones en la [Guía de Inicio de GitHub Pages](https://docs.github.com/es/pages/getting-started-with-github-pages).
 
-### Creating the domain file
+### Crear el archivo de dominio
 
-Create a JSON file inside `domains` directory (`domains/subdomain.json`) with the following content and submit a pull request:
+Crea un archivo JSON dentro del directorio `domains` (`domains/subdominio.json`) con el siguiente contenido y envía una pull request:
 
 ```json
 {
-    "description": "Describe the use of this subdomain",
-    "repo": "https://github.com/github-username/github-repository",
+    "description": "Describe el uso de este subdominio",
+    "repo": "https://github.com/usuario-github/repositorio-github",
     "owner": {
-        "username": "github-username",
-        "email": "me@example.com"
+        "username": "usuario-github",
+        "email": "yo@ejemplo.com"
     },
     "record": {
-        "CNAME": "github-username.github.io"
+        "CNAME": "usuario-github.github.io"
     }
 }
+
 ```
 
-### Configuring
+### Configuración
 
-- After the pull request is merged, you may see a **404** error on `subdomain.is-a.dev` or the wrong site. To fix this, go to your GitHub pages repository's **Settings > GitHub pages > Custom Domain** and add `subdomain.is-a.dev` in the given field. _Only do this **after** your pull request is merged._
-- Check the **Enforce HTTPS** checkbox below the custom domain input.
-- Wait some time and your site should be live!
+- Después de que la pull request sea fusionada, podrías ver un error **404** en `subdominio.is-a.dev`o el sitio incorrecto. Para arreglarlo, ve a **Configuración > GitHub pages > Dominio Personalizado** en tu repositorio de GitHub Pages y añade `subdominio.is-a.dev` en el campo proporcionado. Haz esto _sólo **después** de que tu pull request haya sido fusionada._
+- Marca la casilla **Forzar HTTPS** debajo del campo de dominio personalizado.
+- ¡Espera un momento y tu sitio debería estar en línea!
 
-## Verifying your is-a.dev Domain with GitHub Pages
+## Verificando tu dominio is-a.dev con GitHub Pages
 
-### Get your verification string
+### Obtén tu string de verificación
 
-1. Open GitHub, press on your profile icon on the top right, and press `Settings`.
+1. Abre GitHub, presiona en tu ícono de perfil en la parte superior derecha y presiona `Configuración`.
 
 ![](../media/github_pages_verification/step_1.png)
 
-2. Press `Pages`.
+2. Presiona `Páginas`.
 
 ![](../media/github_pages_verification/step_2.png)
 
-3. Press `Add a domain`.
+3. Presiona `Añadir un dominio`.
 
 ![](../media/github_pages_verification/step_3.png)
 
-4. In the field that appears, type your is-a.dev domain name (e.g. `myname.is-a.dev`) and press `Add domain`.
+4. En el campo que aparece, escribe tu nombre de dominio is-a.dev (por ejemplo, `minombre.is-a.dev`) y presiona `Añadir dominio`.
 
 ![](../media/github_pages_verification/step_4.png)
 
-5. Copy the hostname and the verification string.
+5. Copia el nombre de host y la string de verificación.
 
 ![](../media/github_pages_verification/step_5.png)
 
-### Create the domain file
+### Crear el archivo de dominio
 
-Create a JSON file inside the `domains/` directory called `domains/hostname.json` using the hostname you copied in step 5 with the following content and submit a pull request:
+Crea un archivo JSON dentro del directorio `domains/` llamado `domains/nombrehost.json` usando el nombre de host que copiaste en el paso 5 con el siguiente contenido y envía una pull request:
 
 ```json
 {
     "owner": {
-        "username": "github-username",
-        "email": "me@example.com"
+        "username": "usuario-github",
+        "email": "yo@ejemplo.com"
     },
     "record": {
-        "TXT": "github-verification-string"
+        "TXT": "string-de-verificacion-github"
     }
 }
 ```
 
-### Configuration
+## Configuración
 
-After your pull request has been merged, repeat the steps to get the verification string and press the `Verify` button.
-If it shows any error such as `Unable to verify your domain`, try waiting a few minutes (sometimes up to 24 hours) as the DNS change might not have reflected on the DNS server.
+Después de que tu pull request haya sido fusionada, repite los pasos para obtener la cadena de verificación y presiona el botón `Verificar`.
+Si muestra algún error como `No se puede verificar tu dominio`, intenta esperar unos minutos (a veces hasta 24 horas) ya que el DNS podría no haberse actualizado aún.

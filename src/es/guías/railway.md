@@ -3,25 +3,26 @@ icon: /media/railway.png
 label: Railway
 tags:
     - guides
+    - spanish
 ---
 
-# Setting up is-a.dev with Railway
+# Configurando is-a.dev con Railway
 
-## Getting the CNAME Record
+## Obteniendo el registro CNAME
 
-1. Navigate to the [dashboard](https://railway.app/dashboard)
-1. Navigate to the project.
-1. Navigate to the service.
-1. Switch to the **Settings** tab.
-1. Click on **+ Custom Domain** button.
-1. Enter the `is-a.dev` subdomain you want to use.
-1. Copy the **Value** field.
-1. Go to the [register site](https://register.is-a.dev).
-1. Choose **CNAME** record type from the dropdown menu.
-1. Choose your desired subdomain.
-1. Enter the value from clipboard in the **Record Value** field.
-1. Click on the **Submit Query** button.
-1. Wait for your pull request to be merged and the DNS records to update.
+1. Navega al [panel de control](https://railway.app/dashboard)
+1. Navega al proyecto.
+1. Navega al servicio.
+1. Cambia a la pestaña **Configuración**.
+1. Haz clic en el botón **+ Dominio Personalizado**.
+1. Ingresa el subdominio `is-a.dev` que deseas usar.
+1. Copia el campo **Valor**.
+1. Ve al [sitio de registro](https://register.is-a.dev).
+1. Elige el tipo de registro **CNAME** del menú desplegable.
+1. Elige tu subdominio deseado.
+1. Ingresa el valor del portapapeles en el campo **Valor del Registro**.
+1. Haz clic en el botón **Enviar Consulta**.
+1. Espera a que tu pull request sea fusionada y los registros DNS se actualicen.
 
-**If the PR has been merged, the DNS records will be updated in a few minutes.**
-**If the PR has been merged but the DNS records haven't updated and you have waited 48 hours, open a GitHub issue or a help thread in the is-a.dev discord server.**
+**Si la PR ha sido fusionada, los registros DNS se actualizarán en unos minutos.**
+**Si la PR ha sido fusionada pero los registros DNS no se han actualizado y has esperado 48 horas, abre un issue en GitHub o un hilo de ayuda en el servidor de Discord de is-a.dev.**

@@ -3,27 +3,28 @@ icon: /media/render.svg
 label: Render
 tags:
     - guides
+    - spanish
 ---
 
-# Setting up Render with is-a.dev Subdomain
+# Configurando Render con un subdominio is-a.dev
 
-This guide will walk you through the process of setting up a Render deployment and pointing your is-a.dev subdomain to it.
+Esta guía te guiará a través del proceso de configuración de un despliegue de Render y asignarle tu subdominio is-a.dev.
 
-## Creating a Render Service
+## Crear un servicio en Render
 
-First, you'll need to create a service on Render. Follow the instructions in the [Render Docs](https://docs.render.com/).
+Primero, necesitarás crear un servicio en Render. Sigue las instrucciones en la [Documentación de Render](https://docs.render.com/).
 
-### Creating the Domain File
+### Crear el archivo de dominio
 
-Create a JSON file inside the `domains` directory (`domains/subdomain.json`) with the following content and submit a pull request:
+Crea un archivo JSON dentro del directorio `domains` (`domains/subdominio.json`) con el siguiente contenido y envía una pull request:
 
 ```json
 {
-    "description": "Describe the use of this subdomain",
-    "repo": "https://github.com/github-username/github-repository",
+    "description": "Describe el uso de este subdominio",
+    "repo": "https://github.com/usuario-github/repositorio-github",
     "owner": {
-        "username": "github-username",
-        "email": "me@example.com"
+        "username": "usuario-github",
+        "email": "yo@ejemplo.com"
     },
     "record": {
         "A": ["216.24.57.1"]
@@ -31,15 +32,15 @@ Create a JSON file inside the `domains` directory (`domains/subdomain.json`) wit
 }
 ```
 
-**Note:** In the owner section, you can add any social media handle, such as Discord. If you add another social media account, you can omit the email field. However, the GitHub username is mandatory. Don't forget to provide a preview of your site in your pull request.
+**Nota:** En la sección owner, puedes añadir cualquier red social, como Discord. Si añades otra cuenta de red social, puedes omitir el campo email. Sin embargo, el nombre de usuario de GitHub es obligatorio. No olvides proporcionar una vista previa de tu sitio en tu pull request.
 
-## Configuring Render
+## Configurando Render
 
-- After the pull request is merged, you may need to configure your Render service to use the new subdomain. Go to your Render service's dashboard.
-- Navigate to **Settings > Custom Domains** and add `subdomain.is-a.dev` in the given field.
-- Render will provide a verification step, usually requiring you to add a DNS record. This step should be skipped if your subdomain is already pointing to Render's IP address (`216.24.57.1`).
+- Después de que la pull request sea fusionada, necesitarás configurar tu servicio de Render para usar el nuevo subdominio. Ve al panel de control de servicio en Render.
+- Navega a **Configuración > Dominios Personalizados** y añade  `subdominio.is-a.dev` en el campo proporcionado.
+- Render proporcionará un paso de verificación, generalmente requiriendo que añadas un registro DNS. Este paso debe omitirse si tu subdominio ya está apuntando a la dirección IP de Render (`216.24.57.1`).
 
-### Final Steps
+### Pasos Finales
 
-- Wait for the DNS changes to propagate. This can take from a few minutes to a couple of hours.
-- Your Render service should now be accessible at `subdomain.is-a.dev`.
+- Espera a que los cambios de DNS se propaguen. Esto puede tomar desde unos minutos hasta un par de horas.
+- Tu servicio de Render ahora debería ser accesible en `subdomain.is-a.dev`.

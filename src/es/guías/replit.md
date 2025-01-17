@@ -3,31 +3,32 @@ icon: /media/replit.svg
 label: Replit
 tags:
     - guides
+    - spanish
 ---
 
-# Setting up Replit with your is-a.dev subdomain
+# Configurando Replit con tu subdominio is-a.dev
 
-## Creating a project
+## Creando un proyecto
 
-Follow the instructions in the [Replit Workspace Guide](https://docs.replit.com/programming-ide/introduction-to-the-workspace#how-to-create-a-repl) on how to create a project.
+Sigue las instrucciones en la [Guía del Espacio de Trabajo de Replit](https://docs.replit.com/programming-ide/introduction-to-the-workspace#how-to-create-a-repl) sobre cómo crear un proyecto.
 
-### Connect your repl to your is-a.dev subdomain
+### Conecta tu repl a tu subdominio is-a.dev
 
-Follow the instructions in the [Replit Custom Domains Guide](https://docs.replit.com/hosting/custom-domains#connecting-your-domain-to-your-repl).
+Sigue las instrucciones en la [Guía de Dominios Personalizados de Replit](https://docs.replit.com/hosting/custom-domains#connecting-your-domain-to-your-repl).
 
-Only follow the "Connecting your domain to your repl" section, then return to this guide for the next steps.
+Solo sigue la sección "Conectando tu dominio a tu repl", luego vuelve a esta guía para los siguientes pasos.
 
-### Creating the domain file
+### Creando el archivo de dominio
 
-Create a JSON file inside `domains` directory (`domains/subdomain.json`) with the following content:
+Crea un archivo JSON dentro del directorio `domains` (`domains/subdominio.json`) con el siguiente contenido:
 
-**Note:** Do not add any TXT records, even if Replit instructs you to do so.
+**Nota:** No añadas ningún registro TXT, incluso si Replit te indica que lo hagas.
 
 ```json
 {
     "owner": {
-        "username": "github-username",
-        "email": "me@example.com"
+        "username": "usuario-github",
+        "email": "yo@ejemplo.com"
     },
     "record": {
         "CNAME": "siteid.id.repl.co"
@@ -35,6 +36,6 @@ Create a JSON file inside `domains` directory (`domains/subdomain.json`) with th
 }
 ```
 
-## Finish
+## Finalización
 
-Once your pull request has been merged you should be able to visit your new is-a.dev subdomain connected to your Replit site!
+¡Una vez que tu pull request haya sido fusionada, deberías poder visitar tu nuevo subdominio is-a.dev conectado a tu sitio de Replit!

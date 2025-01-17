@@ -3,27 +3,28 @@ label: ImprovMX
 icon: /media/improvmx.svg
 tags:
     - guides
+    - spanish
 ---
 
-# Setting up ImprovMX with is-a.dev subdomain
+# Configurando ImprovMX con un subdominio is-a.dev
 
-This guide will walk you through the process of setting up ImprovMX with your is-a.dev subdomain.
+Esta guía te guiará a través del proceso de configuración de ImprovMX con tu subdominio is-a.dev.
 
-## What you need to do before you continue.
+## Lo que necesitas hacer antes de continuar
 
-1. Have a ImprovMX account. If you don't have a ImprovMX account, please go to [their site](https://improvmx.com) and make a account.
-2. You should have already forked the [is-a.dev repository](https://github.com/is-a-dev/register). If you haven't forked the repository, please make one by using [this link](https://github.com/is-a-dev/register/fork).
+1. Tener una cuenta de ImprovMX. Si no tienes una cuenta de ImprovMX, visita [su sitio web](https://improvmx.com) y crea una cuenta.
+2. Ya deberías haber bifurcado el [repositorio is-a.dev](https://github.com/is-a-dev/register). Si no has bifurcado el repositorio, hazlo usando [este enlace](https://github.com/is-a-dev/register/fork).
 
-## Making the file.
+## Creando el archivo
 
-First go to the fork you've made, then go into the `domains` directory and make a file. The file should be named like this: `subdomain.json`. (Replace `subdomain` with the subdomain name you want of course.)
+Primero ve a la bifurcación que has creado, luego ve al directorio `domains` y crea un archivo. El archivo debe nombrarse así: `subdominio.json`. (Reemplaza `subdominio` con el nombre del subdominio que deseas, por supuesto.)
 
-After you've made the file, you should put in the file this:
+Después de haber creado el archivo, debes poner esto en el archivo:
 ```json
 {
     "owner": {
-        "username": "github-username",
-        "email": "me@example.com"
+        "username": "usuario-github",
+        "email": "yo@ejemplo.com"
     },
     "record": {
         "MX": ["mx1.improvmx.com", "mx2.improvmx.com"],
@@ -32,8 +33,8 @@ After you've made the file, you should put in the file this:
 }
 ```
 
-**After you have made the file, you should make a pull request to the [is-a.dev repository](https://github.com/is-a-dev/register).**
+**Después de haber creado el archivo, debes hacer una pull request al [repositorio is-a.dev](https://github.com/is-a-dev/register).**
 
-## Configuring
+## Configuración
 
-After it has been merged, it should be automatically recognized and should start working. If you haven't configured it beforehand, please go to the [ImprovMX dashboard](https://app.improvmx.com/) and add the domain there.
+Después de que haya sido fusionado, debería ser reconocido automáticamente y comenzar a funcionar. Si no lo has configurado previamente, ve al [panel de control de ImprovMX](https://app.improvmx.com/) y añade el dominio allí.

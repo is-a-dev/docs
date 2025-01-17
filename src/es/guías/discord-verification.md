@@ -1,49 +1,50 @@
 ---
 icon: /media/discord.svg
-label: Discord Domain Connection
+label: Verificación de Dominio Discord
 tags:
     - guides
+    - spanish
 ---
 
-# Setting up Discord domain connection with your is-a.dev domain
+# Configurando la verificación de dominio Discord con tu dominio is-a.dev
 
-## Get your verification string
+## Obtén tu cadena de verificación
 
-1. Open your Discord app and press `Settings`.
+1. Abre tu aplicación de Discord y presiona `Ajustes`.
    ![](../media/discord/step_1.png)
 
-1. Open the `Connections` section.
+1. Abre la sección `Conexiones`.
    ![](../media/discord/step_2.png)
 
-1. Press the `View more` button.
+1. Presiona el botón `Ver más`.
    ![](../media/discord/step_3.png)
 
-1. Click on the domain button (the globe icon).
+1. Haz clic en el botón de dominio (el ícono del globo).
    ![](../media/discord/step_4.png)
 
-1. In the field that appears type your is-a.dev domain name (e.g. `example.is-a.dev`).
+1. En el campo que aparece, escribe tu nombre de dominio is-a.dev (por ejemplo, `ejemplo.is-a.dev`).
    ![](../media/discord/step_5.png)
 
-1. Copy the verification string.
+1. Copia la cadena de verificación.
    ![](../media/discord/step_6.png)
 
-### Create the domain file
+### Crear el archivo de dominio
 
-Create a JSON file inside the `domains/` directory called `domains/_discord.example.json` with the following content:
+Crea un archivo JSON dentro del directorio `domains/` llamado `domains/_discord.ejemplo.json` con el siguiente contenido:
 
 ```json
 {
     "owner": {
-        "username": "github-username",
-        "email": "email@address"
+        "username": "usuario-github",
+        "email": "correo@direccion"
     },
     "record": {
-        "TXT": "discord-verification-string"
+        "TXT": "cadena-de-verificacion-discord"
     }
 }
 ```
 
-## Configuration
+## Configuración
 
-After your pull request has been merged, repeat the steps to get the verification string and press the `Verify` button.
-If it shows any error such as `Unable to verify your domain`, try waiting a few minutes (sometimes up to 24 hours) as the DNS might have not been updated yet.
+Después de que tu pull request haya sido fusionada, repite los pasos para obtener la cadena de verificación y presiona el botón `Verificar`.
+Si muestra algún error como `No se puede verificar tu dominio`, intenta esperar unos minutos (a veces hasta 24 horas) ya que el DNS podría no haberse actualizado aún.

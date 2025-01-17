@@ -3,70 +3,71 @@ icon: /media/vercel.svg
 label: Vercel
 tags:
     - guides
+    - spanish
 ---
 
-# Setting up Vercel with is-a.dev subdomain
+# Configurando Vercel con un subdominio is-a.dev
 
-This guide will walk you through the process of setting up a Vercel site and pointing your is-a.dev subdomain to it.
+Esta guía te guiará a través del proceso de configuración de un sitio de Vercel y asignarle tu subdominio is-a.dev.
 
-## Make sure you have a Vercel site.
+## Asegúrate de tener un sitio en Vercel
 
-If you haven't made a Vercel site, make sure to make one. Follow the instructions in [Vercel's Docs](https://vercel.com/docs/getting-started-with-vercel).
+Si aún no tienes un sitio en Vercel, asegúrate de crear uno. Sigue las instrucciones en la [Documentación de Vercel](https://vercel.com/docs/getting-started-with-vercel).
 
-### Creating the domain files.
+### Creando los archivos de dominio
 
-First, go to your Vercel dashboard, then go to your project, then go to Custom Domains and put in there the is-a.dev subdomain you want.
+Primero, ve a tu panel de control de Vercel, luego a tu proyecto, después a Dominios Personalizados y coloca allí el subdominio is-a.dev que deseas.
 
-**You will need to make two files to ensure this process goes smoothly**. We will go in order for this section.
+**Necesitarás crear dos archivos para asegurar que este proceso funcione correctamente**. Los haremos en orden.
 
-1. Make a file for Vercel TXT verification.
-   When connecting the domain, you will be greeted with a TXT verification string. To make the file for this one the TXT record should be placed in `_vercel.subdomain.json` in the **domains directory** (replace subdomain with the domain you want of course) and the file should be like this (You can leave email field blank as long as you have another social, but **don't remove the field**):
+1. Crea un archivo para la verificación TXT de Vercel.
+   Al conectar el dominio, se te mostrará una cadena de verificación TXT. Para crear el archivo para este, el registro TXT debe colocarse en `_vercel.subdominio.json` en el **directorio domains** (reemplaza subdominio con el dominio que deseas, por supuesto) y el archivo debe ser así (Puedes dejar el campo email en blanco siempre que tengas otra red social, pero **no elimines el campo**):
 
 ```json
 {
     "owner": {
-        "username": "insert-github-username-here",
+        "username": "inserta-tu-usuario-github-aqui",
         "email": "",
-        "discord": "insert-discord-user-ID-here"
+        "discord": "inserta-tu-ID-de-usuario-discord-aqui"
     },
     "record": {
-        "TXT": "insert-TXT-string-you-got-from-vercel-here"
+        "TXT": "inserta-la-cadena-TXT-que-obtuviste-de-vercel-aqui"
     }
 }
 ```
 
 !!!
-**_DON'T MAKE A PULL REQUEST YET_**, we still have to make another file. If you were to make a pull request at this point, we would reject your domain since you are trying to make a nested subdomain on a subdomain you don't own yet. Please proceed to the next step.
+**_NO HAGAS UNA PULL REQUEST TODAVÍA_**, aún tenemos que crear otro archivo. Si hicieras una pull request en este momento, rechazaríamos tu dominio ya que estás intentando crear un subdominio anidado en un subdominio que aún no posees. Por favor, continúa con el siguiente paso.
 !!!
 
-2. Make a file for the main domain.
-   Now you need to make a file for the main domain, we have two ways to do it: CNAME and A records. We'll have two different files for these and explain what restricions or stuff you need to do.
+2. Crea un archivo para el dominio principal.
+    Ahora necesitas crear un archivo para el dominio principal, tenemos dos formas de hacerlo: registros CNAME y A. Tendremos dos archivos diferentes para estos y explicaremos qué restricciones o cosas necesitas hacer.
 
-Make `subdomain.json` in the **domains directory** (replace subdomain with the domain you want of course) and put in the file one of these types:
+Crea `subdominio.json` en el **directorio domains** (reemplaza subdominio con el dominio que deseas, por supuesto) y coloca en el archivo uno de estos tipos:
 
-**CNAME record**: If you are using CNAME record you don't have to give a preview as you are using the site as the CNAME, but you can't use other record (Like MX and TXT records). **This option is ideal for those who only want to use their domain for their site**.
+**Registro CNAME**: Si estás usando un registro CNAME, no tienes que dar una vista previa ya que estás usando el sitio como CNAME, pero no puedes usar otros registros (Como registros MX y TXT). **Esta opción es ideal para aquellos que solo quieren usar su dominio para su sitio.**.
 
 ```json
 {
     "owner": {
-        "username": "insert-github-username-here",
+        "username": "inserta-tu-usuario-github-aqui",
         "email": "",
-        "discord": "insert-discord-user-ID-here"
+        "discord": "inserta-tu-ID-de-usuario-discord-aqui"
     },
     "record": {
-        "CNAME": "domainname.vercel.app"
+        "CNAME": "nombredominio.vercel.app"
     }
 }
 ```
 
-**A record**: If you are using an A record, you would need to give a preview either by putting a link in the comment section of the PR, putting it in the description, or by providing a screenshot of your website. **This option is ideal for those who want to use their domain for their site and email**.
+**Registro A**: Si estás usando un registro A, necesitarás proporcionar una vista previa ya sea poniendo un enlace en la sección de comentarios de la PR, poniéndolo en la descripción, o proporcionando una captura de pantalla de tu sitio web. **Esta opción es ideal para aquellos que quieren usar su dominio tanto para su sitio como para correo.**.
 
 ```json
 {
     "owner": {
-        "username": "insert-github-username-here",
+        "username": "inserta-tu-usuario-github-aqui",
         "email": "",
-        "discord": "insert-discord-user-ID-here"
+        "discord": "inserta-tu-ID-de-usuario-discord-aqui"
     },
     "record": {
         "A": ["76.76.21.21"]
@@ -74,8 +75,8 @@ Make `subdomain.json` in the **domains directory** (replace subdomain with the d
 }
 ```
 
-### Make your pull request.
+### Haz tu pull request.
 
-Once you have made these two files, you can now make a pull request to the [main repo](https://github.com/is-a-dev/register). Then you will have to be patient until it gets merged. If you want a chance to get your PR merged faster then join our [Discord server!](https://discord.gg/is-a-dev-830872854677422150)
+Una vez que hayas creado estos dos archivos, puedes hacer una pull request al [repositorio principal](https://github.com/is-a-dev/register). Luego tendrás que ser paciente hasta que se fusione. Si quieres tener la oportunidad de que tu PR se fusione más rápido, ¡únete a nuestro [Servidor de Discord!](https://discord.gg/is-a-dev-830872854677422150)
 
-When the pull request has been merged your site should be working, if its still redirecting to the is-a.dev site clear your cache.
+Cuando la pull request haya sido fusionada, tu sitio debería estar funcionando. Si todavía se redirige al sitio is-a.dev, limpia tu caché.

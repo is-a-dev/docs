@@ -1,17 +1,19 @@
 ---
-label: Other services
+label: Otros servicios
 icon: server
-tags: guides
+tags: 
+    - guides
+    - spanish
 ---
 
-# Setting up other services with is-a.dev
+# Configurando otros servicios con is-a.dev
 
-## Setting up records
+## Configurando registros
 
-Read the [domain file structure](/domain-structure) and setup the records accordingly.
+Lee la [estructura del archivo de dominio](/domain-structure) y configura los registros según corresponda.
 
-## Configuring your server
+## Configurando tu servidor
 
-After the pull request is merged, configure your server (apache, nginx, etc.) to work with `subdomain.is-a.dev`. If you are unsure how to configure your server, you can create an issue for support.
+Después de que la pull request sea fusionada, configura tu servidor (apache, nginx, etc.) para que funcione con `subdominio.is-a.dev`. Si no estás seguro de cómo configurar tu servidor, puedes crear un issue para obtener soporte.
 
-You should also, include `subdomain.is-a.dev` in your ssl certificate to get rid of certificate errors.
+También deberías incluir `subdominio.is-a.dev` en tu certificado SSL para eliminar los errores de certificado.
