@@ -1,45 +1,47 @@
 ---
-tags: useful
+tags: útil
 icon: file-code
+label: Estructura del Dominio
 ---
-# Domain Structure
-To register a subdomain, you need to create a new JSON file in the `domains` directory through a pull request. For example, to register `example.is-a.dev`, you would create a file named `example.json` in the `domains` directory. The full path would be `domains/example.json`.
 
-## Filename
+# Estructura del Dominio
+Para registrar un subdominio, necesitas crear un nuevo archivo JSON en el directorio `domains` a través de una pull request. Por ejemplo, para registrar `ejemplo.is-a.dev`, deberías crear un archivo llamado `ejemplo.json` en el directorio `domains`. La ruta completa sería `domains/ejemplo.json`.
 
-**Note**: You can include `.` (dots) in your filename to register a sub-subdomain (e.g., `blog.example.is-a.dev`). However, each segment of your subdomain must meet the following criteria:
+## Nombre del Archivo
 
-The filename:
+**Nota**: Puedes incluir `.` (puntos) en el nombre de tu archivo para registrar un sub-subdominio (por ejemplo, `blog.ejemplo.is-a.dev`). Sin embargo, cada segmento de tu subdominio debe cumplir con los siguientes criterios:
 
-- Must be alphanumeric, in lowercase, with dashes as separators.
-- Must be at least 1 character.
-- Must have a `.json` file extension.
+El nombre del archivo:
 
-### Examples of Invalid Filenames
-- `.json` (filename is less than 1 character)
-- `A.json` (filename contains uppercase letters)
-- `a..json` (filename contains consecutive dots)
-- `.a.json` (filename starts with a dot)
-- `a .json` (filename contains a space)
-- `a$.json` (filename contains a non-alphanumeric character)
-- `a.json.json` (filename contains more than one `.json` extension)
-- `a.is-a.dev.json` (filename contains `.is-a.dev`)
+- Debe ser alfanumérico, en minúsculas, con guiones como separadores.
+- Debe tener al menos 1 carácter.
+- Debe tener una extensión de archivo `.json`.
 
-### Examples of Valid Filenames
-All the filenames below meet all the criteria. The reason in parentheses is just an example of one of the criteria they meet.
+### Ejemplos de Nombres de Archivos Inválidos
+- `.json` (el nombre del archivo tiene menos de 1 carácter)
+- `A.json` (el nombre del archivo contiene letras mayúsculas)
+- `a..json` (el nombre del archivo contiene puntos consecutivos)
+- `.a.json` (el nombre del archivo comienza con un punto)
+- `a .json` (el nombre del archivo contiene un espacio)
+- `a$.json` (el nombre del archivo contiene un carácter no alfanumérico)
+- `a.json.json` (el nombre del archivo contiene más de una extensión `.json`)
+- `a.is-a.dev.json` (el nombre del archivo contiene `.is-a.dev`)
 
-- `a.json` (at least 1 character long)
-- `example.json` (alphanumeric and in lowercase)
-- `blog.example.json` (includes dots to register a sub-subdomain)
-- `my-blog.json` (uses dashes as separators, which is recommended)
+### Ejemplos de Nombres de Archivos Válidos
+Todos los nombres de archivos a continuación cumplen con todos los criterios. La razón entre paréntesis es solo un ejemplo de uno de los criterios que cumplen.
 
-**NOTE:** To stop a person from having a monopoly over one-lettered subdomains, we limit everyone to only one one-lettered subdomain.
+- `a.json` (al menos 1 carácter de longitud)
+- `ejemplo.json` (alfanumérico y en minúsculas)
+- `blog.ejemplo.json` (incluye puntos para registrar un sub-subdominio)
+- `mi-blog.json` (usa guiones como separadores, lo cual es recomendable)
 
-### Example JSON File
+**NOTA:** Para evitar que una persona tenga un monopolio sobre subdominios de una letra, limitamos a todos a solo un subdominio de una letra.
+
+### Ejemplo de Archivo JSON
 `domains/docs.json`
 ```json
 {
-  "description": "Documentation website for is-a.dev",
+  "description": "Sitio de documentación para is-a.dev",
   "repo": "https://github.com/is-a-dev/docs",
   "owner": {
     "username": "is-a-dev",
@@ -50,42 +52,44 @@ All the filenames below meet all the criteria. The reason in parentheses is just
   }
 }
 ```
+## Estructura
 
-## Structure
-
-### owner (required)
-You need to specify some information about yourself here. This is so that you can be contacted if required.
-In the owner object, the fields username and email are required. You can add more information in this object if you want.
+### owner (requerido)
+Necesitas especificar alguna información sobre ti aquí. Esto es para que puedas ser contactado si es necesario.
+En el objeto owner, los campos username y email son obligatorios. Puedes agregar más información en este objeto si lo deseas.
 ```json
 {
   "owner": {
-    "username": "github-username"
+    "username": "usuario-github"
   }
 }
 ```
 
 ### description
-Describe your domain name and your usage. This is purely for documentation purpose and is optional.
+Describe tu nombre de dominio y su uso. Esto es puramente para fines de documentación y es opcional.
 
 ### repo
-This is a link to your website repository or your github account. This is purely for documentation purpose and is optional.
+Este es un enlace a tu repositorio de sitio web o tu cuenta de github. Esto es puramente para fines de documentación y es opcional.
 
-### record (required)
-This section is where you specify the DNS records.
+### record (requerido)
+Esta sección es donde especificas los registros DNS.
 
-You can see a list of supported types [here](/faq/#which-records-are-supported).
+Puedes ver una lista de los tipos soportados [aquí](/faq/#which-records-are-supported).
 
-Below are some examples for the given record types:
+A continuación se presentan algunos ejemplos para los tipos de registro dados:
 
-- **CNAME** record: This must be a hostname (`something.tld`). It cannot be used in conjunction with any other record types. This is typically used to map your domain to a specific server.
+- **CNAME** record: Este debe ser un nombre de host (`algo.tld`). No se puede usar en conjunto con ningún otro tipo de registro. Esto se utiliza típicamente para mapear tu dominio a un servidor específico.
+
 ```json
 {
   "record": {
-    "CNAME": "github-username.github.io"
+    "CNAME": "usuario-github.github.io"
   }
 }
 ```
-- **A** record: This must be a list of IPv4 addresses. These addresses point your domain to a specific server.
+
+- **A** record: Este debe ser una lista de direcciones IPv4. Estas direcciones apuntan tu dominio a un servidor específico.
+
 ```json
 {
   "record": {
@@ -97,7 +101,9 @@ Below are some examples for the given record types:
   }
 }
 ```
-- **AAAA** record: This must be a list of IPv6 addresses. Like the A record, these addresses point your domain to a specific server.
+
+- **AAAA** record: Este debe ser una lista de direcciones IPv6. Al igual que el registro A, estas direcciones apuntan tu dominio a un servidor específico.
+
 ```json
 {
   "record": {
@@ -109,15 +115,19 @@ Below are some examples for the given record types:
   }
 }
 ```
-- **URL** record: This redirects your domain to another URL.
+
+- **URL** record: Esto redirige tu dominio a otra URL.
+
 ```json
 {
   "record": {
-    "URL": "https://example.com"
+    "URL": "https://ejemplo.com"
   }
 }
 ```
-- **MX** record: This must be a list of hostnames. These hostnames specify the mail servers that handle emails for your domain.
+
+- **MX** record: Este debe ser una lista de nombres de host. Estos nombres de host especifican los servidores de correo que manejan los correos electrónicos para tu dominio.
+
 ```json
 {
   "record": {
@@ -128,22 +138,27 @@ Below are some examples for the given record types:
   }
 }
 ```
-- **TXT** record: This can be either a single string or a list of strings. TXT records are often used for various purposes, such as verifying domain ownership and ensuring email security.
+
+- **TXT** record: Este puede ser una cadena única o una lista de cadenas. Los registros TXT se utilizan a menudo para diversos propósitos, como verificar la propiedad del dominio y garantizar la seguridad del correo electrónico.
+
 ```json
 {
   "record": {
-    "TXT": "Hello World!"
+    "TXT": "¡Hola Mundo!"
   }
 }
 ```
+
 ```json
 {
   "record": {
-    "TXT": ["Hello", "World!"]
+    "TXT": ["¡Hola", "Mundo!"]
   }
 }
 ```
-- **NS** record: This must be a list of hostnames. These hostnames specify the authoritative DNS servers for your domain.
+
+- **NS** record: Este debe ser una lista de nombres de host. Estos nombres de host especifican los servidores DNS autoritativos para tu dominio.
+
 ```json
 {
   "record": {
@@ -154,9 +169,11 @@ Below are some examples for the given record types:
   }
 }
 ```
-Note: Please refer to the [frequently asked questions](https://docs.is-a.dev/faq/) for clarification on what or who we allow NS records for. If you want a example on what we want as the reasonings, you can [checkout this PR](https://github.com/is-a-dev/register/pull/16758).
 
-- **SRV** record: This must be a list of service records. Each record specifies the priority, weight, port, and target for a service on your domain. SRV records are often used for services such as VoIP, messaging, and more.
+Nota: Por favor, consulta las [preguntas frecuentes](https://docs.is-a.dev/faq/) para aclaraciones sobre qué o quién permitimos para los registros NS. Si deseas un ejemplo sobre lo que queremos como razonamientos, puedes [revisar esta PR](https://github.com/is-a-dev/register/pull/16758).
+
+- **SRV** record: Este debe ser una lista de registros de servicio. Cada registro especifica la prioridad, el peso, el puerto y el objetivo para un servicio en tu dominio. Los registros SRV se utilizan a menudo para servicios como VoIP, mensajería y más.
+
 ```json
 {
   "record": {
@@ -177,8 +194,10 @@ Note: Please refer to the [frequently asked questions](https://docs.is-a.dev/faq
   }
 }
 ```
-- **CAA** record: This must be a list of Certification Authority Authorization (CAA) records. Each record specifies the authority permitted to issue SSL certificates for your domain, with fields for `flags`, `tag`, and `value`.
-```js
+
+- **CAA** record: Este debe ser una lista de registros de Autorización de Autoridad de Certificación (CAA). Cada registro especifica la autoridad permitida para emitir certificados SSL para tu dominio, con campos para `flags`, `tag` y `value`.
+
+```json
 {
   "record": {
     "CAA": [
@@ -197,8 +216,9 @@ Note: Please refer to the [frequently asked questions](https://docs.is-a.dev/faq
 }
 ```
 
-### proxied (*optional*)
-Enable Cloudflare proxy for your domain. Disabled by default. To enable it, add this line of code:
+### proxied (*opcional*)
+Habilita el proxy de Cloudflare para tu dominio. Desactivado por defecto. Para habilitarlo, agrega esta línea de código:
+
 ```json
 "proxied": true
 ```
