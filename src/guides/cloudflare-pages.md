@@ -1,8 +1,7 @@
 ---
 label: Cloudflare Pages
 icon: /media/cloudflare.svg
-tags:
-    - guides
+tags: guides
 ---
 
 # Setting up Cloudflare Pages with is-a-dev subdomain

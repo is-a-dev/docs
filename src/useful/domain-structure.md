@@ -1,7 +1,7 @@
 ---
-tags: useful
 icon: file-code
 route: /domain-structure
+tags: useful
 ---
 # Domain Structure
 To register a subdomain, you need to create a new JSON file in the `domains` directory through a pull request. For example, to register `example.is-a.dev`, you would create a file named `example.json` in the `domains` directory. The full path would be `domains/example.json`.
@@ -38,6 +38,7 @@ All the filenames below meet all the criteria. The reason in parentheses is just
 
 ### Example JSON File
 `domains/docs.json`
+
 ```json
 {
   "description": "Documentation website for is-a.dev",
@@ -47,8 +48,9 @@ All the filenames below meet all the criteria. The reason in parentheses is just
     "email": "admin@is-a.dev"
   },
   "record": {
-    "CNAME": "is-a.dev"
-  }
+    "CNAME": "is-a-dev-docs.pages.dev"
+  },
+  "proxied": true
 }
 ```
 
@@ -74,7 +76,7 @@ This is a link to your website repository or your github account. This is purely
 ### record (required)
 This section is where you specify the DNS records.
 
-You can see a list of supported types [here](/faq/#which-records-are-supported).
+You can see a list of supported types [here](./faq#which-records-are-supported).
 
 Below are some examples for the given record types:
 

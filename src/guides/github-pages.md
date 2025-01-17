@@ -1,8 +1,7 @@
 ---
 label: GitHub Pages
 icon: mark-github
-tags:
-    - guides
+tags: guides
 ---
 
 ## Setting up GitHub pages with is-a.dev subdomain

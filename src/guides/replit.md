@@ -1,8 +1,7 @@
 ---
 icon: /media/replit.svg
 label: Replit
-tags:
-    - guides
+tags: guides
 ---
 
 # Setting up Replit with your is-a.dev subdomain

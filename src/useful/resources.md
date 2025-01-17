@@ -1,7 +1,7 @@
 ---
-tags: useful
-icon: info
+icon: browser
 route: /resources
+tags: useful
 ---
 
 # Resources

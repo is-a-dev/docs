@@ -1,8 +1,7 @@
 ---
 icon: /media/netlify.svg
 label: Netlify
-tags:
-    - guides
+tags: guides
 ---
 
 # Setting up Netlify with is-a.dev Subdomain
