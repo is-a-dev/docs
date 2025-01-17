@@ -1,12 +1,13 @@
 ![](../media/banner.png)
 
 # Documentation du service is-a.dev
-Ici, vous trouverez des guides, la structure des fichiers JSON à respecter et plus. Si vous voulez contribuer à la documentation, vous pouvez visiter [le référentiel Github](https://github.com/is-a-dev/docs).
+Ici, vous trouverez des guides, la structure des fichiers JSON à respecter et plus. Si vous voulez contribuer à la documentation, vous pouvez visiter [le référentiel Github (En anglais)](https://github.com/is-a-dev/docs).
 
 ## Comment enregistrer un domaine
-Vous pouvez trouver le guide sur la structure des fichiers JSON [ici](useful/domain-structure).
+Vous pouvez trouver le guide sur la structure des fichiers JSON pour enregistrer un domaine [ici](useful/domain-structure). _En cours de traduction_
 
 ## Guides
+_En cours de traduction_
 - [Cloudflare Pages](guides/cloudflare-pages)
 - [DanBot Hosting](guides/dbh)
 - [Vérification de domaine Discord](guides/discord-verification)
@@ -21,7 +22,8 @@ Vous pouvez trouver le guide sur la structure des fichiers JSON [ici](useful/dom
 - [Vercel](guides/vercel)
 
 ## Utile
- - [Structure des domaines](useful/domain-structure)
+_En cours de traduction_
+ - [Structure des fichiers JSON pour enregistrer un domaine](useful/domain-structure)
  - [FAQ](useful/faq)
  - [Ressources](useful/resources)
 
