@@ -1,0 +1,47 @@
+---
+label: Profile Discord
+icon: /media/discord.svg
+tags: guides
+---
+
+# Ajouter votre is-a.dev domaine à votre profile Discord
+## Récupérez votre texte de vérification
+
+1. Ouvrez votre application Discord et sélectionnez `Paramètres`.
+   ![](../media/discord/step_1.png)
+
+1. Ouvrez la section `Connections`.
+   ![](../media/discord/step_2.png)
+
+1. Pressez le bouton `Voir plus`.
+   ![](../media/discord/step_3.png)
+
+1. Cliquez sur le globe (bouton domaine)
+   ![](../media/discord/step_4.png)
+
+1. Dans le champ qui apparait, insérez votre is-a.dev domaine (e.g. `example.is-a.dev`).
+   ![](../media/discord/step_5.png)
+
+1. Récupérez votre texte de vérification
+   ![](../media/discord/step_6.png)
+
+### Créer le fichier de domaine
+
+Créez dans le dossier `domains/` un fichier JSON appelé `domains/_discord.example.json` contenant le texte suivant :
+
+```json
+{
+    "owner": {
+        "username": "github-username",
+        "email": "email@address"
+    },
+    "record": {
+        "TXT": "discord-verification-string"
+    }
+}
+```
+
+## Configuration
+
+Après que votre Pull Request ait été fusionné, refaite les étapes pour obtenir le texte de vérification et cliquez sur le bouton `Vérifier`.
+Si l'erreur 'Impossible de vérifier votre domaine' apparait, attendez quelques minutes (parfois jusqu'à 24 heures) la mise à jour du DNS.

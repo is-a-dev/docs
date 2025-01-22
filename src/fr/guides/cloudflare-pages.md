@@ -5,7 +5,7 @@ tags: guides
 ---
 # Configurer Cloudflare Pages avec un sous-domaine is-a.dev
 
-Ce guide vous guidera à travers le processus de configuration d'un site Cloudflare Pages et de redirection de votre sous-domaine is-a.dev vers celui-ci.
+Ce guide vous guidera pour créer un site Cloudflare Pages et y relier votre sous-domaine is-a.dev.
 
 ## Créer un site Cloudflare Pages
 
@@ -13,12 +13,11 @@ Premièrement, vous devrez créer un site sur Cloudflare Pages. Suivez les instr
 
 ### Rediriger votre sous-domaine vers votre site Cloudflare Pages
 
-Ensuite, vous devrez rediriger votre sous-domaine is-a.dev vers votre site Cloudflare pages. Suivez les instructions du [Guide des domaines personnalisés de Cloudflare Pages (en)](https://developers.cloudflare.com/pages/platform/custom-domains/#add-a-custom-domain). Suivez uniquement la section "Ajouter un domaine personnalisé", puis revenez à ce guide pour les étapes suivantes.
-Next, you'll need to point your is-a.dev subdomain to your Cloudflare Pages site. Follow the instructions in the [Cloudflare Pages Custom Domains Guide](https://developers.cloudflare.com/pages/platform/custom-domains/#add-a-custom-domain). Only follow the "Add a custom domain" section, then return to this guide for the next steps.
+Ensuite, vous devrez rediriger votre sous-domaine is-a.dev vers votre site Cloudflare pages. Suivez les instructions du [Guide des domaines personnalisés de Cloudflare Pages (en)](https://developers.cloudflare.com/pages/platform/custom-domains/#add-a-custom-domain). Suivez uniquement la section *"Ajouter un domaine personnalisé"*, puis revenez à ce guide pour les étapes suivantes.
 
-### Create the Domain File
+### Créer le fichier du domaine
 
-In the `domains` directory, create a new JSON file for your subdomain (`domains/subdomain.json`) and submit a pull request. This file should contain the following:
+Dans le chemin `domains`, créez un nouveau fichier JSON pour votre sous-domaine (`domains/sous-domaine.json`) et soumettez un pull request. Ce fichier doit contenir le JSON suivant :
 
 ```json
 {
@@ -32,6 +31,6 @@ In the `domains` directory, create a new JSON file for your subdomain (`domains/
 }
 ```
 
-### Your site should be live!
+### Votre site est en ligne !
 
-If you have followed all the steps correctly, then your site should be live after your pull request has been merged.
+Si vous arrivez jusqu'ici, votre site devrait être en ligne après que votre pull request ait été fusionné.
