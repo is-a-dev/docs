@@ -1,10 +1,10 @@
 ![](../media/banner.png)
 
-# Documentation du projet is-a.dev
-Ici, vous trouverez des guides, la structure du fichier JSON pour enregistrer un domaine et d'autres informations. Si vous voulez contribuer à la documentation, vous pouvez visiter [le référentiel Github (en)](https://github.com/is-a-dev/docs).
+# Documentation du service is-a.dev
+Ici, vous trouverez des guides, la structure des fichiers JSON à respecter et d'autres informations. Si vous voulez contribuer à la documentation, vous pouvez visiter [le référentiel Github (En anglais)](https://github.com/is-a-dev/docs).
 
 ## Comment enregistrer un domaine
-Vous pouvez trouver le guide sur la structure du fichiers JSON d'enregistrement [ici](utile/domaine-structure). *En cours de traduction*
+Vous pouvez trouver le guide sur la structure des fichiers JSON pour enregistrer un domaine [ici](useful/domain-structure). *En cours de traduction*
 
 ## Guides
 *En cours de traduction*
@@ -15,7 +15,7 @@ Vous pouvez trouver le guide sur la structure du fichiers JSON d'enregistrement 
 - [Hashnode Blogs](guides/hashnode)
 - [ImprovMX](guides/improvmx)
 - [Netlify](guides/netlify)
-- [Autres services](guides/autre)
+- [Autres services](guides/other)
 - [Railway](guides/railway)
 - [Render](guides/render)
 - [Replit](guides/replit)
@@ -24,7 +24,7 @@ Vous pouvez trouver le guide sur la structure du fichiers JSON d'enregistrement 
 ## Utile
 
 *En cours de traduction*
- - [Enregistrement d'un domaine](utile/domaine-structure)
+ - [Enregistrement d'un domaine](useful/domain-structure)
  - [FAQ](utile/faq)
  - [Ressources](utile/ressources)
 
@@ -35,7 +35,7 @@ Voici les domaines utilisés par l'administration de is-a.dev
 - data.is-a.dev (Site web de données, hébergé par [@wdhdev](https://github.com/wdhdev))
 - docs.is-a.dev (Ce site web)
 - owl.is-a.dev (Service de confidentialité des utilisateurs [Beta], hébergé par [@andrewstech](https://github.com/andrewstech) et [@wdhdev](https://github.com/wdhdev))
-- raw-api.is-a.dev (API JSON de tous les sous-domaines de is-a.dev, hébergé par [@wdhdev](https://github.com/wdhdev))
+- raw-api.is-a.dev (API brute JSON de tous les sous-domaines de is-a.dev, hébergé par [@wdhdev](https://github.com/wdhdev))
 - register-bot.is-a.dev (API du bot Discord, hébergé par [@andrewstech](https://github.com/andrewstech))
 - team.is-a.dev (Documentation pour l'administration)
 - www.is-a.dev (Redirige au domaine principal)
