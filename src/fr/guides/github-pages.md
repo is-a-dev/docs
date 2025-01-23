@@ -14,7 +14,7 @@ Tout d'abord, vous devez créer un site sur Github Pages. Suivez les instruction
 
 ### Créer le fichier du domaine
 
-Créer un fichier JSON dans le dossier `domains` (`domains/subdomain.json`) avec le contenu suivant et créer une pull request:
+Créez un fichier JSON dans le dossier `domains` (`domains/subdomain.json`) avec le contenu suivant et créez une pull request:
 
 ```json
 {
@@ -22,7 +22,7 @@ Créer un fichier JSON dans le dossier `domains` (`domains/subdomain.json`) avec
     "repo": "https://github.com/nom-d'utilisateur-github/référentiel-github",
     "owner": {
         "username": "nom-d'utilisateur-github",
-        "email": "moi@example.com"
+        "email": "votre-email@example.fr"
     },
     "record": {
         "CNAME": "nom-d'utilisateur-github.github.io"
@@ -68,7 +68,7 @@ Créer un fichier JSON dans le dossier `domains/` appellé `domains/nom-d'hôte.
 {
     "owner": {
         "username": "nom-d'utilisateur-github",
-        "email": "moi@example.com"
+        "email": "votre-email@example.fr"
     },
     "record": {
         "TXT": "texte-de-vérification-github"
