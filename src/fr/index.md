@@ -22,6 +22,7 @@ Vous pouvez trouver le guide sur la structure du fichiers JSON d'enregistrement 
 - [Vercel](guides/vercel)
 
 ## Utile
+
 *En cours de traduction*
  - [Enregistrement d'un domaine](utile/domaine-structure)
  - [FAQ](utile/faq)
