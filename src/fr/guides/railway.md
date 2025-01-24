@@ -3,18 +3,21 @@ icon: /media/railway.svg
 label: Railway
 tags: guides
 ---
+**Ce guide est obsolète. Pour l'améliorer n'hésitez pas à ouvrir une [pull request](https://github.com/is-a-dev/docs)**
+# Configurer Railway avec un sous-domaine is-a.dev
 
-# Setting up is-a.dev with Railway
+## Obtenir l'enregistrement CNAME
 
-## Getting the CNAME Record
+1. Rendez vous sur le [tableau de bord Railway](https://railway.app/dashboard)
+1. Allez sur le *projet*.
+1. Allez sur *Service*.
+1. Chnagez vers l'onglet **Settings**.
+1. Cliquez sur le bouton **+ Custom Domain**.
+1. Entrez votre sous-domaine `votre-domaine.is-a.dev`.
+1. Copiez le champ **Value**.
 
-1. Navigate to the [dashboard](https://railway.app/dashboard)
-1. Navigate to the project.
-1. Navigate to the service.
-1. Switch to the **Settings** tab.
-1. Click on **+ Custom Domain** button.
-1. Enter the `is-a.dev` subdomain you want to use.
-1. Copy the **Value** field.
+*En cours d'édition*
+
 1. Go to the [register site](https://register.is-a.dev).
 1. Choose **CNAME** record type from the dropdown menu.
 1. Choose your desired subdomain.
