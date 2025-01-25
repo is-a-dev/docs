@@ -3,6 +3,10 @@
 # Documentación is-a.dev
 Aquí vas a encontrar guías, nuestra estructura JSON de archivos y más. Si quieres ayudar a contribuir a nuestra documentación, puedes visitar [nuestro repositorio de documentación](https://github.com/is-a-dev/docs).
 
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CW7DE2JU&placement=is-adev&format=cover" id="_carbonads_js"></script>
+<br>
+
 ## ¿Cómo registrarse?
 Puedes leer sobre la estructura JSON de archivos de dominios [aquí](domain-structure).
 
