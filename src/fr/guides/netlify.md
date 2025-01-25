@@ -11,7 +11,7 @@ Ce guide vous guidera pour créer un déploiement Netlify et y relier votre sous
 
 ## Créer un site Netlify
 
-Premièrement, vous devez créer un site sur Netlify. Suivez les instructions sur [Netlify Docs (en)](https://docs.netlify.com/).
+Premièrement, vous devez créer un site sur Netlify. Suivez les instructions sur [Netlify Docs (En anglais)](https://docs.netlify.com/).
 
 ### Créer le fichier du domaine
 
