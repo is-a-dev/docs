@@ -3,6 +3,10 @@
 # Documentation du service is-a.dev
 Ici, vous trouverez des guides, la structure des fichiers JSON à respecter et d'autres informations. Si vous voulez contribuer à la documentation, vous pouvez visiter [le référentiel Github (En anglais)](https://github.com/is-a-dev/docs).
 
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CW7DE2JU&placement=is-adev&format=cover" id="_carbonads_js"></script>
+<br>
+
 ## Comment enregistrer un domaine
 Vous pouvez trouver le guide sur la structure des fichiers JSON pour enregistrer un domaine [ici](useful/domain-structure). *En cours de traduction*
 
