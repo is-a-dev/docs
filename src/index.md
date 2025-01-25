@@ -7,6 +7,9 @@ icon: home
 # is-a.dev Documentation
 Here you will find guides, our JSON file structure and more. If you want to help contribute to our documentation, you can visit [our docs repository](https://github.com/is-a-dev/docs).
 
+<!-- Carbon Ads -->
+<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CW7DE2JU&placement=is-adev&format=cover" id="_carbonads_js"></script>
+
 ## How to Register
 You can read about the domains JSON file structure [here](useful/domain-structure).
 
