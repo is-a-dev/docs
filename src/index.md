@@ -9,6 +9,7 @@ Here you will find guides, our JSON file structure and more. If you want to help
 
 <!-- Carbon Ads -->
 <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CW7DE2JU&placement=is-adev&format=cover" id="_carbonads_js"></script>
+<br>
 
 ## How to Register
 You can read about the domains JSON file structure [here](useful/domain-structure).
