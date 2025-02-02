@@ -23,7 +23,7 @@ tags: guides
     "email": "your-email"
   },
   "record": {
-    "CNAME": "is-a-dev-docs.pages.dev"
+    "CNAME": "the-value-railway-gave-you"
   }
 }
 ```
