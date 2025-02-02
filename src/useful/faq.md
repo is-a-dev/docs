@@ -84,7 +84,7 @@ We do not permit NS records for:
 ## Why are you so strict with NS records?
 We have to be strict with who we delegate NS records to as they allow the end-user to do basically *whatever they want* with their subdomain.
 
-As you can probably imagine, this can open the door to a lot of abuse, which is why are they are not freely available to everyone.
+As you can probably imagine, this can open the door to a lot of abuse, which is why they are not freely available to everyone.
 
 If we could, we would delegate NS records to everyone that wanted them, however we are not in a perfect world, so unfortunately we cannot.
 
