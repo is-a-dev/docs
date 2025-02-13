@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.792751732957">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.792762196209">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -33,12 +33,12 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../media/logo_circle.png" rel="icon">
-    <link href="../resources/css/retype.css?v=3.6.0.792751732957" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=3.6.0.792762196209" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.6.0.792751732957" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.6.0.792762196209" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.6.0.792751732957" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.6.0.792751732957" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.6.0.792762196209" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.6.0.792762196209" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -478,8 +478,8 @@ In the owner object, the fields username and email are required. You can add mor
 <ul>
 <li><strong>CAA</strong> record: This must be a list of Certification Authority Authorization (CAA) records. Each record specifies the authority permitted to issue SSL certificates for your domain, with fields for <code v-pre>flags</code>, <code v-pre>tag</code>, and <code v-pre>value</code>.</li>
 </ul>
-<div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<pre class="language-javascript"><code v-pre class="language-javascript">{
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-json"><code v-pre class="language-json">{
   &quot;record&quot;: {
     &quot;CAA&quot;: [
       {
@@ -495,6 +495,17 @@ In the owner object, the fields username and email are required. You can add mor
     ]
   }
 }</code></pre>
+</doc-codeblock></div>
+<ul>
+<li><strong>DS</strong> record: This must be a list of Delegation Signer(DS) records. Each verifies the authenticity of the (subdomain) zone with field <code v-pre>key_tag</code>, <code v-pre>algorithm</code>, <code v-pre>digest_type</code> and <code v-pre>digest</code>.</li>
+</ul>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-json"><code v-pre class="language-json">&quot;DS&quot;: [{
+      &quot;key_tag&quot;: 2371,
+      &quot;algorithm&quot;: 13,
+      &quot;digest_type&quot;: 2,
+      &quot;digest&quot;: &quot;C2074462471B81206F792AEC23469EF33DDC53538E8580DCCC92FD130C9A6096&quot;
+    }]</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="proxied-optional">
     <h3>
