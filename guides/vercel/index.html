@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.792762196209">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.793009833508">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -33,12 +33,12 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../media/logo_circle.png" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.6.0.792762196209" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.6.0.793009833508" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.792762196209" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.793009833508" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.792762196209" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.6.0.792762196209" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.793009833508" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.6.0.793009833508" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -285,6 +285,9 @@ When connecting the domain, you will be greeted with a TXT verification string. 
         </div>
         <div class="pr-5 ml-3 w-full">
 <p>You can also replace the email with any form of social media handle (Like Discord, Twitter, Bluesky, Mastodon etc.).</p>
+        </div>
+    </div>
+</div>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">{
     &quot;owner&quot;: {
@@ -296,10 +299,6 @@ When connecting the domain, you will be greeted with a TXT verification string. 
     }
 }</code></pre>
 </doc-codeblock></div>
-        </div>
-    </div>
-</div>
-<p><strong><em>DON&#x27;T MAKE A PULL REQUEST YET</em></strong>, we still have to make another file. If you were to make a pull request at this point, we would reject your domain since you are trying to make a nested subdomain on a subdomain you don&#x27;t own yet. Please proceed to the next step.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -313,6 +312,10 @@ When connecting the domain, you will be greeted with a TXT verification string. 
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
+<p><strong><em>DON&#x27;T MAKE A PULL REQUEST YET</em></strong>, we still have to make another file. If you were to make a pull request at this point, we would reject your domain since you are trying to make a nested subdomain on a subdomain you don&#x27;t own yet. Please proceed to the next step.</p>
+        </div>
+    </div>
+</div>
 <ol start="2">
 <li>Make a file for the main domain.
 Now you need to make a file for the main domain, we have two ways to do it: CNAME and A records. We&#x27;ll have two different files for these and explain what restricions or stuff you need to do.</li>
@@ -350,9 +353,6 @@ Now you need to make a file for the main domain, we have two ways to do it: CNAM
 </doc-anchor-target>
 <p>Once you have made these two files, you can now make a pull request to the <a href="https://github.com/is-a-dev/register">main repo</a>. Then you will have to be patient until it gets merged. If you want a chance to get your PR merged faster then join our <a href="https://discord.gg/is-a-dev-830872854677422150">Discord server!</a></p>
 <p>When the pull request has been merged your site should be working, if its still redirecting to the is-a.dev site clear your cache.</p>
-        </div>
-    </div>
-</div>
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">
                                     <span>
