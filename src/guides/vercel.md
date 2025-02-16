@@ -22,6 +22,7 @@ First, go to your Vercel dashboard, then go to your project, then go to Custom D
    When connecting the domain, you will be greeted with a TXT verification string. To make the file for this one the TXT record should be placed in `_vercel.subdomain.json` in the **domains directory** (replace subdomain with the domain you want of course) and the file should be like this:
 !!!
 You can also replace the email with any form of social media handle (Like Discord, Twitter, Bluesky, Mastodon etc.).
+!!!
 
 ```json
 {
