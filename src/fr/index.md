@@ -29,8 +29,8 @@ Vous pouvez trouver le guide sur la structure des fichiers JSON pour enregistrer
 
 *En cours de traduction*
  - [Enregistrement d'un domaine](useful/domain-structure)
- - [FAQ](utile/faq)
- - [Ressources](utile/ressources)
+ - [FAQ](useful/faq)
+ - [Ressources](useful/ressources)
 
 ## Sous-domaines officiels
 Voici les domaines utilisés par l'administration de is-a.dev
