@@ -11,26 +11,24 @@
     <meta name="generator" content="Retype 3.6.0">
 
     <!-- Primary Meta Tags -->
-    <title>Utiliser DanBot Hosting avec un sous-domaine is-a.dev | is-a.dev Docs</title>
-    <meta name="title" content="Utiliser DanBot Hosting avec un sous-domaine is-a.dev | is-a.dev Docs">
-    <meta name="description" content="Ce guide va vous guider tout au long du processus de configuration d'un site DanBot Hosting et de redirection de votre sous-domaine is-a.">
+    <title>Mise en place avec un sous-domaine is-a.dev | is-a.dev Docs</title>
+    <meta name="title" content="Mise en place avec un sous-domaine is-a.dev | is-a.dev Docs">
+    <meta name="description" content="Ce guide vous guidera tout au long du processus de mise en place d'un site Vercel pour pointer votre sous-domaine is-a.dev vers ce dernier.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://docs.is-a.dev/fr/guides/dbh/">
+    <link rel="canonical" href="https://docs.is-a.dev/fr/guides/vercel/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://docs.is-a.dev/fr/guides/dbh/">
-    <meta property="og:title" content="Utiliser DanBot Hosting avec un sous-domaine is-a.dev | is-a.dev Docs">
-    <meta property="og:description" content="Ce guide va vous guider tout au long du processus de configuration d'un site DanBot Hosting et de redirection de votre sous-domaine is-a.">
-    <meta property="og:image" content="https://docs.is-a.dev/media/dbh_proxy/1.jpg">
+    <meta property="og:url" content="https://docs.is-a.dev/fr/guides/vercel/">
+    <meta property="og:title" content="Mise en place avec un sous-domaine is-a.dev | is-a.dev Docs">
+    <meta property="og:description" content="Ce guide vous guidera tout au long du processus de mise en place d'un site Vercel pour pointer votre sous-domaine is-a.dev vers ce dernier.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://docs.is-a.dev/fr/guides/dbh/">
-    <meta property="twitter:title" content="Utiliser DanBot Hosting avec un sous-domaine is-a.dev | is-a.dev Docs">
-    <meta property="twitter:description" content="Ce guide va vous guider tout au long du processus de configuration d'un site DanBot Hosting et de redirection de votre sous-domaine is-a.">
-    <meta property="twitter:image" content="https://docs.is-a.dev/media/dbh_proxy/1.jpg">
+    <meta property="twitter:url" content="https://docs.is-a.dev/fr/guides/vercel/">
+    <meta property="twitter:title" content="Mise en place avec un sous-domaine is-a.dev | is-a.dev Docs">
+    <meta property="twitter:description" content="Ce guide vous guidera tout au long du processus de mise en place d'un site Vercel pour pointer votre sous-domaine is-a.dev vers ce dernier.">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -247,71 +245,115 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="utiliser-danbot-hosting-avec-un-sous-domaine-is-adev" class="break-words">
+<doc-anchor-target id="mise-en-place-avec-un-sous-domaine-is-adev" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#utiliser-danbot-hosting-avec-un-sous-domaine-is-adev">#</doc-anchor-trigger>
-        <span>Utiliser DanBot Hosting avec un sous-domaine is-a.dev</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#mise-en-place-avec-un-sous-domaine-is-adev">#</doc-anchor-trigger>
+        <span>Mise en place avec un sous-domaine is-a.dev</span>
     </h1>
 </doc-anchor-target>
-<p>Ce guide va vous guider tout au long du processus de configuration d&#x27;un site DanBot Hosting et de redirection de votre sous-domaine is-a.dev vers celui-ci.</p>
-<doc-anchor-target id="obtention-de-lip-du-proxy">
+<p>Ce guide vous guidera tout au long du processus de mise en place d&#x27;un site Vercel pour pointer votre sous-domaine is-a.dev vers ce dernier.</p>
+<doc-anchor-target id="vérifiez-que-vous-avez-un-site-vercel">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#obtention-de-lip-du-proxy">#</doc-anchor-trigger>
-        <span>Obtention de l&#x27;IP du proxy</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#vérifiez-que-vous-avez-un-site-vercel">#</doc-anchor-trigger>
+        <span>Vérifiez que vous avez un site Vercel</span>
     </h2>
 </doc-anchor-target>
-<p>Exécutez la commande suivante dans le salon #commands du serveur Discord de <a href="https://discord.gg/dbh">DanBot Hosting</a> :</p>
-<div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<pre class="language-none"><code v-pre class="language-none">dbh!server proxy</code></pre>
-</doc-codeblock></div>
-<p>Vous aurez une réponse comme celle-ci :</p>
-<p><figure class="content-center">
-    <img src="../../../media/dbh_proxy/1.jpg" alt="">
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-<p>Si vous êtes sur le plan gratuit, choisissez n&#x27;importe quel proxy US. Si vous êtes un donateur, vous pouvez utiliser le proxy spécifique aux donateurs, alors notez l&#x27;adresse IP du proxy que vous avez choisi.</p>
-<doc-anchor-target id="création-du-fichier-du-domaine">
+<p>If you haven&#x27;t made a Vercel site, make sure to make one. Follow the instructions in <a href="https://vercel.com/docs/getting-started-with-vercel">Vercel&#x27;s Docs</a>.
+Si vous n&#x27;avez pas fait de site Vercel, assurez-vous de le faire. Suivez les instructions dans la <a href="https://vercel.com/docs/getting-started-with-vercel">documentation Vercel</a>.</p>
+<doc-anchor-target id="création-du-fichier-de-domaine">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#création-du-fichier-du-domaine">#</doc-anchor-trigger>
-        <span>Création du fichier du domaine</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#création-du-fichier-de-domaine">#</doc-anchor-trigger>
+        <span>Création du fichier de domaine</span>
     </h3>
 </doc-anchor-target>
-<p>Créez un fichier JSON dans le dossier <code v-pre>domains</code> (<code v-pre>domains/subdomain.json</code>) avec le contenu suivant et soumettez une pull request :</p>
+<p>En premier lieu, allez dans votre tableau de bord Vercel, puis allez dans votre projet, puis allez dans Custom Domains et mettez-y le sous-domaine is-a.dev que vous voulez.</p>
+<p><strong>Vous aurez besoin de faire deux fichiers pour que ce processus se déroule correctement</strong>. Nous allons passer dans l&#x27;ordre pour cette section.</p>
+<ol>
+<li>Créez un fichier pour la vérification TXT Vercel
+Quand vous connectez le domaine, vous serez accueilli avec une chaîne de vérification TXT. Pour faire le fichier pour ce dernier, le TXT record doit être placé dans <code v-pre>_vercel.sous-domaine.json</code> dans le <strong>répertoire des domaines</strong> (remplacez sous-domaine par le domaine que vous voulez) et le fichier devrait être comme ceci:</li>
+</ol>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>Vous pouvez également remplacer l&#x27;e-mail par n&#x27;importe quelle forme de réseau social (comme Discord, Twitter, Bluesky, Mastodon etc.).</p>
+        </div>
+    </div>
+</div>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">{
-    &quot;description&quot;: &quot;Description de l'utilisation de ce sous-domaine&quot;,
-    &quot;repo&quot;: &quot;https://github.com/votre-nom-d-utilisateur/votre-depot&quot;,
     &quot;owner&quot;: {
-        &quot;username&quot;: &quot;votre-nom-d-utilisateur&quot;,
-        &quot;email&quot;: &quot;moi@example.com&quot;
+        &quot;username&quot;: &quot;nom-d-utilisateur-github&quot;,
+        &quot;email&quot;: &quot;email@exemple.com&quot;
     },
     &quot;record&quot;: {
-        &quot;A&quot;: [&quot;ip-du-proxy-ici&quot;]
+        &quot;TXT&quot;: &quot;insérer-la-chaine-de-vérification-ici&quot;
     }
 }</code></pre>
 </doc-codeblock></div>
-<p>Note : Dans la section propriétaire, vous pouvez ajouter tout compte de réseau social, comme Discord. Si vous ajoutez un autre compte de réseau social, le champ email devient facultatif. Le nom d&#x27;utilisateur GitHub reste cependant obligatoire. N&#x27;oubliez pas d&#x27;inclure une prévisualisation de votre site dans votre pull request.</p>
-<doc-anchor-target id="configuration">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#configuration">#</doc-anchor-trigger>
-        <span>Configuration</span>
-    </h2>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p><strong><em>NE PAS FAIRE DE PULL REQUEST MAITENANT</em></strong>, nous avons encore un autre fichier à faire. Si vous aviez fait une pull request à ce stade, nous rejetterions votre domaine car vous essayez de faire un sous-domaine imbriqué sur un sous-domaine que vous ne possédez pas encore. Veuillez passer à l&#x27;étape suivante.</p>
+        </div>
+    </div>
+</div>
+<ol>
+<li>Créez un fichier pour le domaine principal
+Maintenant, vous devez faire un fichier pour le domaine principal, nous avons deux façons de le faire : des enregistrements CNAME et A. Nous allons avoir deux différents fichiers pour ceux-là et expliquer ce que vous devez faire.</li>
+</ol>
+<p>Créez <code v-pre>sous-domaine.json</code> dans le <strong>répertoire des domaines</strong> (remplacez sous-domaine par le domaine que vous avez choisi) et mettez-y l&#x27;un de ces types :</p>
+<p><strong>Enregistrement CNAME</strong>: Si vous utilisez un enregistrement CNAME, vous n&#x27;avez pas besoin de fournir une prévisualisation, car vous utilisez le site comme le CNAME, mais vous ne pouvez pas utiliser d&#x27;autre enregistrement (comme des enregistrements MX et TXT). <strong>Cette option est idéale pour ceux qui ne veulent que leur domaine pour leur site</strong>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-json"><code v-pre class="language-json">{
+    &quot;owner&quot;: {
+        &quot;username&quot;: &quot;nom-d-utilisateur-github&quot;,
+        &quot;email&quot;: &quot;email@exemple.com&quot;
+    },
+    &quot;record&quot;: {
+        &quot;CNAME&quot;: &quot;nom-de-domaine.vercel.app&quot;
+    }
+}</code></pre>
+</doc-codeblock></div>
+<p><strong>Enregistrement A</strong>: Si vous utilisez un enregistrement A, vous devrez fournir une prévisualisation soit en plaçant un lien dans la section de commentaire de la PR, en le plaçant dans la description, soit en fournissant une capture d&#x27;écran de votre site web. <strong>Cette option est idéale pour ceux qui veulent utiliser leur domaine pour leur site et leur email</strong>.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-json"><code v-pre class="language-json">{
+    &quot;owner&quot;: {
+        &quot;username&quot;: &quot;nom-d-utilisateur-github&quot;,
+        &quot;email&quot;: &quot;email@exemple.com&quot;
+    },
+    &quot;record&quot;: {
+        &quot;A&quot;: [&quot;76.76.21.21&quot;]
+    }
+}</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="création-de-votre-pull-request">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#création-de-votre-pull-request">#</doc-anchor-trigger>
+        <span>Création de votre pull request</span>
+    </h3>
 </doc-anchor-target>
-<p>Après la fusion de la pull request, obtenez votre ID de serveur en exécutant cette commande :</p>
-<div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<pre class="language-none"><code v-pre class="language-none">dbh!server list</code></pre>
-</doc-codeblock></div>
-<p>Vous aurez une réponse comme celle-ci :</p>
-<p><figure class="content-center">
-    <img src="../../../media/dbh_proxy/2.jpg" alt="">
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-<p>Notez l&#x27;ID de votre serveur, puis exécutez la commande suivante :</p>
-<div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<pre class="language-none"><code v-pre class="language-none">dbh!server proxy your-subdomain.is-a.dev yourserverid</code></pre>
-</doc-codeblock></div>
+<p>Quand vous aurez fait ces deux fichiers, vous pourrez faire une pull request dans le <a href="https://github.com/is-a-dev/register">dépôt principal</a>, puis vous devrez patienter jusqu&#x27;à qu&#x27;elle soit fusionnée. Si vous voulez une change que votre PR soit fusionnée plus rapidement, rejoignez notre <a href="https://discord.gg/is-a-dev-830872854677422150">serveur Discord</a>.</p>
+<p>Quand votre PR aura été fusionnée, votre site devrait fonctionner. Si ce n&#x27;est pas le cas, effacez votre cache.</p>
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">
                                     <span>
@@ -329,7 +371,7 @@
                             </div>
                             <footer class="clear-both">
                                 <div class="flex flex-wrap items-center justify-between mt-14">
-                                    <a class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-blue-500 dark:text-blue-400 hover:text-blue-700 hover:underline" href="https://github.com/is-a-dev/docs/blob/main/src/fr/guides/dbh.md" target="_blank" rel="noopener">
+                                    <a class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-blue-500 dark:text-blue-400 hover:text-blue-700 hover:underline" href="https://github.com/is-a-dev/docs/blob/main/src/fr/guides/vercel.md" target="_blank" rel="noopener">
                                         <svg class="mr-1.5" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M20 12c-.55 0-1 .45-1 1v7c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h7c.55 0 1-.45 1-1s-.45-1-1-1H4C2.35 3 1 4.35 1 6v14c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-7c0-.55-.45-1-1-1z" /><path d="M22.21 1.79c-1.18-1.18-3.24-1.18-4.41 0l-9.5 9.5c-.13.13-.22.29-.26.46l-1 4c-.08.34.01.7.26.95.18.2.44.3.7.3.08 0 .16-.01.24-.03l4-1c.18-.04.34-.13.46-.26l9.5-9.5c1.22-1.22 1.22-3.2.01-4.42zm-1.42 3l-9.3 9.3-2.11.53.53-2.11 9.3-9.3c.42-.42 1.16-.42 1.59 0 .43.43.43 1.15-.01 1.58z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         <span>Edit this page</span>
                                     </a>
@@ -337,20 +379,20 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../fr/guides/codeberg-pages/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../fr/guides/replit/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Codeberg Pages</span>
+                                                <span class="block mt-1">Replit</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../fr/guides/github-pages/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../guides/cloudflare-pages/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Git​Hub Pages</span>
+                                                <span class="block mt-1">Cloudflare Pages</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -397,6 +439,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "DanBot Hosting", level: 3, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Vercel", level: 3, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
