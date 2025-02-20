@@ -1,6 +1,5 @@
 ---
 icon: file-code
-route: /domain-structure
 tags: useful
 ---
 # Structure de Domaine
