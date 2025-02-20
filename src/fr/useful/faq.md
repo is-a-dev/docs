@@ -1,7 +1,6 @@
 ---
 icon: question
 label: FAQ
-route: /faq
 tags: useful
 ---
 
