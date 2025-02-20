@@ -1,5 +1,6 @@
 ---
 icon: file-code
+label: Structure de Domaine
 tags: useful
 ---
 # Structure de Domaine
