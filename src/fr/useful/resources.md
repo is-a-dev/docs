@@ -1,5 +1,6 @@
 ---
 icon: browser
+label: Ressources
 tags: useful
 ---
 
