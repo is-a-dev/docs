@@ -1,6 +1,6 @@
 ---
 icon: browser
-route: /resources
+label: Ressources
 tags: useful
 ---
 
