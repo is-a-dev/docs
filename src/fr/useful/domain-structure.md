@@ -56,7 +56,7 @@ Tous les noms de fichiers ci-dessous respectent les critères. La raison indiqu�
 
 ## Structure
 
-### owner (obligatoire)
+### Owner (obligatoire)
 Vous devez spécifier certaines informations vous concernant ici. Cela permet de vous contacter si nécessaire.
 Dans l’objet owner, les champs `username` et `email` sont obligatoires. Vous pouvez ajouter plus d’informations dans cet objet si vous le souhaitez.
 ```json
@@ -67,13 +67,13 @@ Dans l’objet owner, les champs `username` et `email` sont obligatoires. Vous p
 }
 ```
 
-### description
+### Description
 Décrivez votre nom de domaine et son utilisation. Ceci est uniquement à des fins de documentation et est optionnel.
 
-### repo
+### Repo
 Ceci est un lien vers le dépôt de votre site Web ou votre compte GitHub. Ceci est uniquement à des fins de documentation et est optionnel.
 
-### record (obligatoire)  
+### Record (obligatoire)  
 Cette section est l’endroit où vous spécifiez les enregistrements DNS.  
 
 Vous pouvez voir une liste des types pris en charge [ici](./faq#which-records-are-supported).  
