@@ -214,3 +214,5 @@ Enable Cloudflare proxy for your domain. Disabled by default. To enable it, add 
 ```json
 "proxied": true
 ```
+
+### ¹ - Discord является запрёщенным мессенджером на территории РФ.
