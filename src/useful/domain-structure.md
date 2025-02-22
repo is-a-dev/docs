@@ -214,3 +214,14 @@ Enable Cloudflare proxy for your domain. Disabled by default. To enable it, add 
 ```json
 "proxied": true
 ```
+
+### redirect_config
+- Allows custom redirect endpoints for your domain. An example can be found [here](https://github.com/is-a-dev/register/blob/main/domains/william.json).
+```json
+"redirect_config": {
+    "custom_paths": {
+      "/github": "https://github.com/wdhdev"
+    },
+    "redirect_paths": true
+}
+```
