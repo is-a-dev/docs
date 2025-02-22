@@ -4,39 +4,40 @@ route: /ru/domain-structure
 tags: useful
 ---
 # Структура доменного имени
-To register a subdomain, you need to create a new JSON file in the `domains` directory through a pull request. For example, to register `example.is-a.dev`, you would create a file named `example.json` in the `domains` directory. The full path would be `domains/example.json`.
+Чтобы зарегистрировать субдоменное имя, Вам нужно создать новый файл JSON в каталоге `domains` через pull request (запрос). Например: Для регистрации `example.is-a.dev`, Вам нужно создать файл в каталоге `domains` с названием `example.json` - путь к файлу должен получиться `domains/example.json`.
+Если Вы хотите зарегистрировать субдоменное имя, которое содержит символы, не относящиеся к латинским буквам, цифрам, точке, тире, и нижним подчеркиванием, (пример - любая буква русского алфавита) то Вам нужно конвертировать данные символы в Punycode. Например: Для регистрации `пример.is-a.dev`, то имя файла будет `xn--e1afmkfd.json`.
 
-## Filename
+## Имя файла
 
-**Note**: You can include `.` (dots) in your filename to register a sub-subdomain (e.g., `blog.example.is-a.dev`). However, each segment of your subdomain must meet the following criteria:
+**Дополнительно**: Вы можете добавить `.` (точки) в Ваше имя файла, чтобы зарегистрировать суб-субдоменное имя (пример: `blog.example.is-a.dev`). Но каждый сегмент вашего субдоменного имени должен соблюдать следующие критерии:
 
-The filename:
+Имя файла:
 
-- Must be alphanumeric, in lowercase, with dashes as separators.
-- Must be at least 1 character.
-- Must have a `.json` file extension.
+- Должно содержать только: буквы латинского алфавита, цифры, тире как разделитель.
+- Должно содержать как минимум 1 символ.
+- Файл должен быть `.json`.
 
-### Examples of Invalid Filenames
-- `.json` (filename is less than 1 character)
-- `A.json` (filename contains uppercase letters)
-- `a..json` (filename contains consecutive dots)
-- `.a.json` (filename starts with a dot)
-- `a .json` (filename contains a space)
-- `a$.json` (filename contains a non-alphanumeric character)
-- `a.json.json` (filename contains more than one `.json` extension)
-- `a.is-a.dev.json` (filename contains `.is-a.dev`)
+### Примеры неправильных имён файла
+- `.json` (имя файла содержит менее одного символа)
+- `A.json` (имя файла содержит заглавные буквы)
+- `a..json` (имя файла содержит две или более рядом стоящие точки)
+- `.a.json` (имя файла начинается с точки)
+- `a .json` (имя файла содержит пробел)
+- `a$.json` (имя файла содержит символ, не относящийся к буквам латинского алфавита, или к цифрам, или к тире)
+- `a.json.json` (имя файла содержит более одного расширения файла `.json`)
+- `a.is-a.dev.json` (имя файла содержит `.is-a.dev`)
 
-### Examples of Valid Filenames
-All the filenames below meet all the criteria. The reason in parentheses is just an example of one of the criteria they meet.
+### Примеры правильных имён файла
+Все имена файлов в следующем списке соответствуют вышеупомянутой критерии. Причина, указанная в скобках, является примером одного из критериев, которым они соответствуют.
 
-- `a.json` (at least 1 character long)
-- `example.json` (alphanumeric and in lowercase)
-- `blog.example.json` (includes dots to register a sub-subdomain)
-- `my-blog.json` (uses dashes as separators, which is recommended)
+- `a.json` (имя файла содержит как минимум 1 символ)
+- `example.json` (имя файла содержит только символы, относящиеся к прописным буквам латинского алфавита, или к цифрам, или к тире)
+- `blog.example.json` (имя файла содержит точку, для того чтобы зарегистрировать суб-субдоменное имя)
+- `my-blog.json` (имя файла использует тире как разделитель)
 
-**NOTE:** To stop a person from having a monopoly over one-lettered subdomains, we limit everyone to only one one-lettered subdomain.
+**ВАЖНО:** Чтобы предотвратить возможность того, что один пользователь может владеть значимой частью 1-символьных субдоменных имён, мы поставили ограничение: максимум одно 1-символьное субдоменное имя на пользователя.
 
-### Example JSON File
+### Пример файла JSON
 `domains/docs.json`
 
 ```json
@@ -54,11 +55,11 @@ All the filenames below meet all the criteria. The reason in parentheses is just
 }
 ```
 
-## Structure
+## Структура
 
-### owner (required)
-You need to specify some information about yourself here. This is so that you can be contacted if required.
-In the owner object, the fields username and email are required. You can add more information in this object if you want.
+### owner (владелец) (обязательно)
+Вам нужно заполнить информацию о себе здесь. По данной информации мы сможем связаться с Вами в случае необходимости.
+В объекте "`owner`", поля "`username`" и "`email`" - обязательны. Вы можете добавить больше информации по Вашему желанию.
 ```json
 {
   "owner": {
@@ -67,13 +68,13 @@ In the owner object, the fields username and email are required. You can add mor
 }
 ```
 
-### description
+### description (описание)
 Describe your domain name and your usage. This is purely for documentation purpose and is optional.
 
-### repo
+### repo (репозиторий)
 This is a link to your website repository or your github account. This is purely for documentation purpose and is optional.
 
-### record (required)
+### record (запись/записи) (обязательно)
 This section is where you specify the DNS records.
 
 You can see a list of supported types [here](./faq#which-records-are-supported).
@@ -209,7 +210,7 @@ Note: Please refer to the [frequently asked questions](https://docs.is-a.dev/faq
     }]
 ```
 
-### proxied (*optional*)
+### proxied (прокси) (*необязательно*)
 Enable Cloudflare proxy for your domain. Disabled by default. To enable it, add this line of code:
 ```json
 "proxied": true
