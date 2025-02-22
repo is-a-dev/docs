@@ -63,33 +63,33 @@ tags: useful
 ```json
 {
   "owner": {
-    "username": "github-username"
+    "username": "ваш-псевдоним-github"
   }
 }
 ```
 
 ### description (описание)
-Describe your domain name and your usage. This is purely for documentation purpose and is optional.
+Опишите ваше субдоменное имя и его использование. Не является обязательным.
 
 ### repo (репозиторий)
-This is a link to your website repository or your github account. This is purely for documentation purpose and is optional.
+Ссылка на GitHub репозиторий Вашего сайта. Не является обязательным.
 
-### record (запись/записи) (обязательно)
-This section is where you specify the DNS records.
+### record (DNS-запись/DNS-записи) (обязательно)
+Данная секция предназначена для указания DNS-записей.
 
-You can see a list of supported types [here](./faq#which-records-are-supported).
+Вы можете посмотреть список поддерживаемых типов DNS-записей [здесь](./faq#which-records-are-supported).
 
-Below are some examples for the given record types:
+Несколько примеров типов DNS-записей представлены ниже.
 
-- **CNAME** record: This must be a hostname (`something.tld`). It cannot be used in conjunction with any other record types. This is typically used to map your domain to a specific server.
+- запись **CNAME**: Должно содержать только доменное имя (например `что-нибудь.высшее-доменное-имя`). Данную запись нельзя использовать в сочетании с какими-либо другими типами записей. Обычно это используется для привязки вашего домена к определенному серверу.
 ```json
 {
   "record": {
-    "CNAME": "github-username.github.io"
+    "CNAME": "ваш-псевдоним-github.github.io"
   }
 }
 ```
-- **A** record: This must be a list of IPv4 addresses. These addresses point your domain to a specific server.
+- запись **A**: Должно быть списком (JSON array), содержащим адреса IPv4. Данные адреса привяжут Ваше субдоменное имя к определенному серверу.
 ```json
 {
   "record": {
@@ -101,7 +101,7 @@ Below are some examples for the given record types:
   }
 }
 ```
-- **AAAA** record: This must be a list of IPv6 addresses. Like the A record, these addresses point your domain to a specific server.
+- запись **AAAA**: Должно быть списком (JSON array), содержащим адреса IPv6. Как в записи A, данные адреса привяжут Ваше субдоменное имя к определенному серверу.
 ```json
 {
   "record": {
@@ -113,7 +113,7 @@ Below are some examples for the given record types:
   }
 }
 ```
-- **URL** record: This redirects your domain to another URL.
+- запись **URL**: Установит переадресацию (редирект) Вашего субдоменного имени на другой URL-адрес. По техническим причинам, данная запись может некорректно работать на территории РФ.
 ```json
 {
   "record": {
@@ -121,7 +121,7 @@ Below are some examples for the given record types:
   }
 }
 ```
-- **MX** record: This must be a list of hostnames. These hostnames specify the mail servers that handle emails for your domain.
+- запись **MX**: Должно быть списком (JSON array), содержащим доменные имена. Данные доменные имена укажут почтовые сервера, которые будут обрабатывать электронные письма для Вашего субдоменного имени.
 ```json
 {
   "record": {
@@ -132,7 +132,7 @@ Below are some examples for the given record types:
   }
 }
 ```
-- **TXT** record: This can be either a single string or a list of strings. TXT records are often used for various purposes, such as verifying domain ownership and ensuring email security.
+- запись **TXT**: Должно быть либо одной строкой, либо списком (JSON array) строк. Текстовые записи часто используются для различных целей, таких как проверка владения доменом и обеспечение безопасности электронной почты.
 ```json
 {
   "record": {
@@ -147,7 +147,7 @@ Below are some examples for the given record types:
   }
 }
 ```
-- **NS** record: This must be a list of hostnames. These hostnames specify the authoritative DNS servers for your domain.
+- запись **NS**: Должно быть списком (JSON array), содержащим доменные имена. Данные доменные имена укажут авторитетные DNS сервера для Вашего субдоменного имени.
 ```json
 {
   "record": {
@@ -158,9 +158,9 @@ Below are some examples for the given record types:
   }
 }
 ```
-Note: Please refer to the [frequently asked questions](https://docs.is-a.dev/faq/) for clarification on what or who we allow NS records for. If you want a example on what we want as the reasonings, you can [checkout this PR](https://github.com/is-a-dev/register/pull/16758).
+ВАЖНО: Прочитайте [ЧАВО](https://docs.is-a.dev/faq/) для разъяснений о том, для чего или для кого мы разрешаем использовать записи NS. Также, как пример хорошей причины надобности NS записи, Вы можете посмотреть [этот pull request (запрос)](https://github.com/is-a-dev/register/pull/16758).
 
-- **SRV** record: This must be a list of service records. Each record specifies the priority, weight, port, and target for a service on your domain. SRV records are often used for services such as VoIP, messaging, and more.
+- запись **SRV**: Должно быть списком (JSON array), содержащим записи сервиса. Каждая запись долэна содержать priority (приоритет), weight (вес), port (порт), и target (цель) для сервиса на Вашем субдоменном имени. Записи SRV обычно используются для таких сервисов, как VoIP ², мессенджэр, и другие.
 ```json
 {
   "record": {
@@ -181,7 +181,7 @@ Note: Please refer to the [frequently asked questions](https://docs.is-a.dev/faq
   }
 }
 ```
-- **CAA** record: This must be a list of Certification Authority Authorization (CAA) records. Each record specifies the authority permitted to issue SSL certificates for your domain, with fields for `flags`, `tag`, and `value`.
+- запись **CAA**: Должно быть списком (JSON array), содержащим Записи об Aвторизации в центре Cертификации (CAA). В каждой записи указывается орган, которому разрешено выдавать SSL-сертификаты для вашего домена, с полями для `flags` (флагов), `tag` (тегов) и `value` (значений).
 ```json
 {
   "record": {
@@ -200,7 +200,7 @@ Note: Please refer to the [frequently asked questions](https://docs.is-a.dev/faq
   }
 }
 ```
-- **DS** record: This must be a list of Delegation Signer(DS) records. Each verifies the authenticity of the (subdomain) zone with field `key_tag`, `algorithm`, `digest_type` and `digest`.
+- запись **DS**: Должно быть списком (JSON array), содержащим записи лица, подписавшего делегирование (DS). Каждая из них проверяет подлинность зоны (субдоменного имени) с помощью полей `key_tag`, `algorithm`, `digest_type` и `digest`.
 ```json
 "DS": [{
       "key_tag": 2371,
@@ -211,9 +211,22 @@ Note: Please refer to the [frequently asked questions](https://docs.is-a.dev/faq
 ```
 
 ### proxied (прокси) (*необязательно*)
-Enable Cloudflare proxy for your domain. Disabled by default. To enable it, add this line of code:
+- Включить прокирование Cloudflare для Вашего субдоменного имени, по умолчанию - выключено. Чтобы включить, добавьте следующую строку кода:
 ```json
 "proxied": true
 ```
 
+
+### redirect_config (конфигурация переадресации) (*необязательно*)
+- Добавить конечные точки (endpoints или пути) переадресации (редиректа) для Вашего субдоменного имени. Пример можно найти [здесь](https://github.com/is-a-dev/register/blob/main/domains/william.json).
+```json
+"redirect_config": {
+    "custom_paths": {
+      "/github": "https://github.com/wdhdev"
+    },
+    "redirect_paths": true
+}
+```
+
 ### ¹ - Discord является запрёщенным мессенджером на территории РФ.
+### ² - VoIP (также известная как "IP-телефония") является запрещённой на территории РФ.
