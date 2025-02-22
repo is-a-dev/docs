@@ -19,14 +19,16 @@ First, go to your Vercel dashboard, then go to your project, then go to Custom D
 **You will need to make two files to ensure this process goes smoothly**. We will go in order for this section.
 
 1. Make a file for Vercel TXT verification.
-   When connecting the domain, you will be greeted with a TXT verification string. To make the file for this one the TXT record should be placed in `_vercel.subdomain.json` in the **domains directory** (replace subdomain with the domain you want of course) and the file should be like this (You can leave email field blank as long as you have another social, but **don't remove the field**):
+   When connecting the domain, you will be greeted with a TXT verification string. To make the file for this one the TXT record should be placed in `_vercel.subdomain.json` in the **domains directory** (replace subdomain with the domain you want of course) and the file should be like this:
+!!!
+You can also replace the email with any form of social media handle (Like Discord, Twitter, Bluesky, Mastodon etc.).
+!!!
 
 ```json
 {
     "owner": {
         "username": "insert-github-username-here",
-        "email": "",
-        "discord": "insert-discord-user-ID-here"
+        "email": "insert-email-here"
     },
     "record": {
         "TXT": "insert-TXT-string-you-got-from-vercel-here"
@@ -49,8 +51,7 @@ Make `subdomain.json` in the **domains directory** (replace subdomain with the d
 {
     "owner": {
         "username": "insert-github-username-here",
-        "email": "",
-        "discord": "insert-discord-user-ID-here"
+        "email": "insert-email-here"
     },
     "record": {
         "CNAME": "domainname.vercel.app"
@@ -64,8 +65,7 @@ Make `subdomain.json` in the **domains directory** (replace subdomain with the d
 {
     "owner": {
         "username": "insert-github-username-here",
-        "email": "",
-        "discord": "insert-discord-user-ID-here"
+        "email": "insert-email-here"
     },
     "record": {
         "A": ["76.76.21.21"]

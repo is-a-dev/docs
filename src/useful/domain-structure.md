@@ -181,7 +181,7 @@ Note: Please refer to the [frequently asked questions](https://docs.is-a.dev/faq
 }
 ```
 - **CAA** record: This must be a list of Certification Authority Authorization (CAA) records. Each record specifies the authority permitted to issue SSL certificates for your domain, with fields for `flags`, `tag`, and `value`.
-```js
+```json
 {
   "record": {
     "CAA": [
@@ -198,6 +198,15 @@ Note: Please refer to the [frequently asked questions](https://docs.is-a.dev/faq
     ]
   }
 }
+```
+- **DS** record: This must be a list of Delegation Signer(DS) records. Each verifies the authenticity of the (subdomain) zone with field `key_tag`, `algorithm`, `digest_type` and `digest`.
+```json
+"DS": [{
+      "key_tag": 2371,
+      "algorithm": 13,
+      "digest_type": 2,
+      "digest": "C2074462471B81206F792AEC23469EF33DDC53538E8580DCCC92FD130C9A6096"
+    }]
 ```
 
 ### proxied (*optional*)
