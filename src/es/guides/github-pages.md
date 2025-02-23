@@ -45,15 +45,15 @@ Crea un archivo JSON dentro del directorio `domains` (`domains/subdominio.json`)
 
 1. Abre GitHub, presiona en tu ícono de perfil en la parte superior derecha y presiona `Configuración`.
 
-![](../media/github_pages_verification/step_1.png)
+![](../../media/github_pages_verification/step_1.png)
 
 2. Presiona `Páginas`.
 
-![](../media/github_pages_verification/step_2.png)
+![](../../media/github_pages_verification/step_2.png)
 
 3. Presiona `Añadir un dominio`.
 
-![](../media/github_pages_verification/step_3.png)
+![](../../media/github_pages_verification/step_3.png)
 
 4. En el campo que aparece, escribe tu nombre de dominio is-a.dev (por ejemplo, `minombre.is-a.dev`) y presiona `Añadir dominio`.
 
@@ -61,7 +61,7 @@ Crea un archivo JSON dentro del directorio `domains` (`domains/subdominio.json`)
 
 5. Copia el nombre de host y la string de verificación.
 
-![](../media/github_pages_verification/step_5.png)
+![](../../media/github_pages_verification/step_5.png)
 
 ### Crear el archivo de dominio
 
