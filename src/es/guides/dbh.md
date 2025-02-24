@@ -21,7 +21,7 @@ dbh!server proxy
 
 Recibirás una respuesta como esta:
 
-![](../media/dbh_proxy/1.jpg)
+![](../../media/dbh_proxy/1.jpg)
 
 Si tienes un plan gratuito, elige cualquier proxy de US o puedes usar el Proxy para Donadores en caso de ser Donador. Anota la dirección IP del proxy que elijas.
 
@@ -55,7 +55,7 @@ dbh!server list
 
 Recibirás una respuesta como esta:
 
-![](../media/dbh_proxy/2.jpg)
+![](../../media/dbh_proxy/2.jpg)
 
 Anota el ID del servidor, luego ejecuta el siguiente comando:
 
