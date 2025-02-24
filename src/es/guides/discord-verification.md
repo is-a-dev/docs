@@ -11,22 +11,22 @@ tags:
 ## Obtén tu cadena de verificación
 
 1. Abre tu aplicación de Discord y presiona `Ajustes`.
-   ![](../media/discord/step_1.png)
+   ![](../../media/discord/step_1.png)
 
 1. Abre la sección `Conexiones`.
-   ![](../media/discord/step_2.png)
+   ![](../../media/discord/step_2.png)
 
 1. Presiona el botón `Ver más`.
-   ![](../media/discord/step_3.png)
+   ![](../../media/discord/step_3.png)
 
 1. Haz clic en el botón de dominio (el ícono del globo).
-   ![](../media/discord/step_4.png)
+   ![](../../media/discord/step_4.png)
 
 1. En el campo que aparece, escribe tu nombre de dominio is-a.dev (por ejemplo, `ejemplo.is-a.dev`).
-   ![](../media/discord/step_5.png)
+   ![](../../media/discord/step_5.png)
 
 1. Copia la cadena de verificación.
-   ![](../media/discord/step_6.png)
+   ![](../../media/discord/step_6.png)
 
 ### Crear el archivo de dominio
 
