@@ -57,7 +57,7 @@ Crea un archivo JSON dentro del directorio `domains` (`domains/subdominio.json`)
 
 4. En el campo que aparece, escribe tu nombre de dominio is-a.dev (por ejemplo, `minombre.is-a.dev`) y presiona `Añadir dominio`.
 
-![](../media/github_pages_verification/step_4.png)
+![](../../media/github_pages_verification/step_4.png)
 
 5. Copia el nombre de host y la string de verificación.
 
