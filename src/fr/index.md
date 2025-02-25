@@ -11,7 +11,6 @@ Ici, vous trouverez des guides, la structure des fichiers JSON à respecter et d
 Vous pouvez trouver le guide sur la structure des fichiers JSON pour enregistrer un domaine [ici](useful/domain-structure). *En cours de traduction*
 
 ## Guides
-*En cours de traduction*
 - [Cloudflare Pages](guides/cloudflare-pages)
 - [DanBot Hosting](guides/dbh)
 - [Vérification de domaine Discord](guides/discord-verification)
@@ -26,8 +25,6 @@ Vous pouvez trouver le guide sur la structure des fichiers JSON pour enregistrer
 - [Vercel](guides/vercel)
 
 ## Utile
-
-*En cours de traduction*
  - [Enregistrement d'un domaine](useful/domain-structure)
  - [FAQ](useful/faq)
  - [Ressources](useful/ressources)

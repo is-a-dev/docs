@@ -3,27 +3,33 @@ icon: /media/railway.png
 label: Railway
 tags: guides
 ---
-**Ce guide est obsolète. Pour l'améliorer n'hésitez pas à ouvrir une [pull request](https://github.com/is-a-dev/docs)**
-# Configurer Railway avec un sous-domaine is-a.dev
+
+# Configurer un domaine is-a.dev avec Railway
 
 ## Obtenir l'enregistrement CNAME
 
-1. Rendez vous sur le [tableau de bord Railway](https://railway.app/dashboard)
-1. Allez sur le *projet*.
-1. Allez sur *Service*.
-1. Chnagez vers l'onglet **Settings**.
-1. Cliquez sur le bouton **+ Custom Domain**.
-1. Entrez votre sous-domaine `votre-domaine.is-a.dev`.
-1. Copiez le champ **Value**.
+1. Rendez vous sur le [dashboard](https://railway.app/dashboard)
+2. Allez dans le projet
+3. Allez dans services.
+4. Passez sur l'onglet **Settings**.
+5. Cliquez sur le bouton **+ Custom Domain**.
+6. Entrez le sous domaine `is-a.dev` que vous voulez utiliser.
+7. Copiez le champ **Value**.
+8. Pour votre domaine, créez un JSON comme celui ci-dessous:
+```json
+{
+  "owner": {
+    "username": "votre-pseudo",
+    "email": "votre-email"
+  },
+  "record": {
+    "CNAME": "la-valeur-copiée"
+  }
+}
+```
+9. Après avoir enregistré le fichier, vous devez faire une pull-request.
+!!!
+**Ajouter un apercu du site est obligatoire**, car la valeur CNAME donnée par Railway ne montre pas le site que vous reliez.
+!!!
 
-*En cours d'édition*
-
-1. Go to the [register site](https://register.is-a.dev).
-1. Choose **CNAME** record type from the dropdown menu.
-1. Choose your desired subdomain.
-1. Enter the value from clipboard in the **Record Value** field.
-1. Click on the **Submit Query** button.
-1. Wait for your pull request to be merged and the DNS records to update.
-
-**If the PR has been merged, the DNS records will be updated in a few minutes.**
-**If the PR has been merged but the DNS records haven't updated and you have waited 48 hours, open a GitHub issue or a help thread in the is-a.dev discord server.**
+**Si votre PR a été fusionné, les enregistrements DNS vont s'actualiser dans quelques minutes (jusqu'a 48h).**
