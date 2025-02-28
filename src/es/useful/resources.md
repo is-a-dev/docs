@@ -32,7 +32,7 @@ Esta página proporciona una colección de recursos para ayudarte a entender con
 
 ## Git y GitHub
 
-- [La Guía Simple de Git](https://rogerdudler.github.io/git-guide/) - Una guía simple de Git sin complicaciones.
+- [Guía Simple de Git](https://rogerdudler.github.io/git-guide/) - Una guía simple de Git sin complicaciones.
 - [Piensa Como Git](https://think-like-a-git.net/) - Una guía para entender Git.
 
 ## Otros
