@@ -5,7 +5,7 @@ icon: info
 
 # Recursos
 
-Esta página proporciona una colección de recursos para ayudarte a entender conceptos clave relacionados con la gestión de dominios, como DNS, registros y más.
+Esta página proporciona una colección de recursos para ayudarte a entender conceptos clave relacionados con la gestión de dominios, tales como DNS, registros y más.
 
 ## Cómo Pedir Ayuda
 
