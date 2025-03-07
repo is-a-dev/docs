@@ -62,7 +62,7 @@ Create a JSON file inside `domains` directory (`domains/subdomain.json`) with th
 
 ### Create the domain file
 
-Create a JSON file inside the `domains/` directory called `domains/hostname.json` using the hostname you copied in step 5 with the following content and submit a pull request:
+Create a JSON file inside the `domains/` directory called `domains/hostname.subdomain.json` using the hostname you copied in step 5 and subdomain (`subdomain.is-a.dev`) with the following content and submit a pull request:
 
 ```json
 {
