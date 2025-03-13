@@ -34,7 +34,6 @@ Puedes leer sobre la estructura JSON de archivos de dominios [aquí](domain-stru
 Estos son los subdominios administrados por el equipo de is-a.dev.
 
 - is-a.dev (el dominio raíz, usado para sitios web, documentación y correos electrónicos)
-- all.is-a.dev (visualized version of raw-api.is-a.dev)
 - data.is.a.dev (sitio web de datos, administrado por [@wdhdev](https://github.com/wdhdev))
 - docs.is-a.dev (este sitio web)
 - owl.is-a.dev (servicio de privacidad de usuarios en fase beta, administrado por [@andrewstech](https://github.com/andrewstech) y [@wdhdev](https://github.com/wdhdev))
