@@ -40,7 +40,7 @@ These are the subdomains run by the is-a.dev staff team.
 - data.is-a.dev (data website, run by [@wdhdev](https://github.com/wdhdev))
 - docs.is-a.dev (this website)
 - owl.is-a.dev (beta user privacy service, run by [@andrewstech](https://github.com/andrewstech) and [@wdhdev](https://github.com/wdhdev))
-- raw-api.is-a.dev (raw JSON API of all is-a.dev subdomains, run by [@wdhdev](https://github.com/wdhdev))
+- raw.is-a.dev (raw JSON API of all is-a.dev subdomains, run by [@wdhdev](https://github.com/wdhdev))
 - register-bot.is-a.dev (Discord bot API, run by [@andrewstech](https://github.com/andrewstech))
 - team.is-a.dev (team documentation)
 - www.is-a.dev (redirect to the root domain)

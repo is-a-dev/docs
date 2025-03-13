@@ -37,7 +37,7 @@ Estos son los subdominios administrados por el equipo de is-a.dev.
 - data.is.a.dev (sitio web de datos, administrado por [@wdhdev](https://github.com/wdhdev))
 - docs.is-a.dev (este sitio web)
 - owl.is-a.dev (servicio de privacidad de usuarios en fase beta, administrado por [@andrewstech](https://github.com/andrewstech) y [@wdhdev](https://github.com/wdhdev))
-- raw-api.is-a.dev (API de JSON raw de todos los dominios is-a.dev, administrado por [@wdhdev](https://github.com/wdhdev))
+- raw.is-a.dev (API de JSON raw de todos los dominios is-a.dev, administrado por [@wdhdev](https://github.com/wdhdev))
 - register-bot.is-a.dev (API del bot de Discord, administrado por [@andrewstech](https://github.com/andrewstech))
 - team.is-a.dev (documentación del equipo)
 - www.is-a.dev (redirección al dominio raíz)

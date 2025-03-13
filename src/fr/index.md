@@ -36,7 +36,7 @@ Voici les domaines utilisés par l'administration de is-a.dev
 - data.is-a.dev (Site web de données, hébergé par [@wdhdev](https://github.com/wdhdev))
 - docs.is-a.dev (Ce site web)
 - owl.is-a.dev (Service de confidentialité des utilisateurs [Beta], hébergé par [@andrewstech](https://github.com/andrewstech) et [@wdhdev](https://github.com/wdhdev))
-- raw-api.is-a.dev (API brute JSON de tous les sous-domaines de is-a.dev, hébergé par [@wdhdev](https://github.com/wdhdev))
+- raw.is-a.dev (API brute JSON de tous les sous-domaines de is-a.dev, hébergé par [@wdhdev](https://github.com/wdhdev))
 - register-bot.is-a.dev (API du bot Discord, hébergé par [@andrewstech](https://github.com/andrewstech))
 - team.is-a.dev (Documentation pour l'administration)
 - www.is-a.dev (Redirige au domaine principal)
