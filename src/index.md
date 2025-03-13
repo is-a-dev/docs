@@ -37,6 +37,7 @@ You can read about the domains JSON file structure [here](useful/domain-structur
 These are the subdomains run by the is-a.dev staff team.
 
 - is-a.dev (the root domain, used for website, docs and emails)
+- all.is-a.dev (visualized version of raw-api.is-a.dev)
 - data.is-a.dev (data website, run by [@wdhdev](https://github.com/wdhdev))
 - docs.is-a.dev (this website)
 - owl.is-a.dev (beta user privacy service, run by [@andrewstech](https://github.com/andrewstech) and [@wdhdev](https://github.com/wdhdev))
