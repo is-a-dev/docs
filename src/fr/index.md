@@ -33,7 +33,6 @@ Vous pouvez trouver le guide sur la structure des fichiers JSON pour enregistrer
 Voici les domaines utilisés par l'administration de is-a.dev
 
 - is-a.dev (Le domaine principal, utilisé pour le site web, la documentation et les e-mails)
-- all.is-a.dev (visualized version of raw-api.is-a.dev)
 - data.is-a.dev (Site web de données, hébergé par [@wdhdev](https://github.com/wdhdev))
 - docs.is-a.dev (Ce site web)
 - owl.is-a.dev (Service de confidentialité des utilisateurs [Beta], hébergé par [@andrewstech](https://github.com/andrewstech) et [@wdhdev](https://github.com/wdhdev))
