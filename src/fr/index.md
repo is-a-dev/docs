@@ -33,13 +33,10 @@ Vous pouvez trouver le guide sur la structure des fichiers JSON pour enregistrer
 Voici les domaines utilisés par l'administration de is-a.dev
 
 - is-a.dev (Le domaine principal, utilisé pour le site web, la documentation et les e-mails)
+- all.is-a.dev (Version visuelle des données de raw.is-a.dev, hébergé par [@JustDeveloper1](https://github.com/JustDeveloper1))
+- raw.is-a.dev (API JSON de tous les sous-domaines de is-a.dev, hébergé par [@wdhdev](https://github.com/wdhdev))
 - data.is-a.dev (Site web de données, hébergé par [@wdhdev](https://github.com/wdhdev))
 - docs.is-a.dev (Ce site web)
-- owl.is-a.dev (Service de confidentialité des utilisateurs [Beta], hébergé par [@andrewstech](https://github.com/andrewstech) et [@wdhdev](https://github.com/wdhdev))
-- raw.is-a.dev (API brute JSON de tous les sous-domaines de is-a.dev, hébergé par [@wdhdev](https://github.com/wdhdev))
-- register-bot.is-a.dev (API du bot Discord, hébergé par [@andrewstech](https://github.com/andrewstech))
-- team.is-a.dev (Documentation pour l'administration)
-- www.is-a.dev (Redirige au domaine principal)
 
 **Ne faites confiance à AUCUN site web prétendant être affilié à is-a.dev n'étant pas listé ici. Si vous en trouvez un, merci de le signaler à [security@is-a.dev](mailto:security@is-a.dev).**
 
