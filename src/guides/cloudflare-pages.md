@@ -4,17 +4,17 @@ icon: /media/cloudflare.svg
 tags: guides
 ---
 
-# Setting up Cloudflare Pages with is-a-dev subdomain
+# Setting up Cloudflare Pages with an is-a.dev subdomain
 
-This guide will walk you through the process of setting up a Cloudflare Pages site and pointing your is-a.dev subdomain to it.
+This guide will walk you through the process of setting up a Cloudflare Pages website and pointing your is-a.dev subdomain towards it.
 
-## Create a Cloudflare Pages Site
+## Create a Cloudflare Pages Website
 
-First, you'll need to create a site on Cloudflare Pages. Follow the instructions in the [Cloudflare Pages Getting Started Guide](https://developers.cloudflare.com/pages/get-started/guide/).
+First, you'll need to create a website on Cloudflare Pages. Follow the instructions in the [Cloudflare Pages Getting Started Guide](https://developers.cloudflare.com/pages/get-started/guide/).
 
 ### Point your subdomain to your Cloudflare Pages site
 
-Next, you'll need to point your is-a.dev subdomain to your Cloudflare Pages site. Follow the instructions in the [Cloudflare Pages Custom Domains Guide](https://developers.cloudflare.com/pages/platform/custom-domains/#add-a-custom-domain). Only follow the "Add a custom domain" section, then return to this guide for the next steps.
+Next, you'll need to point your is-a.dev subdomain to your Cloudflare Pages website. Follow the instructions in the [Cloudflare Pages Custom Domains Guide](https://developers.cloudflare.com/pages/platform/custom-domains/#add-a-custom-domain). Only follow the "Add a custom domain" section, and then return to this guide for the next steps.
 
 ### Create the Domain File
 
@@ -24,7 +24,7 @@ In the `domains` directory, create a new JSON file for your subdomain (`domains/
 {
     "owner": {
         "username": "your-github-username",
-        "email": "your-email@gmail.com"
+        "email": "your-email@example.com"
     },
     "record": {
         "CNAME": "your-sitename.pages.dev"
@@ -32,6 +32,6 @@ In the `domains` directory, create a new JSON file for your subdomain (`domains/
 }
 ```
 
-### Your site should be live!
+### Your website should be live!
 
-If you have followed all the steps correctly, then your site should be live after your pull request has been merged.
+If you have followed all the steps correctly, then your website should be live after your pull request has been merged.

@@ -19,8 +19,8 @@ tags: guides
 ```json
 {
   "owner": {
-    "username": "your-username",
-    "email": "your-email"
+    "username": "your-github-username",
+    "email": "your-email@example.com"
   },
   "record": {
     "CNAME": "the-value-railway-gave-you"
@@ -29,9 +29,9 @@ tags: guides
 ```
 9. After you have made the file, you should make a pull request.
 !!!
-**Adding the website preview is neccessary**, since the CNAME value Railway gives you doesn't actually show you the website you are running.
+**Adding the website preview is mandatory**, since the CNAME value Railway gives you doesn't actually show you the website you are running.
 !!!
 
 
-**If the PR has been merged, the DNS records will be updated in a few minutes.**
-**If the PR has been merged but the DNS records haven't updated and you have waited 48 hours, open a GitHub issue or a help thread in the is-a.dev discord server.**
+- **If the PR has been merged, the DNS records will be updated in a few minutes.**
+- **If the PR has been merged but the DNS records haven't updated and you have waited 48 hours, [open a GitHub issue](https://github.com/is-a-dev/register/issues/new/choose) or a help thread in the is-a.dev [Discord server]((https://discord.gg/is-a-dev-830872854677422150)).**

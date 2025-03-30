@@ -4,13 +4,13 @@ label: Render
 tags: guides
 ---
 
-# Setting up Render with is-a.dev Subdomain
+# Setting up Render with an is-a.dev Subdomain
 
-This guide will walk you through the process of setting up a Render deployment and pointing your is-a.dev subdomain to it.
+This guide will walk you through the process of setting up a Render deployment and pointing your is-a.dev subdomain towards it.
 
 ## Creating a Render Service
 
-First, you'll need to create a service on Render. Follow the instructions in the [Render Docs](https://docs.render.com/).
+First, create a service on Render. Follow the instructions in the [Render Documentation](https://docs.render.com/).
 
 ### Creating the Domain File
 
@@ -21,7 +21,7 @@ Create a JSON file inside the `domains` directory (`domains/subdomain.json`) wit
     "description": "Describe the use of this subdomain",
     "repo": "https://github.com/github-username/github-repository",
     "owner": {
-        "username": "github-username",
+        "username": "your-github-username",
         "email": "me@example.com"
     },
     "record": {
@@ -30,11 +30,11 @@ Create a JSON file inside the `domains` directory (`domains/subdomain.json`) wit
 }
 ```
 
-**Note:** In the owner section, you can add any social media handle, such as Discord. If you add another social media account, you can omit the email field. However, the GitHub username is mandatory. Don't forget to provide a preview of your site in your pull request.
+**Note:** In the owner section, you can add any social media handle, such as Discord. If you add another social media account, you can omit the email field. However, the GitHub username is mandatory. Don't forget to provide a preview of your website in your pull request.
 
 ## Configuring Render
 
-- After the pull request is merged, you may need to configure your Render service to use the new subdomain. Go to your Render service's dashboard.
+- After your pull request is merged, you may need to configure your Render service to use the new subdomain. Go to your Render service's dashboard.
 - Navigate to **Settings > Custom Domains** and add `subdomain.is-a.dev` in the given field.
 - Render will provide a verification step, usually requiring you to add a DNS record. This step should be skipped if your subdomain is already pointing to Render's IP address (`216.24.57.1`).
 

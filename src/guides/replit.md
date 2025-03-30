@@ -4,7 +4,7 @@ label: Replit
 tags: guides
 ---
 
-# Setting up Replit with your is-a.dev subdomain
+# Setting up Replit with an is-a.dev subdomain
 
 ## Creating a project
 
@@ -25,7 +25,7 @@ Create a JSON file inside `domains` directory (`domains/subdomain.json`) with th
 ```json
 {
     "owner": {
-        "username": "github-username",
+        "username": "your-github-username",
         "email": "me@example.com"
     },
     "record": {

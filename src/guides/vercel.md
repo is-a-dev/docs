@@ -4,17 +4,17 @@ label: Vercel
 tags: guides
 ---
 
-# Setting up Vercel with is-a.dev subdomain
+# Setting up Vercel with an is-a.dev subdomain
 
-This guide will walk you through the process of setting up a Vercel site and pointing your is-a.dev subdomain to it.
+This guide will walk you through the process of setting up a Vercel site and pointing your is-a.dev subdomain towards it.
 
-## Make sure you have a Vercel site.
+## Ensure you have a Vercel site
 
 If you haven't made a Vercel site, make sure to make one. Follow the instructions in [Vercel's Docs](https://vercel.com/docs/getting-started-with-vercel).
 
-### Creating the domain files.
+### Creating the domain files
 
-First, go to your Vercel dashboard, then go to your project, then go to Custom Domains and put in there the is-a.dev subdomain you want.
+First, go to your Vercel dashboard, then go to your project, then go to Custom Domains and enter the is-a.dev subdomain you want.
 
 **You will need to make two files to ensure this process goes smoothly**. We will go in order for this section.
 
@@ -27,8 +27,8 @@ You can also replace the email with any form of social media handle (Like Discor
 ```json
 {
     "owner": {
-        "username": "insert-github-username-here",
-        "email": "insert-email-here"
+        "username": "your-github-username",
+        "email": "your-email-address@example.com"
     },
     "record": {
         "TXT": "insert-TXT-string-you-got-from-vercel-here"
@@ -40,18 +40,18 @@ You can also replace the email with any form of social media handle (Like Discor
 **_DON'T MAKE A PULL REQUEST YET_**, we still have to make another file. If you were to make a pull request at this point, we would reject your domain since you are trying to make a nested subdomain on a subdomain you don't own yet. Please proceed to the next step.
 !!!
 
-2. Make a file for the main domain.
+2. Create a file for the main domain.
    Now you need to make a file for the main domain, we have two ways to do it: CNAME and A records. We'll have two different files for these and explain what restricions or stuff you need to do.
 
-Make `subdomain.json` in the **domains directory** (replace subdomain with the domain you want of course) and put in the file one of these types:
+Create `subdomain.json` in the **domains directory** (replace subdomain with the domain you want of course) and put in the file one of these types:
 
-**CNAME record**: If you are using CNAME record you don't have to give a preview as you are using the site as the CNAME, but you can't use other record (Like MX and TXT records). **This option is ideal for those who only want to use their domain for their site**.
+**CNAME record**: If you are using CNAME record you don't have to give a preview as you are using the site as the CNAME, but you can't use other record (Like MX and TXT records) unless the domain is proxied. For information on how to proxy a domain, see [proxying your domain](https://docs.is-a.dev/domain-structure/#proxied-optional).
 
 ```json
 {
     "owner": {
-        "username": "insert-github-username-here",
-        "email": "insert-email-here"
+        "username": "your-github-username",
+        "email": "your-email-address@example.com"
     },
     "record": {
         "CNAME": "domainname.vercel.app"
@@ -64,8 +64,8 @@ Make `subdomain.json` in the **domains directory** (replace subdomain with the d
 ```json
 {
     "owner": {
-        "username": "insert-github-username-here",
-        "email": "insert-email-here"
+        "username": "your-github-username",
+        "email": "your-email-address@example.com"
     },
     "record": {
         "A": ["76.76.21.21"]
@@ -73,8 +73,8 @@ Make `subdomain.json` in the **domains directory** (replace subdomain with the d
 }
 ```
 
-### Make your pull request.
+### Make a pull request
 
-Once you have made these two files, you can now make a pull request to the [main repo](https://github.com/is-a-dev/register). Then you will have to be patient until it gets merged. If you want a chance to get your PR merged faster then join our [Discord server!](https://discord.gg/is-a-dev-830872854677422150)
+Once you have made these two files, you can now make a pull request to the [main repo](https://github.com/is-a-dev/register). Then you'll have to be patient until it gets merged. If you want a chance to get your PR merged faster then join our [Discord server!](https://discord.gg/is-a-dev-830872854677422150).
 
-When the pull request has been merged your site should be working, if its still redirecting to the is-a.dev site clear your cache.
+When the pull request has been merged your site should be working; if it is still redirecting to the is-a.dev site try clearing your cache.

@@ -2,17 +2,17 @@
 label: Welcome
 icon: home
 ---
-![](media/banner.png)
+![is-a.dev's banner asset](media/banner.png)
 
 # is-a.dev Documentation
-Here you will find guides, our JSON file structure and more. If you want to help contribute to our documentation, you can visit [our docs repository](https://github.com/is-a-dev/docs).
+Here you'll find detailed guides, the JSON file structure, and more. If you'd like to contribute to our documentation, visit [our documentation repository](https://github.com/is-a-dev/docs) on GitHub.
 
 <!-- Carbon Ads -->
 <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CW7DE2JU&placement=is-adev&format=cover" id="_carbonads_js"></script>
 <br>
 
 ## How to Register
-You can read about the domains JSON file structure [here](useful/domain-structure).
+You can read about the domains' JSON file structure [here](useful/domain-structure).
 
 ## Guides
 - [Cloudflare Pages](guides/cloudflare-pages)
@@ -34,14 +34,14 @@ You can read about the domains JSON file structure [here](useful/domain-structur
  - [Resources](useful/resources)
 
 ## Official Subdomains
-These are the subdomains run by the is-a.dev staff team.
+These are the official subdomains run by the is-a.dev staff team.
 
-- is-a.dev (the root domain, used for website, docs and emails)
-- all.is-a.dev (visualized version of raw.is-a.dev, run by [@JustDeveloper1](https://github.com/JustDeveloper1))
-- data.is-a.dev (data visualization website, run by [@wdhdev](https://github.com/wdhdev))
-- docs.is-a.dev (this website)
-- raw.is-a.dev (raw JSON API of all is-a.dev subdomains, run by [@wdhdev](https://github.com/wdhdev))
+- [`is-a.dev`](https://is-a.dev) (the root domain, used for the main page, documentation, and emails.)
+- [`all.is-a.dev`](https://all.is-a.dev) (visualization of [raw.is-a.dev](raw.is-a.dev), run by [@JustDeveloper1](https://github.com/JustDeveloper1).)
+- [`data.is-a.dev`](data.is-a.dev) (data visualization website, run by [@wdhdev](https://github.com/wdhdev).)
+- `docs.is-a.dev` (this website.)
+- [`raw.is-a.dev`](raw.is-a.dev) (raw JSON API of all is-a.dev subdomains, run by [@wdhdev](https://github.com/wdhdev).)
 
-**Do NOT trust any websites claiming to be us that are not listed here. If you find any, please report them to [security@is-a.dev](mailto:security@is-a.dev).**
+**Do *NOT* trust any websites claiming to be us that are not listed here. If you find any, please report them to [security@is-a.dev](mailto:security@is-a.dev).**
 
-*We do not unsolicitedly send emails to users, do not trust any unsolicitedly sent emails claiming they are us. Report any unsolicited emails to [security@is-a.dev](mailto:security@is-a.dev).*
+*We do not unsolicitedly send emails to users, do not trust any unsolicited emails claiming they are us. Report any unsolicited emails to [security@is-a.dev](mailto:security@is-a.dev).*
