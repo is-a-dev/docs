@@ -147,7 +147,7 @@ Below are some examples for the given record types:
   }
 }
 ```
-- **`TLSA`** record: This is used to store the fingerprint of a TLS/SSL certificate.
+- **`TLSA`** record: This record is used to store the fingerprint of a TLS/SSL certificate associated with a service. It helps in securing the connection by allowing clients to verify the server's certificate against the information stored in DNS.
 ```json
 {
   "record": {
@@ -156,7 +156,7 @@ Below are some examples for the given record types:
         "usage": 1,
         "selector": 1,
         "matchingType": 1,
-        "certificate": "hexadecimal string"
+        "certificate": "5B2D3A4F5E6B7C8D9E0F1A2B3C4D5E6F7A8B9C0D1E2F3A4B5C6D7E8F9A0B1C2D3"
       }
     ]
   }
