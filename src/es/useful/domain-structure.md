@@ -74,7 +74,7 @@ Este es un enlace a tu repositorio de sitio web o tu cuenta de github. Esto es p
 ### record (requerido)
 Esta sección es donde especificas los registros DNS.
 
-Puedes ver una lista de los tipos soportados [aquí](/faq/#which-records-are-supported).
+Puedes ver una lista de los tipos soportados [aquí](/es/useful/faq/#qué-registros-son-compatibles).
 
 A continuación se presentan algunos ejemplos para los tipos de registro dados:
 
@@ -170,7 +170,7 @@ A continuación se presentan algunos ejemplos para los tipos de registro dados:
 }
 ```
 
-Nota: Por favor, consulta las [preguntas frecuentes](https://docs.is-a.dev/faq/) para aclaraciones sobre qué o quién permitimos para los registros NS. Si deseas un ejemplo sobre lo que queremos como razonamientos, puedes [revisar esta PR](https://github.com/is-a-dev/register/pull/16758).
+Nota: Por favor, consulta las [preguntas frecuentes](https://docs.is-a.dev/es/useful/faq/) para aclaraciones sobre qué o quién permitimos para los registros NS. Si deseas un ejemplo sobre lo que queremos como razonamientos, puedes [revisar esta PR](https://github.com/is-a-dev/register/pull/16758).
 
 - **SRV** record: Este debe ser una lista de registros de servicio. Cada registro especifica la prioridad, el peso, el puerto y el objetivo para un servicio en tu dominio. Los registros SRV se utilizan a menudo para servicios como VoIP, mensajería y más.
 
