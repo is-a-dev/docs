@@ -8,7 +8,7 @@ Aquí vas a encontrar guías, nuestra estructura JSON de archivos y más. Si qui
 <br>
 
 ## ¿Cómo registrarse?
-Puedes leer sobre la estructura JSON de archivos de dominios [aquí](domain-structure).
+Puedes leer sobre la estructura JSON de archivos de dominios [aquí](useful/domain-structure).
 
 ## Guías
 
