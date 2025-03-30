@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.795462865842">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.796654276051">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -35,12 +35,12 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../media/logo_circle.png" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.6.0.795462865842" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.6.0.796654276051" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.795462865842" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.796654276051" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.795462865842" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.6.0.795462865842" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.796654276051" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.6.0.796654276051" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -253,10 +253,10 @@
         <span>GitHub Pages</span>
     </h1>
 </doc-anchor-target>
-<doc-anchor-target id="setting-up-github-pages-with-is-adev-subdomain">
+<doc-anchor-target id="setting-up-github-pages-with-an-is-adev-subdomain">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#setting-up-github-pages-with-is-adev-subdomain">#</doc-anchor-trigger>
-        <span>Setting up GitHub pages with is-a.dev subdomain</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#setting-up-github-pages-with-an-is-adev-subdomain">#</doc-anchor-trigger>
+        <span>Setting up GitHub pages with an is-a.dev subdomain</span>
     </h2>
 </doc-anchor-target>
 <p>This guide will walk you through the process of setting up a GitHub Pages site and pointing your is-a.dev subdomain to it.</p>
@@ -294,14 +294,14 @@
     </h3>
 </doc-anchor-target>
 <ul>
-<li>After the pull request is merged, you may see a <strong>404</strong> error on <code v-pre>subdomain.is-a.dev</code> or the wrong site. To fix this, go to your GitHub pages repository&#x27;s <strong>Settings &gt; GitHub pages &gt; Custom Domain</strong> and add <code v-pre>subdomain.is-a.dev</code> in the given field. <em>Only do this <strong>after</strong> your pull request is merged.</em></li>
+<li>After the pull request is merged, you may see a <strong>404</strong> error on <code v-pre>subdomain.is-a.dev</code> or the wrong site. To fix this issue, go to your GitHub pages repository and navigate to: <strong>Settings &gt; GitHub pages &gt; Custom Domain</strong> and add <code v-pre>subdomain.is-a.dev</code> in the given field. <em>Only do this <strong>after</strong> your pull request is merged.</em></li>
 <li>Check the <strong>Enforce HTTPS</strong> checkbox below the custom domain input.</li>
 <li>Wait some time and your site should be live!</li>
 </ul>
-<doc-anchor-target id="verifying-your-is-adev-domain-with-github-pages">
+<doc-anchor-target id="verifying-your-is-adev-subdomain-with-github-pages">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#verifying-your-is-adev-domain-with-github-pages">#</doc-anchor-trigger>
-        <span>Verifying your is-a.dev Domain with GitHub Pages</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#verifying-your-is-adev-subdomain-with-github-pages">#</doc-anchor-trigger>
+        <span>Verifying your is-a.dev Subdomain with GitHub Pages</span>
     </h2>
 </doc-anchor-target>
 <doc-anchor-target id="get-your-verification-string">
@@ -311,7 +311,7 @@
     </h3>
 </doc-anchor-target>
 <ol>
-<li>Open GitHub, press on your profile icon on the top right, and press <code v-pre>Settings</code>.</li>
+<li>Navigate to GitHub, press your profile icon at the top right, and press <code v-pre>Settings</code>.</li>
 </ol>
 <p><figure class="content-center">
     <img src="../../media/github_pages_verification/step_1.png" alt="">
@@ -335,7 +335,7 @@
 </figure>
 </p>
 <ol start="4">
-<li>In the field that appears, type your is-a.dev domain name (e.g. <code v-pre>myname.is-a.dev</code>) and press <code v-pre>Add domain</code>.</li>
+<li>In the field that appears, type your is-a.dev subdomain name (e.g. <code v-pre>myname.is-a.dev</code>) and press <code v-pre>Add domain</code>.</li>
 </ol>
 <p><figure class="content-center">
     <img src="../../media/github_pages_verification/step_4.png" alt="">
@@ -375,7 +375,7 @@
     </h3>
 </doc-anchor-target>
 <p>After your pull request has been merged, repeat the steps to get the verification string and press the <code v-pre>Verify</code> button.
-If it shows any error such as <code v-pre>Unable to verify your domain</code>, try waiting a few minutes (sometimes up to 24 hours) as the DNS change might not have reflected on the DNS server.</p>
+If it shows an error such as <code v-pre>Unable to verify your domain</code>, try waiting a few minutes (sometimes up to 24 hours) as the DNS records may not have propagated yet.</p>
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">
                                     <span>

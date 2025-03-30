@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.795462865842">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.796654276051">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -33,11 +33,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../media/logo_circle.png" rel="icon">
-    <link href="../resources/css/retype.css?v=3.6.0.795462865842" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=3.6.0.796654276051" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.6.0.795462865842" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.6.0.796654276051" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.6.0.795462865842" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.6.0.796654276051" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -263,7 +263,7 @@
 <li>CNAME</li>
 <li>DS
 <ul>
-<li>Note: These can only be used in combination for NS records, which are used for DNSSEC.</li>
+<li>Note: These can only be used in combination with NS records, which are used for DNSSEC.</li>
 </ul>
 </li>
 <li>MX</li>
@@ -280,10 +280,10 @@
 </ul>
 </li>
 </ul>
-<doc-anchor-target id="why-does-my-domain-still-redirect-to-the-is-a-dev-website">
+<doc-anchor-target id="why-does-my-domain-still-redirect-to-the-is-adev-website">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#why-does-my-domain-still-redirect-to-the-is-a-dev-website">#</doc-anchor-trigger>
-        <span>Why does my domain still redirect to the is-a-dev website?</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#why-does-my-domain-still-redirect-to-the-is-adev-website">#</doc-anchor-trigger>
+        <span>Why does my domain still redirect to the is-a.dev website?</span>
     </h2>
 </doc-anchor-target>
 <p>This usually occurs due to the cache of your browser becoming invalid and <a href="https://support.google.com/accounts/answer/32050">clearing your browser&#x27;s cache</a> should solve this issue.</p>
@@ -293,14 +293,14 @@
         <span>Can I use a CNAME record with any other records?</span>
     </h2>
 </doc-anchor-target>
-<p>You cannot request a subdomain nor submit changes containing a CNAME with any other records (A, AAAA, MX, TXT, etc...)</p>
-<doc-anchor-target id="how-long-will-it-take-for-my-pr-to-get-merged">
+<p>You cannot request a subdomain nor submit changes containing a CNAME with any other records (A, AAAA, MX, TXT, etc...) unless the domain is proxied. For information on how to proxy a domain, see <a href="https://docs.is-a.dev/domain-structure/#proxied-optional">proxying your domain</a>.</p>
+<doc-anchor-target id="how-long-will-it-take-for-my-pull-request-to-get-merged">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#how-long-will-it-take-for-my-pr-to-get-merged">#</doc-anchor-trigger>
-        <span>How long will it take for my PR to get merged?</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-long-will-it-take-for-my-pull-request-to-get-merged">#</doc-anchor-trigger>
+        <span>How long will it take for my pull request to get merged?</span>
     </h2>
 </doc-anchor-target>
-<p>When we get into it. We always want you to wait for as short as possible. But maintainers cannot always be online. We have school and work, this is just a side project. Just be patient and we&#x27;ll get to it as soon as possible! For a chance for a quicker review, send your PR in <a href="https://discord.com/channels/830872854677422150/1130858271620726784">#⁠pull-requests</a> on our <a href="https://discord.gg/is-a-dev-830872854677422150">Discord server</a>.</p>
+<p>When we get to it. We always try to shorten users&#x27; wait time as much as possible; however, maintainers have lives and cannot always be online. We have school and work; this is just a side project. Remember that all the maintainers are volunteers. Be patient and we&#x27;ll get to it as soon as possible! For a chance of a quicker review, send your your pull request link in <a href="https://discord.com/channels/830872854677422150/1130858271620726784">#⁠pull-requests</a> on our <a href="https://discord.gg/is-a-dev-830872854677422150">Discord server</a>.</p>
 <doc-anchor-target id="which-services-do-you-support">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#which-services-do-you-support">#</doc-anchor-trigger>
@@ -321,42 +321,28 @@
         <span>Can I create nested subdomains? (sub-sub domains)</span>
     </h2>
 </doc-anchor-target>
-<p>Yes, you can! Simply create a file such as <code v-pre>blog.example.json</code> and follow the same guidelines as you would while registering <code v-pre>example.json</code>. Please note in order to have <code v-pre>blog.example.is-a.dev</code>, you must also own <code v-pre>example.is-a.dev</code>.</p>
-<doc-anchor-target id="how-can-i-edit-my-domain">
+<p>Yes, you can! Simply create a file such as <code v-pre>blog.example.json</code> and follow the same guidelines as you would while registering <code v-pre>example.json</code>. Please note in order to have <code v-pre>blog.example.is-a.dev</code>, you must also own <code v-pre>example.is-a.dev</code>. Additionally, you can nest subdomains as much as you can — <code v-pre>example.example.example.is-a.dev</code> is possible.</p>
+<doc-anchor-target id="i-get-an-ssl-error-while-using-github-pages-how-do-i-fix-this">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#how-can-i-edit-my-domain">#</doc-anchor-trigger>
-        <span>How can I edit my domain?</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#i-get-an-ssl-error-while-using-github-pages-how-do-i-fix-this">#</doc-anchor-trigger>
+        <span>I get an SSL error while using GitHub Pages, how do I fix this?</span>
     </h2>
 </doc-anchor-target>
-<p>You can edit your domain&#x27;s JSON file and submit a pull request to edit your domain.</p>
-<doc-anchor-target id="how-can-i-delete-my-domain">
+<p>Visit your GitHub Pages settings on your website&#x27;s repository (most likely labelled similar to <code v-pre>your-github-username.github.io</code>) and ensure the <code v-pre>Enforce HTTPS</code> option is enabled to avoid this error.</p>
+<doc-anchor-target id="can-i-become-a-maintainerjoin-the-is-adev-staff-team">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#how-can-i-delete-my-domain">#</doc-anchor-trigger>
-        <span>How can I delete my domain?</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#can-i-become-a-maintainerjoin-the-is-adev-staff-team">#</doc-anchor-trigger>
+        <span>Can I become a maintainer/join the is-a.dev staff team?</span>
     </h2>
 </doc-anchor-target>
-<p>You can delete your domain&#x27;s JSON file and submit a pull request to delete your domain.</p>
-<doc-anchor-target id="i-keep-getting-a-ssl-error-while-using-github-pages-how-do-i-fix-this">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#i-keep-getting-a-ssl-error-while-using-github-pages-how-do-i-fix-this">#</doc-anchor-trigger>
-        <span>I keep getting a SSL error while using GitHub Pages, how do i fix this?</span>
-    </h2>
-</doc-anchor-target>
-<p>You need to go to your GitHub Pages settings on your website repository (likely called something like <code v-pre>github-username.github.i&gt;</code>) and make sure the <code v-pre>Enforce HTTPS</code> option is enabled to avoid this error.</p>
-<doc-anchor-target id="can-i-be-a-maintainerjoin-the-team">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#can-i-be-a-maintainerjoin-the-team">#</doc-anchor-trigger>
-        <span>Can I be a maintainer/join the team?</span>
-    </h2>
-</doc-anchor-target>
-<p>No, we handpick every member of our team. You can increase your chances of being chosen by helping out people in our help forums.</p>
+<p>No, we handpick each member of the team. You can increase your chances of being chosen by helping out people in our help forums and channels. This alone, however, will not guarantee in any way a position in the team.</p>
 <doc-anchor-target id="i-have-accidentally-leaked-sensitive-information-in-my-pr-how-can-i-get-my-pr-deleted">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#i-have-accidentally-leaked-sensitive-information-in-my-pr-how-can-i-get-my-pr-deleted">#</doc-anchor-trigger>
         <span>I have accidentally leaked sensitive information in my PR, how can I get my PR deleted?</span>
     </h2>
 </doc-anchor-target>
-<p>If your PR <strong>has not been merged</strong>, you can email <a href="mailto:security@is-a.dev">security@is-a.dev</a> or DM <a href="https://discord.com/users/853158265466257448">williamharrison on Discord</a>. If your PR has been merged already, then there is nothing we can do about it unfortunately.</p>
+<p>If your PR <strong>has not been merged</strong>, email <a href="mailto:security@is-a.dev">security@is-a.dev</a> or DM <a href="https://discord.com/users/853158265466257448">@williamharrison on Discord</a>. If your PR has been merged already, then there is unfortunately nothing we can do about it.</p>
 <doc-anchor-target id="can-i-use-my-domain-for-a-minecraft-server">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#can-i-use-my-domain-for-a-minecraft-server">#</doc-anchor-trigger>
@@ -365,6 +351,7 @@
 </doc-anchor-target>
 <p>Yes, you can. You can use an A record combined with an SRV record for this.</p>
 <p>Refer to <a href="https://www.namecheap.com/support/knowledgebase/article.aspx/9765/2208/how-can-i-link-my-domain-name-to-a-minecraft-server">this article</a> by Namecheap for support.</p>
+<p>Please note that you may only do this on a <em>nested subdomain</em>, as root subdomains must be related to software development as is required in our <a href="https://is-a.dev/terms">Terms of Service</a>.</p>
 <doc-anchor-target id="who-can-use-ns-records">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#who-can-use-ns-records">#</doc-anchor-trigger>
@@ -373,7 +360,7 @@
 </doc-anchor-target>
 <p>We allow NS records for the following reasons and use-cases:</p>
 <ul>
-<li>Users who require a private zone, as they are using their home IP address through <strong>an <code v-pre>A</code> OR <code v-pre>AAAA</code> record</strong> behind a proxy service such as Cloudflare. <strong>You MUST provide evidence of usage for this reasoning to be approved.</strong></li>
+<li>Users who require a private zone, as they are using their home IP address through <strong>an <code v-pre>A</code> OR <code v-pre>AAAA</code> record</strong> behind a proxy service such as Cloudflare. <strong>You <em>MUST</em> provide evidence of usage for this reasoning to be approved.</strong></li>
 <li>When a third-party service (e.g. Aternos, Wix or Squarespace) mandates specific NS records and you are unable to manage DNS records directly under that domain. Approval requires:
 <ul>
 <li>Documentation or evidence from the third-party service explicitly stating this requirement.</li>
@@ -396,24 +383,25 @@
         <span>Why are you so strict with NS records?</span>
     </h2>
 </doc-anchor-target>
-<p>We have to be strict with who we delegate NS records to as they allow the end-user to do basically <em>whatever they want</em> with their subdomain.</p>
-<p>As you can probably imagine, this can open the door to a lot of abuse, which is why they are not freely available to everyone.</p>
-<p>If we could, we would delegate NS records to everyone that wanted them, however we are not in a perfect world, so unfortunately we cannot.</p>
-<doc-anchor-target id="how-can-i-make-changes-to-my-is-adev-subdomain">
+<p>We have to be strict with who we delegate NS records to as they allow the end-user to essentially do <em>whatever they wish</em> with their subdomain.</p>
+<p>As you can probably imagine, this opens the door to a lot of abuse, which is why they are not freely available to everyone.</p>
+<p>If we could, we would delegate NS records to everyone that wanted them, however we do not live in a perfect world, so we unfortunately can&#x27;t.</p>
+<doc-anchor-target id="how-can-i-make-changes-to-or-delete-my-is-adev-subdomain">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#how-can-i-make-changes-to-my-is-adev-subdomain">#</doc-anchor-trigger>
-        <span>How can I make changes to my is-a.dev subdomain?</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-can-i-make-changes-to-or-delete-my-is-adev-subdomain">#</doc-anchor-trigger>
+        <span>How can I make changes to or delete my is-a.dev subdomain?</span>
     </h2>
 </doc-anchor-target>
 <ol>
-<li><strong>Open your JSON file:</strong> Navigate to the <code v-pre>domains</code> directory in your fork and open the JSON file corresponding to your subdomain (<code v-pre>domains/subdomain.json</code>).</li>
-<li><strong>Make your changes:</strong> Edit the JSON file (or delete) to reflect the changes you want to make.</li>
+<li><strong>Read this documentation and our <a href="https://is-a.dev/terms">ToS</a></strong>: This is so that you can ensure you fully understand the registration process, our requirements, and how to fully comply with our Terms of Service.</li>
+<li><strong>Open your JSON file:</strong> Navigate to the <code v-pre>domains</code> directory in your fork and open the JSON file corresponding to your subdomain (<code v-pre>domains/your-subdomain.json</code>).</li>
+<li><strong>Make your changes:</strong> Edit or delete the JSON file to reflect the changes you want to make.</li>
 <li><strong>Commit your changes:</strong> Once you&#x27;ve made your changes, commit them to your fork.</li>
 <li><strong>Push your changes:</strong> Push your changes to your forked repository on GitHub.</li>
-<li><strong>Submit a Pull Request:</strong> Go to your forked repository on GitHub and open a pull request.</li>
+<li><strong>Submit a pull request:</strong> Navigate to your forked repository on GitHub and open a pull request.</li>
 <li><strong>Wait for your PR to be merged:</strong> After you have submitted your pull request, wait for it to be reviewed and merged. Once your pull request has been merged, your changes should be live!</li>
 </ol>
-<p><strong>Note:</strong> Make sure to monitor your PR for reviews in case some changes are requested.</p>
+<p><strong>Note:</strong> Make sure to monitor your PR for reviews in case some changes are requested by a maintainer.</p>
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">
                                     <span>

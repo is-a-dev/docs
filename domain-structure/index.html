@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.795462865842">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.796654276051">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -13,7 +13,7 @@
     <!-- Primary Meta Tags -->
     <title>Domain Structure | is-a.dev Docs</title>
     <meta name="title" content="Domain Structure | is-a.dev Docs">
-    <meta name="description" content="To register a subdomain, you need to create a new JSON file in the domains directory through a pull request. For example, to register ">
+    <meta name="description" content="To register a subdomain, you must create a new JSON file in the domains directory through a pull request. For example, to register ">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.is-a.dev/domain-structure/">
@@ -22,23 +22,23 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.is-a.dev/domain-structure/">
     <meta property="og:title" content="Domain Structure | is-a.dev Docs">
-    <meta property="og:description" content="To register a subdomain, you need to create a new JSON file in the domains directory through a pull request. For example, to register ">
+    <meta property="og:description" content="To register a subdomain, you must create a new JSON file in the domains directory through a pull request. For example, to register ">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.is-a.dev/domain-structure/">
     <meta property="twitter:title" content="Domain Structure | is-a.dev Docs">
-    <meta property="twitter:description" content="To register a subdomain, you need to create a new JSON file in the domains directory through a pull request. For example, to register ">
+    <meta property="twitter:description" content="To register a subdomain, you must create a new JSON file in the domains directory through a pull request. For example, to register ">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../media/logo_circle.png" rel="icon">
-    <link href="../resources/css/retype.css?v=3.6.0.795462865842" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=3.6.0.796654276051" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.6.0.795462865842" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.6.0.796654276051" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.6.0.795462865842" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.6.0.795462865842" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.6.0.796654276051" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.6.0.796654276051" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -251,7 +251,7 @@
         <span>Domain Structure</span>
     </h1>
 </doc-anchor-target>
-<p>To register a subdomain, you need to create a new JSON file in the <code v-pre>domains</code> directory through a pull request. For example, to register <code v-pre>example.is-a.dev</code>, you would create a file named <code v-pre>example.json</code> in the <code v-pre>domains</code> directory. The full path would be <code v-pre>domains/example.json</code>.</p>
+<p>To register a subdomain, you must create a new JSON file in the <code v-pre>domains</code> directory through a pull request. For example, to register <code v-pre>example.is-a.dev</code>, you would create a file named <code v-pre>example.json</code> in the <code v-pre>domains</code> directory. The full path would be <code v-pre>domains/example.json</code>.</p>
 <doc-anchor-target id="filename">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#filename">#</doc-anchor-trigger>
@@ -261,9 +261,10 @@
 <p><strong>Note</strong>: You can include <code v-pre>.</code> (dots) in your filename to register a sub-subdomain (e.g., <code v-pre>blog.example.is-a.dev</code>). However, each segment of your subdomain must meet the following criteria:</p>
 <p>The filename:</p>
 <ul>
-<li>Must be alphanumeric, in lowercase, with dashes as separators.</li>
+<li>Must be alphanumeric, in lowercase. Dashes (<code v-pre>-</code>) may be used as separators.</li>
 <li>Must be at least 1 character.</li>
 <li>Must have a <code v-pre>.json</code> file extension.</li>
+<li>Must <em>not</em> contain <code v-pre>is-a.dev</code>.</li>
 </ul>
 <doc-anchor-target id="examples-of-invalid-filenames">
     <h3>
@@ -272,14 +273,14 @@
     </h3>
 </doc-anchor-target>
 <ul>
-<li><code v-pre>.json</code> (filename is less than 1 character)</li>
-<li><code v-pre>A.json</code> (filename contains uppercase letters)</li>
-<li><code v-pre>a..json</code> (filename contains consecutive dots)</li>
-<li><code v-pre>.a.json</code> (filename starts with a dot)</li>
-<li><code v-pre>a .json</code> (filename contains a space)</li>
-<li><code v-pre>a$.json</code> (filename contains a non-alphanumeric character)</li>
-<li><code v-pre>a.json.json</code> (filename contains more than one <code v-pre>.json</code> extension)</li>
-<li><code v-pre>a.is-a.dev.json</code> (filename contains <code v-pre>.is-a.dev</code>)</li>
+<li><code v-pre>.json</code> (filename is less than 1 character.)</li>
+<li><code v-pre>A.json</code> (filename contains uppercase letters.)</li>
+<li><code v-pre>a..json</code> (filename contains consecutive dots.)</li>
+<li><code v-pre>.a.json</code> (filename starts with a dot.)</li>
+<li><code v-pre>a .json</code> (filename contains a space.)</li>
+<li><code v-pre>a$.json</code> (filename contains a non-alphanumeric character.)</li>
+<li><code v-pre>a.json.json</code> (filename contains more than one <code v-pre>.json</code> extension.)</li>
+<li><code v-pre>a.is-a.dev.json</code> (filename contains <code v-pre>.is-a.dev</code>.)</li>
 </ul>
 <doc-anchor-target id="examples-of-valid-filenames">
     <h3>
@@ -289,12 +290,12 @@
 </doc-anchor-target>
 <p>All the filenames below meet all the criteria. The reason in parentheses is just an example of one of the criteria they meet.</p>
 <ul>
-<li><code v-pre>a.json</code> (at least 1 character long)</li>
-<li><code v-pre>example.json</code> (alphanumeric and in lowercase)</li>
-<li><code v-pre>blog.example.json</code> (includes dots to register a sub-subdomain)</li>
-<li><code v-pre>my-blog.json</code> (uses dashes as separators, which is recommended)</li>
+<li><code v-pre>a.json</code> (at least 1 character long.)</li>
+<li><code v-pre>example.json</code> (alphanumeric and in lowercase.)</li>
+<li><code v-pre>blog.example.json</code> (includes dots to register a sub-subdomain, also called a nested subdomain.)</li>
+<li><code v-pre>my-blog.json</code> (uses dashes as separators, which is recommended.)</li>
 </ul>
-<p><strong>NOTE:</strong> To stop a person from having a monopoly over one-lettered subdomains, we limit everyone to only one one-lettered subdomain.</p>
+<p><strong>NOTE:</strong> To stop a user from having a monopoly over one-lettered subdomains, we limit users to only one one-lettered subdomain.</p>
 <doc-anchor-target id="example-json-file">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#example-json-file">#</doc-anchor-trigger>
@@ -325,43 +326,43 @@
 <doc-anchor-target id="owner-required">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#owner-required">#</doc-anchor-trigger>
-        <span>owner (required)</span>
+        <span><code v-pre>owner</code> (required)</span>
     </h3>
 </doc-anchor-target>
 <p>You need to specify some information about yourself here. This is so that you can be contacted if required.
-In the owner object, the fields username and email are required. You can add more information in this object if you want.</p>
+In the owner object, the fields <code v-pre>username</code> and <code v-pre>email</code> are required. You may add more information in this object if you want, such as a <code v-pre>discord</code> field.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">{
   &quot;owner&quot;: {
-    &quot;username&quot;: &quot;github-username&quot;
+    &quot;username&quot;: &quot;your-github-username&quot;
   }
 }</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="description">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#description">#</doc-anchor-trigger>
-        <span>description</span>
+        <span><code v-pre>description</code></span>
     </h3>
 </doc-anchor-target>
 <p>Describe your domain name and your usage. This is purely for documentation purpose and is optional.</p>
 <doc-anchor-target id="repo">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#repo">#</doc-anchor-trigger>
-        <span>repo</span>
+        <span><code v-pre>repo</code></span>
     </h3>
 </doc-anchor-target>
-<p>This is a link to your website repository or your github account. This is purely for documentation purpose and is optional.</p>
+<p>This is a link to your website repository or your GitHub account. This is purely for documentation purpose and is optional.</p>
 <doc-anchor-target id="record-required">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#record-required">#</doc-anchor-trigger>
-        <span>record (required)</span>
+        <span><code v-pre>record</code> (required)</span>
     </h3>
 </doc-anchor-target>
 <p>This section is where you specify the DNS records.</p>
-<p>You can see a list of supported types <a href="../faq/#which-records-are-supported">here</a>.</p>
+<p>You can see a list of supported record types <a href="../faq/#which-records-are-supported">here</a>.</p>
 <p>Below are some examples for the given record types:</p>
 <ul>
-<li><strong>CNAME</strong> record: This must be a hostname (<code v-pre>something.tld</code>). It cannot be used in conjunction with any other record types. This is typically used to map your domain to a specific server.</li>
+<li><strong><code v-pre>CNAME</code></strong> record: This must be a hostname (<code v-pre>something.tld</code>). It cannot be used in conjunction with any other record types unless your domain is proxied (see <a href="https://docs.is-a.dev/domain-structure/#proxied-optional">proxying your domain</a>). This is typically used to map your domain to a specific server.</li>
 </ul>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">{
@@ -371,7 +372,7 @@ In the owner object, the fields username and email are required. You can add mor
 }</code></pre>
 </doc-codeblock></div>
 <ul>
-<li><strong>A</strong> record: This must be a list of IPv4 addresses. These addresses point your domain to a specific server.</li>
+<li><strong><code v-pre>A</code></strong> record: This must be a list of IPv4 addresses. These addresses point your domain to a specific server.</li>
 </ul>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">{
@@ -385,7 +386,7 @@ In the owner object, the fields username and email are required. You can add mor
 }</code></pre>
 </doc-codeblock></div>
 <ul>
-<li><strong>AAAA</strong> record: This must be a list of IPv6 addresses. Like the A record, these addresses point your domain to a specific server.</li>
+<li><strong><code v-pre>AAAA</code></strong> record: This must be a list of IPv6 addresses. Like the A record, these addresses point your domain to a specific server.</li>
 </ul>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">{
@@ -399,7 +400,7 @@ In the owner object, the fields username and email are required. You can add mor
 }</code></pre>
 </doc-codeblock></div>
 <ul>
-<li><strong>URL</strong> record: This redirects your domain to another URL.</li>
+<li><strong><code v-pre>URL</code></strong> record: This redirects your domain to another URL.</li>
 </ul>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">{
@@ -409,7 +410,7 @@ In the owner object, the fields username and email are required. You can add mor
 }</code></pre>
 </doc-codeblock></div>
 <ul>
-<li><strong>MX</strong> record: This must be a list of hostnames. These hostnames specify the mail servers that handle emails for your domain.</li>
+<li><strong><code v-pre>MX</code></strong> record: This must be a list of hostnames. These hostnames specify the mail servers that handle emails for your domain.</li>
 </ul>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">{
@@ -421,8 +422,41 @@ In the owner object, the fields username and email are required. You can add mor
   }
 }</code></pre>
 </doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;record&quot;: {
+    &quot;MX&quot;: [
+      {
+        &quot;target&quot;: &quot;mx1.improvmx.com&quot;,
+        &quot;priority&quot;: 10
+      },
+      {
+        &quot;target&quot;: &quot;mx2.improvmx.com&quot;,
+        &quot;priority&quot;: 20
+      }
+    ]
+  }
+}</code></pre>
+</doc-codeblock></div>
 <ul>
-<li><strong>TXT</strong> record: This can be either a single string or a list of strings. TXT records are often used for various purposes, such as verifying domain ownership and ensuring email security.</li>
+<li><strong><code v-pre>TLSA</code></strong> record: This record is used to store the fingerprint of a TLS/SSL certificate associated with a service. It helps in securing the connection by allowing clients to verify the server&#x27;s certificate against the information stored in DNS.</li>
+</ul>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-json"><code v-pre class="language-json">{
+  &quot;record&quot;: {
+    &quot;TLSA&quot;: [
+      {
+        &quot;usage&quot;: 1,
+        &quot;selector&quot;: 1,
+        &quot;matchingType&quot;: 1,
+        &quot;certificate&quot;: &quot;5B2D3A4F5E6B7C8D9E0F1A2B3C4D5E6F7A8B9C0D1E2F3A4B5C6D7E8F9A0B1C2D3&quot;
+      }
+    ]
+  }
+}</code></pre>
+</doc-codeblock></div>
+<ul>
+<li><strong><code v-pre>TXT</code></strong> record: This can be either a single string or a list of strings. TXT records are often used for various purposes, such as verifying domain ownership and ensuring email security.</li>
 </ul>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">{
@@ -439,7 +473,7 @@ In the owner object, the fields username and email are required. You can add mor
 }</code></pre>
 </doc-codeblock></div>
 <ul>
-<li><strong>NS</strong> record: This must be a list of hostnames. These hostnames specify the authoritative DNS servers for your domain.</li>
+<li><strong><code v-pre>NS</code></strong> record: This must be a list of hostnames. These hostnames specify the authoritative DNS servers for your domain.</li>
 </ul>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">{
@@ -453,7 +487,7 @@ In the owner object, the fields username and email are required. You can add mor
 </doc-codeblock></div>
 <p>Note: Please refer to the <a href="https://docs.is-a.dev/faq/">frequently asked questions</a> for clarification on what or who we allow NS records for. If you want a example on what we want as the reasonings, you can <a href="https://github.com/is-a-dev/register/pull/16758">checkout this PR</a>.</p>
 <ul>
-<li><strong>SRV</strong> record: This must be a list of service records. Each record specifies the priority, weight, port, and target for a service on your domain. SRV records are often used for services such as VoIP, messaging, and more.</li>
+<li><strong><code v-pre>SRV</code></strong> record: This must be a list of service records. Each record specifies the priority, weight, port, and target for a service on your domain. SRV records are often used for services such as VoIP, messaging, Minecraft, and more.</li>
 </ul>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">{
@@ -476,7 +510,7 @@ In the owner object, the fields username and email are required. You can add mor
 }</code></pre>
 </doc-codeblock></div>
 <ul>
-<li><strong>CAA</strong> record: This must be a list of Certification Authority Authorization (CAA) records. Each record specifies the authority permitted to issue SSL certificates for your domain, with fields for <code v-pre>flags</code>, <code v-pre>tag</code>, and <code v-pre>value</code>.</li>
+<li><strong><code v-pre>CAA</code></strong> record: This must be a list of Certification Authority Authorization (CAA) records. Each record specifies the authority permitted to issue SSL certificates for your domain, with fields for <code v-pre>flags</code>, <code v-pre>tag</code>, and <code v-pre>value</code>.</li>
 </ul>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">{
@@ -497,7 +531,7 @@ In the owner object, the fields username and email are required. You can add mor
 }</code></pre>
 </doc-codeblock></div>
 <ul>
-<li><strong>DS</strong> record: This must be a list of Delegation Signer(DS) records. Each verifies the authenticity of the (subdomain) zone with field <code v-pre>key_tag</code>, <code v-pre>algorithm</code>, <code v-pre>digest_type</code> and <code v-pre>digest</code>.</li>
+<li><strong><code v-pre>DS</code></strong> record: This must be a list of Delegation Signer(DS) records. Each verifies the authenticity of the (subdomain) zone with field <code v-pre>key_tag</code>, <code v-pre>algorithm</code>, <code v-pre>digest_type</code> and <code v-pre>digest</code>.</li>
 </ul>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">&quot;DS&quot;: [{
@@ -510,17 +544,17 @@ In the owner object, the fields username and email are required. You can add mor
 <doc-anchor-target id="proxied-optional">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#proxied-optional">#</doc-anchor-trigger>
-        <span>proxied (<em>optional</em>)</span>
+        <span><code v-pre>proxied</code> (<em>optional</em>)</span>
     </h3>
 </doc-anchor-target>
-<p>Enable Cloudflare proxy for your domain. Disabled by default. To enable it, add this line of code:</p>
+<p>Enable Cloudflare proxy for your domain. This is disabled by default. To enable it, add this line of code:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">&quot;proxied&quot;: true</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="redirect_config-optional">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#redirect_config-optional">#</doc-anchor-trigger>
-        <span>redirect_config (<em>optional</em>)</span>
+        <span><code v-pre>redirect_config</code> (<em>optional</em>)</span>
     </h3>
 </doc-anchor-target>
 <ul>

@@ -5,15 +5,15 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.795462865842">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.796654276051">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
 
     <!-- Primary Meta Tags -->
-    <title>Setting up Cloudflare Pages with is-a-dev subdomain | is-a.dev Docs</title>
-    <meta name="title" content="Setting up Cloudflare Pages with is-a-dev subdomain | is-a.dev Docs">
-    <meta name="description" content="This guide will walk you through the process of setting up a Cloudflare Pages site and pointing your is-a.dev subdomain to it.">
+    <title>Setting up Cloudflare Pages with an is-a.dev subdomain | is-a.dev Docs</title>
+    <meta name="title" content="Setting up Cloudflare Pages with an is-a.dev subdomain | is-a.dev Docs">
+    <meta name="description" content="This guide will walk you through the process of setting up a Cloudflare Pages website and pointing your is-a.dev subdomain towards it.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.is-a.dev/guides/cloudflare-pages/">
@@ -21,24 +21,24 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.is-a.dev/guides/cloudflare-pages/">
-    <meta property="og:title" content="Setting up Cloudflare Pages with is-a-dev subdomain | is-a.dev Docs">
-    <meta property="og:description" content="This guide will walk you through the process of setting up a Cloudflare Pages site and pointing your is-a.dev subdomain to it.">
+    <meta property="og:title" content="Setting up Cloudflare Pages with an is-a.dev subdomain | is-a.dev Docs">
+    <meta property="og:description" content="This guide will walk you through the process of setting up a Cloudflare Pages website and pointing your is-a.dev subdomain towards it.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.is-a.dev/guides/cloudflare-pages/">
-    <meta property="twitter:title" content="Setting up Cloudflare Pages with is-a-dev subdomain | is-a.dev Docs">
-    <meta property="twitter:description" content="This guide will walk you through the process of setting up a Cloudflare Pages site and pointing your is-a.dev subdomain to it.">
+    <meta property="twitter:title" content="Setting up Cloudflare Pages with an is-a.dev subdomain | is-a.dev Docs">
+    <meta property="twitter:description" content="This guide will walk you through the process of setting up a Cloudflare Pages website and pointing your is-a.dev subdomain towards it.">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../media/logo_circle.png" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.6.0.795462865842" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.6.0.796654276051" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.795462865842" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.796654276051" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.795462865842" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.6.0.795462865842" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.796654276051" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.6.0.796654276051" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -245,27 +245,27 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="setting-up-cloudflare-pages-with-is-a-dev-subdomain" class="break-words">
+<doc-anchor-target id="setting-up-cloudflare-pages-with-an-is-adev-subdomain" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#setting-up-cloudflare-pages-with-is-a-dev-subdomain">#</doc-anchor-trigger>
-        <span>Setting up Cloudflare Pages with is-a-dev subdomain</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#setting-up-cloudflare-pages-with-an-is-adev-subdomain">#</doc-anchor-trigger>
+        <span>Setting up Cloudflare Pages with an is-a.dev subdomain</span>
     </h1>
 </doc-anchor-target>
-<p>This guide will walk you through the process of setting up a Cloudflare Pages site and pointing your is-a.dev subdomain to it.</p>
-<doc-anchor-target id="create-a-cloudflare-pages-site">
+<p>This guide will walk you through the process of setting up a Cloudflare Pages website and pointing your is-a.dev subdomain towards it.</p>
+<doc-anchor-target id="create-a-cloudflare-pages-website">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#create-a-cloudflare-pages-site">#</doc-anchor-trigger>
-        <span>Create a Cloudflare Pages Site</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#create-a-cloudflare-pages-website">#</doc-anchor-trigger>
+        <span>Create a Cloudflare Pages Website</span>
     </h2>
 </doc-anchor-target>
-<p>First, you&#x27;ll need to create a site on Cloudflare Pages. Follow the instructions in the <a href="https://developers.cloudflare.com/pages/get-started/guide/">Cloudflare Pages Getting Started Guide</a>.</p>
+<p>First, you&#x27;ll need to create a website on Cloudflare Pages. Follow the instructions in the <a href="https://developers.cloudflare.com/pages/get-started/guide/">Cloudflare Pages Getting Started Guide</a>.</p>
 <doc-anchor-target id="point-your-subdomain-to-your-cloudflare-pages-site">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#point-your-subdomain-to-your-cloudflare-pages-site">#</doc-anchor-trigger>
         <span>Point your subdomain to your Cloudflare Pages site</span>
     </h3>
 </doc-anchor-target>
-<p>Next, you&#x27;ll need to point your is-a.dev subdomain to your Cloudflare Pages site. Follow the instructions in the <a href="https://developers.cloudflare.com/pages/platform/custom-domains/#add-a-custom-domain">Cloudflare Pages Custom Domains Guide</a>. Only follow the &quot;Add a custom domain&quot; section, then return to this guide for the next steps.</p>
+<p>Next, you&#x27;ll need to point your is-a.dev subdomain to your Cloudflare Pages website. Follow the instructions in the <a href="https://developers.cloudflare.com/pages/platform/custom-domains/#add-a-custom-domain">Cloudflare Pages Custom Domains Guide</a>. Only follow the &quot;Add a custom domain&quot; section, and then return to this guide for the next steps.</p>
 <doc-anchor-target id="create-the-domain-file">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#create-the-domain-file">#</doc-anchor-trigger>
@@ -277,20 +277,20 @@
 <pre class="language-json"><code v-pre class="language-json">{
     &quot;owner&quot;: {
         &quot;username&quot;: &quot;your-github-username&quot;,
-        &quot;email&quot;: &quot;your-email@gmail.com&quot;
+        &quot;email&quot;: &quot;your-email@example.com&quot;
     },
     &quot;record&quot;: {
         &quot;CNAME&quot;: &quot;your-sitename.pages.dev&quot;
     }
 }</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="your-site-should-be-live">
+<doc-anchor-target id="your-website-should-be-live">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#your-site-should-be-live">#</doc-anchor-trigger>
-        <span>Your site should be live!</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#your-website-should-be-live">#</doc-anchor-trigger>
+        <span>Your website should be live!</span>
     </h3>
 </doc-anchor-target>
-<p>If you have followed all the steps correctly, then your site should be live after your pull request has been merged.</p>
+<p>If you have followed all the steps correctly, then your website should be live after your pull request has been merged.</p>
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">
                                     <span>

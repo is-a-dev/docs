@@ -5,14 +5,14 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.795462865842">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.796654276051">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
 
     <!-- Primary Meta Tags -->
-    <title>Setting up ImprovMX with is-a.dev subdomain | is-a.dev Docs</title>
-    <meta name="title" content="Setting up ImprovMX with is-a.dev subdomain | is-a.dev Docs">
+    <title>Setting up ImprovMX with an is-a.dev subdomain | is-a.dev Docs</title>
+    <meta name="title" content="Setting up ImprovMX with an is-a.dev subdomain | is-a.dev Docs">
     <meta name="description" content="This guide will walk you through the process of setting up ImprovMX with your is-a.dev subdomain.">
 
     <!-- Canonical -->
@@ -21,24 +21,24 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.is-a.dev/guides/improvmx/">
-    <meta property="og:title" content="Setting up ImprovMX with is-a.dev subdomain | is-a.dev Docs">
+    <meta property="og:title" content="Setting up ImprovMX with an is-a.dev subdomain | is-a.dev Docs">
     <meta property="og:description" content="This guide will walk you through the process of setting up ImprovMX with your is-a.dev subdomain.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.is-a.dev/guides/improvmx/">
-    <meta property="twitter:title" content="Setting up ImprovMX with is-a.dev subdomain | is-a.dev Docs">
+    <meta property="twitter:title" content="Setting up ImprovMX with an is-a.dev subdomain | is-a.dev Docs">
     <meta property="twitter:description" content="This guide will walk you through the process of setting up ImprovMX with your is-a.dev subdomain.">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../media/logo_circle.png" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.6.0.795462865842" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.6.0.796654276051" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.795462865842" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.796654276051" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.795462865842" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.6.0.795462865842" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.796654276051" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.6.0.796654276051" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -245,31 +245,31 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="setting-up-improvmx-with-is-adev-subdomain" class="break-words">
+<doc-anchor-target id="setting-up-improvmx-with-an-is-adev-subdomain" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#setting-up-improvmx-with-is-adev-subdomain">#</doc-anchor-trigger>
-        <span>Setting up ImprovMX with is-a.dev subdomain</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#setting-up-improvmx-with-an-is-adev-subdomain">#</doc-anchor-trigger>
+        <span>Setting up ImprovMX with an is-a.dev subdomain</span>
     </h1>
 </doc-anchor-target>
 <p>This guide will walk you through the process of setting up ImprovMX with your is-a.dev subdomain.</p>
-<doc-anchor-target id="what-you-need-to-do-before-you-continue">
+<doc-anchor-target id="requirements">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#what-you-need-to-do-before-you-continue">#</doc-anchor-trigger>
-        <span>What you need to do before you continue.</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#requirements">#</doc-anchor-trigger>
+        <span>Requirements</span>
     </h2>
 </doc-anchor-target>
 <ol>
-<li>Have a ImprovMX account. If you don&#x27;t have a ImprovMX account, please go to <a href="https://improvmx.com">their site</a> and make a account.</li>
+<li>You must have an ImprovMX account. If you don&#x27;t have an ImprovMX account, please visit <a href="https://improvmx.com">their website</a> and create an account.</li>
 <li>You should have already forked the <a href="https://github.com/is-a-dev/register">is-a.dev repository</a>. If you haven&#x27;t forked the repository, please make one by using <a href="https://github.com/is-a-dev/register/fork">this link</a>.</li>
 </ol>
-<doc-anchor-target id="making-the-file">
+<doc-anchor-target id="creating-the-file">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#making-the-file">#</doc-anchor-trigger>
-        <span>Making the file.</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#creating-the-file">#</doc-anchor-trigger>
+        <span>Creating the file</span>
     </h2>
 </doc-anchor-target>
-<p>First go to the fork you&#x27;ve made, then go into the <code v-pre>domains</code> directory and make a file. The file should be named like this: <code v-pre>subdomain.json</code>. (Replace <code v-pre>subdomain</code> with the subdomain name you want of course.)</p>
-<p>After you&#x27;ve made the file, you should put in the file this:</p>
+<p>Visit your fork and navigate into the <code v-pre>domains</code> directory and create a file. The file should be named in this manner: <code v-pre>subdomain.json</code>. (Replace <code v-pre>subdomain</code> with the subdomain name that you want.)</p>
+<p>After you&#x27;ve made the file, it should look like this:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">{
     &quot;owner&quot;: {
@@ -282,14 +282,14 @@
     }
 }</code></pre>
 </doc-codeblock></div>
-<p><strong>After you have made the file, you should make a pull request to the <a href="https://github.com/is-a-dev/register">is-a.dev repository</a>.</strong></p>
+<p><strong>After you&#x27;ve made the file, make a pull request to the <a href="https://github.com/is-a-dev/register">is-a.dev repository</a>.</strong></p>
 <doc-anchor-target id="configuring">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#configuring">#</doc-anchor-trigger>
         <span>Configuring</span>
     </h2>
 </doc-anchor-target>
-<p>After it has been merged, it should be automatically recognized and should start working. If you haven&#x27;t configured it beforehand, please go to the <a href="https://app.improvmx.com/">ImprovMX dashboard</a> and add the domain there.</p>
+<p>After your pull request has been merged, the MX records should be recognized automatically and start working. If you haven&#x27;t configured it beforehand, please go to the <a href="https://app.improvmx.com/">ImprovMX dashboard</a> and add the subdomain there.</p>
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">
                                     <span>

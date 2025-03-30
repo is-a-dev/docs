@@ -5,15 +5,15 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.795462865842">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.796654276051">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
 
     <!-- Primary Meta Tags -->
-    <title>Setting up Vercel with is-a.dev subdomain | is-a.dev Docs</title>
-    <meta name="title" content="Setting up Vercel with is-a.dev subdomain | is-a.dev Docs">
-    <meta name="description" content="This guide will walk you through the process of setting up a Vercel site and pointing your is-a.dev subdomain to it.">
+    <title>Setting up Vercel with an is-a.dev subdomain | is-a.dev Docs</title>
+    <meta name="title" content="Setting up Vercel with an is-a.dev subdomain | is-a.dev Docs">
+    <meta name="description" content="This guide will walk you through the process of setting up a Vercel site and pointing your is-a.dev subdomain towards it.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.is-a.dev/guides/vercel/">
@@ -21,24 +21,24 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.is-a.dev/guides/vercel/">
-    <meta property="og:title" content="Setting up Vercel with is-a.dev subdomain | is-a.dev Docs">
-    <meta property="og:description" content="This guide will walk you through the process of setting up a Vercel site and pointing your is-a.dev subdomain to it.">
+    <meta property="og:title" content="Setting up Vercel with an is-a.dev subdomain | is-a.dev Docs">
+    <meta property="og:description" content="This guide will walk you through the process of setting up a Vercel site and pointing your is-a.dev subdomain towards it.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.is-a.dev/guides/vercel/">
-    <meta property="twitter:title" content="Setting up Vercel with is-a.dev subdomain | is-a.dev Docs">
-    <meta property="twitter:description" content="This guide will walk you through the process of setting up a Vercel site and pointing your is-a.dev subdomain to it.">
+    <meta property="twitter:title" content="Setting up Vercel with an is-a.dev subdomain | is-a.dev Docs">
+    <meta property="twitter:description" content="This guide will walk you through the process of setting up a Vercel site and pointing your is-a.dev subdomain towards it.">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../media/logo_circle.png" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.6.0.795462865842" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.6.0.796654276051" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.795462865842" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.796654276051" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.795462865842" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.6.0.795462865842" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.796654276051" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.6.0.796654276051" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -245,27 +245,27 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="setting-up-vercel-with-is-adev-subdomain" class="break-words">
+<doc-anchor-target id="setting-up-vercel-with-an-is-adev-subdomain" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#setting-up-vercel-with-is-adev-subdomain">#</doc-anchor-trigger>
-        <span>Setting up Vercel with is-a.dev subdomain</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#setting-up-vercel-with-an-is-adev-subdomain">#</doc-anchor-trigger>
+        <span>Setting up Vercel with an is-a.dev subdomain</span>
     </h1>
 </doc-anchor-target>
-<p>This guide will walk you through the process of setting up a Vercel site and pointing your is-a.dev subdomain to it.</p>
-<doc-anchor-target id="make-sure-you-have-a-vercel-site">
+<p>This guide will walk you through the process of setting up a Vercel site and pointing your is-a.dev subdomain towards it.</p>
+<doc-anchor-target id="ensure-you-have-a-vercel-site">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#make-sure-you-have-a-vercel-site">#</doc-anchor-trigger>
-        <span>Make sure you have a Vercel site.</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#ensure-you-have-a-vercel-site">#</doc-anchor-trigger>
+        <span>Ensure you have a Vercel site</span>
     </h2>
 </doc-anchor-target>
 <p>If you haven&#x27;t made a Vercel site, make sure to make one. Follow the instructions in <a href="https://vercel.com/docs/getting-started-with-vercel">Vercel&#x27;s Docs</a>.</p>
 <doc-anchor-target id="creating-the-domain-files">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#creating-the-domain-files">#</doc-anchor-trigger>
-        <span>Creating the domain files.</span>
+        <span>Creating the domain files</span>
     </h3>
 </doc-anchor-target>
-<p>First, go to your Vercel dashboard, then go to your project, then go to Custom Domains and put in there the is-a.dev subdomain you want.</p>
+<p>First, go to your Vercel dashboard, then go to your project, then go to Custom Domains and enter the is-a.dev subdomain you want.</p>
 <p><strong>You will need to make two files to ensure this process goes smoothly</strong>. We will go in order for this section.</p>
 <ol>
 <li>Make a file for Vercel TXT verification.
@@ -291,8 +291,8 @@ When connecting the domain, you will be greeted with a TXT verification string. 
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">{
     &quot;owner&quot;: {
-        &quot;username&quot;: &quot;insert-github-username-here&quot;,
-        &quot;email&quot;: &quot;insert-email-here&quot;
+        &quot;username&quot;: &quot;your-github-username&quot;,
+        &quot;email&quot;: &quot;your-email-address@example.com&quot;
     },
     &quot;record&quot;: {
         &quot;TXT&quot;: &quot;insert-TXT-string-you-got-from-vercel-here&quot;
@@ -317,16 +317,16 @@ When connecting the domain, you will be greeted with a TXT verification string. 
     </div>
 </div>
 <ol start="2">
-<li>Make a file for the main domain.
+<li>Create a file for the main domain.
 Now you need to make a file for the main domain, we have two ways to do it: CNAME and A records. We&#x27;ll have two different files for these and explain what restricions or stuff you need to do.</li>
 </ol>
-<p>Make <code v-pre>subdomain.json</code> in the <strong>domains directory</strong> (replace subdomain with the domain you want of course) and put in the file one of these types:</p>
-<p><strong>CNAME record</strong>: If you are using CNAME record you don&#x27;t have to give a preview as you are using the site as the CNAME, but you can&#x27;t use other record (Like MX and TXT records). <strong>This option is ideal for those who only want to use their domain for their site</strong>.</p>
+<p>Create <code v-pre>subdomain.json</code> in the <strong>domains directory</strong> (replace subdomain with the domain you want of course) and put in the file one of these types:</p>
+<p><strong>CNAME record</strong>: If you are using CNAME record you don&#x27;t have to give a preview as you are using the site as the CNAME, but you can&#x27;t use other record (Like MX and TXT records) unless the domain is proxied. For information on how to proxy a domain, see <a href="https://docs.is-a.dev/domain-structure/#proxied-optional">proxying your domain</a>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">{
     &quot;owner&quot;: {
-        &quot;username&quot;: &quot;insert-github-username-here&quot;,
-        &quot;email&quot;: &quot;insert-email-here&quot;
+        &quot;username&quot;: &quot;your-github-username&quot;,
+        &quot;email&quot;: &quot;your-email-address@example.com&quot;
     },
     &quot;record&quot;: {
         &quot;CNAME&quot;: &quot;domainname.vercel.app&quot;
@@ -337,22 +337,22 @@ Now you need to make a file for the main domain, we have two ways to do it: CNAM
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">{
     &quot;owner&quot;: {
-        &quot;username&quot;: &quot;insert-github-username-here&quot;,
-        &quot;email&quot;: &quot;insert-email-here&quot;
+        &quot;username&quot;: &quot;your-github-username&quot;,
+        &quot;email&quot;: &quot;your-email-address@example.com&quot;
     },
     &quot;record&quot;: {
         &quot;A&quot;: [&quot;76.76.21.21&quot;]
     }
 }</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="make-your-pull-request">
+<doc-anchor-target id="make-a-pull-request">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#make-your-pull-request">#</doc-anchor-trigger>
-        <span>Make your pull request.</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#make-a-pull-request">#</doc-anchor-trigger>
+        <span>Make a pull request</span>
     </h3>
 </doc-anchor-target>
-<p>Once you have made these two files, you can now make a pull request to the <a href="https://github.com/is-a-dev/register">main repo</a>. Then you will have to be patient until it gets merged. If you want a chance to get your PR merged faster then join our <a href="https://discord.gg/is-a-dev-830872854677422150">Discord server!</a></p>
-<p>When the pull request has been merged your site should be working, if its still redirecting to the is-a.dev site clear your cache.</p>
+<p>Once you have made these two files, you can now make a pull request to the <a href="https://github.com/is-a-dev/register">main repo</a>. Then you&#x27;ll have to be patient until it gets merged. If you want a chance to get your PR merged faster then join our <a href="https://discord.gg/is-a-dev-830872854677422150">Discord server!</a>.</p>
+<p>When the pull request has been merged your site should be working; if it is still redirecting to the is-a.dev site try clearing your cache.</p>
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">
                                     <span>
