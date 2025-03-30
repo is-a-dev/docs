@@ -177,7 +177,7 @@ Below are some examples for the given record types:
   }
 }
 ```
-- **`NS`** record: This must be a list of hostnames. These hostnames specify the authoritative DNS servers for your domain. We only allow NS records for some users; see the [FAQ](https://docs.is-a.dev/faq/#who-can-use-ns-records) to check if you are eligible to request them.
+- **`NS`** record: This must be a list of hostnames. These hostnames specify the authoritative DNS servers for your domain.
 ```json
 {
   "record": {
