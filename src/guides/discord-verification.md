@@ -4,7 +4,7 @@ label: Discord Domain Connection
 tags: guides
 ---
 
-# Setting up Discord domain connection with your is-a.dev domain
+# Setting up Discord domain connection with your is-a.dev subdomain
 
 ## Get your verification string
 
@@ -33,8 +33,8 @@ Create a JSON file inside the `domains/` directory called `domains/_discord.exam
 ```json
 {
     "owner": {
-        "username": "github-username",
-        "email": "email@address"
+        "username": "your-github-username",
+        "email": "your-email-address@example.com"
     },
     "record": {
         "TXT": "discord-verification-string"
@@ -45,4 +45,4 @@ Create a JSON file inside the `domains/` directory called `domains/_discord.exam
 ## Configuration
 
 After your pull request has been merged, repeat the steps to get the verification string and press the `Verify` button.
-If it shows any error such as `Unable to verify your domain`, try waiting a few minutes (sometimes up to 24 hours) as the DNS might have not been updated yet.
+If it shows any error such as `Unable to verify your domain`, try waiting a few minutes (sometimes up to 24 hours) as the DNS might not have propagated yet.
