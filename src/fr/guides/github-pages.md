@@ -4,13 +4,13 @@ icon: mark-github
 tags: guides
 ---
 
-## Utiliser Github Pages avec un sous-domaine is-a.dev
+## Utiliser GitHub Pages avec un sous-domaine is-a.dev
 
-Ce guide vous guidera étape par étape pour créer un site sur Github Pages et y relier votre sous-domaine is-a.dev.
+Ce guide vous guidera étape par étape pour créer un site sur GitHub Pages et y relier votre sous-domaine is-a.dev.
 
-### Créer un référentiel Github Pages
+### Créer un référentiel GitHub Pages
 
-Tout d'abord, vous devez créer un site sur Github Pages. Suivez les instructions du guide ["Bien démarrer avec GitHub Pages"](https://docs.github.com/fr/pages/getting-started-with-github-pages).
+Tout d'abord, vous devez créer un site sur GitHub Pages. Suivez les instructions du guide ["Bien démarrer avec GitHub Pages"](https://docs.github.com/fr/pages/getting-started-with-github-pages).
 
 ### Créer le fichier du domaine
 
@@ -32,11 +32,11 @@ Créez un fichier JSON dans le dossier `domains` (`domains/subdomain.json`) avec
 
 ### Configuration
 
-- Après que la pull request soit fusionnée, vous pouvez apercevoir une erreur **404** sur `sous-domaine.is-a.dev` ou le mauvais site. Pour réparer ceci, allez dans votre référentiel Github Pages **Settings > GitHub pages > Custom Domain** et ajoutez `sous-domaine.is-a.dev` dans l'emplacement donné. _Faites ceci uniquement **après** que votre pull request soit fusionnée._
+- Après que la pull request soit fusionnée, vous pouvez apercevoir une erreur **404** sur `sous-domaine.is-a.dev` ou le mauvais site. Pour réparer ceci, allez dans votre référentiel GitHub Pages **Settings > GitHub pages > Custom Domain** et ajoutez `sous-domaine.is-a.dev` dans l'emplacement donné. _Faites ceci uniquement **après** que votre pull request soit fusionnée._
 - Cochez la case **Enforce HTTPS** en dessous de l'entrée "Custom Domain".
 - Attendez quelque temps et votre site sera en ligne !
 
-## Vérifiez votre domaine is-a.dev avec Github Pages
+## Vérifiez votre domaine is-a.dev avec GitHub Pages
 
 ### Récupérez le texte de vérification
 

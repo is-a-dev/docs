@@ -12,6 +12,6 @@ Lisez la [structure des fichiers de domaine](../useful/domain-structure) et conf
 
 ## Configuration du serveur
 
-Après que la pull request sera fusionnée, configurez votre serveur (apache, nginx, etc.) pour fonctionner avec `sous-domaine.is-a.dev`. Si vous ne savez pas comment configurer votre serveur, vous pouvez créer une issue pour un support sur le référentiel Github, ou vous pouvez aller sur le [serveur Discord](https://discord.gg/is-a-dev-830872854677422150).
+Après que la pull request sera fusionnée, configurez votre serveur (apache, nginx, etc.) pour fonctionner avec `sous-domaine.is-a.dev`. Si vous ne savez pas comment configurer votre serveur, vous pouvez créer une issue pour un support sur le référentiel GitHub, ou vous pouvez aller sur le [serveur Discord](https://discord.gg/is-a-dev-830872854677422150).
 
 Vous devriez aussi inclure `sous-domaine.is-a.dev` dans votre certificat SSL pour éviter les erreurs de certificat.
