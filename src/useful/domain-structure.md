@@ -47,7 +47,7 @@ All the filenames below meet all the criteria. The reason in parentheses is just
     "username": "is-a-dev",
     "email": "admin@is-a.dev"
   },
-  "record": {
+  "records": {
     "CNAME": "is-a-dev-docs.pages.dev"
   },
   "proxied": true
@@ -83,7 +83,7 @@ Below are some examples for the given record types:
 - **`CNAME`** record: This must be a hostname (`something.tld`). It cannot be used in conjunction with any other record types unless your domain is proxied (see [proxying your domain](https://docs.is-a.dev/domain-structure/#proxied-optional)). This is typically used to map your domain to a specific server.
 ```json
 {
-  "record": {
+  "records": {
     "CNAME": "github-username.github.io"
   }
 }
@@ -91,7 +91,7 @@ Below are some examples for the given record types:
 - **`A`** record: This must be a list of IPv4 addresses. These addresses point your domain to a specific server.
 ```json
 {
-  "record": {
+  "records": {
     "A": [
       "192.0.2.1",
       "198.51.100.1",
@@ -103,7 +103,7 @@ Below are some examples for the given record types:
 - **`AAAA`** record: This must be a list of IPv6 addresses. Like the A record, these addresses point your domain to a specific server.
 ```json
 {
-  "record": {
+  "records": {
     "AAAA": [
       "2001:0db8:85a3:0000:0000:8a2e:0370:7334",
       "2001:0db8:85a3:0000:0000:8a2e:0370:7335",
@@ -115,7 +115,7 @@ Below are some examples for the given record types:
 - **`URL`** record: This redirects your domain to another URL.
 ```json
 {
-  "record": {
+  "records": {
     "URL": "https://example.com"
   }
 }
@@ -123,7 +123,7 @@ Below are some examples for the given record types:
 - **`MX`** record: This must be a list of hostnames. These hostnames specify the mail servers that handle emails for your domain.
 ```json
 {
-  "record": {
+  "records": {
     "MX": [
       "mx1.improvmx.com",
       "mx2.improvmx.com"
@@ -133,7 +133,7 @@ Below are some examples for the given record types:
 ```
 ```json
 {
-  "record": {
+  "records": {
     "MX": [
       {
         "target": "mx1.improvmx.com",
@@ -150,7 +150,7 @@ Below are some examples for the given record types:
 - **`TLSA`** record: This record is used to store the fingerprint of a TLS/SSL certificate associated with a service. It helps in securing the connection by allowing clients to verify the server's certificate against the information stored in DNS.
 ```json
 {
-  "record": {
+  "records": {
     "TLSA": [
       {
         "usage": 1,
@@ -165,14 +165,14 @@ Below are some examples for the given record types:
 - **`TXT`** record: This can be either a single string or a list of strings. TXT records are often used for various purposes, such as verifying domain ownership and ensuring email security.
 ```json
 {
-  "record": {
+  "records": {
     "TXT": "Hello World!"
   }
 }
 ```
 ```json
 {
-  "record": {
+  "records": {
     "TXT": ["Hello", "World!"]
   }
 }
@@ -180,7 +180,7 @@ Below are some examples for the given record types:
 - **`NS`** record: This must be a list of hostnames. These hostnames specify the authoritative DNS servers for your domain.
 ```json
 {
-  "record": {
+  "records": {
     "NS": [
       "ns1.example.com",
       "ns2.example.com"
@@ -193,7 +193,7 @@ Note: Please refer to the [frequently asked questions](https://docs.is-a.dev/faq
 - **`SRV`** record: This must be a list of service records. Each record specifies the priority, weight, port, and target for a service on your domain. SRV records are often used for services such as VoIP, messaging, Minecraft, and more.
 ```json
 {
-  "record": {
+  "records": {
     "SRV": [
       {
         "priority": 10,
@@ -214,7 +214,7 @@ Note: Please refer to the [frequently asked questions](https://docs.is-a.dev/faq
 - **`CAA`** record: This must be a list of Certification Authority Authorization (CAA) records. Each record specifies the authority permitted to issue SSL certificates for your domain, with fields for `flags`, `tag`, and `value`.
 ```json
 {
-  "record": {
+  "records": {
     "CAA": [
       {
         "flags": 0,

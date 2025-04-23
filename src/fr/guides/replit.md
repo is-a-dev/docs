@@ -28,7 +28,7 @@ Créez un fichier JSON dans le répertoire `domains` (`domains/sous-domaine.json
         "username": "nom-d-utilisateur-github",
         "email": "moi@exemple.com"
     },
-    "record": {
+    "records": {
         "CNAME": "id-de-site.id.repl.co"
     }
 }

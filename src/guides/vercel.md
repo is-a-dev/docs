@@ -30,7 +30,7 @@ You can also replace the email with any form of social media handle (Like Discor
         "username": "your-github-username",
         "email": "your-email-address@example.com"
     },
-    "record": {
+    "records": {
         "TXT": "insert-TXT-string-you-got-from-vercel-here"
     }
 }
@@ -53,7 +53,7 @@ Create `subdomain.json` in the **domains directory** (replace subdomain with the
         "username": "your-github-username",
         "email": "your-email-address@example.com"
     },
-    "record": {
+    "records": {
         "CNAME": "domainname.vercel.app"
     }
 }
@@ -67,7 +67,7 @@ Create `subdomain.json` in the **domains directory** (replace subdomain with the
         "username": "your-github-username",
         "email": "your-email-address@example.com"
     },
-    "record": {
+    "records": {
         "A": ["76.76.21.21"]
     }
 }

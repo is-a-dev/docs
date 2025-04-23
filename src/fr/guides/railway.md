@@ -22,7 +22,7 @@ tags: guides
     "username": "votre-pseudo",
     "email": "votre-email"
   },
-  "record": {
+  "records": {
     "CNAME": "la-valeur-copiée"
   }
 }

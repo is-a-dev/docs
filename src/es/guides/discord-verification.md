@@ -38,7 +38,7 @@ Crea un archivo JSON dentro del directorio `domains/` llamado `domains/_discord.
         "username": "usuario-github",
         "email": "correo@direccion"
     },
-    "record": {
+    "records": {
         "TXT": "cadena-de-verificacion-discord"
     }
 }

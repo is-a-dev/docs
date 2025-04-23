@@ -26,7 +26,7 @@ Después de haber creado el archivo, debes poner esto en el archivo:
         "username": "usuario-github",
         "email": "yo@ejemplo.com"
     },
-    "record": {
+    "records": {
         "MX": ["mx1.improvmx.com", "mx2.improvmx.com"],
         "TXT": ["v=spf1 include:spf.improvmx.com ~all"]
     }

@@ -30,7 +30,7 @@ Primero, ve a tu panel de control de Vercel, luego a tu proyecto, después a Dom
         "email": "",
         "discord": "inserta-tu-ID-de-usuario-discord-aqui"
     },
-    "record": {
+    "records": {
         "TXT": "inserta-la-cadena-TXT-que-obtuviste-de-vercel-aqui"
     }
 }
@@ -54,7 +54,7 @@ Crea `subdominio.json` en el **directorio domains** (reemplaza subdominio con el
         "email": "",
         "discord": "inserta-tu-ID-de-usuario-discord-aqui"
     },
-    "record": {
+    "records": {
         "CNAME": "nombredominio.vercel.app"
     }
 }
@@ -69,7 +69,7 @@ Crea `subdominio.json` en el **directorio domains** (reemplaza subdominio con el
         "email": "",
         "discord": "inserta-tu-ID-de-usuario-discord-aqui"
     },
-    "record": {
+    "records": {
         "A": ["76.76.21.21"]
     }
 }

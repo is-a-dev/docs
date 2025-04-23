@@ -47,7 +47,7 @@ Todos los nombres de archivos a continuación cumplen con todos los criterios. L
     "username": "is-a-dev",
     "email": "admin@is-a.dev"
   },
-  "record": {
+  "records": {
     "CNAME": "is-a.dev"
   }
 }
@@ -82,7 +82,7 @@ A continuación se presentan algunos ejemplos para los tipos de registro dados:
 
 ```json
 {
-  "record": {
+  "records": {
     "CNAME": "usuario-github.github.io"
   }
 }
@@ -92,7 +92,7 @@ A continuación se presentan algunos ejemplos para los tipos de registro dados:
 
 ```json
 {
-  "record": {
+  "records": {
     "A": [
       "192.0.2.1",
       "198.51.100.1",
@@ -106,7 +106,7 @@ A continuación se presentan algunos ejemplos para los tipos de registro dados:
 
 ```json
 {
-  "record": {
+  "records": {
     "AAAA": [
       "2001:0db8:85a3:0000:0000:8a2e:0370:7334",
       "2001:0db8:85a3:0000:0000:8a2e:0370:7335",
@@ -120,7 +120,7 @@ A continuación se presentan algunos ejemplos para los tipos de registro dados:
 
 ```json
 {
-  "record": {
+  "records": {
     "URL": "https://ejemplo.com"
   }
 }
@@ -130,7 +130,7 @@ A continuación se presentan algunos ejemplos para los tipos de registro dados:
 
 ```json
 {
-  "record": {
+  "records": {
     "MX": [
       "mx1.improvmx.com",
       "mx2.improvmx.com"
@@ -143,7 +143,7 @@ A continuación se presentan algunos ejemplos para los tipos de registro dados:
 
 ```json
 {
-  "record": {
+  "records": {
     "TXT": "¡Hola Mundo!"
   }
 }
@@ -151,7 +151,7 @@ A continuación se presentan algunos ejemplos para los tipos de registro dados:
 
 ```json
 {
-  "record": {
+  "records": {
     "TXT": ["¡Hola", "Mundo!"]
   }
 }
@@ -161,7 +161,7 @@ A continuación se presentan algunos ejemplos para los tipos de registro dados:
 
 ```json
 {
-  "record": {
+  "records": {
     "NS": [
       "ns1.example.com",
       "ns2.example.com"
@@ -176,7 +176,7 @@ Nota: Por favor, consulta las [preguntas frecuentes](https://docs.is-a.dev/es/us
 
 ```json
 {
-  "record": {
+  "records": {
     "SRV": [
       {
         "priority": 10,
@@ -199,7 +199,7 @@ Nota: Por favor, consulta las [preguntas frecuentes](https://docs.is-a.dev/es/us
 
 ```json
 {
-  "record": {
+  "records": {
     "CAA": [
       {
         "flags": 0,

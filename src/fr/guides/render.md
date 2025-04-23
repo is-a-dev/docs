@@ -25,7 +25,7 @@ Dans le dossier domains, créez un nouveau fichier JSON pour votre sous-domaine 
           "username": "nom-d'utilisateur-github",
         "email": "votre-email@example.fr"
     },
-    "record": {
+    "records": {
         "A": ["216.24.57.1"]
     }
 }
