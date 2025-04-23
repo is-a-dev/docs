@@ -31,7 +31,7 @@ Vous pouvez également remplacer l'e-mail par n'importe quelle forme de réseau 
         "username": "nom-d-utilisateur-github",
         "email": "email@exemple.com"
     },
-    "record": {
+    "records": {
         "TXT": "insérer-la-chaine-de-vérification-ici"
     }
 }
@@ -54,7 +54,7 @@ Créez `sous-domaine.json` dans le **répertoire des domaines** (remplacez sous-
         "username": "nom-d-utilisateur-github",
         "email": "email@exemple.com"
     },
-    "record": {
+    "records": {
         "CNAME": "nom-de-domaine.vercel.app"
     }
 }
@@ -68,7 +68,7 @@ Créez `sous-domaine.json` dans le **répertoire des domaines** (remplacez sous-
         "username": "nom-d-utilisateur-github",
         "email": "email@exemple.com"
     },
-    "record": {
+    "records": {
         "A": ["76.76.21.21"]
     }
 }

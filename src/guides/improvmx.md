@@ -24,7 +24,7 @@ After you've made the file, it should look like this:
         "username": "github-username",
         "email": "me@example.com"
     },
-    "record": {
+    "records": {
         "MX": ["mx1.improvmx.com", "mx2.improvmx.com"],
         "TXT": ["v=spf1 include:spf.improvmx.com ~all"]
     }

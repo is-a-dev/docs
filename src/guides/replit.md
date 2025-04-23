@@ -28,7 +28,7 @@ Create a JSON file inside `domains` directory (`domains/subdomain.json`) with th
         "username": "your-github-username",
         "email": "me@example.com"
     },
-    "record": {
+    "records": {
         "CNAME": "siteid.id.repl.co"
     }
 }

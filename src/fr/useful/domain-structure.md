@@ -47,7 +47,7 @@ Tous les noms de fichiers ci-dessous respectent les critères. La raison indiqu�
     "username": "is-a-dev",
     "email": "admin@is-a.dev"
   },
-  "record": {
+  "records": {
     "CNAME": "is-a-dev-docs.pages.dev"
   },
   "proxied": true
@@ -83,7 +83,7 @@ Vous trouverez ci-dessous quelques exemples pour les types d’enregistrements d
 - **Enregistrement CNAME** : Il doit s’agir d’un nom d’hôte (`quelquechose.tld`). Il ne peut pas être utilisé en même temps que d’autres types d’enregistrements. Il est généralement utilisé pour mapper votre domaine à un serveur spécifique.  
 ```json
 {
-  "record": {
+  "records": {
     "CNAME": "nom-utilisateur-github.github.io"
   }
 }
@@ -91,7 +91,7 @@ Vous trouverez ci-dessous quelques exemples pour les types d’enregistrements d
 - **Enregistrement A** : Il doit s’agir d’une liste d’adresses IPv4. Ces adresses pointent votre domaine vers un serveur spécifique.  
 ```json
 {
-  "record": {
+  "records": {
     "A": [
       "192.0.2.1",
       "198.51.100.1",
@@ -103,7 +103,7 @@ Vous trouverez ci-dessous quelques exemples pour les types d’enregistrements d
 - **Enregistrement AAAA** : Il doit s’agir d’une liste d’adresses IPv6. Comme l’enregistrement A, ces adresses pointent votre domaine vers un serveur spécifique.  
 ```json
 {
-  "record": {
+  "records": {
     "AAAA": [
       "2001:0db8:85a3:0000:0000:8a2e:0370:7334",
       "2001:0db8:85a3:0000:0000:8a2e:0370:7335",
@@ -115,7 +115,7 @@ Vous trouverez ci-dessous quelques exemples pour les types d’enregistrements d
 - **Enregistrement URL** : Celui-ci redirige votre domaine vers une autre URL.  
 ```json
 {
-  "record": {
+  "records": {
     "URL": "https://exemple.com"
   }
 }
@@ -123,7 +123,7 @@ Vous trouverez ci-dessous quelques exemples pour les types d’enregistrements d
 - **Enregistrement MX** : Il doit s’agir d’une liste de noms d’hôte. Ces noms d’hôte spécifient les serveurs de messagerie qui gèrent les e-mails pour votre domaine.  
 ```json
 {
-  "record": {
+  "records": {
     "MX": [
       "mx1.improvmx.com",
       "mx2.improvmx.com"
@@ -134,14 +134,14 @@ Vous trouverez ci-dessous quelques exemples pour les types d’enregistrements d
 - **Enregistrement TXT** : Il peut s’agir soit d’une seule chaîne de caractères, soit d’une liste de chaînes. Les enregistrements TXT sont souvent utilisés à diverses fins, telles que la vérification de la propriété du domaine et la sécurisation des e-mails.  
 ```json
 {
-  "record": {
+  "records": {
     "TXT": "Hello World!"
   }
 }
 ```
 ```json
 {
-  "record": {
+  "records": {
     "TXT": ["Hello", "World!"]
   }
 }
@@ -149,7 +149,7 @@ Vous trouverez ci-dessous quelques exemples pour les types d’enregistrements d
 - **Enregistrement NS** : Il doit s’agir d’une liste de noms d’hôte. Ces noms d’hôte spécifient les serveurs DNS faisant autorité pour votre domaine.  
 ```json
 {
-  "record": {
+  "records": {
     "NS": [
       "ns1.exemple.com",
       "ns2.exemple.com"
@@ -162,7 +162,7 @@ Vous trouverez ci-dessous quelques exemples pour les types d’enregistrements d
 - **Enregistrement SRV** : Il doit s’agir d’une liste d’enregistrements de service. Chaque enregistrement spécifie la priorité, le poids, le port et la cible d’un service sur votre domaine. Les enregistrements SRV sont souvent utilisés pour des services tels que la VoIP, la messagerie, et plus encore.  
 ```json
 {
-  "record": {
+  "records": {
     "SRV": [
       {
         "priority": 10,
@@ -183,7 +183,7 @@ Vous trouverez ci-dessous quelques exemples pour les types d’enregistrements d
 - **Enregistrement CAA** : Il doit s’agir d’une liste d’enregistrements d’autorisation de certification (CAA). Chaque enregistrement spécifie l’autorité autorisée à émettre des certificats SSL pour votre domaine, avec des champs pour `flags`, `tag` et `value`.  
 ```json
 {
-  "record": {
+  "records": {
     "CAA": [
       {
         "flags": 0,

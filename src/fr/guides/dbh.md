@@ -34,7 +34,7 @@ Créez un fichier JSON dans le dossier `domains` (`domains/subdomain.json`) avec
         "username": "votre-nom-d-utilisateur",
         "email": "moi@example.com"
     },
-    "record": {
+    "records": {
         "A": ["ip-du-proxy-ici"]
     }
 }

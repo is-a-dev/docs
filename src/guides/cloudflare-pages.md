@@ -26,7 +26,7 @@ In the `domains` directory, create a new JSON file for your subdomain (`domains/
         "username": "your-github-username",
         "email": "your-email@example.com"
     },
-    "record": {
+    "records": {
         "CNAME": "your-sitename.pages.dev"
     }
 }

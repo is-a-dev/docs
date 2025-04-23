@@ -22,7 +22,7 @@ Create a JSON file inside domains directory (`domains/subdomain.json`) with the 
         "username": "your-codeberg-username",
         "email": "your-email@example.com"
     },
-    "record": {
+    "records": {
         "CNAME": "pages.your-codeberg-username.codeberg.page"
     }
 }

@@ -28,7 +28,7 @@ En el directorio `domains`, crea un nuevo archivo JSON para tu subdominio (`doma
         "username": "tu-usuario-de-github",
         "email": "tu-email@gmail.com"
     },
-    "record": {
+    "records": {
         "CNAME": "tu-nombre-de-sitio.pages.dev"
     }
 }

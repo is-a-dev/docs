@@ -22,7 +22,7 @@ tags: guides
     "username": "your-github-username",
     "email": "your-email@example.com"
   },
-  "record": {
+  "records": {
     "CNAME": "the-value-railway-gave-you"
   }
 }

@@ -34,7 +34,7 @@ Create a JSON file inside `domains` directory (`domains/subdomain.json`) with th
         "username": "github-username",
         "email": "me@example.com"
     },
-    "record": {
+    "records": {
         "A": ["proxy-ip-here"]
     }
 }

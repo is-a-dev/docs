@@ -24,7 +24,7 @@ Créez un fichier JSON dans le dossier `domains` (`domains/subdomain.json`) avec
         "username": "nom-d'utilisateur-github",
         "email": "votre-email@example.fr"
     },
-    "record": {
+    "records": {
         "CNAME": "nom-d'utilisateur-github.github.io"
     }
 }
@@ -70,7 +70,7 @@ Créer un fichier JSON dans le dossier `domains/` appellé `domains/nom-d'hôte.
         "username": "nom-d'utilisateur-github",
         "email": "votre-email@example.fr"
     },
-    "record": {
+    "records": {
         "TXT": "texte-de-vérification-github"
     }
 }
