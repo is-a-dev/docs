@@ -60,20 +60,18 @@ Refer to [this article](https://www.namecheap.com/support/knowledgebase/article.
 Please note that you may only do this on a *nested subdomain*, as root subdomains must be related to software development as is required in our [Terms of Service](https://is-a.dev/terms).
 
 ## Who can use NS records?
-We allow NS records for the following reasons and use-cases:
+We permit NS records for the following reasons:
 
-- Users who require a private zone, as they are using their home IP address through **an `A` OR `AAAA` record** behind a proxy service such as Cloudflare. **You *MUST* provide evidence of usage for this reasoning to be approved.**
-- When a third-party service (e.g. Aternos, Wix or Squarespace) mandates specific NS records and you are unable to manage DNS records directly under that domain. Approval requires:
-  - Documentation or evidence from the third-party service explicitly stating this requirement.
-  - Proof that no alternative DNS configuration (CNAME, A records, etc.) can achieve the same result.
+- The DNS record types we already support are not sufficient for your use case. **Evidence must be provided for your use case and why you require them.**
+- When a provider (e.g. Aternos) requires NS delegation, where they maintain the DNS zone, not you. **Supporting documentation must be provided.**
 
 We do not permit NS records for:
 
 - Convenience-only setups: Where alternatives such as A, AAAA, or CNAME records are sufficient.
-- Non-operational purposes: Vanity configurations, aesthetic setups, or speculative use.
-- Unverifiable claims: Any setup lacking clear and concrete evidence of necessity.
-- Misleading configurations: Attempts to misrepresent ownership, mislead users, or impersonate another entity.
-- Security risks: Configurations that introduce vulnerabilities, such as delegating to untrusted or unreliable servers.
+- Non-operational purposes
+- Lack of evidence for need of use
+- Misleading evidence
+- Security risks
 
 ***We reserve the right to deny NS records at our discretion, no matter the reasoning.***
 
@@ -81,8 +79,6 @@ We do not permit NS records for:
 We have to be strict with who we delegate NS records to as they allow the end-user to essentially do *whatever they wish* with their subdomain.
 
 As you can probably imagine, this opens the door to a lot of abuse, which is why they are not freely available to everyone.
-
-If we could, we would delegate NS records to everyone that wanted them, however we do not live in a perfect world, so we unfortunately can't.
 
 ## How can I make changes to or delete my is-a.dev subdomain?
 1. **Read this documentation and our [ToS](https://is-a.dev/terms)**: This is so that you can ensure you fully understand the registration process, our requirements, and how to fully comply with our Terms of Service.
