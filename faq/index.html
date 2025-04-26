@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.7.0.798713434179">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.7.0.798990216183">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.7.0">
@@ -33,11 +33,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../media/logo_circle.png" rel="icon">
-    <link href="../resources/css/retype.css?v=3.7.0.798713434179" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=3.7.0.798990216183" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.7.0.798713434179" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.7.0.798990216183" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=3.7.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.7.0.798713434179" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.7.0.798990216183" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -357,23 +357,18 @@
         <span>Who can use NS records?</span>
     </h2>
 </doc-anchor-target>
-<p>We allow NS records for the following reasons and use-cases:</p>
+<p>We permit NS records for the following reasons:</p>
 <ul>
-<li>Users who require a private zone, as they are using their home IP address through <strong>an <code v-pre>A</code> OR <code v-pre>AAAA</code> record</strong> behind a proxy service such as Cloudflare. <strong>You <em>MUST</em> provide evidence of usage for this reasoning to be approved.</strong></li>
-<li>When a third-party service (e.g. Aternos, Wix or Squarespace) mandates specific NS records and you are unable to manage DNS records directly under that domain. Approval requires:
-<ul>
-<li>Documentation or evidence from the third-party service explicitly stating this requirement.</li>
-<li>Proof that no alternative DNS configuration (CNAME, A records, etc.) can achieve the same result.</li>
-</ul>
-</li>
+<li>The DNS record types we already support are not sufficient for your use case. <strong>Evidence must be provided for your use case and why you require them.</strong></li>
+<li>When a provider (e.g. Aternos) requires NS delegation, where they maintain the DNS zone, not you. <strong>Supporting documentation must be provided.</strong></li>
 </ul>
 <p>We do not permit NS records for:</p>
 <ul>
 <li>Convenience-only setups: Where alternatives such as A, AAAA, or CNAME records are sufficient.</li>
-<li>Non-operational purposes: Vanity configurations, aesthetic setups, or speculative use.</li>
-<li>Unverifiable claims: Any setup lacking clear and concrete evidence of necessity.</li>
-<li>Misleading configurations: Attempts to misrepresent ownership, mislead users, or impersonate another entity.</li>
-<li>Security risks: Configurations that introduce vulnerabilities, such as delegating to untrusted or unreliable servers.</li>
+<li>Non-operational purposes</li>
+<li>Lack of evidence for need of use</li>
+<li>Misleading evidence</li>
+<li>Security risks</li>
 </ul>
 <p><em><strong>We reserve the right to deny NS records at our discretion, no matter the reasoning.</strong></em></p>
 <doc-anchor-target id="why-are-you-so-strict-with-ns-records">
@@ -384,7 +379,6 @@
 </doc-anchor-target>
 <p>We have to be strict with who we delegate NS records to as they allow the end-user to essentially do <em>whatever they wish</em> with their subdomain.</p>
 <p>As you can probably imagine, this opens the door to a lot of abuse, which is why they are not freely available to everyone.</p>
-<p>If we could, we would delegate NS records to everyone that wanted them, however we do not live in a perfect world, so we unfortunately can&#x27;t.</p>
 <doc-anchor-target id="how-can-i-make-changes-to-or-delete-my-is-adev-subdomain">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#how-can-i-make-changes-to-or-delete-my-is-adev-subdomain">#</doc-anchor-trigger>
