@@ -71,7 +71,7 @@ Describe tu nombre de dominio y su uso. Esto es puramente para fines de document
 ### repo
 Este es un enlace a tu repositorio de sitio web o tu cuenta de github. Esto es puramente para fines de documentación y es opcional.
 
-### record (requerido)
+### records (requerido)
 Esta sección es donde especificas los registros DNS.
 
 Puedes ver una lista de los tipos soportados [aquí](/es/useful/faq/#qué-registros-son-compatibles).
