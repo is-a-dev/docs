@@ -73,7 +73,7 @@ Describe your domain name and your usage. This is purely for documentation purpo
 ### `repo`
 This is a link to your website repository or your GitHub account. This is purely for documentation purpose and is optional.
 
-### `record` (required)
+### `records` (required)
 This section is where you specify the DNS records.
 
 You can see a list of supported record types [here](./faq#which-records-are-supported).
