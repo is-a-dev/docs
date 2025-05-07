@@ -41,8 +41,6 @@ Todos los nombres de archivos a continuación cumplen con todos los criterios. L
 `domains/docs.json`
 ```json
 {
-  "description": "Sitio de documentación para is-a.dev",
-  "repo": "https://github.com/is-a-dev/docs",
   "owner": {
     "username": "is-a-dev",
     "email": "admin@is-a.dev"

@@ -41,8 +41,6 @@ All the filenames below meet all the criteria. The reason in parentheses is just
 
 ```json
 {
-  "description": "Documentation website for is-a.dev",
-  "repo": "https://github.com/is-a-dev/docs",
   "owner": {
     "username": "is-a-dev",
     "email": "admin@is-a.dev"

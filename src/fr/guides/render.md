@@ -19,8 +19,6 @@ Dans le dossier domains, créez un nouveau fichier JSON pour votre sous-domaine 
 
 ```json
 {
-    "description": "Décrivez l'utilité de ce sous-domaine",
-    "repo": "https://github.com/nom-d'utilisateur-github/référentiel-github",
     "owner": {
           "username": "nom-d'utilisateur-github",
         "email": "votre-email@example.fr"

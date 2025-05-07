@@ -28,8 +28,6 @@ Créez un fichier JSON dans le dossier `domains` (`domains/subdomain.json`) avec
 
 ```json
 {
-    "description": "Description de l'utilisation de ce sous-domaine",
-    "repo": "https://github.com/votre-nom-d-utilisateur/votre-depot",
     "owner": {
         "username": "votre-nom-d-utilisateur",
         "email": "moi@example.com"

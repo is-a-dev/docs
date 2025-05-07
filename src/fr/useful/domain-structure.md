@@ -41,8 +41,6 @@ Tous les noms de fichiers ci-dessous respectent les crit√®res. La raison indiqu√
 
 ```json
 {
-  "description": "Site web de documentation pour is-a.dev",
-  "repo": "https://github.com/is-a-dev/docs",
   "owner": {
     "username": "is-a-dev",
     "email": "admin@is-a.dev"
