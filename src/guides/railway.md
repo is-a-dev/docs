@@ -34,4 +34,4 @@ tags: guides
 
 
 - **If the PR has been merged, the DNS records will be updated in a few minutes.**
-- **If the PR has been merged but the DNS records haven't updated and you have waited 48 hours, [open a GitHub issue](https://github.com/is-a-dev/register/issues/new/choose) or a help thread in the is-a.dev [Discord server]((https://discord.gg/is-a-dev-830872854677422150)).**
+- **If the PR has been merged but the DNS records haven't updated and you have waited 48 hours, [open a GitHub issue](https://github.com/is-a-dev/register/issues/new/choose) or a help thread in the is-a.dev [Discord server](https://discord.gg/is-a-dev-830872854677422150).**
