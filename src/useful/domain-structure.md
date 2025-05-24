@@ -65,12 +65,6 @@ In the owner object, the fields `username` and `email` are required. You may add
 }
 ```
 
-### `description`
-Describe your domain name and your usage. This is purely for documentation purpose and is optional.
-
-### `repo`
-This is a link to your website repository or your GitHub account. This is purely for documentation purpose and is optional.
-
 ### `records` (required)
 This section is where you specify the DNS records.
 
@@ -236,6 +230,15 @@ Note: Please refer to the [frequently asked questions](https://docs.is-a.dev/faq
       "digest_type": 2,
       "digest": "C2074462471B81206F792AEC23469EF33DDC53538E8580DCCC92FD130C9A6096"
     }]
+```
+### `services` (*optional*)
+This section is for the verification records of certain services. Here is an example of all currently available options:
+```json
+"services": {
+    "discord": "dh=examplestring123",
+    "vercel": "vc-domain-verify=example.is-a.dev,example123",
+    "bluesky": "did=did:plc:example123"
+}
 ```
 
 ### `proxied` (*optional*)
