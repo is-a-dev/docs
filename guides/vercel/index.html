@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.8.1.800971194738">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.8.1.801403218641">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.8.1">
@@ -33,12 +33,12 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../media/logo_circle.png" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.8.1.800971194738" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.8.1.801403218641" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.8.1.800971194738" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.8.1.801403218641" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.8.1" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.8.1.800971194738" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.8.1.800971194738" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.8.1.801403218641" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.8.1.801403218641" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -258,35 +258,18 @@
     </h2>
 </doc-anchor-target>
 <p>If you haven&#x27;t made a Vercel site, make sure to make one. Follow the instructions in <a href="https://vercel.com/docs/getting-started-with-vercel">Vercel&#x27;s Docs</a>.</p>
-<doc-anchor-target id="creating-the-domain-files">
+<doc-anchor-target id="creating-the-domain">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#creating-the-domain-files">#</doc-anchor-trigger>
-        <span>Creating the domain files</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#creating-the-domain">#</doc-anchor-trigger>
+        <span>Creating the domain</span>
     </h3>
 </doc-anchor-target>
-<p>First, go to your Vercel dashboard, then go to your project, then go to Custom Domains and enter the is-a.dev subdomain you want.</p>
-<p><strong>You will need to make two files to ensure this process goes smoothly</strong>. We will go in order for this section.</p>
 <ol>
-<li>Make a file for Vercel TXT verification.
-When connecting the domain, you will be greeted with a TXT verification string. To make the file for this one the TXT record should be placed in <code v-pre>_vercel.subdomain.json</code> in the <strong>domains directory</strong> (replace subdomain with the domain you want of course) and the file should be like this:</li>
+<li>Navigate to your Vercel dashboard. Then, navigate to the &quot;Domains&quot; tab of your project&#x27;s settings. Click &quot;Add Domain&quot; and enter the is-a.dev subdomain you want (e.g. <code v-pre>example.is-a.dev</code>).</li>
+<li>Once you&#x27;re past the &quot;Configure Environment and Redirects&quot; tab—if unsure, just click &quot;Save&quot;—then click &quot;Continue manually&quot;. Copy the TXT verification value that you&#x27;ll get; you&#x27;ll need this in step 4.</li>
+<li>Fork our <a href="https://github.com/is-a-dev/register">repository</a> and create a file <strong>in the <code v-pre>/domains</code> folder</strong> named <code v-pre>your-domain.json</code>. Replace <code v-pre>your-domain</code> with the name of the subdomain you chose earlier in the Vercel dashboard.</li>
+<li>In this file, paste the following JSON and <em><strong>make sure to replace all the values properly</strong></em>, except for the CNAME, which you should leave untouched.</li>
 </ol>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>You can also replace the email with any form of social media handle (Like Discord, Twitter, Bluesky, Mastodon etc.).</p>
-        </div>
-    </div>
-</div>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-json"><code v-pre class="language-json">{
     &quot;owner&quot;: {
@@ -294,53 +277,10 @@ When connecting the domain, you will be greeted with a TXT verification string. 
         &quot;email&quot;: &quot;your-email-address@example.com&quot;
     },
     &quot;records&quot;: {
-        &quot;TXT&quot;: &quot;insert-TXT-string-you-got-from-vercel-here&quot;
-    }
-}</code></pre>
-</doc-codeblock></div>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p><strong><em>DON&#x27;T MAKE A PULL REQUEST YET</em></strong>, we still have to make another file. If you were to make a pull request at this point, we would reject your domain since you are trying to make a nested subdomain on a subdomain you don&#x27;t own yet. Please proceed to the next step.</p>
-        </div>
-    </div>
-</div>
-<ol start="2">
-<li>Create a file for the main domain.
-Now you need to make a file for the main domain, we have two ways to do it: CNAME and A records. We&#x27;ll have two different files for these and explain what restricions or stuff you need to do.</li>
-</ol>
-<p>Create <code v-pre>subdomain.json</code> in the <strong>domains directory</strong> (replace subdomain with the domain you want of course) and put in the file one of these types:</p>
-<p><strong>CNAME record</strong>: If you are using CNAME record you don&#x27;t have to give a preview as you are using the site as the CNAME, but you can&#x27;t use other record (Like MX and TXT records) unless the domain is proxied. For information on how to proxy a domain, see <a href="https://docs.is-a.dev/domain-structure/#proxied-optional">proxying your domain</a>.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-json"><code v-pre class="language-json">{
-    &quot;owner&quot;: {
-        &quot;username&quot;: &quot;your-github-username&quot;,
-        &quot;email&quot;: &quot;your-email-address@example.com&quot;
+        &quot;CNAME&quot;: &quot;cname.vercel-dns.com&quot;
     },
-    &quot;records&quot;: {
-        &quot;CNAME&quot;: &quot;domainname.vercel.app&quot;
-    }
-}</code></pre>
-</doc-codeblock></div>
-<p><strong>A record</strong>: If you are using an A record, you would need to give a preview either by putting a link in the comment section of the PR, putting it in the description, or by providing a screenshot of your website. <strong>This option is ideal for those who want to use their domain for their site and email</strong>.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-json"><code v-pre class="language-json">{
-    &quot;owner&quot;: {
-        &quot;username&quot;: &quot;your-github-username&quot;,
-        &quot;email&quot;: &quot;your-email-address@example.com&quot;
-    },
-    &quot;records&quot;: {
-        &quot;A&quot;: [&quot;76.76.21.21&quot;]
+    &quot;services&quot;: {
+        &quot;vercel&quot;: &quot;insert-TXT-string-you-got-from-vercel-here&quot;
     }
 }</code></pre>
 </doc-codeblock></div>
@@ -350,8 +290,8 @@ Now you need to make a file for the main domain, we have two ways to do it: CNAM
         <span>Make a pull request</span>
     </h3>
 </doc-anchor-target>
-<p>Once you have made these two files, you can now make a pull request to the <a href="https://github.com/is-a-dev/register">main repo</a>. Then you&#x27;ll have to be patient until it gets merged. If you want a chance to get your PR merged faster then join our <a href="https://discord.gg/is-a-dev-830872854677422150">Discord server!</a>.</p>
-<p>When the pull request has been merged your site should be working; if it is still redirecting to the is-a.dev site try clearing your cache.</p>
+<p>Once you have created your file, make a pull request to the <a href="https://github.com/is-a-dev/register">main repository</a>. Then you&#x27;ll need to be patient until it gets merged. If you want a chance to get your PR merged faster, join our <a href="https://discord.gg/is-a-dev-830872854677422150">Discord server</a> and send your pull request link <em><strong>once</strong></em> in <code v-pre>#pull-requests</code>.</p>
+<p>Once the pull request has been merged your site should be working; if it is still redirecting to the is-a.dev site, try clearing your cache.</p>
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">
                                     <span>

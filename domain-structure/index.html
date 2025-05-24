@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.8.1.800971194738">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.8.1.801403218641">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.8.1">
@@ -33,12 +33,12 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../media/logo_circle.png" rel="icon">
-    <link href="../resources/css/retype.css?v=3.8.1.800971194738" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=3.8.1.801403218641" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.8.1.800971194738" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.8.1.801403218641" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=3.8.1" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.8.1.800971194738" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.8.1.800971194738" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.8.1.801403218641" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.8.1.801403218641" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -335,20 +335,6 @@ In the owner object, the fields <code v-pre>username</code> and <code v-pre>emai
   }
 }</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="description">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#description">#</doc-anchor-trigger>
-        <span><code v-pre>description</code></span>
-    </h3>
-</doc-anchor-target>
-<p>Describe your domain name and your usage. This is purely for documentation purpose and is optional.</p>
-<doc-anchor-target id="repo">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#repo">#</doc-anchor-trigger>
-        <span><code v-pre>repo</code></span>
-    </h3>
-</doc-anchor-target>
-<p>This is a link to your website repository or your GitHub account. This is purely for documentation purpose and is optional.</p>
 <doc-anchor-target id="records-required">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#records-required">#</doc-anchor-trigger>
@@ -537,6 +523,20 @@ In the owner object, the fields <code v-pre>username</code> and <code v-pre>emai
       &quot;digest_type&quot;: 2,
       &quot;digest&quot;: &quot;C2074462471B81206F792AEC23469EF33DDC53538E8580DCCC92FD130C9A6096&quot;
     }]</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="services-optional">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#services-optional">#</doc-anchor-trigger>
+        <span><code v-pre>services</code> (<em>optional</em>)</span>
+    </h3>
+</doc-anchor-target>
+<p>This section is for the verification records of certain services. Here is an example of all currently available options:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-json"><code v-pre class="language-json">&quot;services&quot;: {
+    &quot;discord&quot;: &quot;dh=examplestring123&quot;,
+    &quot;vercel&quot;: &quot;vc-domain-verify=example.is-a.dev,example123&quot;,
+    &quot;bluesky&quot;: &quot;did=did:plc:example123&quot;
+}</code></pre>
 </doc-codeblock></div>
 <doc-anchor-target id="proxied-optional">
     <h3>
