@@ -65,12 +65,6 @@ In the owner object, the fields `username` and `email` are required. You may add
 }
 ```
 
-### `description`
-Describe your domain name and your usage. This is purely for documentation purpose and is optional.
-
-### `repo`
-This is a link to your website repository or your GitHub account. This is purely for documentation purpose and is optional.
-
 ### `records` (required)
 This section is where you specify the DNS records.
 
