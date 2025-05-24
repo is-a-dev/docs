@@ -40,7 +40,7 @@ Edit your domain file (`domains/your-domain.json`) and **add this snippet after 
 }
 ```
 
-Please remember to add a comma after the `record` key's closing brace!
+Please remember to add a comma after the `records` key's closing brace!
 
 ## Configuration
 
