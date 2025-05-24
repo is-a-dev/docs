@@ -231,6 +231,15 @@ Note: Please refer to the [frequently asked questions](https://docs.is-a.dev/faq
       "digest": "C2074462471B81206F792AEC23469EF33DDC53538E8580DCCC92FD130C9A6096"
     }]
 ```
+### `services` (*optional*)
+This section is for the verification records of certain services. Here is an example of all currently available options:
+```json
+"services": {
+    "discord": "dh=examplestring123",
+    "vercel": "vc-domain-verify=example.is-a.dev,example123",
+    "bluesky": "did=did:plc:example123"
+}
+```
 
 ### `proxied` (*optional*)
 Enable Cloudflare proxy for your domain. This is disabled by default. To enable it, add this line of code:
