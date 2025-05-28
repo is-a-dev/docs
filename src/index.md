@@ -2,7 +2,8 @@
 label: Welcome
 icon: home
 ---
-![is-a.dev's banner asset](media/banner.png)
+<!-- Do not provide meta name as it messes with SEO -->
+![](media/banner.png)
 
 # is-a.dev Documentation
 Here you'll find detailed guides, the JSON file structure, and more. If you'd like to contribute to our documentation, visit [our documentation repository](https://github.com/is-a-dev/docs) on GitHub.
