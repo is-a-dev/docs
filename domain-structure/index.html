@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.8.1.801720695259">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.8.1.801737059533">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.8.1">
@@ -33,12 +33,12 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../media/logo_circle.png" rel="icon">
-    <link href="../resources/css/retype.css?v=3.8.1.801720695259" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=3.8.1.801737059533" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.8.1.801720695259" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.8.1.801737059533" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=3.8.1" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.8.1.801720695259" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.8.1.801720695259" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.8.1.801737059533" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.8.1.801737059533" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -260,8 +260,10 @@
 <p><strong>Note</strong>: You can include <code v-pre>.</code> (dots) in your filename to register a sub-subdomain (e.g., <code v-pre>blog.example.is-a.dev</code>). However, each segment of your subdomain must meet the following criteria:</p>
 <p>The filename:</p>
 <ul>
-<li>Must be alphanumeric, in lowercase. Dashes (<code v-pre>-</code>) may be used as separators.</li>
+<li>Must be alphanumeric, in lowercase. Dashes (<code v-pre>-</code>) may be used as separators, however they must <em>not</em> be consecutive (e.g. <code v-pre>--</code>).</li>
 <li>Must be at least 1 character.</li>
+<li>Must not be longer than 244 characters (excluding the file extension, <code v-pre>.json</code>).</li>
+<li>Each label (separated by fullstops, e.g. <code v-pre>test.example</code>) must not be longer than 63 characters.</li>
 <li>Must have a <code v-pre>.json</code> file extension.</li>
 <li>Must <em>not</em> contain <code v-pre>is-a.dev</code>.</li>
 </ul>
@@ -272,14 +274,18 @@
     </h3>
 </doc-anchor-target>
 <ul>
-<li><code v-pre>.json</code> (filename is less than 1 character.)</li>
-<li><code v-pre>A.json</code> (filename contains uppercase letters.)</li>
-<li><code v-pre>a..json</code> (filename contains consecutive dots.)</li>
-<li><code v-pre>.a.json</code> (filename starts with a dot.)</li>
-<li><code v-pre>a .json</code> (filename contains a space.)</li>
-<li><code v-pre>a$.json</code> (filename contains a non-alphanumeric character.)</li>
-<li><code v-pre>a.json.json</code> (filename contains more than one <code v-pre>.json</code> extension.)</li>
-<li><code v-pre>a.is-a.dev.json</code> (filename contains <code v-pre>.is-a.dev</code>.)</li>
+<li><code v-pre>.json</code> (filename is less than 1 character)</li>
+<li><code v-pre>A.json</code> (filename contains uppercase letters)</li>
+<li><code v-pre>a..json</code> (filename contains consecutive dots)</li>
+<li><code v-pre>.a.json</code> (filename starts with a dot)</li>
+<li><code v-pre>a .json</code> (filename contains a space)</li>
+<li><code v-pre>a$.json</code> (filename contains a non-alphanumeric character)</li>
+<li><code v-pre>a.json.json</code> (filename contains more than one <code v-pre>.json</code> extension)</li>
+<li><code v-pre>a.is-a.dev.json</code> (filename contains <code v-pre>.is-a.dev</code>)</li>
+<li><code v-pre>a--a.json</code> (filename contains consecutive dashes)</li>
+<li><code v-pre>blog._a.json</code> (root subdomain starts starts with an underscore)</li>
+<li><code v-pre>abc123.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json</code> (one label is longer than 63 characters)</li>
+<li><code v-pre>abc12abc12abc12abc12abc12abc1.2abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc.12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12a.bc12abc12abc12abc12abc12abc12abc12abc12abc12.json</code> (file name is longer than 244 characters)</li>
 </ul>
 <doc-anchor-target id="examples-of-valid-filenames">
     <h3>
@@ -289,10 +295,13 @@
 </doc-anchor-target>
 <p>All the filenames below meet all the criteria. The reason in parentheses is just an example of one of the criteria they meet.</p>
 <ul>
-<li><code v-pre>a.json</code> (at least 1 character long.)</li>
-<li><code v-pre>example.json</code> (alphanumeric and in lowercase.)</li>
-<li><code v-pre>blog.example.json</code> (includes dots to register a sub-subdomain, also called a nested subdomain.)</li>
-<li><code v-pre>my-blog.json</code> (uses dashes as separators, which is recommended.)</li>
+<li><code v-pre>a.json</code> (at least 1 character long)</li>
+<li><code v-pre>example.json</code> (alphanumeric and in lowercase)</li>
+<li><code v-pre>blog.example.json</code> (includes dots to register a sub-subdomain, also called a nested subdomain)</li>
+<li><code v-pre>my-blog.json</code> (uses dashes as separators)</li>
+<li><code v-pre>mail._domainkey.example.json</code> (root subdomain does not contain underscores)</li>
+<li><code v-pre>_vercel.example.json</code> (root subdomain does not contain underscores)</li>
+<li><code v-pre>abc123.json</code> (alphanumeric)</li>
 </ul>
 <p><strong>NOTE:</strong> To stop a user from having a monopoly over one-lettered subdomains, we limit users to only one one-lettered subdomain.</p>
 <doc-anchor-target id="example-json-file">
