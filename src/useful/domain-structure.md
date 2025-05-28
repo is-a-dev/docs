@@ -11,28 +11,37 @@ To register a subdomain, you must create a new JSON file in the `domains` direct
 **Note**: You can include `.` (dots) in your filename to register a sub-subdomain (e.g., `blog.example.is-a.dev`). However, each segment of your subdomain must meet the following criteria:
 
 The filename:
-- Must be alphanumeric, in lowercase. Dashes (`-`) may be used as separators.
+- Must be alphanumeric, in lowercase. Dashes (`-`) may be used as separators, however they must *not* be consecutive (e.g. `--`).
 - Must be at least 1 character.
+- Must not be longer than 244 characters (excluding the file extension, `.json`).
+- Each label (separated by fullstops, e.g. `test.example`) must not be longer than 63 characters.
 - Must have a `.json` file extension.
 - Must *not* contain `is-a.dev`.
 
 ### Examples of Invalid Filenames
-- `.json` (filename is less than 1 character.)
-- `A.json` (filename contains uppercase letters.)
-- `a..json` (filename contains consecutive dots.)
-- `.a.json` (filename starts with a dot.)
-- `a .json` (filename contains a space.)
-- `a$.json` (filename contains a non-alphanumeric character.)
-- `a.json.json` (filename contains more than one `.json` extension.)
-- `a.is-a.dev.json` (filename contains `.is-a.dev`.)
+- `.json` (filename is less than 1 character)
+- `A.json` (filename contains uppercase letters)
+- `a..json` (filename contains consecutive dots)
+- `.a.json` (filename starts with a dot)
+- `a .json` (filename contains a space)
+- `a$.json` (filename contains a non-alphanumeric character)
+- `a.json.json` (filename contains more than one `.json` extension)
+- `a.is-a.dev.json` (filename contains `.is-a.dev`)
+- `a--a.json` (filename contains consecutive dashes)
+- `blog._a.json` (root subdomain starts starts with an underscore)
+- `abc123.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json` (one label is longer than 63 characters)
+- `abc12abc12abc12abc12abc12abc1.2abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc.12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12a.bc12abc12abc12abc12abc12abc12abc12abc12abc12.json` (file name is longer than 244 characters)
 
 ### Examples of Valid Filenames
 All the filenames below meet all the criteria. The reason in parentheses is just an example of one of the criteria they meet.
 
-- `a.json` (at least 1 character long.)
-- `example.json` (alphanumeric and in lowercase.)
-- `blog.example.json` (includes dots to register a sub-subdomain, also called a nested subdomain.)
-- `my-blog.json` (uses dashes as separators, which is recommended.)
+- `a.json` (at least 1 character long)
+- `example.json` (alphanumeric and in lowercase)
+- `blog.example.json` (includes dots to register a sub-subdomain, also called a nested subdomain)
+- `my-blog.json` (uses dashes as separators)
+- `mail._domainkey.example.json` (root subdomain does not contain underscores)
+- `_vercel.example.json` (root subdomain does not contain underscores)
+- `abc123.json` (alphanumeric)
 
 **NOTE:** To stop a user from having a monopoly over one-lettered subdomains, we limit users to only one one-lettered subdomain.
 
