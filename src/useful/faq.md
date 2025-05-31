@@ -18,6 +18,7 @@ tags: useful
 - NS
     - Note: These are only given out in specific cases. Refer to [`Who can use NS records?`](#who-can-use-ns-records) for more information.
 - SRV
+- TLSA
 - TXT
 - URL
     - Note: These records use Cloudflare for redirection, it is not a real DNS record type.
