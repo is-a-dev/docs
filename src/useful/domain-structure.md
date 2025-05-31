@@ -156,7 +156,7 @@ Below are some examples for the given record types:
       {
         "usage": 1,
         "selector": 1,
-        "matchingType": 1,
+        "matching_type": 1,
         "certificate": "5B2D3A4F5E6B7C8D9E0F1A2B3C4D5E6F7A8B9C0D1E2F3A4B5C6D7E8F9A0B1C2D3"
       }
     ]
