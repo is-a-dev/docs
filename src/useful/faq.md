@@ -16,15 +16,15 @@ We support the following DNS record types:
 * `CAA`
 * `CNAME`
 * `DS`
-  *Note: Must be used alongside `NS` records for DNSSEC.*
+  * *Note: Must be used alongside `NS` records for DNSSEC.*
 * `MX`
 * `NS`
-  *Note: Only approved in specific cases. See [Who can use NS records?](#who-can-use-ns-records) for details.*
+  * *Note: Only approved in specific cases. See [Who can use NS records?](#who-can-use-ns-records) for details.*
 * `SRV`
 * `TLSA`
 * `TXT`
 * `URL`
-  *Note: This is not a true DNS record. It uses Cloudflare’s redirection service.*
+  * *Note: This is not a true DNS record. It is a custom made redirector specifically for is-a.dev.*
 
 ---
 
@@ -42,7 +42,7 @@ No, unless the domain is proxied. A `CNAME` cannot be combined with other record
 
 ## How long does it take for my pull request to be merged?
 
-We're a team of volunteers, and is-a.dev is a side project for us, so review times can vary. We’ll get to your PR as soon as we can. To potentially speed things up, share your PR link in [#pull-requests](https://discord.com/channels/830872854677422150/1130858271620726784) on our [Discord server](https://discord.gg/is-a-dev-830872854677422150).
+We're a team of volunteers, and is-a.dev is a side project for us, so review times can vary. We'll get to your PR as soon as we can. To potentially speed things up, share your PR link in [#pull-requests](https://discord.com/channels/830872854677422150/1130858271620726784) on our [Discord server](https://discord.gg/is-a-dev-830872854677422150).
 
 ---
 
@@ -72,7 +72,7 @@ Go to your GitHub Pages settings for your repository and **enable "Enforce HTTPS
 
 ## Can I become a maintainer or join the is-a.dev team?
 
-We don’t accept direct applications. Team members are **handpicked**, often based on community involvement and support activity. Even then, it does **not guarantee** a position.
+We don't accept direct applications. Team members are **handpicked**, often based on community involvement and support activity. Even then, it does **not guarantee** a position.
 
 ---
 
@@ -101,7 +101,7 @@ Refer to this [Namecheap article](https://www.namecheap.com/support/knowledgebas
 
 We **allow** NS records only when:
 
-* The standard DNS record types we support aren’t sufficient.
+* The standard DNS record types we support aren't sufficient.
   ✅ You must provide clear, technical justification.
 * A DNS provider (e.g., Aternos) requires NS delegation.
   ✅ You must provide documentation.
@@ -129,7 +129,7 @@ Follow these steps:
 
 1. **Review the [documentation](https://docs.is-a.dev) and [ToS](https://is-a.dev/terms)**.
 2. **Open your JSON file** (in `/domains/your-subdomain.json`).
-3. **Make your changes** (or delete the file if you’re removing your domain).
+3. **Make your changes** (or delete the file if you're removing your domain).
 4. **Commit the changes** to your fork.
 5. **Push** them to your GitHub fork.
 6. **Open a pull request** from your forked repo.
