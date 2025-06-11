@@ -20,7 +20,7 @@ tags: guides
 4. Click on the domain button (the globe icon).
    ![](../media/discord/step_4.png)
 
-5. In the field that appears type your is-a.dev domain name (e.g. `example.is-a.dev`).
+5. In the field that appears type your is-a.dev domain name (e.g. `your-domain.is-a.dev`).
    ![](../media/discord/step_5.png)
 
 6. Copy the verification string.
@@ -28,7 +28,7 @@ tags: guides
 
 ### Create your domain file
 
-Create a JSON file inside the `domains/` directory called `domains/_discord.example.json` with the following content:
+Create a JSON file inside the `domains/` directory called `domains/_discord.your-domain.json` with the following content:
 
 ```json
 {
