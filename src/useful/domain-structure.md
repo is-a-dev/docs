@@ -3,50 +3,68 @@ icon: file-code
 route: /domain-structure
 tags: useful
 ---
+
 # Domain Structure
-To register a subdomain, you must create a new JSON file in the `domains` directory through a pull request. For example, to register `example.is-a.dev`, you would create a file named `example.json` in the `domains` directory. The full path would be `domains/example.json`.
 
-## Filename
+To register a subdomain, submit a pull request with a new JSON file in the `domains` directory.
+For example, to register `example.is-a.dev`, create a file named `example.json` in `domains/`:
 
-**Note**: You can include `.` (dots) in your filename to register a sub-subdomain (e.g., `blog.example.is-a.dev`). However, each segment of your subdomain must meet the following criteria:
+```
+domains/example.json
+```
 
-The filename:
-- Must be alphanumeric, in lowercase. Dashes (`-`) may be used as separators, however they must *not* be consecutive (e.g. `--`).
-- Must be at least 1 character.
-- Must not be longer than 244 characters (excluding the file extension, `.json`).
-- Each label (separated by fullstops, e.g. `test.example`) must not be longer than 63 characters.
-- Must have a `.json` file extension.
-- Must *not* contain `is-a.dev`.
+---
 
-### Examples of Invalid Filenames
-- `.json` (filename is less than 1 character)
-- `A.json` (filename contains uppercase letters)
-- `a..json` (filename contains consecutive dots)
-- `.a.json` (filename starts with a dot)
-- `a .json` (filename contains a space)
-- `a$.json` (filename contains a non-alphanumeric character)
-- `a.json.json` (filename contains more than one `.json` extension)
-- `a.is-a.dev.json` (filename contains `.is-a.dev`)
-- `a--a.json` (filename contains consecutive dashes)
-- `blog._a.json` (root subdomain starts starts with an underscore)
-- `abc123.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json` (one label is longer than 63 characters)
-- `abc12abc12abc12abc12abc12abc1.2abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc.12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12abc12a.bc12abc12abc12abc12abc12abc12abc12abc12abc12.json` (file name is longer than 244 characters)
+## 📁 Filename Guidelines
 
-### Examples of Valid Filenames
-All the filenames below meet all the criteria. The reason in parentheses is just an example of one of the criteria they meet.
+To register a nested subdomain like `blog.example.is-a.dev`, use dots (`.`) in the filename:
+`blog.example.json`
 
-- `a.json` (at least 1 character long)
-- `example.json` (alphanumeric and in lowercase)
-- `blog.example.json` (includes dots to register a sub-subdomain, also called a nested subdomain)
-- `my-blog.json` (uses dashes as separators)
-- `mail._domainkey.example.json` (root subdomain does not contain underscores)
-- `_vercel.example.json` (root subdomain does not contain underscores)
-- `abc123.json` (alphanumeric)
+Each part of the filename (i.e., each subdomain label) must follow these rules:
 
-**NOTE:** To stop a user from having a monopoly over one-lettered subdomains, we limit users to only one one-lettered subdomain.
+* Must be **alphanumeric and lowercase**. Dashes (`-`) are allowed as separators, but **not consecutively** (e.g., `--` is invalid).
+* Minimum of **1 character**, maximum of **244 characters** (excluding `.json`).
+* Each label (segment between dots) must be **≤ 63 characters**.
+* File must **end with `.json`**.
+* **Must not contain `is-a.dev`**.
+* **Must not begin with a dot**, or contain spaces or invalid characters.
 
-### Example JSON File
-`domains/docs.json`
+### ❌ Invalid Filenames
+
+| Filename                      | Issue                               |
+| ----------------------------- | ----------------------------------- |
+| `.json`                       | Empty filename                      |
+| `A.json`                      | Uppercase letters                   |
+| `a..json`                     | Consecutive dots                    |
+| `.a.json`                     | Starts with a dot                   |
+| `a .json`                     | Contains a space                    |
+| `a$.json`                     | Non-alphanumeric character          |
+| `a.json.json`                 | Multiple extensions                 |
+| `a.is-a.dev.json`             | Contains reserved string `is-a.dev` |
+| `a--a.json`                   | Consecutive dashes                  |
+| `blog._a.json`                | Label starts with an underscore     |
+| `abc123.aaaaaaaa...aaaa.json` | Label exceeds 63 characters         |
+| `very.long.filename...json`   | Filename exceeds 244 characters     |
+
+### ✅ Valid Filenames
+
+| Filename                       | Why It's Valid                      |
+| ------------------------------ | ----------------------------------- |
+| `a.json`                       | Minimum 1 character                 |
+| `example.json`                 | Lowercase and alphanumeric          |
+| `blog.example.json`            | Nested subdomain                    |
+| `my-blog.json`                 | Uses dashes correctly               |
+| `mail._domainkey.example.json` | Underscore is not in the root label |
+| `_vercel.example.json`         | Valid underscore usage              |
+| `abc123.json`                  | Alphanumeric                        |
+
+> **Note:** Users may only register *one* single-letter subdomain to prevent domain squatting.
+
+---
+
+## 🧾 Example JSON File
+
+`domains/docs.json`:
 
 ```json
 {
@@ -61,199 +79,186 @@ All the filenames below meet all the criteria. The reason in parentheses is just
 }
 ```
 
-## Structure
+---
 
-### `owner` (required)
-You need to specify some information about yourself here. This is so that you can be contacted if required.
-In the owner object, the fields `username` and `email` are required. You may add more information in this object if you want, such as a `discord` field.
+## JSON Structure
+
+### 🔐 `owner` (required)
+
+Provides contact information. Required fields:
+
+* `username`: Your GitHub username.
+* `email`: A valid contact email.
+
+Example:
+
 ```json
 {
   "owner": {
-    "username": "your-github-username"
+    "username": "your-github-username",
+    "email": "you@example.com"
   }
 }
 ```
 
-### `records` (required)
-This section is where you specify the DNS records.
+---
 
-You can see a list of supported record types [here](./faq#which-records-are-supported).
+### 🌐 `records` (required)
 
-Below are some examples for the given record types:
+Specify your domain's DNS records.
 
-- **`CNAME`** record: This must be a hostname (`something.tld`). It cannot be used in conjunction with any other record types unless your domain is proxied (see [proxying your domain](https://docs.is-a.dev/domain-structure/#proxied-optional)). This is typically used to map your domain to a specific server.
-```json
-{
-  "records": {
-    "CNAME": "github-username.github.io"
-  }
-}
-```
-- **`A`** record: This must be a list of IPv4 addresses. These addresses point your domain to a specific server.
-```json
-{
-  "records": {
-    "A": [
-      "192.0.2.1",
-      "198.51.100.1",
-      "203.0.113.1"
-    ]
-  }
-}
-```
-- **`AAAA`** record: This must be a list of IPv6 addresses. Like the A record, these addresses point your domain to a specific server.
-```json
-{
-  "records": {
-    "AAAA": [
-      "2001:0db8:85a3:0000:0000:8a2e:0370:7334",
-      "2001:0db8:85a3:0000:0000:8a2e:0370:7335",
-      "2001:0db8:85a3:0000:0000:8a2e:0370:7336"
-    ]
-  }
-}
-```
-- **`URL`** record: This redirects your domain to another URL.
-```json
-{
-  "records": {
-    "URL": "https://example.com"
-  }
-}
-```
-- **`MX`** record: This must be a list of hostnames. These hostnames specify the mail servers that handle emails for your domain.
-```json
-{
-  "records": {
-    "MX": [
-      "mx1.improvmx.com",
-      "mx2.improvmx.com"
-    ]
-  }
-}
-```
-```json
-{
-  "records": {
-    "MX": [
-      {
-        "target": "mx1.improvmx.com",
-        "priority": 10
-      },
-      {
-        "target": "mx2.improvmx.com",
-        "priority": 20
-      }
-    ]
-  }
-}
-```
-- **`TLSA`** record: This record is used to store the fingerprint of a TLS/SSL certificate associated with a service. It helps in securing the connection by allowing clients to verify the server's certificate against the information stored in DNS.
-```json
-{
-  "records": {
-    "TLSA": [
-      {
-        "usage": 1,
-        "selector": 1,
-        "matching_type": 1,
-        "certificate": "5B2D3A4F5E6B7C8D9E0F1A2B3C4D5E6F7A8B9C0D1E2F3A4B5C6D7E8F9A0B1C2D3"
-      }
-    ]
-  }
-}
-```
-- **`TXT`** record: This can be either a single string or a list of strings. TXT records are often used for various purposes, such as verifying domain ownership and ensuring email security.
-```json
-{
-  "records": {
-    "TXT": "Hello World!"
-  }
-}
-```
-```json
-{
-  "records": {
-    "TXT": ["Hello", "World!"]
-  }
-}
-```
-- **`NS`** record: This must be a list of hostnames. These hostnames specify the authoritative DNS servers for your domain.
-```json
-{
-  "records": {
-    "NS": [
-      "ns1.example.com",
-      "ns2.example.com"
-    ]
-  }
-}
-```
-Note: Please refer to the [frequently asked questions](https://docs.is-a.dev/faq/) for clarification on what or who we allow NS records for. If you want a example on what we want as the reasonings, you can [checkout this PR](https://github.com/is-a-dev/register/pull/16758).
+See all supported record types in the [FAQ](./faq#which-records-are-supported).
 
-- **`SRV`** record: This must be a list of service records. Each record specifies the priority, weight, port, and target for a service on your domain. SRV records are often used for services such as VoIP, messaging, Minecraft, and more.
-```json
-{
-  "records": {
-    "SRV": [
-      {
-        "priority": 10,
-        "weight": 5,
-        "port": 8080,
-        "target": "srv.example.com"
-      },
-      {
-        "priority": 20,
-        "weight": 10,
-        "port": 9090,
-        "target": "srv2.example.com"
-      }
-    ]
-  }
-}
-```
-- **`CAA`** record: This must be a list of Certification Authority Authorization (CAA) records. Each record specifies the authority permitted to issue SSL certificates for your domain, with fields for `flags`, `tag`, and `value`.
-```json
-{
-  "records": {
-    "CAA": [
-      {
-        "flags": 0,
-        "tag": "issue",
-        "value": "letsencrypt.org"
-      },
-      {
-        "flags": 0,
-        "tag": "issuewild",
-        "value": "comodoca.com"
-      }
-    ]
-  }
-}
-```
-- **`DS`** record: This must be a list of Delegation Signer (DS) records. Each verifies the authenticity of the (subdomain) zone with field `key_tag`, `algorithm`, `digest_type` and `digest`.
-```json
-"DS": [{
+#### Record Type Examples
+
+* **A**
+  Points to IPv4 addresses:
+
+  ```json
+  "A": ["192.0.2.1", "198.51.100.1"]
+  ```
+
+* **AAAA**
+  Points to IPv6 addresses:
+
+  ```json
+  "AAAA": ["2001:db8::1", "2001:db8::2"]
+  ```
+
+* **CAA**
+  Controls which CAs can issue certificates:
+
+  ```json
+  "CAA": [
+    { "flags": 0, "tag": "issue", "value": "letsencrypt.org" }
+  ]
+  ```
+
+* **CNAME**
+  Points to another hostname:
+
+  ```json
+  "CNAME": "your-site.example.com"
+  ```
+
+* **DS**
+  DNSSEC delegation signer:
+
+  ```json
+  "DS": [
+    {
       "key_tag": 2371,
       "algorithm": 13,
       "digest_type": 2,
-      "digest": "C2074462471B81206F792AEC23469EF33DDC53538E8580DCCC92FD130C9A6096"
-    }]
-```
+      "digest": "..."
+    }
+  ]
+  ```
 
-### `proxied` (*optional*)
-Enable Cloudflare proxy for your domain. This is disabled by default. To enable it, add this line of code:
+* **MX**
+  Email servers for your domain:
+
+  Simple form:
+
+  ```json
+  "MX": [
+    "mx1.example.com",
+    "mx2.example.com"
+  ]
+  ```
+
+  With priority:
+
+  ```json
+  "MX": [
+    { "target": "mx1.example.com", "priority": 10 },
+    { "target": "mx2.example.com", "priority": 20 }
+  ]
+  ```
+
+* **NS**
+  Delegates DNS to other nameservers:
+
+  ```json
+  "NS": ["ns1.example.com", "ns2.example.com"]
+  ```
+
+  > Refer to the [FAQ](https://docs.is-a.dev/faq/#who-can-use-ns-records) for guidance on valid use cases.
+  > Example PR: [#16758](https://github.com/is-a-dev/register/pull/16758)
+
+* **SRV**
+  Defines service records:
+
+  ```json
+  "SRV": [
+    {
+      "priority": 10,
+      "weight": 5,
+      "port": 8080,
+      "target": "service.example.com"
+    }
+  ]
+  ```
+
+* **TLSA**
+  Validates a TLS/SSL certificate:
+
+  ```json
+  "TLSA": [
+    {
+      "usage": 1,
+      "selector": 1,
+      "matching_type": 1,
+      "certificate": "..."
+    }
+  ]
+  ```
+
+* **TXT**
+  Used for verification and other metadata:
+
+  Single string:
+
+  ```json
+  "TXT": "Some verification text"
+  ```
+
+  List format:
+
+  ```json
+  "TXT": ["part1", "part2"]
+  ```
+
+* **URL**
+  Redirects your subdomain to a URL:
+
+  ```json
+  "URL": "https://example.com"
+  ```
+
+---
+
+### ☁️ `proxied` (optional)
+
+Enable Cloudflare proxy:
+
 ```json
 "proxied": true
 ```
 
-### `redirect_config` (*optional*)
-- Allows custom redirect endpoints for your domain. An example can be found [here](https://github.com/is-a-dev/register/blob/main/domains/william.json).
+---
+
+### 🔁 `redirect_config` (optional)
+
+Custom redirect paths for your domain:
+
 ```json
 "redirect_config": {
-    "custom_paths": {
-      "/github": "https://github.com/is-a-dev"
-    },
-    "redirect_paths": true
+  "custom_paths": {
+    "/github": "https://github.com/is-a-dev"
+  },
+  "redirect_paths": true
 }
 ```
+
+> See full example: [`william.json`](https://github.com/is-a-dev/register/blob/main/domains/william.json)
