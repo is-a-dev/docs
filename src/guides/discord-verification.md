@@ -41,7 +41,7 @@ Create a JSON file inside the `domains/` directory called `domains/_discord.exam
 }
 ```
 
-Please remember to add a comma after the `records` key's closing brace!
+**Note:** Don't forget the comma right above the `"records"` key!
 
 ## Configuration
 
