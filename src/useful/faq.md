@@ -36,13 +36,13 @@ This usually happens due to browser caching. [Clear your browser cache](https://
 
 ## Can I use a CNAME record with other record types?
 
-No — unless the domain is proxied. A `CNAME` cannot be combined with other record types (`A`, `MX`, `TXT`, etc.) in the same record set. For exceptions and setup instructions, see [Proxying Your Domain](https://docs.is-a.dev/domain-structure/#proxied-optional).
+No, unless the domain is proxied. A `CNAME` cannot be combined with other record types (`A`, `MX`, `TXT`, etc.) in the same record set. For exceptions and setup instructions, see [Proxying Your Domain](https://docs.is-a.dev/domain-structure/#proxied-optional).
 
 ---
 
 ## How long does it take for my pull request to be merged?
 
-We're a team of volunteers, and is-a.dev is a side project for us — so review times can vary. We’ll get to your PR as soon as we can. To potentially speed things up, share your PR link in [#pull-requests](https://discord.com/channels/830872854677422150/1130858271620726784) on our [Discord server](https://discord.gg/is-a-dev-830872854677422150).
+We're a team of volunteers, and is-a.dev is a side project for us, so review times can vary. We’ll get to your PR as soon as we can. To potentially speed things up, share your PR link in [#pull-requests](https://discord.com/channels/830872854677422150/1130858271620726784) on our [Discord server](https://discord.gg/is-a-dev-830872854677422150).
 
 ---
 
@@ -76,7 +76,7 @@ We don’t accept direct applications. Team members are **handpicked**, often ba
 
 ---
 
-## I accidentally leaked sensitive data in my PR — what can I do?
+## I accidentally leaked sensitive data in my PR, what can I do?
 
 * If **your PR has not been merged**, contact us immediately:
 
@@ -89,7 +89,7 @@ We don’t accept direct applications. Team members are **handpicked**, often ba
 
 ## Can I use my domain for a Minecraft server?
 
-Yes — use an `A` record and an `SRV` record.
+Yes, use an `A` record and an `SRV` record.
 Refer to this [Namecheap article](https://www.namecheap.com/support/knowledgebase/article.aspx/9765/2208/how-can-i-link-my-domain-name-to-a-minecraft-server) for guidance.
 
 > ⚠️ Root subdomains (e.g., `yourname.is-a.dev`) **must relate to software development** as required in our [Terms of Service](https://is-a.dev/terms).
@@ -135,4 +135,4 @@ Follow these steps:
 6. **Open a pull request** from your forked repo.
 7. **Wait for approval and merging** by a maintainer.
 
-> 💡 Keep an eye on your pull request — we may request changes before merging.
+> 💡 Keep an eye on your pull request, we may request changes before merging.
