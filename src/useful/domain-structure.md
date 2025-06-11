@@ -231,7 +231,7 @@ Note: Please refer to the [frequently asked questions](https://docs.is-a.dev/faq
   }
 }
 ```
-- **`DS`** record: This must be a list of Delegation Signer(DS) records. Each verifies the authenticity of the (subdomain) zone with field `key_tag`, `algorithm`, `digest_type` and `digest`.
+- **`DS`** record: This must be a list of Delegation Signer (DS) records. Each verifies the authenticity of the (subdomain) zone with field `key_tag`, `algorithm`, `digest_type` and `digest`.
 ```json
 "DS": [{
       "key_tag": 2371,
@@ -239,15 +239,6 @@ Note: Please refer to the [frequently asked questions](https://docs.is-a.dev/faq
       "digest_type": 2,
       "digest": "C2074462471B81206F792AEC23469EF33DDC53538E8580DCCC92FD130C9A6096"
     }]
-```
-### `services` (*optional*)
-This section is for the verification records of certain services. Here is an example of all currently available options:
-```json
-"services": {
-    "discord": "dh=examplestring123",
-    "vercel": "vc-domain-verify=example.is-a.dev,example123",
-    "bluesky": "did=did:plc:example123"
-}
 ```
 
 ### `proxied` (*optional*)
@@ -261,7 +252,7 @@ Enable Cloudflare proxy for your domain. This is disabled by default. To enable 
 ```json
 "redirect_config": {
     "custom_paths": {
-      "/github": "https://github.com/wdhdev"
+      "/github": "https://github.com/is-a-dev"
     },
     "redirect_paths": true
 }

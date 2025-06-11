@@ -26,17 +26,18 @@ tags: guides
 6. Copy the verification string.
    ![](../media/discord/step_6.png)
 
-### Edit your domain file
+### Create your domain file
 
-!!!
-You must already own an is-a.dev domain to do this.
-!!!
-
-Edit your domain file (`domains/your-domain.json`) and **add this snippet after the `records` key**:
+Create a JSON file inside the `domains/` directory called `domains/_discord.example.json` with the following content:
 
 ```json
-"services": {
-   "discord": "your-discord-verification-string"
+{
+    "owner": {
+        "username": "your-github-username"
+    },
+    "records": {
+        "TXT": "discord-verification-string"
+    }
 }
 ```
 
@@ -44,5 +45,5 @@ Please remember to add a comma after the `records` key's closing brace!
 
 ## Configuration
 
-After your pull request has been merged, repeat steps 1–5 and press the `Verify` button.
+After your pull request has been merged, repeat steps 1-5 and press the `Verify` button.
 If it shows any error such as `Unable to verify your domain`, try waiting a few minutes (sometimes up to 24 hours) as the DNS might not have propagated yet.
