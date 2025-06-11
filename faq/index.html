@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.10.0.802928411357">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.10.0.802928507812">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.10.0">
@@ -33,11 +33,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../media/logo_circle.png" rel="icon">
-    <link href="../resources/css/retype.css?v=3.10.0.802928411357" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=3.10.0.802928507812" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.10.0.802928411357" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.10.0.802928507812" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=3.10.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.10.0.802928411357" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.10.0.802928507812" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -262,15 +262,24 @@
 <li><code v-pre>CAA</code></li>
 <li><code v-pre>CNAME</code></li>
 <li><code v-pre>DS</code>
-<em>Note: Must be used alongside <code v-pre>NS</code> records for DNSSEC.</em></li>
+<ul>
+<li><em>Note: Must be used alongside <code v-pre>NS</code> records for DNSSEC.</em></li>
+</ul>
+</li>
 <li><code v-pre>MX</code></li>
 <li><code v-pre>NS</code>
-<em>Note: Only approved in specific cases. See <doc-anchor-trigger to="#who-can-use-ns-records">Who can use NS records?</doc-anchor-trigger> for details.</em></li>
+<ul>
+<li><em>Note: Only approved in specific cases. See <doc-anchor-trigger to="#who-can-use-ns-records">Who can use NS records?</doc-anchor-trigger> for details.</em></li>
+</ul>
+</li>
 <li><code v-pre>SRV</code></li>
 <li><code v-pre>TLSA</code></li>
 <li><code v-pre>TXT</code></li>
 <li><code v-pre>URL</code>
-<em>Note: This is not a true DNS record. It uses Cloudflare’s redirection service.</em></li>
+<ul>
+<li><em>Note: This is not a true DNS record. It is a custom made redirector specifically for is-a.dev.</em></li>
+</ul>
+</li>
 </ul>
 <hr>
 <doc-anchor-target id="why-does-my-domain-still-redirect-to-the-is-adev-homepage">
@@ -295,7 +304,7 @@
         <span>How long does it take for my pull request to be merged?</span>
     </h2>
 </doc-anchor-target>
-<p>We&#x27;re a team of volunteers, and is-a.dev is a side project for us, so review times can vary. We’ll get to your PR as soon as we can. To potentially speed things up, share your PR link in <a href="https://discord.com/channels/830872854677422150/1130858271620726784">#pull-requests</a> on our <a href="https://discord.gg/is-a-dev-830872854677422150">Discord server</a>.</p>
+<p>We&#x27;re a team of volunteers, and is-a.dev is a side project for us, so review times can vary. We&#x27;ll get to your PR as soon as we can. To potentially speed things up, share your PR link in <a href="https://discord.com/channels/830872854677422150/1130858271620726784">#pull-requests</a> on our <a href="https://discord.gg/is-a-dev-830872854677422150">Discord server</a>.</p>
 <hr>
 <doc-anchor-target id="which-platforms-or-services-are-supported">
     <h2>
@@ -334,7 +343,7 @@
         <span>Can I become a maintainer or join the is-a.dev team?</span>
     </h2>
 </doc-anchor-target>
-<p>We don’t accept direct applications. Team members are <strong>handpicked</strong>, often based on community involvement and support activity. Even then, it does <strong>not guarantee</strong> a position.</p>
+<p>We don&#x27;t accept direct applications. Team members are <strong>handpicked</strong>, often based on community involvement and support activity. Even then, it does <strong>not guarantee</strong> a position.</p>
 <hr>
 <doc-anchor-target id="i-accidentally-leaked-sensitive-data-in-my-pr-what-can-i-do">
     <h2>
@@ -374,7 +383,7 @@ Use a <em>nested</em> subdomain (e.g., <code v-pre>mc.yourname.is-a.dev</code>) 
 </doc-anchor-target>
 <p>We <strong>allow</strong> NS records only when:</p>
 <ul>
-<li><p>The standard DNS record types we support aren’t sufficient.
+<li><p>The standard DNS record types we support aren&#x27;t sufficient.
 <span class="docs-emoji">&#x2705;</span> You must provide clear, technical justification.</p>
 </li>
 <li><p>A DNS provider (e.g., Aternos) requires NS delegation.
@@ -410,7 +419,7 @@ Use a <em>nested</em> subdomain (e.g., <code v-pre>mc.yourname.is-a.dev</code>) 
 <ol>
 <li><strong>Review the <a href="https://docs.is-a.dev">documentation</a> and <a href="https://is-a.dev/terms">ToS</a></strong>.</li>
 <li><strong>Open your JSON file</strong> (in <code v-pre>/domains/your-subdomain.json</code>).</li>
-<li><strong>Make your changes</strong> (or delete the file if you’re removing your domain).</li>
+<li><strong>Make your changes</strong> (or delete the file if you&#x27;re removing your domain).</li>
 <li><strong>Commit the changes</strong> to your fork.</li>
 <li><strong>Push</strong> them to your GitHub fork.</li>
 <li><strong>Open a pull request</strong> from your forked repo.</li>
