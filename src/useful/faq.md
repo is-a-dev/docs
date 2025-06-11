@@ -7,6 +7,8 @@ tags: useful
 
 # 📘 Frequently Asked Questions (FAQ)
 
+This page provides our most frequently asked questions regarding our service.
+
 ## Which DNS record types are supported?
 
 We support the following DNS record types:
