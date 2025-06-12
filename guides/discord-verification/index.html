@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.10.0.802928769227">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.10.0.803014998786">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.10.0">
@@ -35,12 +35,12 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../media/logo_circle.png" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.10.0.802928769227" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.10.0.803014998786" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.10.0.802928769227" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.10.0.803014998786" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.10.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.10.0.802928769227" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.10.0.802928769227" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.10.0.803014998786" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.10.0.803014998786" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -271,7 +271,7 @@
 <li><p>Click on the domain button (the globe icon).
 <img src="../../media/discord/step_4.png" alt="" /></p>
 </li>
-<li><p>In the field that appears type your is-a.dev domain name (e.g. <code v-pre>example.is-a.dev</code>).
+<li><p>In the field that appears type your is-a.dev domain name (e.g. <code v-pre>your-domain.is-a.dev</code>).
 <img src="../../media/discord/step_5.png" alt="" /></p>
 </li>
 <li><p>Copy the verification string.
@@ -284,7 +284,7 @@
         <span>Create your domain file</span>
     </h3>
 </doc-anchor-target>
-<p>Create a JSON file inside the <code v-pre>domains/</code> directory called <code v-pre>domains/_discord.example.json</code> with the following content:</p>
+<p>Create a JSON file inside the <code v-pre>domains/</code> directory called <code v-pre>domains/_discord.your-domain.json</code> with the following content:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-json"><code v-pre class="language-json">{
     &quot;owner&quot;: {
@@ -295,7 +295,7 @@
     }
 }</code></pre>
 </doc-codeblock></div>
-<p>Please remember to add a comma after the <code v-pre>records</code> key&#x27;s closing brace!</p>
+<p><strong>Note:</strong> Don&#x27;t forget the comma right above the <code v-pre>&quot;records&quot;</code> key!</p>
 <doc-anchor-target id="configuration">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#configuration">#</doc-anchor-trigger>
