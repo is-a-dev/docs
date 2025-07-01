@@ -55,10 +55,6 @@ snippets:
 templating:
   enabled: true
   liquid: false
-integrations:
-  plausible:
-    domain: docs.is-a.dev
-    host: analytics.hrsn.net
 footer:
   copyright: "&copy; 2020-2025 is-a.dev - All Rights Reserved."
   links:
