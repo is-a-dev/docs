@@ -34,7 +34,6 @@ You can read about the domains' JSON file structure [here](useful/domain-structu
 These are the official subdomains run by the is-a.dev staff team.
 
 - [`is-a.dev`](https://is-a.dev) (the root domain, used for the main page, documentation, and emails.)
-- [`all.is-a.dev`](https://all.is-a.dev) (visualization of [raw.is-a.dev](raw.is-a.dev), run by [@JustDeveloper1](https://github.com/JustDeveloper1).)
 - [`data.is-a.dev`](https://data.is-a.dev) (data visualization website, run by [@wdhdev](https://github.com/wdhdev).)
 - `docs.is-a.dev` (this website.)
 - [`factory.is-a.dev`](https://factory.is-a.dev) (Subdomain JSON file generator/factory.)
