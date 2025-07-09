@@ -24,7 +24,7 @@ tags: guides
 
    ![](../media/bsky/step_4.png)
 
-5. **Enter** your is-a.dev domain name in the text input and then **Copy** the TXT string. (e.g. `your-subdomain.is-a.dev`).
+5. **Enter** your is-a.dev subdomain name in the text input and then **Copy** the TXT string. (e.g. `your-subdomain.is-a.dev`).
 
    ![](../media/bsky/step_5.png)
 
