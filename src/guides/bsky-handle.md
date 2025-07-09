@@ -4,7 +4,7 @@ label: Bluesky Custom Handle
 tags: guides
 ---
 
-# Setting up Bluesky custom handle with an is-a.dev subdomain
+# Setting up a Bluesky custom handle with an is-a.dev subdomain
 
 ## Get your verification string
 
