@@ -50,4 +50,4 @@ Create a JSON file inside the `domains/` directory called `domains/_atproto.your
 ## Configuration
 
 After your pull request has been merged, repeat steps 1-5 and press the `Verify DNS Record` button.
-If it shows any error such as `Failed to verify handle. Please try again.`, try waiting a few minutes (sometimes up to 24 hours) as the DNS might not have propagated yet.
+If it shows any error such as `Failed to verify handle. Please try again.`, try waiting a few minutes (sometimes up to 24 hours) as the DNS records may not have propagated yet.
