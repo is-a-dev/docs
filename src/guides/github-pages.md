@@ -1,4 +1,5 @@
 ---
+order: 2000
 label: GitHub Pages
 icon: mark-github
 tags: guides
@@ -66,7 +67,7 @@ Create a JSON file inside the `domains/` directory called `domains/hostname.subd
 {
     "owner": {
         "username": "github-username",
-        "email": "me@example.com"
+        "email": "your-email@gmail.com"
     },
     "records": {
         "TXT": "github-verification-string"

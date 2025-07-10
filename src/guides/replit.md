@@ -1,4 +1,5 @@
 ---
+order: 1000
 icon: /media/replit.svg
 label: Replit
 tags: guides

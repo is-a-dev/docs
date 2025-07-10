@@ -1,4 +1,5 @@
 ---
+order: 1700
 label: Codeberg Pages
 icon: /media/codeberg.svg
 tags: guides

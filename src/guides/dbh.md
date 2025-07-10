@@ -1,4 +1,5 @@
 ---
+order: 1400
 label: DanBot Hosting
 tags: guides
 icon: /media/dbh.png

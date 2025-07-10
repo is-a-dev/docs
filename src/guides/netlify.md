@@ -1,4 +1,5 @@
 ---
+order: 1600
 icon: /media/netlify.svg
 label: Netlify
 tags: guides
