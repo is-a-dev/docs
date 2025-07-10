@@ -1,4 +1,5 @@
 ---
+order: 100
 icon: /media/bluesky.svg
 label: Bluesky Custom Handle
 tags: guides
@@ -10,7 +11,7 @@ tags: guides
 
 1. Open your Bluesky app and go to your profile **Settings**.
 
-   ![](../media/discord/step_1.png)
+   ![](../media/bsky/step_1.png)
 
 2. Open the **Accounts** page.
 
