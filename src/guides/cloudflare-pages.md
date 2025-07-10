@@ -1,4 +1,5 @@
 ---
+order: 1900
 label: Cloudflare Pages
 icon: /media/cloudflare.svg
 tags: guides
