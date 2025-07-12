@@ -10,9 +10,9 @@ This page provides a collection of resources to help you understand key concepts
 ## Asking For Help
 - [How do I ask a good question?](https://stackoverflow.com/help/how-to-ask) - A guide on how to ask a good question by Stack Overflow.
 - [How To Ask Questions The Smart Way](http://catb.org/~esr/faqs/smart-questions.html) - A long and comprehensive guide on asking questions the smart way by Eric Steven Raymond and Rick Moen.
-- [Don't Ask to Ask](https://dontasktoask.com) - When asking for support, ask your question directly. This makes everyones' lives easier, including yours!
+- [Don't Ask to Ask](https://dontasktoask.com) - When asking for support, ask your question directly. This makes everyone's lives easier, including yours!
 
-## JSON
+## JavaScript Object Notation (JSON)
 - [JSON for Beginners](https://www.freecodecamp.org/news/what-is-json-a-json-file-example/) - JavaScript Object Notation (JSON) Explained in Plain English by Tapas Adhikary.
 - [JSON Formatter](https://jsonformatter.org/) - A JSON formatter and validator.
 - [JSON Explained](https://www.youtube.com/watch?v=cj3h3Fb10QY) - A video on JSON by Hostinger Academy.
