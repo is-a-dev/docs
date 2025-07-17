@@ -88,15 +88,13 @@ Each part of the filename (i.e., each subdomain label) must follow these rules:
 Provides contact information. Required fields:
 
 * `username`: Your GitHub username.
-* `email`: A valid contact email.
 
 Example:
 
 ```json
 {
   "owner": {
-    "username": "your-github-username",
-    "email": "you@example.com"
+    "username": "your-github-username"
   }
 }
 ```
