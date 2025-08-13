@@ -1,5 +1,5 @@
 ---
-order: 200
+order: 900
 icon: /media/discord.svg
 label: Discord Domain Connection
 tags: guides
