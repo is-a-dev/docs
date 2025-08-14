@@ -1,5 +1,5 @@
 ---
-order: 900
+order: 100
 label: Other services
 icon: server
 tags: guides

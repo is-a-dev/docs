@@ -1,5 +1,5 @@
 ---
-order: 100
+order: 200
 icon: /media/bluesky.svg
 label: Bluesky Custom Handle
 tags: guides
