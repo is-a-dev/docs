@@ -12,18 +12,21 @@ Here you'll find detailed guides, the JSON file structure, and more. If you'd li
 You can read about the domains' JSON file structure [here](useful/domain-structure).
 
 ## Guides
-- [Cloudflare Pages](guides/cloudflare-pages)
-- [DanBot Hosting](guides/dbh)
-- [Discord Domain Verification](guides/discord-verification)
 - [GitHub Pages](guides/github-pages)
-- [Hashnode Blogs](guides/hashnode)
-- [ImprovMX](guides/improvmx)
+- [Cloudflare Pages](guides/cloudflare-pages)
+- [Vercel](guides/vercel)
+- [Codeberg Pages](guides/codeberg-pages)
 - [Netlify](guides/netlify)
-- [Other Services](guides/other)
+- [ImprovMX](guides/improvmx)
+- [Zoho Mail](guides/zoho-mail.md)
+- [DanBot Hosting](guides/dbh)
+- [Hashnode Blogs](guides/hashnode)
 - [Railway](guides/railway)
 - [Render](guides/render)
 - [Replit](guides/replit)
-- [Vercel](guides/vercel)
+- [Discord Domain Verification](guides/discord-verification)
+- [Bluesky Custom Handle](guides/bsky-handle)
+- [Other Services](guides/other)
 
 ## Useful
  - [Domain Structure](useful/domain-structure)
