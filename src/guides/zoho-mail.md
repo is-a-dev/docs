@@ -24,7 +24,7 @@ After logging in to your Zoho Mail account, follow the steps given to verify you
 
    ![](../media/zohomail/step_2.png)
 
-2. Enter `your-domain.is-a.dev` subdomain and the name of your organization in the pop-up. The organization name may your personal name. Click **Add now** to proceed.
+2. Enter `your-domain.is-a.dev` subdomain and the name of your organization in the pop-up. The organization name can be your personal name too. Click **Add now** to proceed.
 
    ![](../media/zohomail/step_3.png)
 
