@@ -182,7 +182,7 @@ See all supported record types in the [FAQ](./faq#which-records-are-supported).
   ```
 
   > Refer to the [FAQ](https://docs.is-a.dev/faq/#who-can-use-ns-records) for guidance on valid use cases.
-  > Example PR: [#16758](https://github.com/is-a-dev/register/pull/16758)
+  > Example PR: [#24565](https://github.com/is-a-dev/register/pull/24565)
 
 * **SRV**
   Defines service records:
