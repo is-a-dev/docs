@@ -61,7 +61,7 @@ After you verified your domain, you may see the **Setup Users** and **Setup Grou
 
 ### MX and SPF Records 
 
-1. Now you need to verify the **MX** and **SPF records** for your domain. You will need to update the existing file that you used to verify the domain and add the TXT record.
+1. Now you need to add the **MX** and **SPF records** for your domain. You will need to update the existing file that you used to verify the domain and add the TXT record.
 
    ![](../media/zohomail/step_7.png)
 
