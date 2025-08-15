@@ -42,7 +42,7 @@ After logging in to your Zoho Mail account, follow the steps given to verify you
    {
     "owner": {
         "username": "github-username",
-        "email": "[email protected]"
+        "email": "example@example.org"
      },
     "records": {
         "TXT": ["Paste TXT Value / Content Here"]
