@@ -114,7 +114,7 @@ After you verified your domain, you may see the **Setup Users** and **Setup Grou
    }
    ```
 
-   After you have done all, please create a Pull Request in [is-a-dev/register](https://github.com/is-a-dev/register) and wait for it to get merged.
+   After you have done all, please create a Pull Request in [our repository](https://github.com/is-a-dev/register) and wait for it to get merged.
 
 
 ## You're all set
