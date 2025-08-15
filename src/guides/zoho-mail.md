@@ -98,7 +98,7 @@ After you verified your domain, you may see the **Setup Users** and **Setup Grou
 
 ### DKIM Record
 
-2. Now only **DKIM record** is left, for this you have to create a **new file** named `zmail._domainkey.your-domain.json`. Please note that *your-domain* should be replaced with the is-a.dev subdomain that you own.
+2. Now only **DKIM record** is left, for this you have to create a **new file** named `zmail._domainkey.your-domain.json`. Please note that `your-domain` should be replaced with the is-a.dev subdomain that you own.
 
    Paste the following content in your `zmail._domainkey.your-domain.json` file:
 
@@ -114,7 +114,7 @@ After you verified your domain, you may see the **Setup Users** and **Setup Grou
    }
    ```
 
-   After you have done all, please create a Pull Request in [our repository](https://github.com/is-a-dev/register) and wait for it to get merged.
+   After you have done all, please create a pull request in [our repository](https://github.com/is-a-dev/register) and wait for it to get merged.
 
 
 ## You're all set
