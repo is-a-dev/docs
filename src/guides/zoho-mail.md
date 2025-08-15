@@ -36,7 +36,7 @@ After logging in to your Zoho Mail account, follow the steps given to verify you
 
    ![](../media/zohomail/step_5.png)
 
-   You need to copy the **TXT value / content** and create a new file or update an existing file, for example `your-domain.json`. After that, please open a pull request in the [is-a-dev/register](https://github.com/is-a-dev/register) repository and **wait for the merge**.
+   You need to copy the **TXT value / content** and create a new file or update an existing file, for example `your-domain.json`. After that, please open a pull request in [our repository](https://github.com/is-a-dev/register) and **wait for the pull request to be merged**.
 
    ```json
    {
