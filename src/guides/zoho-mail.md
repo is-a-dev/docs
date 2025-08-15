@@ -57,7 +57,7 @@ After logging in to your Zoho Mail account, follow the steps given to verify you
 
 ## DNS Mapping
 
-After you verify your domain, you may see the **Setup Users** and **Setup Groups** sections, where you can set up your users (such as example@your-domain.is-a.dev) and groups. For now, you can skip these and move on to **DNS Mapping**.
+After you verified your domain, you may see the **Setup Users** and **Setup Groups** sections, where you can set up your users (such as example@your-domain.is-a.dev) and groups. For now, you can skip these and move on to **DNS Mapping**.
 
 ### MX and SPF Records 
 
