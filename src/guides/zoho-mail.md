@@ -14,7 +14,7 @@ This guide will walk you through the process of setting up custom email in Zoho 
 ![](../media/zohomail/step_1.png)
 
 1. Visit the [Zoho Mail homepage](https://www.zoho.com/mail/), fill in the required details, and click **SIGN UP FOR FREE** to create your account. If you already have one, visit [here](https://www.zoho.com/mail/login.html) to login to your existing account.
-2. You must have an active is-a.dev subdomain, to set up and use Zoho Mail services. Learn more in our [GitHub repository](https://github.com/is-a-dev/register).
+2. You must have an is-a.dev subdomain to set up and use Zoho Mail services. Learn more in our [GitHub repository](https://github.com/is-a-dev/register).
 3. A valid mobile number that can receive text messages and an email address for verification purposes, is **required** to access Zoho Mail.
 
 ## Verify your domain
