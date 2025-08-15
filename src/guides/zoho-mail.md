@@ -98,7 +98,7 @@ After you verify your domain, you may see the **Setup Users** and **Setup Groups
 
 ### DKIM Record
 
-2. Now only **DKIM record** is left, for this you have to create a **new file** named `zmail._domainkey.your-domain.json`. Please note down that *your-domain* is your owned is-a.dev subdomain.
+2. Now only **DKIM record** is left, for this you have to create a **new file** named `zmail._domainkey.your-domain.json`. Please note that *your-domain* should be replaced with the is-a.dev subdomain that you own.
 
    Paste the following content in your `zmail._domainkey.your-domain.json` file:
 
