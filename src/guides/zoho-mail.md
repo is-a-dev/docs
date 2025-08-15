@@ -106,7 +106,7 @@ After you verify your domain, you may see the **Setup Users** and **Setup Groups
    {
      "owner": {
       "username": "github-username",
-      "email": "[email protected]"
+        "email": "example@example.org"
      },
     "records": {
       "TXT": "Paste the DKIM Value Here"
