@@ -18,7 +18,7 @@ We support the following DNS record types:
 * `CAA`
 * `CNAME`
 * `DS`
-  * *Note: Can only be used alongside `NS` records for DNSSEC.*
+  * *Note: Can only be used alongside `NS` records.*
 * `MX`
 * `NS`
   * *Note: Only approved in specific cases. See [Who can use NS records?](#who-can-use-ns-records) for details.*
