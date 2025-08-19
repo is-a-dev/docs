@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.808802687733">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.808882883555">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -31,11 +31,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../media/logo_circle.png" rel="icon">
-    <link href="../resources/css/retype.css?v=3.11.0.808802687733" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=3.11.0.808882883555" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.11.0.808802687733" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.11.0.808882883555" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.11.0.808802687733" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.11.0.808882883555" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -263,7 +263,7 @@
 <li><code v-pre>CNAME</code></li>
 <li><code v-pre>DS</code>
 <ul>
-<li><em>Note: Must be used alongside <code v-pre>NS</code> records for DNSSEC.</em></li>
+<li><em>Note: Can only be used alongside <code v-pre>NS</code> records for DNSSEC.</em></li>
 </ul>
 </li>
 <li><code v-pre>MX</code></li>
@@ -383,23 +383,42 @@ Use a <em>nested</em> subdomain (e.g., <code v-pre>mc.yourname.is-a.dev</code>) 
 </doc-anchor-target>
 <p>We <strong>allow</strong> NS records only when:</p>
 <ul>
-<li><p>The standard DNS record types we support aren&#x27;t sufficient.
-<span class="docs-emoji">&#x2705;</span> You must provide clear, technical justification.</p>
-</li>
-<li><p>A DNS provider (e.g., Aternos) requires NS delegation.
-<span class="docs-emoji">&#x2705;</span> You must provide documentation.</p>
+<li>The standard DNS record types we support aren&#x27;t sufficient.</li>
+<li>A provider (e.g. Aternos) <strong>requires</strong> NS delegation and <strong>does not</strong> have any other method of setting up a subdomain.
+<ul>
+<li>This is mostly regarding SaaS providers, <strong>not</strong> DNS providers like Cloudflare or deSEC.</li>
+</ul>
 </li>
 </ul>
 <p>We <strong>do not allow</strong> NS records for:</p>
 <ul>
+<li>Self hosting
+<ul>
+<li><strong>Note</strong>: This can vary from case to case</li>
+</ul>
+</li>
 <li>Convenience or ease of use</li>
 <li>Unverifiable or unsupported claims</li>
 <li>Non-functional or placeholder purposes</li>
-<li>Security concerns or abuse risk</li>
+<li>Self hosting websites that can be easily hosted on a free platform like GitHub Pages</li>
+<li>If we have security or abuse concerns</li>
+<li>New users of is-a.dev
+<ul>
+<li>If you have not had an is-a.dev subdomain for at least 30 days, you will be denied due to security reasons.</li>
+</ul>
+</li>
+<li>Users that have abused is-a.dev subdomains in the past</li>
 </ul>
 <blockquote>
-<p><span class="docs-emoji">&#x26A0;&#xFE0F;</span> <strong>We reserve the right to deny any NS request at our discretion.</strong></p>
+<p><span class="docs-emoji">&#x26A0;&#xFE0F;</span> <strong>We reserve the right to deny any NS request at our discretion for any reason.</strong></p>
 </blockquote>
+<p>All NS record requests are reviewed on a case by case basis by the service owner.</p>
+<p>Any PRs that clearly lack approved reasoning or evidence can be immediately denied by any maintainer, without a review from the service owner.
+If denied by another maintainer, you do reserve the right to request a more thorough review from the service owner, which is possible by requesting the maintainer to escalate the PR.</p>
+<blockquote>
+<p>How long will it take for my NS record request to be reviewed?</p>
+</blockquote>
+<p>Times can vary, usually with-in 24-72 hours, however in some rare cases it can take up to 2 weeks.</p>
 <hr>
 <doc-anchor-target id="why-are-ns-records-restricted">
     <h2>
@@ -428,6 +447,13 @@ Use a <em>nested</em> subdomain (e.g., <code v-pre>mc.yourname.is-a.dev</code>) 
 <blockquote>
 <p><span class="docs-emoji">&#x1F4A1;</span> Keep an eye on your pull request, we may request changes before merging.</p>
 </blockquote>
+<doc-anchor-target id="why-does-my-pr-have-the-low-priority-label">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#why-does-my-pr-have-the-low-priority-label">#</doc-anchor-trigger>
+        <span>Why does my PR have the &quot;low priority&quot; label?</span>
+    </h2>
+</doc-anchor-target>
+<p>This is because you have mentioned or messaged maintainers to get your PR approved.</p>
 
                                 <div id="retype-tags" class="flex items-center mt-6 mb-6 clear-both">
                                     <span>
