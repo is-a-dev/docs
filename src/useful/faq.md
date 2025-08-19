@@ -18,7 +18,7 @@ We support the following DNS record types:
 * `CAA`
 * `CNAME`
 * `DS`
-  * *Note: Must be used alongside `NS` records for DNSSEC.*
+  * *Note: Can only be used alongside `NS` records for DNSSEC.*
 * `MX`
 * `NS`
   * *Note: Only approved in specific cases. See [Who can use NS records?](#who-can-use-ns-records) for details.*
@@ -104,18 +104,32 @@ Refer to this [Namecheap article](https://www.namecheap.com/support/knowledgebas
 We **allow** NS records only when:
 
 * The standard DNS record types we support aren't sufficient.
-  ✅ You must provide clear, technical justification.
-* A DNS provider (e.g., Aternos) requires NS delegation.
-  ✅ You must provide documentation.
+* A provider (e.g. Aternos) **requires** NS delegation and **does not** have any other method of setting up a subdomain.
+  * This is mostly regarding SaaS providers, **not** DNS providers like Cloudflare or deSEC.
 
 We **do not allow** NS records for:
 
+* Self hosting
+  * **Note**: This can vary from case to case
 * Convenience or ease of use
 * Unverifiable or unsupported claims
 * Non-functional or placeholder purposes
-* Security concerns or abuse risk
+* Self hosting websites that can be easily hosted on a free platform like GitHub Pages
+* If we have security or abuse concerns
+* New users of is-a.dev
+  * If you have not had an is-a.dev subdomain for at least 30 days, you will be denied due to security reasons.
+* Users that have abused is-a.dev subdomains in the past
 
-> ⚠️ **We reserve the right to deny any NS request at our discretion.**
+> ⚠️ **We reserve the right to deny any NS request at our discretion for any reason.**
+
+All NS record requests are reviewed on a case by case basis by the service owner.
+
+Any PRs that clearly lack approved reasoning or evidence can be immediately denied by any maintainer, without a review from the service owner.
+If denied by another maintainer, you do reserve the right to request a more thorough review from the service owner, which is possible by requesting the maintainer to escalate the PR.
+
+> How long will it take for my NS record request to be reviewed?
+
+Times can vary, usually with-in 24-72 hours, however in some rare cases it can take up to 2 weeks.
 
 ---
 
@@ -138,3 +152,7 @@ Follow these steps:
 7. **Wait for approval and merging** by a maintainer.
 
 > 💡 Keep an eye on your pull request, we may request changes before merging.
+
+## Why does my PR have the "low priority" label?
+
+This is because you have mentioned or messaged maintainers to get your PR approved.
