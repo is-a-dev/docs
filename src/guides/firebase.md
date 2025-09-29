@@ -11,7 +11,7 @@ This guide will walk you through the process of setting up a Firebase Hosting si
 
 ## Creating a Firebase Project
 
-First, create a Firebase project and set up Firebase Hosting. Follow the instructions in the [Firebase Hosting Documentation](https://firebase.google.com/docs/hosting/get-started).
+First, create a Firebase project and set up Firebase Hosting. Follow the instructions in the [Firebase Hosting Documentation](https://firebase.google.com/docs/hosting/quickstart).
 
 ### Setting up Firebase Hosting
 
