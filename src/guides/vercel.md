@@ -18,7 +18,7 @@ If you haven't made a Vercel site, make sure to make one. Follow the instruction
 1. Navigate to your Vercel dashboard. Then, navigate to the "Domains" tab of your project's settings. Click "Add Domain" and enter the is-a.dev subdomain you want (e.g. `example.is-a.dev`). 
 2. Once you're past the "Configure Environment and Redirects" tab—if unsure, just click "Save"—then click "Continue manually". Copy the TXT verification value that you'll get; you'll need this in step 4.
 3. [Fork](https://github.com/is-a-dev/register/fork) our repository and create a file **in the `/domains` folder** named `your-domain.json`. Replace `your-domain` with the name of the subdomain you chose earlier in the Vercel dashboard.
-4. In this file, paste the following JSON and ***make sure to replace all the values properly***, except for the A record, which you should leave untouched.
+4. In this file, paste the following JSON and ***make sure to replace all the values properly***.
 
 ```json
 {
@@ -31,6 +31,9 @@ If you haven't made a Vercel site, make sure to make one. Follow the instruction
     }
 }
 ```
+!!!
+These records could be different so please pay attention and check what records Vercel assigned you with.
+!!!
 
 5. Create a second file named `_vercel.your-domain.json` (replace `your-domain` with your chosen subdomain) and add the following content (make sure to replace the TXT record value with your verification string):
 
