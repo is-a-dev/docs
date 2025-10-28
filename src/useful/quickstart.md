@@ -16,7 +16,7 @@ After you've made sure that you meet these requirements, we can continue with th
 
 # Making the is-a.dev domain
 
-Now, to make the file in the first place before making a pull request, you have to fork [our repository](https://github.com/is-a-dev/register). You can click the link [here](https://github.com/is-a-dev/register/fork) to fork our repository.
+Now, to make the file in the first place before making a pull request, you have to fork [our repository](https://github.com/is-a-dev/register). You can click the link [here](https://github.com/is-a-dev/register/fork) to do so.
 
 After you've forked our repository, you can start making the file for your domain. To make the file, enter your fork of our repository (which you should already be there), enter the `domains` directory, also known as a folder, and create the file from there.
 
