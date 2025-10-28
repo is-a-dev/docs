@@ -45,7 +45,7 @@ When you've made sure that you have the valid file format and the correct filena
 
 Assuming you know how GitHub works, it should be easy for you to make a pull request to our repository. For those who don't know how to make one, you can check [this guide from GitHub's documentation](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) on how to do it.
 
-Before you create the pull request, make sure that you've read the pull request template and have completed it with the right information so that it saves both your time and our (maintainers) time.
+Before you create the pull request, make sure that you've read the pull request template and have completed it with the right information in order to save both your time and our (the maintainers') time.
 
 !!!danger
 Please don't replace the pull request template with something else, since that could result in your pull request being closed instantly when a maintainer sees it. Please also add a preview of your website with both the link to your website and a screenshot of your website in the pull request description.
