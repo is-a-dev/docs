@@ -20,7 +20,7 @@ Now, to make the file in the first place before making a pull request, you have 
 
 After you've forked our repository, you can start making the file for your domain. To make the file, enter your fork of our repository (which you should already be there), enter the `domains` directory, also known as a folder, and create the file from there.
 
-You may be wondering, "How should I name the file?". The filename should be the domain name you want in lowercase and then the JSON extension (.json) at the end of the filename, so basically it would be something like this: `subdomain.json`. (Replace `subdomain` with the name you want to register of course)
+You may be wondering, "How should I name the file?". The filename should be the domain name you want in lowercase and then the JSON extension (.json) at the end of the filename, so basically it would be something like this: `subdomain.json` (Replace `subdomain` with the name you want to register of course). For more information about what filenames are valid or invalid, click [here](https://docs.is-a.dev/domain-structure/#-filename-guidelines).
 
 After you've finished with the filename, you can start making the file format of the JSON file. Now depending on your hosting provider, we have guides for most hosting providers (like GitHub Pages, Cloudflare Pages and Vercel, just to name a few) accessible in our documentation, but for hosting providers that don't have a guide, you should pay attention to what records they provide. An example of a valid file format is the one listed below, though you can also check out the [Domain Structure](useful/domain-structure) section to see what records we support.
 
@@ -45,7 +45,14 @@ When you've made sure that you have the valid file format and the correct filena
 
 Assuming you know how GitHub works, it should be easy for you to make a pull request to our repository. For those who don't know how to make one, you can check [this guide from GitHub's documentation](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) on how to do it.
 
-Before you create the pull request, make sure that you've read the pull request template and have completed it with the right information so that it saves both your time and our (maintainers) time. When you've completed it, you can create the pull request and wait for the maintainers to review the pull request. Make sure to also check the pull request from time to time to see if there's any chances that need to be made.
+Before you create the pull request, make sure that you've read the pull request template and have completed it with the right information so that it saves both your time and our (maintainers) time.
+
+!!!danger
+Please don't replace the pull request template with something else, since that could result in your pull request being closed instantly when a maintainer sees it. Please also add a preview of your website with both the link to your website and a screenshot of your website in the pull request description.
+!!!
+
+When you've completed it, you can create the pull request and wait for the maintainers to review the pull request. Make sure to also check the pull request from time to time to see if there's any chances that need to be made.
+
 
 # What do I do now?
 
