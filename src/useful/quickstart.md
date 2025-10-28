@@ -10,7 +10,7 @@ tags: useful
 Before you start the process of making a is-a.dev domain, make sure you have the following:
     1. You have a website that is at least somewhat complete. It should not be blank or have very little information.
     2. Make sure the website is a personal website (like a portfolio or a blog that's software development related) or a non-commercial project that's software development related.
-    3. Make sure the website isn't for commercial purposes, if we see that the website is for commercial purposes we have the right to close the pull request. You can read more of our Terms of Conditions [here](https://is-a.dev/terms).
+    3. Make sure the website isn't for commercial purposes; if the website is for commercial purposes, we have the right to close the pull request. You can read our Terms of Conditions [here](https://is-a.dev/terms).
     
 After you've made sure that you meet these requirements, we can continue with the process of making a is-a.dev domain.
 
