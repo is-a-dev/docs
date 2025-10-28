@@ -22,7 +22,7 @@ After you've forked our repository, you can start making the file for your domai
 
 You may be wondering, "How should I name the file?" The filename should be the domain name you want in lowercase followed by the JSON extension (.json) at the end of the filename, so it would be something like this: `subdomain.json` (Replace `subdomain` with the name you want to register, of course). For more information about what filenames are valid or invalid, click [here](https://docs.is-a.dev/domain-structure/#-filename-guidelines).
 
-After you've finished with the filename, you can start making the file format of the JSON file. Now depending on your hosting provider, we have guides for most hosting providers (like GitHub Pages, Cloudflare Pages and Vercel, just to name a few) accessible in our documentation, but for hosting providers that don't have a guide, you should pay attention to what records they provide. An example of a valid file format is the one listed below, though you can also check out the [Domain Structure](useful/domain-structure) section to see what records we support.
+After you've finished with the filename, you can start making the file format of the JSON file. Depending on your hosting provider, we have guides for most hosting providers (like GitHub Pages, Cloudflare Pages and Vercel, just to name a few) accessible in our documentation, but for hosting providers that don't have a guide, you should pay attention to what records they provide. An example of a valid file format is the one listed below, though you can also check out the [Domain Structure](useful/domain-structure) section to see what records we support.
 
 ```json
 {
