@@ -6,7 +6,7 @@ icon: /media/dbh.png
 ---
 
 !!!danger
-This hosting service has changed a lot in recent times, so this guide may not be up to date with the current system the hosting provider has.
+This hosting provider has changed a lot in recent times, so this guide may not be up to date with the current system the hosting provider has.
 !!!
 
 # Setting up DanBot Hosting with an is-a.dev subdomain
