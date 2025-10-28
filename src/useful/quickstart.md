@@ -51,7 +51,7 @@ Before you create the pull request, make sure that you've read the pull request 
 Please don't replace the pull request template with something else, since that could result in your pull request being closed instantly when a maintainer sees it. Please also add a preview of your website with both the link to your website and a screenshot of your website in the pull request description.
 !!!
 
-When you've completed it, you can create the pull request and wait for the maintainers to review the pull request. Make sure to also check the pull request from time to time to see if there's any chances that need to be made.
+When you've completed it, you can create the pull request and wait for the maintainers to review it. Make sure to also check the pull request from time to time to see if there's any chances that need to be made.
 
 
 # What do I do now?
