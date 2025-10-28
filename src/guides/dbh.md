@@ -5,6 +5,10 @@ tags: guides
 icon: /media/dbh.png
 ---
 
+!!!danger
+This hosting service has changed a lot in recent times, so this guide may not be up to date with the current system the hosting provider has.
+!!!
+
 # Setting up DanBot Hosting with an is-a.dev subdomain
 
 This guide will walk you through the process of setting up a DanBot Hosting website and pointing your is-a.dev subdomain to it.
