@@ -9,7 +9,7 @@ icon: home
 Here you'll find detailed guides, the JSON file structure, and more. If you'd like to contribute to our documentation, visit [our documentation repository](https://github.com/is-a-dev/docs) on GitHub.
 
 ## How to Register
-For our Quick Start guide you can click [here](useful/quickstart) to read it. You can also read about the domains' JSON file structure [here](useful/domain-structure).
+For our Quick Start guide you can click [here](quickstart) to read it. You can also read about the domains' JSON file structure [here](useful/domain-structure).
 
 ## Guides
 - [GitHub Pages](guides/github-pages)
@@ -17,9 +17,10 @@ For our Quick Start guide you can click [here](useful/quickstart) to read it. Yo
 - [Vercel](guides/vercel)
 - [Codeberg Pages](guides/codeberg-pages)
 - [Netlify](guides/netlify)
-- [ImprovMX](guides/improvmx)
 - [Zoho Mail](guides/zoho-mail)
+- [ImprovMX](guides/improvmx)
 - [DanBot Hosting](guides/dbh)
+- [Firebase Hosting](https://web.app)
 - [Hashnode Blogs](guides/hashnode)
 - [Railway](guides/railway)
 - [Render](guides/render)
