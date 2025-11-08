@@ -20,7 +20,7 @@ For our Quick Start guide you can click [here](quickstart) to read it. You can a
 - [Zoho Mail](guides/zoho-mail)
 - [ImprovMX](guides/improvmx)
 - [DanBot Hosting](guides/dbh)
-- [Firebase Hosting](https://web.app)
+- [Firebase Hosting](guides/firebase)
 - [Hashnode Blogs](guides/hashnode)
 - [Railway](guides/railway)
 - [Render](guides/render)
