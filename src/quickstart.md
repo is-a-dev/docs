@@ -2,6 +2,7 @@
 icon: rocket
 label: Quick Start
 route: /quickstart
+order: 100
 tags: [useful, guides]
 ---
 
