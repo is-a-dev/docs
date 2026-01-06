@@ -95,7 +95,8 @@ After you verified your domain, you may see the **Setup Users** and **Setup Grou
       }
     }
   ```
-!!! Double check if the Zoho domain is right. Zoho gives different domains to each region the user is located, like `zoho.eu` for Europe, `zoho.in` for India and so on. !!!
+!!! Double check if the Zoho domain is right. Zoho gives different domains to each region the user is located, like `zoho.eu` for Europe, `zoho.in` for India and so on.
+!!!
 
 ### DKIM Record
 
