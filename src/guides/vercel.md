@@ -15,11 +15,11 @@ If you haven't made a Vercel site, make sure to make one. Follow the instruction
 
 ### Creating the domain
 
-1. Navigate to your Vercel dashboard. Then, navigate to the "Domains" tab of your project's settings. Click "Add Domain" and enter the is-a.dev subdomain you want (e.g. `example.is-a.dev`). 
+1. Navigate to your Vercel dashboard. Then, navigate to the "Domains" tab of your project's settings. Click "Add Domain" and enter the is-a.dev subdomain you want (e.g. `example.is-a.dev`).
+!!!
+You may see Vercel enable by default the "Redirect example.is-a.dev to www.example.is-a.dev" button. We recommend to disable it since it will make the main subdomain (`example.is-a.dev`) be a redirect to a nested subdomain (`www.example.is-a.dev`) which you would have to make a file for alongside the main subdomain. If you wish to make a file for `www.example.is-a.dev`. copy the same file format as the main subdomain, but replace the records with what Vercel gave you.
+!!!
 2. Once you're past the "Configure Environment and Redirects" tab—if unsure, just click "Save"—then click "Continue manually". Copy the TXT verification value that you'll get; you'll need this in step 4.
-!!!
-You may see Vercel enable by default the "Redirect example.is-a.dev to www.example.is-a.dev" button. We recommend to disable it since it will make the root domain (example.is-a.dev) be a redirect to a nested subdomain (www.example.is-a.dev) which you would have to make alongside the main subdomain.
-!!!
 3. [Fork](https://github.com/is-a-dev/register/fork) our repository and create a file **in the `/domains` folder** named `your-domain.json`. Replace `your-domain` with the name of the subdomain you chose earlier in the Vercel dashboard.
 4. In this file, paste the following JSON and ***make sure to replace all the values properly***.
 
@@ -51,6 +51,9 @@ These records could be different so please pay attention and check what records 
     }
 }
 ```
+!!!
+If you wish to add multiple nested subdomains with Vercel, please add all of the TXT records in this file. For more information on how you can add multiple TXT records please check the [Domain Structure](useful/domain-structure) section.
+!!!
 
 ### Make a pull request
 
