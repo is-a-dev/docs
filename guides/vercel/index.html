@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.822240130369">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.823283486803">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -31,12 +31,12 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../media/logo_circle.png" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.11.0.822240130369" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.11.0.823283486803" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.822240130369" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.823283486803" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.822240130369" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.11.0.822240130369" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.823283486803" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.11.0.823283486803" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -265,6 +265,25 @@
 </doc-anchor-target>
 <ol>
 <li>Navigate to your Vercel dashboard. Then, navigate to the &quot;Domains&quot; tab of your project&#x27;s settings. Click &quot;Add Domain&quot; and enter the is-a.dev subdomain you want (e.g. <code v-pre>example.is-a.dev</code>).</li>
+</ol>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>You may see Vercel enable by default the &quot;Redirect example.is-a.dev to www.example.is-a.dev&quot; button. We recommend to disable it since it will make the main subdomain (<code v-pre>example.is-a.dev</code>) be a redirect to a nested subdomain (<code v-pre>www.example.is-a.dev</code>), which you would have to make a file for alongside the main subdomain. If you wish to make a file for <code v-pre>www.example.is-a.dev</code>, repeat step 4 like you did with the main subdomain, but replace the records with what Vercel gave you.</p>
+        </div>
+    </div>
+</div>
+<ol start="2">
 <li>Once you&#x27;re past the &quot;Configure Environment and Redirects&quot; tab—if unsure, just click &quot;Save&quot;—then click &quot;Continue manually&quot;. Copy the TXT verification value that you&#x27;ll get; you&#x27;ll need this in step 4.</li>
 <li><a href="https://github.com/is-a-dev/register/fork">Fork</a> our repository and create a file <strong>in the <code v-pre>/domains</code> folder</strong> named <code v-pre>your-domain.json</code>. Replace <code v-pre>your-domain</code> with the name of the subdomain you chose earlier in the Vercel dashboard.</li>
 <li>In this file, paste the following JSON and <em><strong>make sure to replace all the values properly</strong></em>.</li>
@@ -311,6 +330,23 @@
     }
 }</code></pre>
 </doc-codeblock></div>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>If you wish to add multiple nested subdomains with Vercel, please add all of the TXT verification records to this file. For more information on how you can add multiple TXT records please check the <a href="../../domain-structure/">Domain Structure</a> section.</p>
+        </div>
+    </div>
+</div>
 <doc-anchor-target id="make-a-pull-request">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#make-a-pull-request">#</doc-anchor-trigger>
