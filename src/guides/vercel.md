@@ -17,6 +17,9 @@ If you haven't made a Vercel site, make sure to make one. Follow the instruction
 
 1. Navigate to your Vercel dashboard. Then, navigate to the "Domains" tab of your project's settings. Click "Add Domain" and enter the is-a.dev subdomain you want (e.g. `example.is-a.dev`). 
 2. Once you're past the "Configure Environment and Redirects" tab—if unsure, just click "Save"—then click "Continue manually". Copy the TXT verification value that you'll get; you'll need this in step 4.
+!!!
+You may see Vercel enable by default the "Redirect `example.is-a.dev` to `www.example.is-a.dev`" button. We recommend to disable it since, unless you make a file for `www.example.is-a.dev`, it will make the root domain be a redirect to a nested subdomain which you haven't even made. It will also show a configuration error for `www.example.is-a.dev` since it doesn't exist in the first place.
+!!!
 3. [Fork](https://github.com/is-a-dev/register/fork) our repository and create a file **in the `/domains` folder** named `your-domain.json`. Replace `your-domain` with the name of the subdomain you chose earlier in the Vercel dashboard.
 4. In this file, paste the following JSON and ***make sure to replace all the values properly***.
 
