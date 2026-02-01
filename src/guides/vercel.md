@@ -52,7 +52,7 @@ These records could be different so please pay attention and check what records 
 }
 ```
 !!!
-If you wish to add multiple nested subdomains with Vercel, please add all of the TXT records in this file. For more information on how you can add multiple TXT records please check the [Domain Structure](useful/domain-structure) section.
+If you wish to add multiple nested subdomains with Vercel, please add all of the TXT records in this file. For more information on how you can add multiple TXT records please check the [Domain Structure](/useful/domain-structure) section.
 !!!
 
 ### Make a pull request
