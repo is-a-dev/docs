@@ -23,7 +23,7 @@ You should instantly close a pull request when:
 8. Any one the "Requirements" checkboxes have not been fulfilled.
 
 ## Steps to Reviewing a PR
-First, approve checks. Do this by clicking the button at the bottom of the PR labelled "Approve workflows to run".
+First, approve checks if needed. Do this by clicking the button at the bottom of the PR labelled "Approve workflows to run".
 
 ![](../media/reviewing-prs/checks-need-approval.png)
 
