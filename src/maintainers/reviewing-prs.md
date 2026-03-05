@@ -51,4 +51,4 @@ You can use quickly select and use saved replies in the reply/reviewing text box
 
 3. When unsure of whether or not to approve or request changes on a PR, do not hesitate to ask another, more experienced maintainer on how to deal with it. You can also simply skip the PR and wait for someone else to review it.
 
-[^1]: Nested subdomains are a subdomain of a subdomain, such as `nested.orangc.is-a.dev`. `orangc.is-a.dev` is not a nested subdomain, it is a subdomain!
+[^1]: Nested subdomains are a subdomain of a subdomain, such as `nested.example.is-a.dev`. `example.is-a.dev` is not a nested subdomain, it is a subdomain!
