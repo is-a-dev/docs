@@ -13,7 +13,7 @@ Let's begin.
 You should instantly close a pull request when:
 
 1. The website has no preview provided *and* isn't accessible. We expect previews for *all* webpages.
-2. The checkbox stating the user's agreement to our ToS has not been checked.
+2. The checkbox stating the user's agreement to our [ToS](https://is-a.dev/terms) (Terms of Service) has not been checked.
 3. The PR is requesting NS records without a valid reason or without a reason provided at all. See [this page](https://docs.is-a.dev/faq/#who-can-use-ns-records) for details on what we consider a valid reason to request NS records.
 4. The user violates our ToS in any way; e.g., if they are under thirteen years of age, if their webpage is breaking the law or hosting illegal content, cryptocurrency mining sites or tools, impersonation without consent, et cetera.
 5. The webpage is not related to software development. This does not apply for nested subdomains![^1]
