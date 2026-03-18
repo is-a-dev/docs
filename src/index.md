@@ -42,6 +42,6 @@ These are the official subdomains run by the is-a.dev staff team.
 - `docs.is-a.dev` (this website.)
 - [`raw.is-a.dev`](https://raw.is-a.dev) (raw JSON API of all is-a.dev subdomains, run by [@wdhdev](https://github.com/wdhdev).)
 
-**Do *NOT* trust any websites claiming to be us that are not listed here. If you find any, please report them to [security@is-a.dev](mailto:security@is-a.dev).**
+**Do *NOT* trust any websites claiming to be us that are not listed here. If you find any, please report them to [admin@is-a.dev](mailto:admin@is-a.dev).**
 
-*We do not unsolicitedly send emails to users, do not trust any unsolicited emails claiming they are us. Report any unsolicited emails to [security@is-a.dev](mailto:security@is-a.dev).*
+*We do not unsolicitedly send emails to users, do not trust any unsolicited emails claiming they are us. Report any unsolicited emails to [admin@is-a.dev](mailto:admin@is-a.dev).*
