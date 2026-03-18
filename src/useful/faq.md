@@ -80,9 +80,9 @@ We don't accept direct applications. Team members are **handpicked**, often base
 
 ## I accidentally leaked sensitive data in my PR, what can I do?
 
-* If **your PR has not been merged**, contact us immediately:
+* If **your PR containing sensistive information has not been merged**, contact us immediately:
 
-  * Email: [security@is-a.dev](mailto:security@is-a.dev)
+  * Email: [admin@is-a.dev](mailto:admin@is-a.dev)
   * Discord: [@williamharrison](https://discord.com/users/853158265466257448)
 
 * If your PR **has already been merged**, we cannot retroactively remove it.
