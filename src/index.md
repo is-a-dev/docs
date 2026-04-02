@@ -40,7 +40,6 @@ These are the official subdomains run by the is-a.dev staff team.
 - [`is-a.dev`](https://is-a.dev) (the root domain, used for the main page, documentation, and emails.)
 - [`data.is-a.dev`](https://data.is-a.dev) (data visualization website, run by [@wdhdev](https://github.com/wdhdev).)
 - `docs.is-a.dev` (this website.)
-- [`raw.is-a.dev`](https://raw.is-a.dev) (raw JSON API of all is-a.dev subdomains, run by [@wdhdev](https://github.com/wdhdev).)
 
 **Do *NOT* trust any websites claiming to be us that are not listed here. If you find any, please report them to [admin@is-a.dev](mailto:admin@is-a.dev).**
 
