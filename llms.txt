@@ -1,0 +1,28 @@
+﻿#  | is-a.dev Docs
+
+> Here you'll find detailed guides, the JSON file structure, and more. If you'd like to contribute to our documentation, visit our documentation repository on GitHub.
+
+- [is-a.dev Documentation](https://docs.is-a.dev/index.md): is-a.dev Documentation
+- [Quickstart Guide](https://docs.is-a.dev/quickstart.md): Before you start the process of making a is-a.dev domain, make sure you have the following:
+- [Domain Structure](https://docs.is-a.dev/useful/domain-structure.md): To register a subdomain, submit a pull request with a new JSON file in the domains directory. For example, to register example.is-a.dev, create a file
+- [📘 Frequently Asked Questions (FAQ)](https://docs.is-a.dev/useful/faq.md): This page provides our most frequently asked questions regarding our service.
+- [Resources](https://docs.is-a.dev/useful/resources.md): This page provides a collection of resources to help you understand key concepts related to domain management, such as DNS, records, and more.
+
+## Guides
+
+- [GitHub Pages](https://docs.is-a.dev/guides/github-pages.md): This guide will walk you through the process of setting up a GitHub Pages site and pointing your is-a.dev subdomain to it.
+- [Setting up Cloudflare Pages with an is-a.dev subdomain](https://docs.is-a.dev/guides/cloudflare-pages.md): This guide will walk you through the process of setting up a Cloudflare Pages website and pointing your is-a.dev subdomain towards it.
+- [Setting up Vercel with an is-a.dev subdomain](https://docs.is-a.dev/guides/vercel.md): This guide will walk you through the process of setting up a Vercel site and pointing your is-a.dev subdomain towards it.
+- [Setting up Codeberg Pages with an is-a.dev subdomain](https://docs.is-a.dev/guides/codeberg-pages.md): This guide will walk you through the process of setting up a Codeberg Pages website and pointing your is-a.dev subdomain to it.
+- [Setting up Netlify with an is-a.dev Subdomain](https://docs.is-a.dev/guides/netlify.md): This guide will walk you through the process of setting up a Netlify deployment and pointing your is-a.dev subdomain towards it.
+- [Setting up Zoho Mail using is-a.dev subdomain](https://docs.is-a.dev/guides/zoho-mail.md): This guide will walk you through the process of setting up custom email in Zoho Mail with your is-a.dev subdomain.
+- [Setting up ImprovMX with an is-a.dev subdomain](https://docs.is-a.dev/guides/improvmx.md): This guide will walk you through the process of setting up ImprovMX with your is-a.dev subdomain.
+- [Setting up DanBot Hosting with an is-a.dev subdomain](https://docs.is-a.dev/guides/dbh.md): This hosting provider has changed a lot in recent times, so this guide may not be up to date with the current system the hosting provider has.
+- [Setting up Firebase Hosting with an is-a.dev Subdomain](https://docs.is-a.dev/guides/firebase.md): This guide will walk you through the process of setting up a Firebase Hosting site and pointing your is-a.dev subdomain towards it.
+- [Hashnode Blog](https://docs.is-a.dev/guides/hashnode.md): When you create your Hashnode blog, Hashnode provides a free hashnode.dev subdomain for you. However, you can alternatively set up your own is-a.dev subdomain.
+- [Setting up is-a.dev with Railway](https://docs.is-a.dev/guides/railway.md): Navigate to the dashboard
+- [Setting up Render with an is-a.dev Subdomain](https://docs.is-a.dev/guides/render.md): This guide will walk you through the process of setting up a Render deployment and pointing your is-a.dev subdomain towards it.
+- [Setting up Replit with an is-a.dev subdomain](https://docs.is-a.dev/guides/replit.md): Follow the instructions in the Replit Workspace Guide on how to create a project.
+- [Setting up Discord domain connection with your is-a.dev subdomain](https://docs.is-a.dev/guides/discord-verification.md): Open your Discord app and press Settings.
+- [Setting up a Bluesky custom handle with an is-a.dev subdomain](https://docs.is-a.dev/guides/bsky-handle.md): Open your Bluesky app and go to your profile Settings.
+- [Setting up other services with is-a.dev](https://docs.is-a.dev/guides/other.md): Read the domain file structure and set up the records accordingly.
