@@ -38,7 +38,7 @@ This usually happens due to browser caching. [Clear your browser cache](https://
 
 ## Can I use a CNAME record with other record types?
 
-No, unless the domain is proxied. A `CNAME` cannot be combined with other record types (`A`, `MX`, `TXT`, etc.) in the same record set. For exceptions and setup instructions, see [Proxying Your Domain](https://docs.is-a.dev/domain-structure/#proxied-optional).
+No, unless the domain is proxied. A `CNAME` cannot be combined with other record types (`A`, `MX`, `TXT`, etc.) in the same record set. For exceptions and setup instructions, see [Proxying Your Domain](https://docs.is-a.dev/domain-structure/#-proxied-optional).
 
 ---
 
