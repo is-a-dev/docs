@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.2.828900824001">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.834588472060">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.5.2">
+    <meta name="generator" content="Retype 4.6.0">
 
     <!-- Primary Meta Tags -->
     <title>Domain Structure | is-a.dev Docs</title>
@@ -38,12 +38,12 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../media/logo_circle.png" />
-    <link href="../resources/css/retype.css?v=4.5.2.828900824001" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=4.6.0.834588472060" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=4.5.2.828900824001" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../resources/js/retype.js?v=4.5.2" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.5.2.828900824001" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=4.5.2.828900824001" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=4.6.0.834588472060" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.6.0.834588472060" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=4.6.0.834588472060" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -230,6 +230,20 @@ For example, to register <code translate="no" v-pre>example.is-a.dev</code>, cre
 <li><strong>Must not begin with a dot</strong>, or contain spaces or invalid characters.</li>
 </ul>
 <h3 id="-invalid-filenames"><span class="docs-emoji">&#x274C;</span> Invalid Filenames</h3>
+<retype-table copy-text="| Filename                      | Issue                               |
+| ----------------------------- | ----------------------------------- |
+| `.json`                       | Empty filename                      |
+| `A.json`                      | Uppercase letters                   |
+| `a..json`                     | Consecutive dots                    |
+| `.a.json`                     | Starts with a dot                   |
+| `a .json`                     | Contains a space                    |
+| `a$.json`                     | Non-alphanumeric character          |
+| `a.json.json`                 | Multiple extensions                 |
+| `a.is-a.dev.json`             | Contains reserved string `is-a.dev` |
+| `a--a.json`                   | Consecutive dashes                  |
+| `blog._a.json`                | Label starts with an underscore     |
+| `abc123.aaaaaaaa...aaaa.json` | Label exceeds 63 characters         |
+| `very.long.filename...json`   | Filename exceeds 244 characters     |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -290,7 +304,17 @@ For example, to register <code translate="no" v-pre>example.is-a.dev</code>, cre
 </tbody>
 </table>
 </div>
+</retype-table>
 <h3 id="-valid-filenames"><span class="docs-emoji">&#x2705;</span> Valid Filenames</h3>
+<retype-table copy-text="| Filename                       | Why It's Valid                      |
+| ------------------------------ | ----------------------------------- |
+| `a.json`                       | Minimum 1 character                 |
+| `example.json`                 | Lowercase and alphanumeric          |
+| `blog.example.json`            | Nested subdomain                    |
+| `my-blog.json`                 | Uses dashes correctly               |
+| `mail._domainkey.example.json` | Underscore is not in the root label |
+| `_vercel.example.json`         | Valid underscore usage              |
+| `abc123.json`                  | Alphanumeric                        |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -331,6 +355,7 @@ For example, to register <code translate="no" v-pre>example.is-a.dev</code>, cre
 </tbody>
 </table>
 </div>
+</retype-table>
 <blockquote>
 <p><strong>Note:</strong> Users may only register <em>one</em> single-letter subdomain to prevent domain squatting.</p>
 </blockquote>
