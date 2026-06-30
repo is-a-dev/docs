@@ -105,6 +105,9 @@ Example:
 
 Specify your domain's DNS records.
 
+> [!IMPORTANT]
+> The JSON key must be plural: `"records"`. Using `"record"` (singular) will fail the automated validation checks.
+
 See all supported record types in the [FAQ](./faq#which-records-are-supported).
 
 #### Record Type Examples
