@@ -13,10 +13,10 @@ You should instantly close a pull request when:
 3. The PR is requesting NS records without a valid reason or without a reason provided at all. See [this page](https://docs.is-a.dev/faq/#who-can-use-ns-records) for details on what we consider a valid reason to request NS records.
 4. The user violates our ToS in any way; e.g., if they are under thirteen years of age, if their webpage is breaking the law or hosting illegal content, cryptocurrency mining sites or tools, impersonation without consent, et cetera.
 5. The webpage is not related to software development. This does not apply for nested subdomains![^1]
-5. Webpages who want to use our subdomain for commercial purposes. Including but not limited to *anything* with a "pricing plan" page. A portfolio stating that the user is available for hire is not considered commercial usage.
-6. The user breaks GitHub's [Terms of Service](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service).
-7. The PR is a duplicate of another PR (i.e., the user made multiple PRs in the hopes of getting their domain faster).
-8. Any one the "Requirements" checkboxes have not been fulfilled.
+6. Webpages who want to use our subdomain for commercial purposes. Including but not limited to *anything* with a "pricing plan" page. A portfolio stating that the user is available for hire is not considered commercial usage.
+7. The user breaks GitHub's [Terms of Service](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service).
+8. The PR is a duplicate of another PR (i.e., the user made multiple PRs in the hopes of getting their domain faster).
+9. Any one the "Requirements" checkboxes have not been fulfilled.
 
 ## Steps to Reviewing a PR
 First, approve checks if needed. Do this by clicking the button at the bottom of the PR labelled "Approve workflows to run".

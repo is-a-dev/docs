@@ -73,7 +73,7 @@ We don't accept direct applications. Team members are **handpicked**, often base
 
 ## I accidentally leaked sensitive data in my PR, what can I do?
 
-* If **your PR containing sensistive information has not been merged**, contact us immediately:
+* If **your PR containing sensitive information has not been merged**, contact us immediately:
 
   * Email: [admin@is-a.dev](mailto:admin@is-a.dev)
   * Discord: [@williamharrison](https://discord.com/users/853158265466257448)
@@ -122,7 +122,7 @@ If denied by another maintainer, you do reserve the right to request a more thor
 
 > How long will it take for my NS record request to be reviewed?
 
-Times can vary, usually with-in 24-72 hours, however in some rare cases it can take up to 2 weeks.
+Times can vary, usually within 24-72 hours, however in some rare cases it can take up to 2 weeks.
 
 ---
 
