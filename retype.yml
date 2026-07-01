@@ -56,7 +56,7 @@ templating:
   enabled: true
   liquid: false
 footer:
-  copyright: "&copy; 2020-2025 is-a.dev - All Rights Reserved."
+  copyright: "&copy; 2020-2026 is-a.dev - All Rights Reserved."
   links:
     - text: is-a-dev/docs
       link: https://github.com/is-a-dev/docs
