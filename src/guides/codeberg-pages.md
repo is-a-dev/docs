@@ -7,31 +7,59 @@ tags: guides
 
 # Setting up Codeberg Pages with an is-a.dev subdomain
 
-This guide will walk you through the process of setting up a Codeberg Pages website and pointing your is-a.dev subdomain to it.
+This guide will walk you through the process of setting up a Codeberg Pages (or any git-pages host) website and pointing your is-a.dev subdomain to it.
 
 ## Create a Codeberg Pages Website
 
 First, you'll need to create a website on Codeberg Pages. Follow the instructions in the [Codeberg Pages Guide](https://docs.codeberg.org/codeberg-pages/).
 
-### Create the Domain File
+For detailed and alternative methods, see instructions on [git-pages.org](https://git-pages.org/) or [grebedoc.dev](https://grebedoc.dev/).
 
-Create a JSON file inside domains directory (`domains/subdomain.json`) with the following content and submit a pull request:
+## Create the Domain File
+
+Create a JSON file inside domains directory (`domains/subdomain.json`) with the following content:
 
 ```json
 {
     "owner": {
-        "username": "your-codeberg-username",
+        "username": "your-github-username",
         "email": "your-email@example.com"
     },
     "records": {
-        "CNAME": "pages.your-codeberg-username.codeberg.page"
+        "CNAME": "codeberg.page"
     }
 }
 ```
 
-### Add `.domains` file
+## Verifying Your Domain
 
-Once your PR is merged, Make a `.domains` file to point your website to your new `.is-a.dev` domain and add your subdomain (`your-subdomain.is-a.dev`) to it.
+Create a JSON file inside domains directory (`domains/_git-pages-repository.subdomain.json`) with the following content:
+
+```json
+{
+    "owner": {
+        "username": "your-github-username",
+        "email": "your-email@example.com"
+    },
+    "records": {
+        "TXT": "https://codeberg.org/USERNAME/REPOSITORY.git"
+    }
+}
+```
+
+## Submit a Pull Request
+
+Make sure you have created the above two files properly, and then submit a Pull Request.
+
+## Add a Repository Webhook
+
+- Navigate to the webhooks section of your Codeberg repository: <https://codeberg.org/USERNAME/REPOSITORY/settings/hooks>
+- Click `Add webhook` and select `Forgejo` in the dropdown menu.
+- Set `Target URL` to `https://subdomain.is-a.dev` and set `Branch filter` to `pages`
+- Now submit the form using `Add webhook` button at the bottom.
+
+Now, make sure your site's html and other content is stored in the `pages` branch of your repository.
+After your pull request is merged, you can do a push to the pages branch to activate your domain.
 
 ### Done!
 
