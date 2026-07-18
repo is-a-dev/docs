@@ -60,7 +60,9 @@ A very helpful tool we have at our disposal is [reviewbot](https://github.com/io
 
 Example usage would be as follows: on a pull request that adds a website unrelated to software development, you should add the `status: denied` and `reason: not dev related` labels to the pull request, and simply move on. Reviewbot will close the pull request on your behalf and explain the reason why the pull request was denied in detail to the PR author. 
 
+!!!
 Note: You may use `status: invalid` to simply request changes on a PR instead of closing it.
+!!!
 
 Please use `status: denied` or `status: invalid` in conjuction with other `reason: x` or `status: y` labels. If none of the labels fit the reason why you denied the pull request, use `reason: other` in conjuction with either status label and comment your reason directly in the pull request.
 
