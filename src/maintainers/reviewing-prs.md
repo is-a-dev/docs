@@ -22,6 +22,8 @@ You should instantly close a pull request when:
 8. The PR is a duplicate of another PR (i.e., the user made multiple PRs in the hopes of getting their domain faster).
 9. Any one the "Requirements" checkboxes have not been fulfilled.
 
+[^1]: Nested subdomains are a subdomain of a subdomain, such as `nested.example.is-a.dev`. `example.is-a.dev` is not a nested subdomain, it is a subdomain!
+
 ## Steps to Reviewing a PR
 First, approve checks if needed. Do this by clicking the button at the bottom of the PR labelled "Approve workflows to run".
 
@@ -47,11 +49,11 @@ If you requested changes, please *apply labels to the PR*. For example, if the P
 
 You can use quickly select and use saved replies in the reply/reviewing text box by pressing Ctrl/Command + Period (.) together.
 
+We recommend using reviewbot instead of saved replies, however! See the next section.
+
 2. Mass approve checks first, review afterwards. This allows you to skip the hassle of waiting for checks to finish running.
 
 3. When unsure of whether or not to approve or request changes on a PR, do not hesitate to ask another, more experienced maintainer on how to deal with it. You can also simply skip the PR and wait for someone else to review it.
-
-[^1]: Nested subdomains are a subdomain of a subdomain, such as `nested.example.is-a.dev`. `example.is-a.dev` is not a nested subdomain, it is a subdomain!
 
 ## Reviewbot
 A very helpful tool we have at our disposal is [reviewbot](https://github.com/iostpa/reviewbot). Reviewbot is a GitHub bot maintained by [iostpa](https://iostpa.com) which sends a comment in a pull request upon the application of labels with an explanation of each label in some detail. Reviewbot can also optionally close a pull request based on the `status: denied` label.
