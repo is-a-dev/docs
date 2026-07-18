@@ -36,7 +36,7 @@ tags: guides
     }
   }
   ```
-6. After you have made the two file, you should make a pull request.
+6. After you have made the two files, you should make a pull request.
 
 !!!
 **Adding the website preview is mandatory**, since the CNAME value Railway gives you doesn't actually show you the website you are running.
