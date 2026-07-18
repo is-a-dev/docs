@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.837671092935">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.837700156629">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -12,7 +12,7 @@
     <!-- Primary Meta Tags -->
     <title>Setting up is-a.dev with Railway | is-a.dev Docs</title>
     <meta name="title" content="Setting up is-a.dev with Railway | is-a.dev Docs">
-    <meta name="description" content="Navigate to the dashboard">
+    <meta name="description" content="Navigate to the dashboard > project > service">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.is-a.dev/guides/railway/">
@@ -22,7 +22,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.is-a.dev/guides/railway/">
     <meta property="og:title" content="Setting up is-a.dev with Railway | is-a.dev Docs">
-    <meta property="og:description" content="Navigate to the dashboard">
+    <meta property="og:description" content="Navigate to the dashboard > project > service">
     <meta property="og:site_name" content="is-a.dev Docs">
     <meta property="og:locale" content="en_US">
 
@@ -30,7 +30,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://docs.is-a.dev/guides/railway/">
     <meta name="twitter:title" content="Setting up is-a.dev with Railway | is-a.dev Docs">
-    <meta name="twitter:description" content="Navigate to the dashboard">
+    <meta name="twitter:description" content="Navigate to the dashboard > project > service">
 
     <!-- Alternate Markdown -->
     <link rel="alternate" type="text/markdown" href="https://docs.is-a.dev/guides/railway.md">
@@ -38,12 +38,12 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../media/logo_circle.png" />
-    <link href="../../resources/css/retype.css?v=4.6.0.837671092935" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.837700156629" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.837671092935" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.837700156629" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.837671092935" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=4.6.0.837671092935" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.837700156629" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=4.6.0.837700156629" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -213,14 +213,10 @@
 <h1 id="setting-up-is-adev-with-railway">Setting up is-a.dev with Railway</h1>
 <h2 id="getting-the-cname-record">Getting the CNAME Record</h2>
 <ol>
-<li>Navigate to the <a href="https://railway.app/dashboard">dashboard</a></li>
-<li>Navigate to the project.</li>
-<li>Navigate to the service.</li>
-<li>Switch to the <strong>Settings</strong> tab.</li>
-<li>Click on <strong>+ Custom Domain</strong> button.</li>
-<li>Enter the <code translate="no" v-pre>is-a.dev</code> subdomain you want to use.</li>
-<li>Copy the <strong>Value</strong> field.</li>
-<li>For the domain, make the json like this:</li>
+<li>Navigate to the <a href="https://railway.app/dashboard">dashboard</a> &gt; project &gt; service</li>
+<li>Switch to the <strong>Settings</strong> tab and click on <strong>+ Custom Domain</strong> button.</li>
+<li>Enter the <code translate="no" v-pre>is-a.dev</code> subdomain you want to use (ex: <code translate="no" v-pre>subdomain.is-a.dev</code>)</li>
+<li>Copy the <strong>Value</strong> field for <code translate="no" v-pre>@</code> and create <code translate="no" v-pre>subdomain.json</code></li>
 </ol>
 <div id="getting-the-cname-record-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-json"><code v-pre class="language-json">{
@@ -233,8 +229,22 @@
   }
 }</code></pre>
 </doc-codeblock></div>
-<ol start="9">
-<li>After you have made the file, you should make a pull request.</li>
+<ol start="5">
+<li>Copy the <strong>Value</strong> field for <code translate="no" v-pre>_railway-verify</code> and create <code translate="no" v-pre>_railway-verify.subdomain.json</code></li>
+</ol>
+<div id="getting-the-cname-record-code-2" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-json"><code v-pre class="language-json">{
+  &quot;owner&quot;: {
+    &quot;username&quot;: &quot;your-github-username&quot;,
+    &quot;email&quot;: &quot;your-email@example.com&quot;
+  },
+  &quot;records&quot;: {
+    &quot;TXT&quot;: &quot;the-value-railway-gave-you&quot;
+  }
+}</code></pre>
+</doc-codeblock></div>
+<ol start="6">
+<li>After you have made the two files, you should make a pull request.</li>
 </ol>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>

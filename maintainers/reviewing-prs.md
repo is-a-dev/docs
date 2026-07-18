@@ -18,6 +18,8 @@ You should instantly close a pull request when:
 8. The PR is a duplicate of another PR (i.e., the user made multiple PRs in the hopes of getting their domain faster).
 9. Any one the "Requirements" checkboxes have not been fulfilled.
 
+[^1]: Nested subdomains are a subdomain of a subdomain, such as `nested.example.is-a.dev`. `example.is-a.dev` is not a nested subdomain, it is a subdomain!
+
 ## Steps to Reviewing a PR
 First, approve checks if needed. Do this by clicking the button at the bottom of the PR labelled "Approve workflows to run".
 
@@ -29,7 +31,7 @@ You cannot merge a PR if the checks do not pass. If the checks fail, examine the
 
 ![](../media/reviewing-prs/checks-failed.png)
 
-*Request changes* based on the issues at hand. Do not be rude in your review and act professionally.
+*Request changes* based on the issues at hand. Do not be rude in your review and act professionally. We recommend using reviewbot to streamline the process of requesting changes!
 
 If there are no issues with the PR at this point, you are free to merge it.
 If you requested changes, please *apply labels to the PR*. For example, if the PR violates our ToS because it is a commercial website:
@@ -43,8 +45,27 @@ If you requested changes, please *apply labels to the PR*. For example, if the P
 
 You can use quickly select and use saved replies in the reply/reviewing text box by pressing Ctrl/Command + Period (.) together.
 
+We recommend using reviewbot instead of saved replies, however! See the next section.
+
 2. Mass approve checks first, review afterwards. This allows you to skip the hassle of waiting for checks to finish running.
 
 3. When unsure of whether or not to approve or request changes on a PR, do not hesitate to ask another, more experienced maintainer on how to deal with it. You can also simply skip the PR and wait for someone else to review it.
 
-[^1]: Nested subdomains are a subdomain of a subdomain, such as `nested.example.is-a.dev`. `example.is-a.dev` is not a nested subdomain, it is a subdomain!
+## Reviewbot
+A very helpful tool we have at our disposal is [reviewbot](https://github.com/iostpa/reviewbot). Reviewbot is a GitHub bot maintained by [iostpa](https://iostpa.com) which sends a comment in a pull request upon the application of labels with an explanation of each label in some detail. Reviewbot can also optionally close a pull request based on the `status: denied` label.
+
+Example usage would be as follows: on a pull request that adds a website unrelated to software development, you should add the `status: denied` and `reason: not dev related` labels to the pull request, and simply move on. Reviewbot will close the pull request on your behalf and explain the reason why the pull request was denied in detail to the PR author. 
+
+!!!
+Note: You may use `status: invalid` to simply request changes on a PR instead of closing it.
+!!!
+
+Please use `status: denied` or `status: invalid` in conjuction with other `reason: x` labels (or `status: needs preview`). If none of the labels fit the reason why you denied the pull request, use `reason: other` in conjuction with either status label and comment your reason directly in the pull request.
+
+!!!
+Reviewbot has a 3 second time window. This means that you can make last-minute changes before reviewbot starts sending the message.
+!!!
+
+Here is an example of using reviewbot with the `status: denied` and `reason: not dev related` labels:
+
+![reviewbot example](../media/reviewbot-example.png)

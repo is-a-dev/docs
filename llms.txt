@@ -20,7 +20,7 @@
 - [Setting up DanBot Hosting with an is-a.dev subdomain](https://docs.is-a.dev/guides/dbh.md): This hosting provider has changed a lot in recent times, so this guide may not be up to date with the current system the hosting provider has.
 - [Setting up Firebase Hosting with an is-a.dev Subdomain](https://docs.is-a.dev/guides/firebase.md): This guide will walk you through the process of setting up a Firebase Hosting site and pointing your is-a.dev subdomain towards it.
 - [Hashnode Blog](https://docs.is-a.dev/guides/hashnode.md): When you create your Hashnode blog, Hashnode provides a free hashnode.dev subdomain for you. However, you can alternatively set up your own is-a.dev subdomain.
-- [Setting up is-a.dev with Railway](https://docs.is-a.dev/guides/railway.md): Navigate to the dashboard
+- [Setting up is-a.dev with Railway](https://docs.is-a.dev/guides/railway.md): Navigate to the dashboard > project > service
 - [Setting up Render with an is-a.dev Subdomain](https://docs.is-a.dev/guides/render.md): This guide will walk you through the process of setting up a Render deployment and pointing your is-a.dev subdomain towards it.
 - [Setting up Replit with an is-a.dev subdomain](https://docs.is-a.dev/guides/replit.md): Follow the instructions in the Replit Workspace Guide on how to create a project.
 - [Setting up Discord domain connection with your is-a.dev subdomain](https://docs.is-a.dev/guides/discord-verification.md): Open your Discord app and press Settings.
