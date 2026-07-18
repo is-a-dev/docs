@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.836212985981">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.837671091279">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -12,7 +12,7 @@
     <!-- Primary Meta Tags -->
     <title>Setting up Codeberg Pages with an is-a.dev subdomain | is-a.dev Docs</title>
     <meta name="title" content="Setting up Codeberg Pages with an is-a.dev subdomain | is-a.dev Docs">
-    <meta name="description" content="This guide will walk you through the process of setting up a Codeberg Pages website and pointing your is-a.dev subdomain to it.">
+    <meta name="description" content="This guide will walk you through the process of setting up a Codeberg Pages (or any git-pages host) website and pointing your is-a.dev subdomain to it.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.is-a.dev/guides/codeberg-pages/">
@@ -22,7 +22,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.is-a.dev/guides/codeberg-pages/">
     <meta property="og:title" content="Setting up Codeberg Pages with an is-a.dev subdomain | is-a.dev Docs">
-    <meta property="og:description" content="This guide will walk you through the process of setting up a Codeberg Pages website and pointing your is-a.dev subdomain to it.">
+    <meta property="og:description" content="This guide will walk you through the process of setting up a Codeberg Pages (or any git-pages host) website and pointing your is-a.dev subdomain to it.">
     <meta property="og:site_name" content="is-a.dev Docs">
     <meta property="og:locale" content="en_US">
 
@@ -30,7 +30,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://docs.is-a.dev/guides/codeberg-pages/">
     <meta name="twitter:title" content="Setting up Codeberg Pages with an is-a.dev subdomain | is-a.dev Docs">
-    <meta name="twitter:description" content="This guide will walk you through the process of setting up a Codeberg Pages website and pointing your is-a.dev subdomain to it.">
+    <meta name="twitter:description" content="This guide will walk you through the process of setting up a Codeberg Pages (or any git-pages host) website and pointing your is-a.dev subdomain to it.">
 
     <!-- Alternate Markdown -->
     <link rel="alternate" type="text/markdown" href="https://docs.is-a.dev/guides/codeberg-pages.md">
@@ -38,12 +38,12 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../media/logo_circle.png" />
-    <link href="../../resources/css/retype.css?v=4.6.0.836212985981" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.837671091279" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.836212985981" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.837671091279" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.836212985981" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=4.6.0.836212985981" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.837671091279" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=4.6.0.837671091279" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -211,24 +211,47 @@
 
                 <!-- Page content  -->
 <h1 id="setting-up-codeberg-pages-with-an-is-adev-subdomain">Setting up Codeberg Pages with an is-a.dev subdomain</h1>
-<p>This guide will walk you through the process of setting up a Codeberg Pages website and pointing your is-a.dev subdomain to it.</p>
+<p>This guide will walk you through the process of setting up a Codeberg Pages (or any git-pages host) website and pointing your is-a.dev subdomain to it.</p>
 <h2 id="create-a-codeberg-pages-website">Create a Codeberg Pages Website</h2>
 <p>First, you&#x27;ll need to create a website on Codeberg Pages. Follow the instructions in the <a href="https://docs.codeberg.org/codeberg-pages/">Codeberg Pages Guide</a>.</p>
-<h3 id="create-the-domain-file">Create the Domain File</h3>
-<p>Create a JSON file inside domains directory (<code translate="no" v-pre>domains/subdomain.json</code>) with the following content and submit a pull request:</p>
+<p>For detailed and alternative methods, see instructions on <a href="https://git-pages.org/">git-pages.org</a> or <a href="https://grebedoc.dev/">grebedoc.dev</a>.</p>
+<h2 id="create-the-domain-file">Create the Domain File</h2>
+<p>Create a JSON file inside domains directory (<code translate="no" v-pre>domains/subdomain.json</code>) with the following content:</p>
 <div id="create-the-domain-file-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-json"><code v-pre class="language-json">{
     &quot;owner&quot;: {
-        &quot;username&quot;: &quot;your-codeberg-username&quot;,
+        &quot;username&quot;: &quot;your-github-username&quot;,
         &quot;email&quot;: &quot;your-email@example.com&quot;
     },
     &quot;records&quot;: {
-        &quot;CNAME&quot;: &quot;pages.your-codeberg-username.codeberg.page&quot;
+        &quot;CNAME&quot;: &quot;codeberg.page&quot;
     }
 }</code></pre>
 </doc-codeblock></div>
-<h3 id="add-domains-file">Add <code translate="no" v-pre>.domains</code> file</h3>
-<p>Once your PR is merged, Make a <code translate="no" v-pre>.domains</code> file to point your website to your new <code translate="no" v-pre>.is-a.dev</code> domain and add your subdomain (<code translate="no" v-pre>your-subdomain.is-a.dev</code>) to it.</p>
+<h2 id="verifying-your-domain">Verifying Your Domain</h2>
+<p>Create a JSON file inside domains directory (<code translate="no" v-pre>domains/_git-pages-repository.subdomain.json</code>) with the following content:</p>
+<div id="verifying-your-domain-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-json"><code v-pre class="language-json">{
+    &quot;owner&quot;: {
+        &quot;username&quot;: &quot;your-github-username&quot;,
+        &quot;email&quot;: &quot;your-email@example.com&quot;
+    },
+    &quot;records&quot;: {
+        &quot;TXT&quot;: &quot;https://codeberg.org/USERNAME/REPOSITORY.git&quot;
+    }
+}</code></pre>
+</doc-codeblock></div>
+<h2 id="submit-a-pull-request">Submit a Pull Request</h2>
+<p>Make sure you have created the above two files properly, and then submit a Pull Request.</p>
+<h2 id="add-a-repository-webhook">Add a Repository Webhook</h2>
+<ul>
+<li>Navigate to the webhooks section of your Codeberg repository: <a href="https://codeberg.org/USERNAME/REPOSITORY/settings/hooks">https://codeberg.org/USERNAME/REPOSITORY/settings/hooks</a></li>
+<li>Click <code translate="no" v-pre>Add webhook</code> and select <code translate="no" v-pre>Forgejo</code> in the dropdown menu.</li>
+<li>Set <code translate="no" v-pre>Target URL</code> to <code translate="no" v-pre>https://subdomain.is-a.dev</code> and set <code translate="no" v-pre>Branch filter</code> to <code translate="no" v-pre>pages</code></li>
+<li>Now submit the form using <code translate="no" v-pre>Add webhook</code> button at the bottom.</li>
+</ul>
+<p>Now, make sure your site&#x27;s html and other content is stored in the <code translate="no" v-pre>pages</code> branch of your repository.
+After your pull request is merged, you can do a push to the pages branch to activate your domain.</p>
 <h3 id="done">Done!</h3>
 <p>If you&#x27;ve followed everything correctly your website should be live :)</p>
 
