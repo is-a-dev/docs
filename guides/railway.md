@@ -2,35 +2,26 @@
 
 ## Getting the CNAME Record
 
-1. Navigate to the [dashboard](https://railway.app/dashboard) > project > service
-2. Switch to the **Settings** tab and click on **+ Custom Domain** button.
-3. Enter the `is-a.dev` subdomain you want to use (ex: `subdomain.is-a.dev`)
-4. Copy the **Value** field for `@` and create `subdomain.json`
-  ```json
-  {
-    "owner": {
-      "username": "your-github-username",
-      "email": "your-email@example.com"
-    },
-    "records": {
-      "CNAME": "the-value-railway-gave-you"
-    }
+1. Navigate to the [dashboard](https://railway.app/dashboard)
+2. Navigate to the project.
+3. Navigate to the service.
+4. Switch to the **Settings** tab.
+5. Click on **+ Custom Domain** button.
+6. Enter the `is-a.dev` subdomain you want to use.
+7. Copy the **Value** field.
+8. For the domain, make the json like this:
+```json
+{
+  "owner": {
+    "username": "your-github-username",
+    "email": "your-email@example.com"
+  },
+  "records": {
+    "CNAME": "the-value-railway-gave-you"
   }
-  ```
-5. Copy the **Value** field for `_railway-verify` and create `_railway-verify.subdomain.json`
-  ```json
-  {
-    "owner": {
-      "username": "your-github-username",
-      "email": "your-email@example.com"
-    },
-    "records": {
-      "TXT": "the-value-railway-gave-you"
-    }
-  }
-  ```
-6. After you have made the two files, you should make a pull request.
-
+}
+```
+9. After you have made the file, you should make a pull request.
 !!!
 **Adding the website preview is mandatory**, since the CNAME value Railway gives you doesn't actually show you the website you are running.
 !!!
