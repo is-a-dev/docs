@@ -64,7 +64,11 @@ Example usage would be as follows: on a pull request that adds a website unrelat
 Note: You may use `status: invalid` to simply request changes on a PR instead of closing it.
 !!!
 
-Please use `status: denied` or `status: invalid` in conjuction with other `reason: x` or `status: y` labels. If none of the labels fit the reason why you denied the pull request, use `reason: other` in conjuction with either status label and comment your reason directly in the pull request.
+Please use `status: denied` or `status: invalid` in conjuction with other `reason: x` labels (or `status: needs preview`). If none of the labels fit the reason why you denied the pull request, use `reason: other` in conjuction with either status label and comment your reason directly in the pull request.
+
+!!!
+Reviewbot has a 3 second time window. This means that you can make last-minute changes before reviewbot starts sending the message.
+!!!
 
 Here is an example of using reviewbot with the `status: denied` and `reason: not dev related` labels:
 
