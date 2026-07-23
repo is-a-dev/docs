@@ -35,6 +35,6 @@ In the `domains` directory, create a new JSON file for your subdomain (`domains/
 
 ### Adding the domain to Cloudflare Pages
 
-Once your pull request has been merged (or while you're waiting if you want to get over with it), you should add your domain. Before, you could easily do it from the dashboard, but now you can't, due to us being in the [Public Suffix List](https://github.com/publicsuffix/list). Because of this, we have to use Cloudflare's API. There are 2 steps: you can either do it the manual way (like using cURL) like [this](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/domains/methods/create), or you can use our GUI [that we made](https://cf-pages.is-a.dev) to make it easier.
+Once your pull request has been merged (or while you're waiting if you want to get over with it), you should add your domain. Before, you could easily do it from the dashboard, but now you can't, due to us being in the [Public Suffix List](https://github.com/publicsuffix/list). Because of this, we have to use Cloudflare's API. There are 2 ways: you can either do it the manual way (like using cURL) like [this](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/domains/methods/create), or you can use our GUI [that we made](https://cf-pages.is-a.dev) to make it easier.
 
 If you have followed all the steps correctly, then your website should be live after your pull request has been merged.
