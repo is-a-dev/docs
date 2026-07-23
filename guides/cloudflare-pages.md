@@ -1,7 +1,3 @@
-!!!danger
-This hosting provider is currently showing users that they need to add their domain to the user's own Cloudflare DNS zone in order to use Cloudflare Pages. Until we know why it's happening, we recommend that you use a different hosting provider.
-!!!
-
 # Setting up Cloudflare Pages with an is-a.dev subdomain
 
 This guide will walk you through the process of setting up a Cloudflare Pages website and pointing your is-a.dev subdomain towards it.
@@ -30,6 +26,8 @@ In the `domains` directory, create a new JSON file for your subdomain (`domains/
 }
 ```
 
-### Your website should be live!
+### Adding the domain to Cloudflare Pages
+
+Once your pull request has been merged (or while you're waiting if you want to get over with it), you should add your domain. Before, you could easily do it from the dashboard, but now you can't, due to us being in the [Public Suffix List](https://github.com/publicsuffix/list). Because of this, we have to use Cloudflare's API. There are 2 ways: you can either do it the manual way (like using cURL) like [this](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/domains/methods/create), or you can use our GUI [that we made](https://cf-pages.is-a.dev) to make it easier.
 
 If you have followed all the steps correctly, then your website should be live after your pull request has been merged.
