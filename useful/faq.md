@@ -37,7 +37,7 @@ No, unless the domain is proxied. A `CNAME` cannot be combined with other record
 
 ## How long does it take for my pull request to be merged?
 
-We're a team of volunteers, and is-a.dev is a side project for us, so review times can vary. We'll get to your PR as soon as we can. To potentially speed things up, share your PR link in [#pull-requests](https://discord.com/channels/830872854677422150/1130858271620726784) on our [Discord server](https://discord.gg/is-a-dev-830872854677422150).
+We're a team of volunteers, and is-a.dev is a side project for us, so review times can vary. We'll get to your PR as soon as we can.
 
 ---
 
