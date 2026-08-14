@@ -57,6 +57,6 @@ If you wish to add multiple nested subdomains with Vercel, please add all of the
 
 ### Make a pull request
 
-Once you have made these two files, you can now make a pull request to the [repository](https://github.com/is-a-dev/register). Then you'll need to be patient until it gets merged. If you want a chance to get your PR merged faster, join our [Discord server](https://discord.gg/is-a-dev-830872854677422150) and send your pull request link ***once*** in `#pull-requests`.
+Once you have made these two files, you can now make a pull request to the [repository](https://github.com/is-a-dev/register). Then you'll need to be patient until it gets merged.
 
 Once the pull request has been merged your site should be working; if it is still redirecting to the is-a.dev site, try clearing your cache.
