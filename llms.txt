@@ -25,4 +25,5 @@
 - [Setting up Replit with an is-a.dev subdomain](https://docs.is-a.dev/guides/replit.md): Follow the instructions in the Replit Workspace Guide on how to create a project.
 - [Setting up Discord domain connection with your is-a.dev subdomain](https://docs.is-a.dev/guides/discord-verification.md): Open your Discord app and press Settings.
 - [Setting up a Bluesky custom handle with an is-a.dev subdomain](https://docs.is-a.dev/guides/bsky-handle.md): Open your Bluesky app and go to your profile Settings.
+- [Lovable](https://docs.is-a.dev/guides/lovable.md): This guide will walk you through the process of making your Lovable Project work on is-a.dev subdomains. Currently Lovable doesn't intergrate directly with is-a.dev, so we have to use GitHub as a proxy with Cloudflare Pages to make this work.
 - [Setting up other services with is-a.dev](https://docs.is-a.dev/guides/other.md): Read the domain file structure and set up the records accordingly.

@@ -22,6 +22,7 @@ For our Quick Start guide you can click [here](quickstart) to read it. You can a
 - [Replit](guides/replit)
 - [Discord Domain Verification](guides/discord-verification)
 - [Bluesky Custom Handle](guides/bsky-handle)
+- [Lovable](guides/lovable)
 - [Other Services](guides/other)
 
 ## Useful
