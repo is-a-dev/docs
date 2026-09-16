@@ -6,19 +6,9 @@ This hosting provider has changed a lot in recent times, so this guide may not b
 
 This guide will walk you through the process of setting up a DanBot Hosting website and pointing your is-a.dev subdomain to it.
 
-## Getting Proxy IP
+## Proxy IP
 
-Execute the following command in [DanBot Hosting Discord server](https://discord.gg/dbh) in the `#commands` channel.
-
-```
-dbh!server proxy
-```
-
-You will get a reply like this:
-
-![](../media/dbh_proxy/1.jpg)
-
-If you are on a free plan, choose any US proxy or you can use the Donator Proxy If you are a Donator, note the IP address of the proxy you chose.
+The current proxy IP is: 82.38.134.96 for Proxy #1 at [DanBot Hosting](https://discord.gg/dbh)
 
 ### Creating the domain file
 
@@ -40,18 +30,10 @@ Create a JSON file inside `domains` directory (`domains/subdomain.json`) with th
 
 ## Configuring
 
-After your pull request is merged, get your server ID by running this command:
+After your pull request is merged, locate the server you wish to proxy. Head on over to the domains tab after selecting your server. 
 
-```
-dbh!server list
-```
+![](../media/dbh_proxy/DoaminsTab.png)
 
-You will get a reply like this:
+Enter your subdomain you wish to use, like: your-subdomain.is-a.dev, select the SSL option and hit link button. 
 
-![](../media/dbh_proxy/2.jpg)
-
-Note down the server ID, then execute following command:
-
-```
-dbh!server proxy your-subdomain.is-a.dev yourserverid
-```
+![](../media/dbh_proxy/DoaminsTab-Proxy.png)

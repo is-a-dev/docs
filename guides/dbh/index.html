@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.842090859081">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.842882193134">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -23,7 +23,7 @@
     <meta property="og:url" content="https://docs.is-a.dev/guides/dbh/">
     <meta property="og:title" content="Setting up DanBot Hosting with an is-a.dev subdomain | is-a.dev Docs">
     <meta property="og:description" content="This hosting provider has changed a lot in recent times, so this guide may not be up to date with the current system the hosting provider has.">
-    <meta property="og:image" content="https://docs.is-a.dev/media/dbh_proxy/1.jpg">
+    <meta property="og:image" content="https://docs.is-a.dev/media/dbh_proxy/doaminstab.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Setting up DanBot Hosting with an is-a.dev subdomain | is-a.dev Docs">
@@ -35,7 +35,7 @@
     <meta name="twitter:url" content="https://docs.is-a.dev/guides/dbh/">
     <meta name="twitter:title" content="Setting up DanBot Hosting with an is-a.dev subdomain | is-a.dev Docs">
     <meta name="twitter:description" content="This hosting provider has changed a lot in recent times, so this guide may not be up to date with the current system the hosting provider has.">
-    <meta name="twitter:image" content="https://docs.is-a.dev/media/dbh_proxy/1.jpg">
+    <meta name="twitter:image" content="https://docs.is-a.dev/media/dbh_proxy/doaminstab.png">
     <meta name="twitter:image:alt" content="Setting up DanBot Hosting with an is-a.dev subdomain | is-a.dev Docs">
 
     <!-- Alternate Markdown -->
@@ -44,12 +44,12 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../media/logo_circle.png" />
-    <link href="../../resources/css/retype.css?v=4.6.0.842090859081" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.842882193134" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.842090859081" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.842882193134" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.842090859081" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=4.6.0.842090859081" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.842882193134" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=4.6.0.842882193134" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -234,17 +234,8 @@
 </div>
 <h1 id="setting-up-danbot-hosting-with-an-is-adev-subdomain">Setting up DanBot Hosting with an is-a.dev subdomain</h1>
 <p>This guide will walk you through the process of setting up a DanBot Hosting website and pointing your is-a.dev subdomain to it.</p>
-<h2 id="getting-proxy-ip">Getting Proxy IP</h2>
-<p>Execute the following command in <a href="https://discord.gg/dbh">DanBot Hosting Discord server</a> in the <code translate="no" v-pre>#commands</code> channel.</p>
-<div id="getting-proxy-ip-code-1" class="codeblock-wrapper"><doc-codeblock line-numbers>
-<pre translate="no" class="language-none"><code v-pre class="language-none">dbh!server proxy</code></pre>
-</doc-codeblock></div>
-<p>You will get a reply like this:</p>
-<figure class="content-center">
-    <img src="../../media/dbh_proxy/1.jpg" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="904" height="1593" />
-    <figcaption class="caption"></figcaption>
-</figure>
-<p>If you are on a free plan, choose any US proxy or you can use the Donator Proxy If you are a Donator, note the IP address of the proxy you chose.</p>
+<h2 id="proxy-ip">Proxy IP</h2>
+<p>The current proxy IP is: 82.38.134.96 for Proxy #1 at <a href="https://discord.gg/dbh">DanBot Hosting</a></p>
 <h3 id="creating-the-domain-file">Creating the domain file</h3>
 <p>Create a JSON file inside <code translate="no" v-pre>domains</code> directory (<code translate="no" v-pre>domains/subdomain.json</code>) with the following content and submit a pull request:</p>
 <div id="creating-the-domain-file-code-1" class="codeblock-wrapper"><doc-codeblock>
@@ -260,19 +251,16 @@
 </doc-codeblock></div>
 <p><strong>Note:</strong> In the owner section, you can add any social media handle, such as Discord. If you add another social media account, you may omit the email field. However, the GitHub username is mandatory. Don&#x27;t forget to provide a preview of your website in your pull request.</p>
 <h2 id="configuring">Configuring</h2>
-<p>After your pull request is merged, get your server ID by running this command:</p>
-<div id="configuring-code-1" class="codeblock-wrapper"><doc-codeblock line-numbers>
-<pre translate="no" class="language-none"><code v-pre class="language-none">dbh!server list</code></pre>
-</doc-codeblock></div>
-<p>You will get a reply like this:</p>
+<p>After your pull request is merged, locate the server you wish to proxy. Head on over to the domains tab after selecting your server.</p>
 <figure class="content-center">
-    <img src="../../media/dbh_proxy/2.jpg" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="811" height="655" />
+    <img src="../../media/dbh_proxy/doaminstab.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1919" height="941" />
     <figcaption class="caption"></figcaption>
 </figure>
-<p>Note down the server ID, then execute following command:</p>
-<div id="configuring-code-2" class="codeblock-wrapper"><doc-codeblock line-numbers>
-<pre translate="no" class="language-none"><code v-pre class="language-none">dbh!server proxy your-subdomain.is-a.dev yourserverid</code></pre>
-</doc-codeblock></div>
+<p>Enter your subdomain you wish to use, like: your-subdomain.is-a.dev, select the SSL option and hit link button.</p>
+<figure class="content-center">
+    <img src="../../media/dbh_proxy/doaminstab-proxy.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1917" height="944" />
+    <figcaption class="caption"></figcaption>
+</figure>
 
                 <div id="retype-tags" class="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 mt-6 mb-6 clear-both">
                     <span>
