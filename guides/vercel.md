@@ -19,8 +19,7 @@ You may see Vercel enable by default the "Redirect example.is-a.dev to www.examp
 ```json
 {
     "owner": {
-        "username": "your-github-username",
-        "email": "your-email-address@example.com"
+        "username": "your-github-username"
     },
     "records": {
         "A": ["216.198.79.1"]
@@ -36,8 +35,7 @@ These records could be different so please pay attention and check what records 
 ```json
 {
     "owner": {
-        "username": "your-github-username",
-        "email": "your-email-address@example.com"
+        "username": "your-github-username"
     },
     "records": {
         "TXT": "insert-TXT-string-you-got-from-vercel-here"

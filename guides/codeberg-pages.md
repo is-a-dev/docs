@@ -15,8 +15,7 @@ Create a JSON file inside domains directory (`domains/subdomain.json`) with the 
 ```json
 {
     "owner": {
-        "username": "your-github-username",
-        "email": "your-email@example.com"
+        "username": "your-github-username"
     },
     "records": {
         "CNAME": "codeberg.page"
@@ -31,8 +30,7 @@ Create a JSON file inside domains directory (`domains/_git-pages-repository.subd
 ```json
 {
     "owner": {
-        "username": "your-github-username",
-        "email": "your-email@example.com"
+        "username": "your-github-username"
     },
     "records": {
         "TXT": "https://codeberg.org/USERNAME/REPOSITORY.git"

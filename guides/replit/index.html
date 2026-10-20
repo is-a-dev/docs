@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.842882193134">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.845792700160">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -38,12 +38,12 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../media/logo_circle.png" />
-    <link href="../../resources/css/retype.css?v=4.6.0.842882193134" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.845792700160" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.842882193134" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.845792700160" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.842882193134" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=4.6.0.842882193134" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.845792700160" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=4.6.0.845792700160" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -213,17 +213,16 @@
 <h1 id="setting-up-replit-with-an-is-adev-subdomain">Setting up Replit with an is-a.dev subdomain</h1>
 <h2 id="creating-a-project">Creating a project</h2>
 <p>Follow the instructions in the <a href="https://docs.replit.com/programming-ide/introduction-to-the-workspace#how-to-create-a-repl">Replit Workspace Guide</a> on how to create a project.</p>
-<h3 id="connect-your-repl-to-your-is-adev-subdomain">Connect your repl to your is-a.dev subdomain</h3>
-<p>Follow the instructions in the <a href="https://docs.replit.com/hosting/custom-domains#connecting-your-domain-to-your-repl">Replit Custom Domains Guide</a>.</p>
-<p>Only follow the &quot;Connecting your domain to your repl&quot; section, then return to this guide for the next steps.</p>
+<h3 id="connect-your-replit-site-to-your-is-adev-subdomain">Connect your Replit site to your is-a.dev subdomain</h3>
+<p>Follow the instructions in the <a href="https://docs.replit.com/features/publishing/custom-domains#connect-a-domain-manually">Replit Custom Domains Guide</a>.</p>
+<p>Only follow the &quot;Connect a domain manually&quot; section, then return to this guide for the next steps.</p>
 <h3 id="creating-the-domain-file">Creating the domain file</h3>
 <p>Create a JSON file inside <code translate="no" v-pre>domains</code> directory (<code translate="no" v-pre>domains/subdomain.json</code>) with the following content:</p>
 <p><strong>Note:</strong> Do not add any TXT records, even if Replit instructs you to do so.</p>
 <div id="creating-the-domain-file-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-json"><code v-pre class="language-json">{
     &quot;owner&quot;: {
-        &quot;username&quot;: &quot;your-github-username&quot;,
-        &quot;email&quot;: &quot;me@example.com&quot;
+        &quot;username&quot;: &quot;your-github-username&quot;
     },
     &quot;records&quot;: {
         &quot;CNAME&quot;: &quot;siteid.id.repl.co&quot;

@@ -13,8 +13,7 @@ Create a JSON file inside `domains` directory (`domains/subdomain.json`) with th
 ```json
 {
     "owner": {
-        "username": "github-username",
-        "email": "me@example.com"
+        "username": "github-username"
     },
     "records": {
         "CNAME": "github-username.github.io"
@@ -59,8 +58,7 @@ Create a JSON file inside the `domains/` directory called `domains/hostname.subd
 ```json
 {
     "owner": {
-        "username": "github-username",
-        "email": "your-email@gmail.com"
+        "username": "github-username"
     },
     "records": {
         "TXT": "github-verification-string"

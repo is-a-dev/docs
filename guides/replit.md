@@ -4,11 +4,11 @@
 
 Follow the instructions in the [Replit Workspace Guide](https://docs.replit.com/programming-ide/introduction-to-the-workspace#how-to-create-a-repl) on how to create a project.
 
-### Connect your repl to your is-a.dev subdomain
+### Connect your Replit site to your is-a.dev subdomain
 
-Follow the instructions in the [Replit Custom Domains Guide](https://docs.replit.com/hosting/custom-domains#connecting-your-domain-to-your-repl).
+Follow the instructions in the [Replit Custom Domains Guide](https://docs.replit.com/features/publishing/custom-domains#connect-a-domain-manually).
 
-Only follow the "Connecting your domain to your repl" section, then return to this guide for the next steps.
+Only follow the "Connect a domain manually" section, then return to this guide for the next steps.
 
 ### Creating the domain file
 
@@ -19,8 +19,7 @@ Create a JSON file inside `domains` directory (`domains/subdomain.json`) with th
 ```json
 {
     "owner": {
-        "username": "your-github-username",
-        "email": "me@example.com"
+        "username": "your-github-username"
     },
     "records": {
         "CNAME": "siteid.id.repl.co"

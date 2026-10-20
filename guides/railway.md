@@ -9,8 +9,7 @@
   ```json
   {
     "owner": {
-      "username": "your-github-username",
-      "email": "your-email@example.com"
+      "username": "your-github-username"
     },
     "records": {
       "CNAME": "the-value-railway-gave-you"
@@ -21,8 +20,7 @@
   ```json
   {
     "owner": {
-      "username": "your-github-username",
-      "email": "your-email@example.com"
+      "username": "your-github-username"
     },
     "records": {
       "TXT": "the-value-railway-gave-you"

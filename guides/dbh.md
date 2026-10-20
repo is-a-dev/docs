@@ -17,8 +17,7 @@ Create a JSON file inside `domains` directory (`domains/subdomain.json`) with th
 ```json
 {
     "owner": {
-        "username": "github-username",
-        "email": "me@example.com"
+        "username": "github-username"
     },
     "records": {
         "A": ["proxy-ip-here"]
@@ -26,7 +25,7 @@ Create a JSON file inside `domains` directory (`domains/subdomain.json`) with th
 }
 ```
 
-**Note:** In the owner section, you can add any social media handle, such as Discord. If you add another social media account, you may omit the email field. However, the GitHub username is mandatory. Don't forget to provide a preview of your website in your pull request.
+**Note:** Don't forget to provide a preview of your website in your pull request.
 
 ## Configuring
 

@@ -19,8 +19,7 @@ Create a JSON file inside the `domains` directory called `subdomain.json` with t
 ```json
 {
     "owner": {
-        "username": "github-username",
-        "email": "me@example.com"
+        "username": "github-username"
     },
     "records": {
         "A": ["75.2.60.5"]
@@ -28,15 +27,14 @@ Create a JSON file inside the `domains` directory called `subdomain.json` with t
 }
 ```
 !!!
-Note: In the owner section, you can add any social media handle, such as Discord. If you add another social media account, you can omit the email field. However, the GitHub username is mandatory. Don't forget to provide a preview of your website in your pull request.
+Note: Don't forget to provide a preview of your website in your pull request.
 !!!
 
 After that, create another JSON file in the same directory called `www.subdomain.json` with the following content:
 ```json
 {
     "owner": {
-        "username": "github-username",
-        "email": "me@example.com"
+        "username": "github-username"
     },
     "records": {
         "CNAME": "website.netlify.app"

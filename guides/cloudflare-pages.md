@@ -17,8 +17,7 @@ In the `domains` directory, create a new JSON file for your subdomain (`domains/
 ```json
 {
     "owner": {
-        "username": "your-github-username",
-        "email": "your-email@example.com"
+        "username": "your-github-username"
     },
     "records": {
         "CNAME": "your-sitename.pages.dev"
