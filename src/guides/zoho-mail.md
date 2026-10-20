@@ -41,8 +41,7 @@ After logging in to your Zoho Mail account, follow the steps given to verify you
    ```json
    {
     "owner": {
-        "username": "github-username",
-        "email": "example@example.org"
+        "username": "github-username"
      },
     "records": {
         "TXT": ["Paste TXT Value / Content Here"]
@@ -70,8 +69,7 @@ After you verified your domain, you may see the **Setup Users** and **Setup Grou
   ```json
      {
       "owner": {
-        "username": "github-username",
-        "email": "example@example.org"
+        "username": "github-username"
       },
       "records": {
         "TXT": [
@@ -107,8 +105,7 @@ After you verified your domain, you may see the **Setup Users** and **Setup Grou
    ```json
    {
      "owner": {
-      "username": "github-username",
-        "email": "example@example.org"
+      "username": "github-username"
      },
     "records": {
       "TXT": "Paste the DKIM Value Here"
