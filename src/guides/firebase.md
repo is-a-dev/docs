@@ -26,8 +26,7 @@ Create a JSON file inside the `domains` directory (`domains/subdomain.json`) wit
 ```json
 {
   "owner": {
-    "username": "github-username",
-    "email": "me@example.com"
+    "username": "github-username"
   },
   "records": {
     "CNAME": "your-firebase-site.web.app"
@@ -38,7 +37,6 @@ Create a JSON file inside the `domains` directory (`domains/subdomain.json`) wit
 Make sure to replace:
 
 - `github-username` with your actual GitHub username
-- `me@example.com` with your email address
 - `your-firebase-site.web.app` with your hosting site
 
 ### Configuring Firebase Hosting for Custom Domain
