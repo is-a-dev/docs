@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.845792700160">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.845793364860">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -38,12 +38,12 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../media/logo_circle.png" />
-    <link href="../resources/css/retype.css?v=4.6.0.845792700160" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=4.6.0.845793364860" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=4.6.0.845792700160" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=4.6.0.845793364860" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.6.0.845792700160" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=4.6.0.845792700160" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.6.0.845793364860" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=4.6.0.845793364860" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -217,7 +217,7 @@ For example, to register <code translate="no" v-pre>example.is-a.dev</code>, cre
 <pre translate="no" class="language-none"><code v-pre class="language-none">domains/example.json</code></pre>
 </doc-codeblock></div>
 <hr>
-<h2 id="-filename-guidelines"><span class="docs-emoji">&#x1F4C1;</span> Filename Guidelines</h2>
+<h2 id="filename-guidelines">Filename Guidelines</h2>
 <p>To register a nested subdomain like <code translate="no" v-pre>blog.example.is-a.dev</code>, use dots (<code translate="no" v-pre>.</code>) in the filename:
 <code translate="no" v-pre>blog.example.json</code></p>
 <p>Each part of the filename (i.e., each subdomain label) must follow these rules:</p>
@@ -229,7 +229,7 @@ For example, to register <code translate="no" v-pre>example.is-a.dev</code>, cre
 <li><strong>Must not contain <code translate="no" v-pre>is-a.dev</code></strong>.</li>
 <li><strong>Must not begin with a dot</strong>, or contain spaces or invalid characters.</li>
 </ul>
-<h3 id="-invalid-filenames"><span class="docs-emoji">&#x274C;</span> Invalid Filenames</h3>
+<h3 id="invalid-filenames">Invalid Filenames</h3>
 <retype-table copy-text="| Filename                      | Issue                               |
 | ----------------------------- | ----------------------------------- |
 | `.json`                       | Empty filename                      |
@@ -305,7 +305,7 @@ For example, to register <code translate="no" v-pre>example.is-a.dev</code>, cre
 </table>
 </div>
 </retype-table>
-<h3 id="-valid-filenames"><span class="docs-emoji">&#x2705;</span> Valid Filenames</h3>
+<h3 id="valid-filenames">Valid Filenames</h3>
 <retype-table copy-text="| Filename                       | Why It's Valid                      |
 | ------------------------------ | ----------------------------------- |
 | `a.json`                       | Minimum 1 character                 |
@@ -360,13 +360,12 @@ For example, to register <code translate="no" v-pre>example.is-a.dev</code>, cre
 <p><strong>Note:</strong> Users may only register <em>one</em> single-letter subdomain to prevent domain squatting.</p>
 </blockquote>
 <hr>
-<h2 id="-example-json-file"><span class="docs-emoji">&#x1F9FE;</span> Example JSON File</h2>
+<h2 id="example-json-file">Example JSON File</h2>
 <p><code translate="no" v-pre>domains/docs.json</code>:</p>
-<div id="-example-json-file-code-1" class="codeblock-wrapper"><doc-codeblock>
+<div id="example-json-file-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-json"><code v-pre class="language-json">{
   &quot;owner&quot;: {
-    &quot;username&quot;: &quot;is-a-dev&quot;,
-    &quot;email&quot;: &quot;admin@is-a.dev&quot;
+    &quot;username&quot;: &quot;is-a-dev&quot;
   },
   &quot;records&quot;: {
     &quot;CNAME&quot;: &quot;is-a-dev-docs.pages.dev&quot;
@@ -376,13 +375,13 @@ For example, to register <code translate="no" v-pre>example.is-a.dev</code>, cre
 </doc-codeblock></div>
 <hr>
 <h2 id="json-structure">JSON Structure</h2>
-<h3 id="-owner-required"><span class="docs-emoji">&#x1F510;</span> <code translate="no" v-pre>owner</code> (required)</h3>
+<h3 id="owner-required"><code translate="no" v-pre>owner</code> (required)</h3>
 <p>Provides contact information. Required fields:</p>
 <ul>
 <li><code translate="no" v-pre>username</code>: Your GitHub username.</li>
 </ul>
 <p>Example:</p>
-<div id="-owner-required-code-1" class="codeblock-wrapper"><doc-codeblock>
+<div id="owner-required-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-json"><code v-pre class="language-json">{
   &quot;owner&quot;: {
     &quot;username&quot;: &quot;your-github-username&quot;
@@ -390,7 +389,7 @@ For example, to register <code translate="no" v-pre>example.is-a.dev</code>, cre
 }</code></pre>
 </doc-codeblock></div>
 <hr>
-<h3 id="-records-required"><span class="docs-emoji">&#x1F310;</span> <code translate="no" v-pre>records</code> (required)</h3>
+<h3 id="records-required"><code translate="no" v-pre>records</code> (required)</h3>
 <p>Specify your domain&#x27;s DNS records.</p>
 <p>See all supported record types in the <a href="../faq/#which-records-are-supported">FAQ</a>.</p>
 <h4 id="record-type-examples">Record Type Examples</h4>
@@ -516,15 +515,15 @@ Redirects your subdomain to a URL:</p>
 </li>
 </ul>
 <hr>
-<h3 id="-proxied-optional"><span class="docs-emoji">&#x2601;&#xFE0F;</span> <code translate="no" v-pre>proxied</code> (optional)</h3>
+<h3 id="proxied-optional"><code translate="no" v-pre>proxied</code> (optional)</h3>
 <p>Enable Cloudflare proxy:</p>
-<div id="-proxied-optional-code-1" class="codeblock-wrapper"><doc-codeblock>
+<div id="proxied-optional-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-json"><code v-pre class="language-json">&quot;proxied&quot;: true</code></pre>
 </doc-codeblock></div>
 <hr>
-<h3 id="-redirect_config-optional"><span class="docs-emoji">&#x1F501;</span> <code translate="no" v-pre>redirect_config</code> (optional)</h3>
+<h3 id="redirect_config-optional"><code translate="no" v-pre>redirect_config</code> (optional)</h3>
 <p>Custom redirect paths for your domain:</p>
-<div id="-redirect_config-optional-code-1" class="codeblock-wrapper"><doc-codeblock>
+<div id="redirect_config-optional-code-1" class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-json"><code v-pre class="language-json">&quot;redirect_config&quot;: {
   &quot;custom_paths&quot;: {
     &quot;/github&quot;: &quot;https://github.com/is-a-dev&quot;
