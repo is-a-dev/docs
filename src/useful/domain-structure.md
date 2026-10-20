@@ -15,7 +15,7 @@ domains/example.json
 
 ---
 
-## 📁 Filename Guidelines
+## Filename Guidelines
 
 To register a nested subdomain like `blog.example.is-a.dev`, use dots (`.`) in the filename:
 `blog.example.json`
@@ -29,7 +29,7 @@ Each part of the filename (i.e., each subdomain label) must follow these rules:
 * **Must not contain `is-a.dev`**.
 * **Must not begin with a dot**, or contain spaces or invalid characters.
 
-### ❌ Invalid Filenames
+### Invalid Filenames
 
 | Filename                      | Issue                               |
 | ----------------------------- | ----------------------------------- |
@@ -46,7 +46,7 @@ Each part of the filename (i.e., each subdomain label) must follow these rules:
 | `abc123.aaaaaaaa...aaaa.json` | Label exceeds 63 characters         |
 | `very.long.filename...json`   | Filename exceeds 244 characters     |
 
-### ✅ Valid Filenames
+### Valid Filenames
 
 | Filename                       | Why It's Valid                      |
 | ------------------------------ | ----------------------------------- |
@@ -62,15 +62,14 @@ Each part of the filename (i.e., each subdomain label) must follow these rules:
 
 ---
 
-## 🧾 Example JSON File
+## Example JSON File
 
 `domains/docs.json`:
 
 ```json
 {
   "owner": {
-    "username": "is-a-dev",
-    "email": "admin@is-a.dev"
+    "username": "is-a-dev"
   },
   "records": {
     "CNAME": "is-a-dev-docs.pages.dev"
@@ -83,7 +82,7 @@ Each part of the filename (i.e., each subdomain label) must follow these rules:
 
 ## JSON Structure
 
-### 🔐 `owner` (required)
+### `owner` (required)
 
 Provides contact information. Required fields:
 
@@ -101,7 +100,7 @@ Example:
 
 ---
 
-### 🌐 `records` (required)
+### `records` (required)
 
 Specify your domain's DNS records.
 
@@ -235,7 +234,7 @@ See all supported record types in the [FAQ](./faq#which-records-are-supported).
 
 ---
 
-### ☁️ `proxied` (optional)
+### `proxied` (optional)
 
 Enable Cloudflare proxy:
 
@@ -245,7 +244,7 @@ Enable Cloudflare proxy:
 
 ---
 
-### 🔁 `redirect_config` (optional)
+### `redirect_config` (optional)
 
 Custom redirect paths for your domain:
 
