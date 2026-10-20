@@ -11,7 +11,7 @@ tags: guides
 
 Follow the instructions in the [Replit Workspace Guide](https://docs.replit.com/programming-ide/introduction-to-the-workspace#how-to-create-a-repl) on how to create a project.
 
-### Connect your replit site to your is-a.dev subdomain
+### Connect your Replit site to your is-a.dev subdomain
 
 Follow the instructions in the [Replit Custom Domains Guide](https://docs.replit.com/features/publishing/custom-domains#connect-a-domain-manually).
 
