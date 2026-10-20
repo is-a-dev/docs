@@ -22,8 +22,7 @@ After you've made the file, it should look like this:
 ```json
 {
     "owner": {
-        "username": "github-username",
-        "email": "me@example.com"
+        "username": "github-username"
     },
     "records": {
         "MX": ["mx1.improvmx.com", "mx2.improvmx.com"],
