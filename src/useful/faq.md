@@ -9,6 +9,12 @@ tags: useful
 
 This page provides our most frequently asked questions regarding our service.
 
+## What is allowed on root subdomains?
+
+Root subdomains are intended for hosting user portfolios.
+
+If you want to host something unrelated to software development, you can use a nested subdomain instead, as long as it adheres to our [Terms of Service](https://is-a.dev/terms).
+
 ## Which DNS record types are supported?
 
 We support the following DNS record types:
