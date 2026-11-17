@@ -49,43 +49,7 @@ When you've made sure that you have the valid file format and the correct filena
 
 Assuming you know how GitHub works, it should be easy for you to make a pull request to our repository. For those who don't know how to make one, you can check [this guide from GitHub's documentation](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) on how to do it.
 
-Before you create the pull request, make sure that you've read the pull request template and have completed it with the right information in order to save both your time and our (the maintainers') time.
-
-Here is the PR template:
-
-```md
-<!--
-YOU MUST FILL OUT THIS ENTIRE TEMPLATE FOR YOUR PR TO BE APPROVED!
-
-DO NOT MODIFY OR REMOVE THIS TEMPLATE (INCLUDING REMOVING COMMENTS) OR YOUR PR WILL FAIL VALIDATION!
--->
-
-# Requirements
-<!-- Your domain MUST pass ALL the requirements below, otherwise it WILL BE DENIED. -->
-<!-- Change each checkbox to [x] (all lowercase, with no spaces between the brackets) to mark it as completed. -->
-<!-- Do not modify anything in this section other than the checkboxes, or your PR will fail validation. -->
-
-- [ ] <!-- TOS --> I **agree** to the [Terms of Service](https://is-a.dev/terms). <!-- Your request MUST follow the TOS to be approved. -->
-- [ ] <!-- DOMAIN_STRUCTURE --> My file is following the [domain structure](https://docs.is-a.dev/domain-structure/). <!-- Your file is in the domains directory, the name is valid, it is JSON format, etc. -->
-- [ ] <!-- WEBSITE_REACHABLE --> My website is **reachable** and **completed**. <!-- We do not permit simple "Hello, world!" or simply copied template websites with minimal changes. -->
-- [ ] <!-- SOFTWARE_RELATED --> My website is **software development** related. <!-- We do not accept websites such as gaming, courses, AI agents/chatbots, etc. NOTE: Only your root subdomain needs to meet this requirement. -->
-- [ ] <!-- NON_COMMERCIAL --> My website is **not for commercial use**. <!-- Your website's purpose should not be to generate any form of revenue or profit. (e.g. a business) -->
-- [ ] <!-- CONTACT_INFO --> I have provided sufficient contact information in the `owner` key. <!-- Provide your email in the `email` field or another platform (e.g. Twitter or Discord) for contact. -->
-- [ ] <!-- WEBSITE_LINK --> I have provided a link to my website below. <!-- This step is required for your PR to be approved. -->
-
-# Website Preview
-<!-- Provide a LINK (not a screenshot) to your website below between the start/end markers. -->
-<!-- This should be a LINK to the existing domain your website is on, NOT the is-a.dev domain you're applying for. (e.g. https://abc.vercel.app, https://abc.github.io) -->
-
-<!-- WEBSITE_PREVIEW_START -->
-<!-- WEBSITE_PREVIEW_END -->
-
-# Website Purpose
-<!-- Please tell us the purpose or motive behind your website in between the start/end markers. For example, it is a portfolio website, etc. -->
-
-<!-- WEBSITE_PURPOSE_START -->
-<!-- WEBSITE_PURPOSE_END -->
-```
+Before you create the pull request, make sure that you've read the [pull request template](https://github.com/is-a-dev/register/blob/main/.github/PULL_REQUEST_TEMPLATE.md) and have completed it with the right information in order to save both your time and our (the maintainers') time.
 
 !!!danger
 Please don't replace the pull request template with something else, since that could result in your pull request being closed instantly when a maintainer sees it. Please also add a preview of your website with both the link to your website and a screenshot of your website in the pull request description.
