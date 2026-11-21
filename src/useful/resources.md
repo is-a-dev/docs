@@ -29,6 +29,7 @@ This page provides a collection of resources to help you understand key concepts
 
 ## Git and GitHub
 - [The Simple Guide to Git](https://rogerdudler.github.io/git-guide/) - A simple guide to Git without any deep shit.
+- [JSON domain request compiler](https://veronne2010.is-a.dev/is-a.dev_compiler/) - A simple tool that make quickly and easier write the JSON domain request.
 - [Think Like a Git](https://think-like-a-git.net/) - A guide for understanding Git.
 
 ## Other
