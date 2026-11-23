@@ -11,6 +11,10 @@ When you create your Hashnode blog, Hashnode provides a free `hashnode.dev` subd
 
 In this guide, you will learn how to accomplish this.
 
+!!!warning
+Mapping a custom domain is a **Hashnode Pro** feature. See [Hashnode's pricing](https://hashnode.com/pricing) before you start.
+!!!
+
 ---
 
 1. Log in to your Hashnode account.
@@ -24,7 +28,7 @@ In this guide, you will learn how to accomplish this.
 1. Navigate to the **Domain** tab and enter your domain without the **www** or **https://** prefix in the text field provided. Then click on the **Update** button to proceed.
    ![Hashnode's Blog Domain Tab](https://cdn.hashnode.com/res/hashnode/image/upload/v1614937377176/0cwddAywO.png?auto=compress)
 
-1. Go to your fork of the `is-a-dev/register` repository, edit your subdomain's JSON file, make sure you remove any old records, then add this to the `record` key and create a PR:
+1. Go to your fork of the `is-a-dev/register` repository, edit your subdomain's JSON file, make sure you remove any old records, then add this to the `records` key and create a PR:
 
 ```json
 "CNAME": "hashnode.network"
@@ -38,9 +42,6 @@ Once the DNS has propagated, you can start enjoying your Hashnode blog with your
 
 ## Need More Help?
 
-If you encounter any issues or need further assistance, consider the following resources:
-
-- [Hashnode Domain Mapping Guide](https://support.hashnode.com/docs/mapping-domain/): This support article provides detailed instructions on mapping your domain in Hashnode.
-- [Hashnode Support Center](https://support.hashnode.com/): For more general help related to Hashnode, visit their Support Center.
+If you encounter any issues or need further assistance, contact Hashnode's support from your Hashnode dashboard.
 
 Please note that is-a.dev is not affiliated with Hashnode. If you're experiencing issues with your Hashnode blog, please seek help through Hashnode's support channels. We are unable to assist with Hashnode-specific issues.
